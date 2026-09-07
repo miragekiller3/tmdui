@@ -1,0 +1,28 @@
+<tmdui version="20210202" encoding="utf-8">
+  <pic>
+    <L1002 class="bmp" FrameNum="1" FileName="1.bmp" Valid="#11FF" />
+  </pic>
+  <frame>
+    <L1001 class="form" />
+  </frame>
+  <wnd>
+    <L1000 class="window" Frame="1001">
+      <L1003 class="widget" Style="#10100000" Rect="21,36,250,178" Hint="aa+" BkPic="1002" />
+    </L1000>
+    <L1004 class="window" Frame="1001">
+      <L1006 class="pushbutton" TextFormat="#100825" Rect="142,131,242,151" Text="a+" />
+      <L1007 class="pushbutton" Rect="143,226,243,246" Text="a+" />
+    </L1004>
+    <L1008 class="window" Frame="1001">
+      <L1009 class="edit" TextFormat="#100800" Style="#10010001" Layout="#30" Rect="117,104,317,124" Text="+1" Frame="1001" />
+      <L1015 class="edit" Rect="75,155,430,175" Text="aaa:ارات عربية متح direction:rtl; text-align:right;" Frame="1001" />
+    </L1008>
+    <L1011 class="window" Frame="1001">
+      <L1012 class="rich" Layout="#20030" Rect="120,58,349,140" Text="&lt;font&gt;aaa :&lt;/font&gt; ربية متح&lt;br&gt;bbb: ربية متح&lt;br&gt;c++&lt;br&gt;" Font="Arial:17" Frame="1001" />
+      <L1016 class="rich" Rect="32,176,459,258" Text=" aaa:ارات عربية متح direction:rtl; text-align:right;" Frame="1001" />
+    </L1011>
+    <L1013 class="window" Frame="1001">
+      <L1014 class="memo" TextFormat="#100802" Style="#10018042" Layout="#20000" Rect="166,91,371,196" Text="a+&#13;&#10;b+&#13;&#10;c++" Frame="1001" />
+    </L1013>
+  </wnd>
+</tmdui>

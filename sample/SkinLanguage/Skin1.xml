@@ -1,0 +1,9 @@
+<tmdui version="20210202" encoding="utf-8">
+  <res_tui>
+    <L1000 Alpha="255" BkPic="1001"></L1000>
+      <L1014 TextColor="#FFFF80" Rect="109,124,327,176" Font="Verdana:28"></L1014>
+      <L1008 Rect="94,271,220,302" HighlightTextColor="#FF8000" BkPic="1003"></L1008>
+      <L1009 Rect="95,316,221,347" HighlightTextColor="#FF8000" BkPic="1003"></L1009>
+      <L1010 Rect="351,74,375,98" BkPic="1004"></L1010>
+  </res_tui>
+</tmdui>

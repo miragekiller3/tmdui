@@ -1,0 +1,92 @@
+<tmdui version="20210202" encoding="utf-8">
+  <pic>
+    <L1007 class="clr" Color="#C0B0A090" />
+    <L1015 class="bmp" FrameNum="1" FileName="24.jpg" Alpha="196" />
+    <L1017 class="bmp" FrameNum="1" FileName="32.gif" Alpha="196" />
+    <L1031 class="gradient" />
+    <L1035 class="clr" />
+    <L1112 class="clr" Color="#FFFFFF" />
+    <L1229 class="bmp" FrameNum="1" Left="5" Top="3" Right="11" Bottom="11" FileName="1.bmp" />
+  </pic>
+  <frame>
+    <L1000 class="form" />
+    <L1234 class="form" OutterBk="null" CaptionBk="null" CloseBk="null" MaxBk="null" MinBk="null" />
+  </frame>
+  <wnd>
+    <L1001 class="window" AdvStyle="#80000" Rect="0,0,921,598" BkPic="1007" Frame="1000">
+      <L1026 class="widget" Layout="#41" Rect="4,24,917,594">
+        <L1002 class="groupbox" Layout="#2" Rect="24,24,224,174" Text="FillRect" margin="20,0,0,0" />
+        <L1003 class="groupbox" Layout="#2" Rect="244,24,444,174" Text="FrameRect" margin="20,0,0,0" />
+        <L1004 class="groupbox" Layout="#2" Rect="464,24,664,174" Text="InvertRect" margin="20,0,0,0" />
+        <L1005 class="groupbox" Layout="#2" Rect="684,24,884,174" Text="DrawFocusRect" margin="20,0,0,0" />
+        <L1006 class="groupbox" Layout="#2" Rect="24,174,224,324" Text="DrawRectEdge" margin="20,0,0,0" />
+        <L1008 class="groupbox" Layout="#2" Rect="244,174,444,324" Text="GrandientFill" margin="20,0,0,0" />
+      </L1026>
+    </L1001>
+    <L1046 class="window" Rect="0,0,764,468" BkPic="1007" Frame="1000">
+      <L1047 class="widget" Layout="#21" Rect="4,24,760,44" BkPic="1035">
+        <L1048 class="radiobutton" State="1" ID="1039" Style="#10010010" Layout="#1" Rect="4,24,79,44" Text="GDI" />
+        <L1049 class="radiobutton" ID="1040" Style="#10010010" Layout="#1" Rect="79,24,154,44" Text="D3D9" />
+        <L1050 class="radiobutton" ID="1041" Style="#10010010" Layout="#1" Rect="154,24,229,44" Text="D3D11" />
+        <L1051 class="radiobutton" ID="1042" Style="#10010010" Layout="#1" Rect="229,24,304,44" Text="OpenGL" />
+      </L1047>
+      <L1094 class="widget" Layout="#41" Rect="4,44,482,438">
+        <L1071 class="pushbutton" ID="1071" Rect="29,64,171,84" Text="test shape" />
+        <L1072 class="pushbutton" ID="1072" Rect="32,100,169,120" Text="test blt" />
+        <L1223 class="pushbutton" ID="1223" Rect="31,135,168,155" Text="test blt dir" />
+      </L1094>
+      <L1093 class="splitter" Layout="#11" Rect="482,44,491,438" BkPic="1031" />
+      <L1092 class="memo" Layout="#22011" Rect="491,44,760,438" Frame="1000" />
+      <L1012 class="edit" Layout="#31" Rect="4,438,760,464" BkPic="81" Frame="1000" />
+    </L1046>
+    <L1073 class="window" AdvStyle="#80000" Rect="0,0,693,598" BkPic="1007" Frame="1000">
+      <L1095 class="widget" Layout="#1" Rect="4,24,201,594" BkPic="1035">
+        <L1097 class="groupbox" Rect="26,38,175,150" Text="format" padding="0,20,0,0">
+          <L1098 class="radiobutton" State="1" ID="1098" Layout="#21" Rect="26,58,175,78" Text="32" />
+          <L1099 class="radiobutton" ID="1099" Layout="#21" Rect="26,78,175,98" Text="32A" />
+          <L1100 class="radiobutton" ID="1100" Layout="#21" Rect="26,98,175,118" Text="24" />
+          <L1101 class="radiobutton" ID="1101" Layout="#21" Rect="26,118,175,138" Text="NV12" />
+        </L1097>
+        <L1103 class="groupbox" Rect="26,168,175,295" Text="ResetAsDib" padding="0,20,0,0">
+          <L1104 class="radiobutton" State="1" ID="1104" Layout="#21" Rect="26,188,175,208" Text="none" />
+          <L1105 class="radiobutton" ID="1105" Layout="#21" Rect="26,208,175,228" Text="dib" />
+          <L1106 class="radiobutton" ID="1106" Layout="#21" Rect="26,228,175,248" Text="alpha" />
+          <L1107 class="radiobutton" ID="1107" Layout="#21" Rect="26,248,175,268" Text="dib+alpha" />
+          <L1108 class="radiobutton" ID="1108" Layout="#21" Rect="26,268,175,288" Text="dib+eKeepAlpha" />
+        </L1103>
+        <L1110 class="groupbox" Rect="26,313,175,369" Text="alpha">
+          <L1111 class="edit" ID="1111" Rect="36,336,158,356" Text="196" BkPic="1112" Frame="1000" />
+        </L1110>
+      </L1095>
+      <L1074 class="widget" Layout="#41" Rect="201,24,689,594">
+        <L1082 class="groupbox" Layout="#2" Rect="221,24,421,174" Text="srccpy" margin="20,0,0,0" />
+        <L1084 class="groupbox" Layout="#2" Rect="441,24,641,174" Text="srcover" margin="20,0,0,0" />
+        <L1086 class="groupbox" Layout="#2" Rect="221,174,421,324" Text="srccpy+ResetAsDib" margin="20,0,0,0" />
+        <L1088 class="groupbox" Layout="#2" Rect="441,174,641,324" Text="srcover+ResetAsDib" margin="20,0,0,0" />
+        <L1090 class="groupbox" Style="#0" Layout="#2" Rect="221,324,421,474" Text="srccopy+keep alpha" margin="20,0,0,0" />
+        <L1091 class="groupbox" Style="#0" Layout="#2" Rect="441,324,641,474" Text="srcover+keepalpha" margin="20,0,0,0" />
+        <L1113 class="memo" TextFormat="#0" Style="#10010800" Layout="#31" Rect="201,341,689,594" Text="dib:         alpha:&#13;&#10;0 0 0 0 0 0  196 196 196 196 196 196&#13;&#10;0 0 0 0 0 0  196 196 196 196 196 196&#13;&#10;0 0 0 0 0 0  196 196   0   0 196 196&#13;&#10;0 0 0 0 0 0  196 196   0   0 196 196&#13;&#10;0 0 0 0 0 0  196 196 196 196 196 196&#13;&#10;0 0 0 0 0 0  196 196 196 196 196 196&#13;&#10;&#13;&#10;D3D11 not support 24 bit" BkPic="1112" Frame="1000" />
+      </L1074>
+    </L1073>
+    <L1200 class="window" AdvStyle="#80000" Rect="0,0,693,560" BkPic="1007" Frame="1000">
+      <L1201 class="widget" Layout="#1" Rect="4,24,201,556" BkPic="1035">
+        <L1207 class="groupbox" Rect="25,38,174,131" Text="direction" padding="0,20,0,0">
+          <L1208 class="checkbox" ID="1224" Layout="#21" Rect="25,58,174,78" Text="R2L" />
+          <L1209 class="checkbox" ID="1231" Layout="#21" Rect="25,78,174,98" Text="B2T" />
+          <L1230 class="checkbox" ID="1225" Layout="#21" Rect="25,98,174,118" Text="X2Y" />
+        </L1207>
+        <L1213 class="groupbox" Rect="22,174,171,230" Text="alpha">
+          <L1214 class="edit" ID="1111" Rect="32,197,154,217" Text="196" BkPic="1112" Frame="1000" />
+        </L1213>
+      </L1201>
+      <L1215 class="widget" Layout="#41" Rect="201,24,689,556">
+        <L1216 class="groupbox" Layout="#530" Rect="221,24,595,294" Text="blt" margin="20,0,20,0" />
+        <L1217 class="groupbox" Layout="#630" Rect="221,290,595,554" Text="blts" margin="20,0,20,0" />
+      </L1215>
+    </L1200>
+    <L1232 class="window" Rect="0,0,696,447" Frame="1234">
+      <L1233 class="widget" Rect="59,37,283,195" />
+      <L1235 class="widget" Rect="399,45,602,203" />
+    </L1232>
+  </wnd>
+</tmdui>

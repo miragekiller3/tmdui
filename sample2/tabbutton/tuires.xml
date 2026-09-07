@@ -1,0 +1,28 @@
+<tmdui version="20210202" encoding="utf-8">
+  <pic />
+  <frame>
+    <L1001 class="form" />
+  </frame>
+  <wnd>
+    <L1000 class="window" Rect="0,0,555,288" Frame="1001">
+      <L1002 class="groupbox" Rect="20,208,114,236" padding="4,4,4,4">
+        <L1003 class="tabbutton" Target="1004" State="1" NormalTextColor="255" HighlightTextColor="255" DownTextColor="255" FocusTextColor="255" Style="#10012096" Layout="#1" Rect="24,212,98,232" Text="1" />
+      </L1002>
+      <L1004 class="widget" Style="#0" Rect="23,57,94,185" BkPic="71" />
+      <L1005 class="groupbox" Rect="127,207,283,235" padding="4,4,4,4">
+        <L1006 class="tabbutton" Target="1007" State="1" NormalTextColor="255" HighlightTextColor="255" DownTextColor="255" FocusTextColor="255" Style="#10012096" Layout="#1" Rect="131,211,205,231" Text="1" />
+        <L1008 class="tabbutton" Target="1009" NormalTextColor="255" HighlightTextColor="255" DownTextColor="255" FocusTextColor="255" Style="#10012096" Layout="#1" Rect="205,211,279,231" Text="2" />
+      </L1005>
+      <L1007 class="widget" Style="#0" Rect="132,57,203,185" BkPic="71" />
+      <L1009 class="widget" Style="#0" Rect="205,57,276,185" BkPic="71" />
+      <L1010 class="groupbox" Rect="287,206,514,234" padding="4,4,4,4">
+        <L1011 class="tabbutton" Target="1013" State="1" NormalTextColor="255" HighlightTextColor="255" DownTextColor="255" FocusTextColor="255" Style="#10012096" Layout="#1" Rect="291,210,365,230" Text="1" />
+        <L1012 class="tabbutton" Target="1014" NormalTextColor="255" HighlightTextColor="255" DownTextColor="255" FocusTextColor="255" Style="#10012096" Layout="#1" Rect="365,210,439,230" Text="2" />
+        <L1015 class="tabbutton" Target="1016" NormalTextColor="255" HighlightTextColor="255" DownTextColor="255" FocusTextColor="255" Style="#10012096" Layout="#1" Rect="439,210,513,230" Text="3" />
+      </L1010>
+      <L1013 class="widget" Rect="290,56,361,184" BkPic="71" />
+      <L1014 class="widget" Rect="363,56,434,184" BkPic="71" />
+      <L1016 class="widget" Rect="437,56,508,184" BkPic="71" />
+    </L1000>
+  </wnd>
+</tmdui>

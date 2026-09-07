@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="95px" height="16px" viewBox="0 0 95 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+  <g id="normal" fill="white">
+    <polygon points="3,4 5,4 16,13 16,14 14,14 3,5" />
+    <polygon points="3,14 5,14 16,5 16,4 14,4 3,13" />
+  </g>
+
+  <g id="down" fill="#FF8080" transform="translate(19, 0)">
+    <polygon points="3,4 5,4 16,13 16,14 14,14 3,5" />
+    <polygon points="3,14 5,14 16,5 16,4 14,4 3,13" />
+  </g>
+
+  <g id="high_shadow" fill="#404040" transform="translate(38, 0)">
+    <polygon points="3,4 5,4 16,13 16,14 14,14 3,5" />
+    <polygon points="3,14 5,14 16,5 16,4 14,4 3,13" />
+  </g>
+  <g id="high" fill="#FF8080" transform="translate(37, -1)">
+    <polygon points="3,4 5,4 16,13 16,14 14,14 3,5" />
+    <polygon points="3,14 5,14 16,5 16,4 14,4 3,13" />
+  </g>
+</svg>

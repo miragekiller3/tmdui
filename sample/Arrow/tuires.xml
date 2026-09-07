@@ -1,0 +1,46 @@
+<tmdui version="20210202" encoding="utf-8">
+  <pic />
+  <frame>
+    <L1001 class="form" />
+  </frame>
+  <wnd>
+    <L1000 class="window" Style="#10CF0402" Rect="0,0,624,364" Frame="1001">
+      <L1006 class="pushbutton" Style="#10C50006" Layout="#20" Rect="326,122,349,171" Text="O" Frame="1001" />
+      <L2009 class="widget" Rect="335,4,424,23">
+        <L2000 class="pushbutton" ID="2003" Style="#10010016" Layout="#1" Rect="335,4,357,23" Text="+" Hint="zoom out" />
+        <L2001 class="pushbutton" ID="2004" Style="#10010016" Layout="#1" Rect="357,4,378,23" Text="-" Hint="zoom in" />
+        <L2002 class="pushbutton" StateNumber="2" ID="2005" Style="#10010016" Layout="#1" Rect="378,4,399,23" Text="&lt;&gt;" Hint="Right To Left" />
+        <L2010 class="pushbutton" StateNumber="2" ID="2011" Style="#10010016" Layout="#1" Rect="399,4,420,23" Text="D" Hint="change device" />
+      </L2009>
+      <L2014 class="pushbutton" ID="1012" Rect="7,265,152,285" Text="create/del1(float)" />
+      <L1011 class="pushbutton" ID="2019" Layout="#2" Rect="152,265,297,285" Text="bind1" />
+      <L2015 class="pushbutton" ID="2020" Layout="#202" Rect="297,265,442,285" Text="unbind1" />
+      <L1013 class="pushbutton" ID="1012" Rect="7,289,152,309" Text="create/del2(pop)" Tag="1" />
+      <L2016 class="pushbutton" ID="2021" Layout="#202" Rect="152,289,297,309" Text="bind2" />
+      <L2017 class="pushbutton" ID="2022" Layout="#202" Rect="297,289,442,309" Text="unbind2" />
+      <L1014 class="pushbutton" ID="1012" Rect="6,315,151,335" Text="create/del3(pop)" Tag="2" />
+      <L1015 class="pushbutton" ID="1020" Layout="#202" Rect="151,315,296,335" Text="bind3" />
+      <L1016 class="pushbutton" ID="1021" Layout="#202" Rect="296,315,441,335" Text="unbind3" />
+      <L2023 class="pushbutton" ID="2024" Layout="#200" Rect="5,341,150,361" Text="Min&amp;Create" />
+      <L2012 class="pushbutton" ID="2012" Layout="#200" Rect="441,316,586,336" Text="set text" />
+    </L1000>
+    <L1003 class="window" AdvStyle="#8000000" Rect="0,0,159,103" Frame="1001">
+      <L1004 class="arrow" Style="#10C40000" Rect="10,34,50,84" Frame="1001" padding="-80,0,0,0">
+        <L1005 class="static" Rect="17,57,33,74" Text="&lt;" />
+      </L1004>
+    </L1003>
+    <L1007 class="window" Layout="#10240" AdvStyle="#8000000" Rect="0,0,236,223" Frame="1001" padding="0,20,0,0">
+      <L2013 class="memo" TextFormat="#0" Style="#10000000" Layout="#10031" Rect="4,44,232,64" Frame="1001" />
+      <L1010 class="widget" Style="#10C40000" Layout="#31" Rect="4,64,232,219" Frame="1001">
+        <L1008 class="arrow" Style="#10C40000" Layout="#200" Rect="77,193,101,216" BkPic="91" padding="0,160,0,0" />
+      </L1010>
+    </L1007>
+    <L1022 class="window" Rect="0,0,592,296">
+      <L2006 class="float" Style="#10C40000" Rect="216,74,343,166" BkPic="71" Frame="1001">
+        <L2007 class="arrow" BindWnd="2006" Style="#10C40000" Rect="290,88,334,147" Frame="1001" padding="160,0,0,0">
+          <L2008 class="static" Rect="309,116,326,133" Text="&gt;" />
+        </L2007>
+      </L2006>
+    </L1022>
+  </wnd>
+</tmdui>

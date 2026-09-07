@@ -1,0 +1,1 @@
+the sample test bind window to tree view item.

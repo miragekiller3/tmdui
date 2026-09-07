@@ -1,0 +1,16 @@
+﻿<tmdui version="20210202" localid="1033">
+  <res_tui>
+    <L1000 Text="TUI演示"></L1000>
+      <L1014 Text="TUI演示"></L1014>
+      <L1009 Text="更换语言"></L1009>
+      <L1008 Text="更换皮肤"></L1008>
+  </res_tui>
+  <res_sys>
+    <message>
+    </message>
+    <menu>
+    </menu>
+    <menupop>
+    </menupop>
+  </res_sys>
+</tmdui>

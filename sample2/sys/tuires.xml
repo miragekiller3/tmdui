@@ -1,0 +1,43 @@
+﻿  <tmdui version="20181218" encoding="utf-8">
+    <pic></pic>
+    <frame>
+      <L1015 class="form"></L1015>
+    </frame>
+    <wnd>
+      <L1000 class="window" BkPic="71">
+        <L1001 class="sys" Style="#10010086" Rect="54,8,431,40" Text="caption"></L1001>
+        <L1002 class="sys" type="2048" Rect="117,77,150,97" Text="min" BkPic="71"></L1002>
+        <L1003 class="sys" type="2304" Rect="155,77,188,97" Text="max" BkPic="71"></L1003>
+        <L1004 class="sys" type="5120" Rect="198,77,245,97" Text="close" BkPic="71"></L1004>
+        <L1005 class="sys" type="7681" Style="#10010086" Layout="#1" Rect="0,0,43,300" Text="left">
+          <L2000 class="sys" Target="1000" type="7684" Style="#10010086" Layout="#21" Rect="4,4,39,37" Text="LT"></L2000>
+          <L2001 class="sys" Target="1000" type="7687" Style="#10010086" Layout="#31" Rect="4,260,39,296" Text="LB"></L2001>
+        </L1005>
+        <L1006 class="sys" type="7682" Style="#10010086" Layout="#11" Rect="449,0,500,300" Text="right">
+          <L2002 class="sys" Target="1000" type="7685" Style="#10010086" Layout="#21" Rect="453,4,496,37" Text="RT"></L2002>
+          <L2003 class="sys" Target="1000" type="7688" Style="#10010086" Layout="#31" Rect="453,260,496,296" Text="RB"></L2003>
+        </L1006>
+      </L1000>
+      <L1007 class="window" BkPic="71" Frame="1015">
+        <L1014 class="widget" Rect="59,61,443,262" BkPic="71">
+          <L1008 class="sys" Style="#10010086" Rect="110,78,411,110" Text="caption"></L1008>
+          <L1009 class="sys" type="2048" Rect="126,158,359,178" Text="min(unused in tui mode)" BkPic="71"></L1009>
+          <L1010 class="sys" type="2304" Rect="125,187,362,207" Text="max(unused in tui mode)" BkPic="71"></L1010>
+          <L1011 class="sys" type="5120" Rect="125,216,359,236" Text="close" BkPic="71"></L1011>
+          <L1012 class="sys" type="7681" Style="#10010086" Layout="#1" Rect="59,61,103,262" Text="left"></L1012>
+          <L1013 class="sys" type="7682" Style="#10010086" Layout="#11" Rect="391,61,443,262" Text="right"></L1013>
+        </L1014>
+      </L1007>
+      <L1016 class="window" BkPic="71" Frame="1015">
+        <L1017 class="widget" Rect="79,83,463,284" BkPic="71">
+          <L1018 class="sys" Target="1024" Style="#10010086" Rect="127,99,428,131" Text="caption TARGET"></L1018>
+          <L1019 class="sys" Target="1016" type="2048" Rect="146,180,379,200" Text="min Mgr" BkPic="71"></L1019>
+          <L1020 class="sys" Target="1016" type="2304" Rect="145,209,382,229" Text="max Mgr" BkPic="71"></L1020>
+          <L1021 class="sys" Target="1016" type="5120" Rect="145,238,379,258" Text="close Mgr" BkPic="71"></L1021>
+          <L1022 class="sys" Target="1016" type="7681" TextFormat="#815" Style="#10010086" Layout="#1" Rect="79,83,124,284" Text="Mgr left"></L1022>
+          <L1023 class="sys" Target="1024" type="7682" TextFormat="#815" Style="#10010086" Layout="#11" Rect="400,83,463,284" Text="right TARGET"></L1023>
+        </L1017>
+        <L1024 class="pushbutton" Rect="130,36,323,64" Text="TARGET"></L1024>
+      </L1016>
+    </wnd>
+  </tmdui>

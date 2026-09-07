@@ -1,0 +1,35 @@
+<tmdui version="20210202" encoding="utf-8">
+  <pic>
+    <L1004 class="bmp" FrameNum="1" FileName="panda.gif" />
+  </pic>
+  <frame>
+    <L1001 class="form" />
+    <L1020 class="form" />
+  </frame>
+  <wnd>
+    <L1000 class="window" AdvStyle="#600" Text="win2pic" Frame="1020">
+      <L1002 class="pushbutton" StateNumber="2" PicWidth="32" PicHeight="32" ID="1002" Style="#10850006" Rect="171,42,467,122" Text="set/unset fore pic" Frame="1001">
+        <L1003 class="animate" Style="#10000004" Rect="191,55,229,87" BkPic="1004">
+          <L1007 class="pushbutton" Layout="#31" Rect="191,77,229,87" Text="aaa" />
+        </L1003>
+      </L1002>
+      <L1005 class="pushbutton" StateNumber="2" PicWidth="32" PicHeight="32" ID="1005" Style="#10850006" Rect="169,123,465,203" Text="set/unset bk pic" Frame="1001">
+        <L1006 class="animate" Style="#10000004" AdvStyle="#20" Rect="189,136,227,168" BkPic="1004">
+          <L1008 class="pushbutton" Layout="#31" Rect="189,158,227,168" Text="aaa" />
+        </L1006>
+      </L1005>
+      <L1010 class="groupbox" Rect="15,39,160,250" Text="frame" padding="0,20,0,0">
+        <L1009 class="radiobutton" State="1" ID="1009" Layout="#21" Rect="15,59,160,79" Text="none" />
+        <L1011 class="radiobutton" ID="1009" Layout="#21" Rect="15,79,160,99" Text="caption" Tag="2" />
+        <L1012 class="radiobutton" ID="1009" Layout="#21" Rect="15,99,160,119" Text="min" Tag="8" />
+        <L1013 class="radiobutton" ID="1009" Layout="#21" Rect="15,119,160,139" Text="max" Tag="9" />
+        <L1014 class="radiobutton" ID="1009" Layout="#21" Rect="15,139,160,159" Text="close" Tag="20" />
+        <L1015 class="radiobutton" ID="1009" Layout="#21" Rect="15,159,160,179" Text="sys" Tag="3" />
+        <L1016 class="radiobutton" ID="1009" Layout="#21" Rect="15,179,160,199" Text="help" Tag="21" />
+        <L1017 class="radiobutton" ID="1009" Layout="#21" Rect="15,199,160,219" Text="outer border" Tag="30" />
+        <L1018 class="radiobutton" ID="1009" Layout="#21" Rect="15,219,160,239" Text="inner border" Tag="31" />
+      </L1010>
+      <L1019 class="animate" Style="#10000004" AdvStyle="#20" Rect="94,98,141,134" BkPic="1004" />
+    </L1000>
+  </wnd>
+</tmdui>

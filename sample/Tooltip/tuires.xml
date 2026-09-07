@@ -1,0 +1,39 @@
+<tmdui version="20210202" encoding="utf-8">
+  <pic>
+    <L10008 class="gradient" ColorTo="#80FF" FillMode="10" />
+    <L20016 class="bmp" FrameNum="1" Left="20" Top="22" Right="20" Bottom="30" FileName="bc_bg.png" Valid="#9FF" />
+    <L20020 class="bmp" FrameNum="1" FileName="apply.png" />
+  </pic>
+  <frame>
+    <L10001 class="form" />
+  </frame>
+  <wnd>
+    <L10002 class="window" Rect="0,0,500,298" Text="press 'T' to track active" BkPic="10008" Frame="10001">
+      <L10015 class="pushbutton" ID="20011" Rect="-3,40,115,62" Text="mode2:normal" HintDlg="21005" Hint="1. set IDC_PUSHBUTTON_20019 Layout property to &quot;autosize&quot;" Tag="99" />
+      <L20021 class="pushbutton" Style="#18010006" Rect="124,40,228,63" Text="mode2:disable" HintDlg="21005" Hint="2. on &quot;OnSize&quot; of IDC_PUSHBUTTON_20019,&#13;&#10;call &quot;SetWindowPos(...,SWP_NOACTIVATE)&quot; to move tip window rect" />
+      <L10017 class="pushbutton" TextFormat="#800" ID="20012" Style="#10010000" Rect="-2,94,60,115" Text="normal" Hint="test tooltip normal" padding="0,0,0,0" Tag="99" />
+      <L10018 class="checkbox" ID="20013" Style="#18010016" Rect="134,95,223,116" Text="disable" Hint="test tooltip disable" Tag="99" />
+      <L20022 class="pushbutton" ID="20022" Layout="#20" Rect="381,3,403,23" Text="+" Hint="zoom out" />
+      <L20023 class="pushbutton" ID="20023" Layout="#20" Rect="404,3,425,23" Text="-" Hint="zoom in" />
+      <L20024 class="edit" TextFormat="#40000" Prompt="bk color(HEX)" ID="20024" Style="#10010004" Rect="30,180,146,200" Frame="10001" />
+      <L20025 class="edit" TextFormat="#40000" Prompt="text color(HEX)" ID="20025" Style="#10010004" Rect="163,178,289,198" Frame="10001" />
+      <L21001 class="checkbox" TextFormat="#40824" Rect="304,176,463,196" Text="pop immediately ______" />
+      <L21002 class="float" Style="#10000000" Rect="226,28,380,141" HintDlg="21005" Hint="container" BkPic="20016">
+        <L10019 class="radiobutton" ID="20014" AdvStyle="#20" Rect="234,92,335,118" Text="penetrate" Hint="test tooltip penetrate" Tag="99" />
+        <L21000 class="pushbutton" Style="#18010006" AdvStyle="#20" Rect="230,39,363,62" Text="mode2:penetrate" HintDlg="21005" Hint="3. tool tip support normal, disabled, penetrate control." />
+      </L21002>
+      <L21003 class="pushbutton" ID="21003" Rect="28,211,228,231" Text="delay hide container" />
+      <L1000 class="checkbox" ID="1000" Rect="28,243,228,263" Text="Show Hint On Ellipsis" />
+      <L1001 class="checkbox" ID="1001" Rect="28,263,228,283" Text="Show HInt On TabKey" />
+      <L21004 class="pushbutton" ID="20011" Rect="386,41,491,63" Text="mode 1" HintDlg="20015" Hint="1. set IDC_PUSHBUTTON_20019 Layout property to &quot;autosize&quot;" Tag="99" />
+    </L10002>
+    <L20015 class="window" Style="#2" Layout="#11110" AdvStyle="#8080088" Rect="0,0,240,80" BkPic="20016" padding="20,20,20,20">
+      <L20019 class="pushbutton" PicWidth="32" PicHeight="32" ForePic="20020" TextFormat="#815" Layout="#11021" Rect="20,20,220,60" MinWidth="200" MaxWidth="400" Text="aa" BkPic="10008" />
+      <L21009 class="static" Rect="6,3,59,23" Text="mode1" BkPic="71" />
+    </L20015>
+    <L21005 class="window" Style="#2" Layout="#11110" AdvStyle="#8080088" Rect="0,0,240,80" BkPic="20016" padding="20,20,20,20">
+      <L21006 class="pushbutton" PicWidth="32" PicHeight="32" ForePic="20020" TextFormat="#815" Layout="#11021" Rect="20,20,220,60" MinWidth="200" MaxWidth="400" Text="aa" BkPic="10008" />
+      <L21008 class="static" Rect="6,3,59,23" Text="mode2" BkPic="71" />
+    </L21005>
+  </wnd>
+</tmdui>

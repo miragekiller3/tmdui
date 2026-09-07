@@ -1,0 +1,25 @@
+<tmdui version="20210202" encoding="utf-8">
+  <pic>
+    <L10008 class="gradient" ColorTo="#80FF" FillMode="10" />
+  </pic>
+  <frame>
+    <L10001 class="form" />
+  </frame>
+  <wnd>
+    <L10002 class="window" BkPic="10008" Frame="10001">
+      <L10011 class="memo" ID="20008" Layout="#22030" Rect="9,31,279,287" Text="Accept dui obj or text object" Hint="Accept obj " Frame="10001" />
+      <L10016 class="groupbox" ID="20009" Layout="#20" Rect="286,35,484,282" Hint="Accept obj ">
+        <L10015 class="pushbutton" ID="20011" Rect="303,44,442,66" Text="test push button" Hint="Drag button to other controtrol" Tag="99" />
+        <L10017 class="static" ID="20012" Rect="306,92,468,132" Text="test static" Hint="Drag button to other controtrol" Tag="99" />
+        <L10018 class="checkbox" ID="20013" Rect="311,119,386,140" Text="test check" Hint="Drag button to other controtrol" Tag="99" />
+        <L10019 class="radiobutton" ID="20014" Rect="308,149,405,175" Text="test radio" Hint="Drag button to other controtrol" Tag="99" />
+        <L21000 class="float" Rect="316,187,446,207">
+          <L21001 class="pushbutton" Rect="316,187,446,207" Text="float child" Tag="99" />
+        </L21000>
+        <L21002 class="float" Rect="312,215,444,235" BkPic="71" Tag="99">
+          <L21003 class="static" AdvStyle="#20" Rect="312,215,444,235" Text="float" />
+        </L21002>
+      </L10016>
+    </L10002>
+  </wnd>
+</tmdui>

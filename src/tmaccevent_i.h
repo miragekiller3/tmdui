@@ -1,0 +1,199 @@
+/*
+ *  @file
+ *  @brief  debug function for acccessible
+ *
+ *  @author miragekiller <3916345933@qq.com>
+ *  @date   2021.4.12
+ *
+ *  Copyright (C) 2021 miragekiller
+ */
+
+#if !defined(EVENT_DEFW) && !defined(EVENT_DEF2) && !defined(EVENT_DEFU)
+#   error must defined EVENT_DEFW && EVENT_DEF2 && EVENT_DEFU
+#endif
+
+
+// #define EVENT_MIN           0x00000001
+// #define EVENT_MAX           0x7FFFFFFF
+
+EVENT_DEFW(0x0001, SYSTEM_SOUND);                               // EVENT_SYSTEM_SOUND
+EVENT_DEFW(0x0002, SYSTEM_ALERT);
+EVENT_DEFW(0x0003, SYSTEM_FOREGROUND);
+EVENT_DEFW(0x0004, SYSTEM_MENUSTART);
+EVENT_DEFW(0x0005, SYSTEM_MENUEND);
+EVENT_DEFW(0x0006, SYSTEM_MENUPOPUPSTART);
+EVENT_DEFW(0x0007, SYSTEM_MENUPOPUPEND);
+EVENT_DEFW(0x0008, SYSTEM_CAPTURESTART);
+EVENT_DEFW(0x0009, SYSTEM_CAPTUREEND);
+EVENT_DEFW(0x000A, SYSTEM_MOVESIZESTART);
+EVENT_DEFW(0x000B, SYSTEM_MOVESIZEEND);
+EVENT_DEFW(0x000C, SYSTEM_CONTEXTHELPSTART);
+EVENT_DEFW(0x000D, SYSTEM_CONTEXTHELPEND);
+EVENT_DEFW(0x000E, SYSTEM_DRAGDROPSTART);
+EVENT_DEFW(0x000F, SYSTEM_DRAGDROPEND);
+EVENT_DEFW(0x0010, SYSTEM_DIALOGSTART);
+EVENT_DEFW(0x0011, SYSTEM_DIALOGEND);
+EVENT_DEFW(0x0012, SYSTEM_SCROLLINGSTART);
+EVENT_DEFW(0x0013, SYSTEM_SCROLLINGEND);
+EVENT_DEFW(0x0014, SYSTEM_SWITCHSTART);
+EVENT_DEFW(0x0015, SYSTEM_SWITCHEND);
+EVENT_DEFW(0x0016, SYSTEM_MINIMIZESTART);
+EVENT_DEFW(0x0017, SYSTEM_MINIMIZEEND);
+
+EVENT_DEFW(0x0020, SYSTEM_DESKTOPSWITCH);
+    
+EVENT_DEFW(0x0024, SYSTEM_SWITCHER_APPGRABBED)
+EVENT_DEFW(0x0025, SYSTEM_SWITCHER_APPOVERTARGET)
+EVENT_DEFW(0x0026, SYSTEM_SWITCHER_APPDROPPED)
+EVENT_DEFW(0x0027, SYSTEM_SWITCHER_CANCELLED)
+EVENT_DEFW(0x0029, SYSTEM_IME_KEY_NOTIFICATION)
+
+
+EVENT_DEFW(0x00FF, SYSTEM_END)
+
+// EVENT_DEFW(0x0101, OEM_DEFINED_START)
+// EVENT_DEFW(0x01FF, OEM_DEFINED_END)
+
+// IA2
+EVENT_DEF2(0x0101, ACTION_CHANGED);                        // = 0x101,
+EVENT_DEF2(0x0102, ACTIVE_DECENDENT_CHANGED);              // = (IA2_EVENT_ACTION_CHANGED + 1) ,
+EVENT_DEF2(0x0103, DOCUMENT_ATTRIBUTE_CHANGED);            // = (IA2_EVENT_ACTIVE_DESCENDANT_CHANGED + 1) ,
+EVENT_DEF2(0x0104, DOCUMENT_CONTENT_CHANGED);              // = (IA2_EVENT_DOCUMENT_ATTRIBUTE_CHANGED + 1) ,
+EVENT_DEF2(0x0105, DOCUMENT_LOAD_COMPLETE);                // = (IA2_EVENT_DOCUMENT_CONTENT_CHANGED + 1) ,
+EVENT_DEF2(0x0106, DOCUMENT_LOAD_STOPPED);                 // = (IA2_EVENT_DOCUMENT_LOAD_COMPLETE + 1) ,
+EVENT_DEF2(0x0107, DOCUMENT_RELOAD);                       // = (IA2_EVENT_DOCUMENT_LOAD_STOPPED + 1) ,
+EVENT_DEF2(0x0108, HYPERLINK_END_INDEX_CHANGED);           // = (IA2_EVENT_DOCUMENT_RELOAD + 1) ,
+EVENT_DEF2(0x0109, HYPERLINK_NUMBER_OF_ANCHORS_CHANGED);   // = (IA2_EVENT_HYPERLINK_END_INDEX_CHANGED + 1) ,
+EVENT_DEF2(0x010A, HYPERLINK_SELECTED_LINK_CHANGED);       // = (IA2_EVENT_HYPERLINK_NUMBER_OF_ANCHORS_CHANGED + 1) ,
+EVENT_DEF2(0x010B, HYPERTEXT_LINK_ACTIVATED);              // = (IA2_EVENT_HYPERLINK_SELECTED_LINK_CHANGED + 1) ,
+EVENT_DEF2(0x010C, HYPERTEXT_LINK_SELECTED);               // = (IA2_EVENT_HYPERTEXT_LINK_ACTIVATED + 1) ,
+EVENT_DEF2(0x010D, HYPERLINK_START_INDEX_CHANGED);         // = (IA2_EVENT_HYPERTEXT_LINK_SELECTED + 1) ,
+EVENT_DEF2(0x010E, HYPERTEXT_CHANGED);                     // = (IA2_EVENT_HYPERLINK_START_INDEX_CHANGED + 1) ,
+EVENT_DEF2(0x010F, HYPERTEXT_NLINKS_CHANGED);              // = (IA2_EVENT_HYPERTEXT_CHANGED + 1) ,
+EVENT_DEF2(0x0110, OBJECT_ATTRIBUTE_CHANGED);              // = (IA2_EVENT_HYPERTEXT_NLINKS_CHANGED + 1) ,
+EVENT_DEF2(0x0111, PAGE_CHANGED);                          // = (IA2_EVENT_OBJECT_ATTRIBUTE_CHANGED + 1) ,
+EVENT_DEF2(0x0112, SECTION_CHANGED);                       // = (IA2_EVENT_PAGE_CHANGED + 1) ,
+EVENT_DEF2(0x0113, TABLE_CAPTION_CHANGED);                 // = (IA2_EVENT_SECTION_CHANGED + 1) ,
+EVENT_DEF2(0x0114, TABLE_COLUMN_DESCRIPTION_CHANGED);      // = (IA2_EVENT_TABLE_CAPTION_CHANGED + 1) ,
+EVENT_DEF2(0x0115, TABLE_COLUMN_HEADER_CHANGED);           // = (IA2_EVENT_TABLE_COLUMN_DESCRIPTION_CHANGED + 1) ,
+EVENT_DEF2(0x0116, TABLE_MODEL_CHANGED);                   // = (IA2_EVENT_TABLE_COLUMN_HEADER_CHANGED + 1) ,
+EVENT_DEF2(0x0117, TABLE_ROW_DESCRIPTION_CHANGED);         // = (IA2_EVENT_TABLE_MODEL_CHANGED + 1) ,
+EVENT_DEF2(0x0118, TABLE_ROW_HEADER_CHANGED);              // = (IA2_EVENT_TABLE_ROW_DESCRIPTION_CHANGED + 1) ,
+EVENT_DEF2(0x0119, TABLE_SUMMARY_CHANGED);                 // = (IA2_EVENT_TABLE_ROW_HEADER_CHANGED + 1) ,
+EVENT_DEF2(0x011A, TEXT_ATTRIBUTE_CHANGED);                // = (IA2_EVENT_TABLE_SUMMARY_CHANGED + 1) ,
+EVENT_DEF2(0x011B, TEXT_CARET_MOVED);                      // = (IA2_EVENT_TEXT_ATTRIBUTE_CHANGED + 1) ,
+EVENT_DEF2(0x011C, TEXT_CHANGED);                          // = (IA2_EVENT_TEXT_CARET_MOVED + 1) ,
+EVENT_DEF2(0x011D, TEXT_COLUMN_CHANGED);                   // = (IA2_EVENT_TEXT_CHANGED + 1) ,
+EVENT_DEF2(0x011E, TEXT_INSERTED);                         // = (IA2_EVENT_TEXT_COLUMN_CHANGED + 1) ,
+EVENT_DEF2(0x011F, TEXT_REMOVED);                          // = (IA2_EVENT_TEXT_INSERTED + 1) ,
+EVENT_DEF2(0x0120, TEXT_UPDATED);                          // = (IA2_EVENT_TEXT_REMOVED + 1) ,
+EVENT_DEF2(0x0121, TEXT_SELECTION_CHANGED);                // = (IA2_EVENT_TEXT_UPDATED + 1) ,
+EVENT_DEF2(0x0122, VISIBLE_DATA_CHANGED);                  // = (IA2_EVENT_TEXT_SELECTION_CHANGED + 1) ,
+EVENT_DEF2(0x0123, ROLE_CHANGED);                          // = (IA2_EVENT_VISIBLE_DATA_CHANGED + 1) 
+
+
+// #define EVENT_CONSOLE_END       0x40FF
+EVENT_DEF2(0x4001, CONSOLE_CARET);
+EVENT_DEF2(0x4002, CONSOLE_UPDATE_REGION);
+EVENT_DEF2(0x4003, CONSOLE_UPDATE_SIMPLE);
+EVENT_DEF2(0x4004, CONSOLE_UPDATE_SCROLL);
+EVENT_DEF2(0x4005, CONSOLE_LAYOUT);
+EVENT_DEF2(0x4006, CONSOLE_START_APPLICATION);
+EVENT_DEF2(0x4007, CONSOLE_END_APPLICATION);
+
+
+// EVENT_DEFW(0x4E00, UIA_EVENTID_START)
+// EVENT_DEFW(0x4EFF, UIA_EVENTID_END)
+EVENT_DEFU(20000, ToolTipOpenedEventId);                    // UIA_ToolTipOpenedEventId
+EVENT_DEFU(20001, ToolTipClosedEventId);
+EVENT_DEFU(20002, StructureChangedEventId);
+EVENT_DEFU(20003, MenuOpenedEventId);
+EVENT_DEFU(20004, AutomationPropertyChangedEventId);
+EVENT_DEFU(20005, AutomationFocusChangedEventId);
+EVENT_DEFU(20006, AsyncContentLoadedEventId);
+EVENT_DEFU(20007, MenuClosedEventId);
+EVENT_DEFU(20008, LayoutInvalidatedEventId);
+EVENT_DEFU(20009, Invoke_InvokedEventId);
+EVENT_DEFU(20010, SelectionItem_ElementAddedToSelectionEventId);
+EVENT_DEFU(20011, SelectionItem_ElementRemovedFromSelectionEventId);
+EVENT_DEFU(20012, SelectionItem_ElementSelectedEventId);
+EVENT_DEFU(20013, Selection_InvalidatedEventId);
+EVENT_DEFU(20014, Text_TextSelectionChangedEventId);
+EVENT_DEFU(20015, Text_TextChangedEventId);
+EVENT_DEFU(20016, Window_WindowOpenedEventId);
+EVENT_DEFU(20017, Window_WindowClosedEventId);
+EVENT_DEFU(20018, MenuModeStartEventId);
+EVENT_DEFU(20019, MenuModeEndEventId);
+EVENT_DEFU(20020, InputReachedTargetEventId);
+EVENT_DEFU(20021, InputReachedOtherElementEventId);
+EVENT_DEFU(20022, InputDiscardedEventId);
+EVENT_DEFU(20023, SystemAlertEventId);
+EVENT_DEFU(20024, LiveRegionChangedEventId);
+EVENT_DEFU(20025, HostedFragmentRootsInvalidatedEventId);
+EVENT_DEFU(20026, Drag_DragStartEventId);
+EVENT_DEFU(20027, Drag_DragCancelEventId);
+EVENT_DEFU(20028, Drag_DragCompleteEventId);
+EVENT_DEFU(20029, DropTarget_DragEnterEventId);
+EVENT_DEFU(20030, DropTarget_DragLeaveEventId);
+EVENT_DEFU(20031, DropTarget_DroppedEventId);
+EVENT_DEFU(20032, TextEdit_TextChangedEventId);
+EVENT_DEFU(20033, TextEdit_ConversionTargetChangedEventId);
+EVENT_DEFU(20034, ChangesEventId);
+EVENT_DEFU(20035, NotificationEventId);
+EVENT_DEFU(20036, ActiveTextPositionChangedEventId);
+
+
+EVENT_DEFW(0x7500, UIA_PROPID_START)
+EVENT_DEFW(0x75FF, UIA_PROPID_END)
+
+
+// #define EVENT_OBJECT_END                    0x80FF
+EVENT_DEFW(0x8000, OBJECT_CREATE);                             // 0x8000     hwnd + ID + idChild is created item
+EVENT_DEFW(0x8001, OBJECT_DESTROY);                            // 0x8001     hwnd + ID + idChild is destroyed item
+EVENT_DEFW(0x8002, OBJECT_SHOW);                               // 0x8002     hwnd + ID + idChild is shown item
+EVENT_DEFW(0x8003, OBJECT_HIDE);                               // 0x8003     hwnd + ID + idChild is hidden item
+EVENT_DEFW(0x8004, OBJECT_REORDER);                            // 0x8004     hwnd + ID + idChild is parent of zordering children
+EVENT_DEFW(0x8005, OBJECT_FOCUS);                              // 0x8005     hwnd + ID + idChild is focused item
+EVENT_DEFW(0x8006, OBJECT_SELECTION);                          // 0x8006     hwnd + ID + idChild is selected item (if only one), or idChild is OBJID_WINDOW if complex
+EVENT_DEFW(0x8007, OBJECT_SELECTIONADD);                       // 0x8007     hwnd + ID + idChild is item added
+EVENT_DEFW(0x8008, OBJECT_SELECTIONREMOVE);                    // 0x8008     hwnd + ID + idChild is item removed
+EVENT_DEFW(0x8009, OBJECT_SELECTIONWITHIN);                    // 0x8009     hwnd + ID + idChild is parent of changed selected items
+EVENT_DEFW(0x800A, OBJECT_STATECHANGE);                        // 0x800A     hwnd + ID + idChild is item w/ state change
+EVENT_DEFW(0x800B, OBJECT_LOCATIONCHANGE);                     // 0x800B     hwnd + ID + idChild is moved/sized item
+EVENT_DEFW(0x800C, OBJECT_NAMECHANGE);                         // 0x800C     hwnd + ID + idChild is item w/ name change
+EVENT_DEFW(0x800D, OBJECT_DESCRIPTIONCHANGE);                  // 0x800D     hwnd + ID + idChild is item w/ desc change
+EVENT_DEFW(0x800E, OBJECT_VALUECHANGE);                        // 0x800E     hwnd + ID + idChild is item w/ value change
+EVENT_DEFW(0x800F, OBJECT_PARENTCHANGE);                       // 0x800F     hwnd + ID + idChild is item w/ new parent
+EVENT_DEFW(0x8010, OBJECT_HELPCHANGE);                         // 0x8010     hwnd + ID + idChild is item w/ help change
+EVENT_DEFW(0x8011, OBJECT_DEFACTIONCHANGE);                    // 0x8011     hwnd + ID + idChild is item w/ def action change
+EVENT_DEFW(0x8012, OBJECT_ACCELERATORCHANGE);                  // 0x8012     hwnd + ID + idChild is item w/ keybd accel change
+
+EVENT_DEFW(0x8013, OBJECT_INVOKED);                            // 0x8013     hwnd + ID + idChild is item invoked
+EVENT_DEFW(0x8014, OBJECT_TEXTSELECTIONCHANGED);               // 0x8014     hwnd + ID + idChild is item w? test selection change
+EVENT_DEFW(0x8015, OBJECT_CONTENTSCROLLED);                    // 0x8015
+EVENT_DEFW(0x8016, SYSTEM_ARRANGMENTPREVIEW);                  // 0x8016
+EVENT_DEFW(0x8017, OBJECT_CLOAKED);                            // 0x8017
+EVENT_DEFW(0x8018, OBJECT_UNCLOAKED);                          // 0x8018
+EVENT_DEFW(0x8019, OBJECT_LIVEREGIONCHANGED);                  // 0x8019
+EVENT_DEFW(0x8020, OBJECT_HOSTEDOBJECTSINVALIDATED);           // 0x8020
+EVENT_DEFW(0x8021, OBJECT_DRAGSTART);                          // 0x8021
+EVENT_DEFW(0x8022, OBJECT_DRAGCANCEL);                         // 0x8022
+EVENT_DEFW(0x8023, OBJECT_DRAGCOMPLETE);                       // 0x8023
+EVENT_DEFW(0x8024, OBJECT_DRAGENTER);                          // 0x8024
+EVENT_DEFW(0x8025, OBJECT_DRAGLEAVE);                          // 0x8025
+EVENT_DEFW(0x8026, OBJECT_DRAGDROPPED);                        // 0x8026
+EVENT_DEFW(0x8027, OBJECT_IME_SHOW);                           // 0x8027
+EVENT_DEFW(0x8028, OBJECT_IME_HIDE);                           // 0x8028
+EVENT_DEFW(0x8029, OBJECT_IME_CHANGE);                         // 0x8029
+EVENT_DEFW(0x8030, OBJECT_TEXTEDIT_CONVERSIONTARGETCHANGED);   // 0x8030
+
+
+// #define EVENT_AIA_START                     0xA000
+// #define EVENT_AIA_END                       0xAFFF
+
+
+
+#undef EVENT_DEFW
+#undef EVENT_DEF2
+#undef EVENT_DEFU
+

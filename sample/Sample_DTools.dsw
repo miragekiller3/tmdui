@@ -1,0 +1,509 @@
+Microsoft Developer Studio Workspace File, Format Version 6.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "Animation"=.\Animation\Animation.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name TMDui
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name TMDuiAcc
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "Arrow"=.\Arrow\Arrow.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name TMDui
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name TMDuiAcc
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "AutoSizeDlg"=.\AutoSizeDlg\AutoSizeDlg.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name TMDui
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name TMDuiAcc
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "Canvas2D"=.\Canvas2D\Canvas2D.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name TMDui
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name TMDuiAcc
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "Combo"=.\Combo\Combo.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name TMDui
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name TMDuiAcc
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "CreateByHWND"=.\CreateByHWND\CreateByHWND.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name TMDui
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name TMDuiAcc
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "DragDrop"=.\DragDrop\DragDrop.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name TMDui
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name TMDuiAcc
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "Dummy"=.\Dummy\Dummy.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name TMDui
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name TMDuiAcc
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "Flash"=.\Flash\Flash.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name TMDui
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name TMDuiAcc
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "Float"=.\Float\Float.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name TMDui
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name TMDuiAcc
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "GXTest"=.\GXTest\GXTest.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name TMDui
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name TMDuiAcc
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "Header"=.\Header\Header.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name TMDui
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "IEBrowser"=.\IEBrowser\IEBrowser.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name TMDui
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name TMDuiAcc
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "ListBindWnd"=.\ListBindWnd\ListBindWnd.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name TMDui
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name TMDuiAcc
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "MenuBar"=.\MenuBar\MenuBar.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name TMDui
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name TMDuiAcc
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "MenuModal"=.\MenuModal\MenuModal.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name TMDui
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name TMDuiAcc
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "RichEdit"=.\RichEdit\RichEdit.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name TMDui
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name TMDuiAcc
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "Rotate"=.\Rotate\Rotate.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name TMDui
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name TMDuiAcc
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "ScrollBox"=.\ScrollBox\ScrollBox.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name TMDui
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name TMDuiAcc
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "SkinLanguage"=.\SkinLanguage\SkinLanguage.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name TMDui
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name TMDuiAcc
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "TMDui"=..\src\design\TMDui.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "TMDuiAcc"=..\src\accessible\TMDuiAcc.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name TMDui
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "Tooltip"=.\Tooltip\Tooltip.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name TMDui
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name TMDuiAcc
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "TreeBindWnd"=.\TreeBindWnd\TreeBindWnd.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name TMDui
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name TMDuiAcc
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "TreeView"=.\TreeView\TreeView.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name TMDui
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name TMDuiAcc
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "Video"=.\Video\Video.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name TMDui
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name TMDuiAcc
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "Win2Pic"=.\Win2Pic\Win2Pic.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name TMDui
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name TMDuiAcc
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "updown"=.\UpDown\updown.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name TMDui
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name TMDuiAcc
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+}}}
+
+Package=<3>
+{{{
+}}}
+
+###############################################################################
+

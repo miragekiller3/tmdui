@@ -1,0 +1,32 @@
+<tmdui version="20210202" encoding="utf-8">
+  <pic>
+    <L10008 class="gradient" ColorTo="#80FF" FillMode="10" />
+    <L10025 class="clr" Color="#80FF" />
+    <L20018 class="bmp" FrameNum="1" FileName="clr.bmp" Alpha="50" Valid="#10001FF" />
+  </pic>
+  <frame>
+    <L10001 class="form" />
+  </frame>
+  <wnd>
+    <L10002 class="window" Rect="0,0,620,554" Text="tree sample" BkPic="10008" Frame="10001">
+      <L10028 class="groupbox" Rect="20,157,228,218" Text="Set Height">
+        <L10029 class="pushbutton" ID="20016" Style="#10010016" Rect="170,183,192,206" Text="&lt;" />
+        <L10030 class="pushbutton" ID="20017" Style="#10010016" Rect="193,183,215,205" Text="&gt;" />
+      </L10028>
+      <L10027 class="groupbox" Rect="13,30,330,141">
+        <L10021 class="static" Rect="21,44,111,62" Text="text(xx%dxx):" />
+        <L10017 class="edit" ID="20009" Rect="117,39,237,63" Text="test (%x)" Hint="Here can use  Format-control string by &quot;printf&quot; like &quot;%d&quot;, &quot;%x&quot;" Frame="10001" />
+        <L10022 class="static" Rect="20,73,92,88" Text="number:" />
+        <L10018 class="edit" ID="20011" Rect="117,68,237,92" Text="1" Frame="10001" />
+        <L10019 class="pushbutton" ID="20010" Style="#10010016" Rect="21,104,108,127" Text="Add Item" />
+        <L20019 class="pushbutton" ID="20019" Style="#10010016" Rect="120,104,207,127" Text="Add HTML" />
+        <L10020 class="pushbutton" ID="20013" Style="#10010016" Rect="221,103,319,126" Text="Del Selected" />
+      </L10027>
+      <L10024 class="widget" Layout="#22011" Rect="364,24,616,296">
+        <L10016 class="tree" Indent="20" ID="20012" Style="#10010005" Layout="#22041" AdvStyle="#200" Rect="364,49,616,296" BkPic="20018" Frame="10001" />
+        <L10014 class="edit" ID="20008" Layout="#21" Rect="364,24,616,49" Frame="10001" />
+      </L10024>
+      <L10023 class="memo" TextFormat="#40000" ID="20014" Style="#10010004" Layout="#22031" Rect="4,296,616,550" Frame="10001" />
+    </L10002>
+  </wnd>
+</tmdui>

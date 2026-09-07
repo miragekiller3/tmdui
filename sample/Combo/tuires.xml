@@ -1,0 +1,75 @@
+<tmdui version="20210202" encoding="utf-8">
+  <pic>
+    <L1021 class="clr" Color="#FFFFFF" />
+    <L1200 class="clr" Color="#20202020" />
+  </pic>
+  <frame>
+    <L1001 class="form" />
+    <L1201 class="form" OutterBk="1200" OutterLeft="24" OutterRight="24" OutterTop="24" OutterBottom="24" />
+  </frame>
+  <wnd>
+    <L1000 class="window" Rect="0,0,550,326" Text="test combo" Frame="1001">
+      <L1005 class="memo" Layout="#22031" Rect="4,137,546,322" Frame="1001" />
+      <L1009 class="widget" Layout="#41" Rect="4,24,546,137">
+        <L1018 class="widget" Layout="#20" Rect="393,27,545,118">
+          <L1016 class="checkbox" State="1" ID="1020" Rect="403,34,542,50" Text="pop dialog" />
+          <L2002 class="checkbox" ID="1020" Rect="403,55,503,75" Text="pop tree" />
+          <L2023 class="checkbox" ID="1020" Rect="403,75,532,95" Text="commit button" />
+          <L2012 class="checkbox" ID="2013" Rect="404,99,504,119" Text="Log" />
+        </L1018>
+      </L1009>
+    </L1000>
+    <L1006 class="window" Rect="0,0,896,429">
+      <L1010 class="widget" ID="1019" Layout="#21" Rect="0,0,896,43">
+        <L1011 class="edit" Rect="8,12,214,38" Text="list" Frame="1001">
+          <L1012 class="combobutton" PopDlg="1014" PopList="1015" ListItems="test1&#13;&#10;test2&#13;&#10;test3&#13;&#10;test4&#13;&#10;test5&#13;&#10;test6" ID="1003" Layout="#11" Rect="182,14,212,36" />
+        </L1011>
+      </L1010>
+      <L2020 class="widget" ID="1019" Layout="#21" Rect="0,43,896,88">
+        <L2021 class="pushbutton" FocusTextColor="255" TextFormat="#800" Style="#10010000" AdvStyle="#200" Rect="8,55,214,81" Text="list" Frame="1001" padding="0,0,0,0">
+          <L2022 class="combobutton" PopDlg="1014" PopList="1015" ListItems="test1&#13;&#10;test2&#13;&#10;test3&#13;&#10;test4&#13;&#10;test5&#13;&#10;test6" ID="1003" Layout="#11" Rect="182,57,212,79" />
+        </L2021>
+      </L2020>
+      <L2009 class="widget" ID="1019" Layout="#21" Rect="0,88,896,131">
+        <L2010 class="edit" Rect="8,100,214,126" Text="tree" Frame="1001">
+          <L2011 class="combobutton" PopDlg="2000" PopList="2001" ListItems="tree test1&#13;&#10;tree test2&#13;&#10;tree test3&#13;&#10;tree test4&#13;&#10;tree test5&#13;&#10;tree test6" ID="1003" Layout="#11" Rect="182,102,212,124" />
+        </L2010>
+      </L2009>
+      <L2031 class="widget" ID="1019" Layout="#21" Rect="0,131,896,176">
+        <L2032 class="pushbutton" FocusTextColor="255" TextFormat="#800" Style="#10010000" AdvStyle="#200" Rect="8,143,214,169" Text="tree" Frame="1001" padding="0,0,0,0">
+          <L2033 class="combobutton" PopDlg="2000" PopList="2001" ListItems="tree test1&#13;&#10;tree test2&#13;&#10;tree test3&#13;&#10;tree test4&#13;&#10;tree test5&#13;&#10;tree test6" ID="1003" Layout="#11" Rect="182,145,212,167" />
+        </L2032>
+      </L2031>
+      <L1008 class="widget" ID="1019" Layout="#1" Rect="0,176,218,429">
+        <L1002 class="edit" Rect="11,190,217,216" Text="list" Frame="1001">
+          <L1003 class="combobutton" PopList="1004" ListItems="test1&#13;&#10;test2&#13;&#10;test3&#13;&#10;test4&#13;&#10;test5&#13;&#10;test6" ID="1003" Layout="#11" Rect="185,192,215,214" />
+        </L1002>
+        <L1004 class="listbox" ID="1004" Style="#18004" Layout="#12000" AdvStyle="#200" Rect="10,226,219,364" BkPic="1021" Frame="1001" />
+      </L1008>
+      <L2015 class="widget" ID="1019" Layout="#1" Rect="218,176,436,429">
+        <L2016 class="pushbutton" FocusTextColor="255" TextFormat="#800" Style="#10010000" AdvStyle="#200" Rect="229,190,435,216" Text="list" Frame="1001" padding="0,0,0,0">
+          <L2017 class="combobutton" PopList="2018" ListItems="test1&#13;&#10;test2&#13;&#10;test3&#13;&#10;test4&#13;&#10;test5&#13;&#10;test6" ID="1003" Layout="#11" Rect="403,192,433,214" />
+        </L2016>
+        <L2018 class="listbox" ID="1004" Style="#18004" Layout="#12000" AdvStyle="#200" Rect="227,223,436,361" BkPic="1021" Frame="1001" />
+      </L2015>
+      <L2026 class="widget" ID="1019" Layout="#1" Rect="436,176,654,429">
+        <L2027 class="edit" Rect="447,190,653,216" Text="tree" Frame="1001">
+          <L2028 class="combobutton" PopList="2029" ListItems="tree test1&#13;&#10;tree test2&#13;&#10;tree test3&#13;&#10;tree test4&#13;&#10;tree test5&#13;&#10;tree test6" ID="1003" Layout="#11" Rect="621,192,651,214" />
+        </L2027>
+        <L2029 class="tree" Indent="4" ID="1004" Style="#18004" Layout="#12000" AdvStyle="#200" Rect="443,225,652,363" BkPic="1021" Frame="1001" />
+      </L2026>
+      <L2004 class="widget" ID="1019" Layout="#1" Rect="654,176,872,429">
+        <L2005 class="pushbutton" FocusTextColor="255" TextFormat="#800" Style="#10010000" AdvStyle="#200" Rect="665,190,871,216" Text="tree" Frame="1001" padding="0,0,0,0">
+          <L2006 class="combobutton" PopList="2007" ListItems="tree test1&#13;&#10;tree test2&#13;&#10;tree test3&#13;&#10;tree test4&#13;&#10;tree test5&#13;&#10;tree test6" ID="1003" Layout="#11" Rect="839,192,869,214" />
+        </L2005>
+        <L2007 class="tree" Indent="4" ID="1004" Style="#18004" Layout="#12000" AdvStyle="#200" Rect="662,221,871,359" BkPic="1021" Frame="1001" />
+      </L2004>
+    </L1006>
+    <L1014 class="window" Style="#400002" Layout="#10440" AdvStyle="#80000" Rect="0,0,290,168" Frame="1201" margin="-20,0,-20,-20">
+      <L1015 class="listbox" Style="#10018004" Layout="#12021" AdvStyle="#200" Rect="0,0,290,168" BkPic="1021" Frame="1001" />
+    </L1014>
+    <L2000 class="window" Style="#CF0002" Layout="#10440" Rect="0,0,290,168" BkPic="1021">
+      <L2001 class="tree" Indent="4" Style="#10018004" Layout="#12021" AdvStyle="#200" Rect="0,0,290,168" Frame="1001" />
+    </L2000>
+  </wnd>
+</tmdui>

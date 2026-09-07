@@ -1,0 +1,127 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include <winres.h>
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "#include <winres.h>\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// HTML
+//
+
+tuires.xml                       HTML                 "tuires.xml"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// TUIPIC
+//
+
+24.JPG                           TUIPIC               "24.jpg"
+32.GIF                           TUIPIC               "32.gif"
+1.BMP                            TUIPIC               "1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG1 DIALOG DISCARDABLE  0, 0, 347, 196
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "test GX"
+FONT 10, "System"
+BEGIN
+    CONTROL         "GDI",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,
+                    13,15,28,10
+    CONTROL         "D3D9",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,44,15,34,
+                    10
+    CONTROL         "D3D11",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,84,15,38,
+                    10
+    CONTROL         "OpenGL",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON,122,15,
+                    42,10
+    CONTROL         "Layered",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_GROUP | 
+                    WS_TABSTOP,185,15,43,10
+    DEFPUSHBUTTON   "OK",IDOK,290,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,290,24,50,14
+    EDITTEXT        IDC_EDIT1,7,175,333,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "shade",IDC_BUTTON1,17,56,50,14
+    PUSHBUTTON      "blt",IDC_BUTTON2,17,72,50,14
+    PUSHBUTTON      "blt dir",IDC_BUTTON3,15,88,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 340
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 189
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

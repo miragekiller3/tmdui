@@ -1,0 +1,110 @@
+<tmdui version="20210202" encoding="utf-8">
+  <pic>
+    <L1071 class="bmp" FrameNum="1" FileName="1.bmp" Alpha="100" />
+    <L1105 class="bmp" FrameNum="1" FileName="2.bmp" Alpha="100" />
+  </pic>
+  <frame>
+    <L1001 class="form" />
+  </frame>
+  <wnd>
+    <L1000 class="window" Rect="0,0,666,472" Font="Verdana:13" Frame="1001">
+      <L1072 class="widget" AdvStyle="#20" Rect="11,29,543,236" BkPic="1071" />
+      <L1018 class="widget" Rect="19,33,181,223">
+        <L1002 class="pushbutton" Layout="#21" Rect="19,33,181,53" Text="only text" />
+        <L1005 class="pushbutton" Layout="#21" Rect="19,53,181,73" Text="only text no ellipsis;  here is tial" />
+        <L1006 class="pushbutton" TextFormat="#8825" Layout="#21" Rect="19,73,181,93" Text="only text + ellipsis;  here is tial" />
+        <L1003 class="pushbutton" TextFormat="#824" Layout="#21" Rect="19,93,181,113" Text="only text left" />
+        <L1007 class="pushbutton" TextFormat="#824" Layout="#21" Rect="19,113,181,133" Text="only text left no ellipsis;  here is tial" />
+        <L1008 class="pushbutton" TextFormat="#40824" Layout="#21" Rect="19,133,181,153" Text="only text left + ellipsis;  here is tial" />
+        <L1004 class="pushbutton" TextFormat="#826" Layout="#21" Rect="19,153,181,173" Text="only text right" />
+        <L1009 class="pushbutton" TextFormat="#826" Layout="#21" Rect="19,173,181,193" Text="only text right no ellipsis;  here is tial" />
+        <L1010 class="pushbutton" TextFormat="#40826" Layout="#21" Rect="19,193,181,213" Text="only text right + ellipsis;  here is tial" />
+      </L1018>
+      <L1020 class="widget" Rect="195,36,357,225">
+        <L1021 class="pushbutton" ForePic="72" Layout="#21" Rect="195,36,357,56" Text="only text" />
+        <L1022 class="pushbutton" ForePic="72" Layout="#21" Rect="195,56,357,76" Text="only text no ellipsis;  here is tial" />
+        <L1023 class="pushbutton" ForePic="72" TextFormat="#8825" Layout="#21" Rect="195,76,357,96" Text="only text + ellipsis;  here is tial" />
+        <L1024 class="pushbutton" ForePic="72" TextFormat="#824" Layout="#21" Rect="195,96,357,116" Text="only text left" />
+        <L1025 class="pushbutton" ForePic="72" TextFormat="#824" Layout="#21" Rect="195,116,357,136" Text="only text left no ellipsis;  here is tial" />
+        <L1026 class="pushbutton" ForePic="72" TextFormat="#40824" Layout="#21" Rect="195,136,357,156" Text="only text left + ellipsis;  here is tial" />
+        <L1027 class="pushbutton" ForePic="72" TextFormat="#826" Layout="#21" Rect="195,156,357,176" Text="only text right" />
+        <L1028 class="pushbutton" ForePic="72" TextFormat="#826" Layout="#21" Rect="195,176,357,196" Text="only text right no ellipsis;  here is tial" />
+        <L1029 class="pushbutton" ForePic="72" TextFormat="#40826" Layout="#21" Rect="195,196,357,216" Text="only text right + ellipsis;  here is tial" />
+      </L1020>
+      <L1030 class="widget" Rect="370,38,532,227">
+        <L1031 class="pushbutton" Alignment="#2" ForePic="72" Layout="#21" Rect="370,38,532,58" Text="only text" />
+        <L1032 class="pushbutton" Alignment="#2" ForePic="72" Layout="#21" Rect="370,58,532,78" Text="only text no ellipsis;  here is tial" />
+        <L1033 class="pushbutton" Alignment="#2" ForePic="72" TextFormat="#8825" Layout="#21" Rect="370,78,532,98" Text="only text + ellipsis;  here is tial" />
+        <L1034 class="pushbutton" Alignment="#2" ForePic="72" TextFormat="#824" Layout="#21" Rect="370,98,532,118" Text="only text left" />
+        <L1035 class="pushbutton" Alignment="#2" ForePic="72" TextFormat="#824" Layout="#21" Rect="370,118,532,138" Text="only text left no ellipsis;  here is tial" />
+        <L1036 class="pushbutton" Alignment="#2" ForePic="72" TextFormat="#40824" Layout="#21" Rect="370,138,532,158" Text="only text left + ellipsis;  here is tial" />
+        <L1037 class="pushbutton" Alignment="#2" ForePic="72" TextFormat="#826" Layout="#21" Rect="370,158,532,178" Text="only text right" />
+        <L1038 class="pushbutton" Alignment="#2" ForePic="72" TextFormat="#826" Layout="#21" Rect="370,178,532,198" Text="only text right no ellipsis;  here is tial" />
+        <L1039 class="pushbutton" Alignment="#2" ForePic="72" TextFormat="#40826" Layout="#21" Rect="370,198,532,218" Text="only text right + ellipsis;  here is tial" />
+      </L1030>
+    </L1000>
+    <L1040 class="window" Rect="0,0,666,472" Font="Verdana:13" Frame="1001">
+      <L1051 class="widget" Rect="28,36,190,415">
+        <L1052 class="pushbutton" Alignment="#1" ForePic="72" Layout="#21" Rect="28,36,190,76" Text="only text" />
+        <L1053 class="pushbutton" Alignment="#1" ForePic="72" Layout="#21" Rect="28,76,190,116" Text="only text no ellipsis;  here is tial" />
+        <L1054 class="pushbutton" Alignment="#1" ForePic="72" TextFormat="#8825" Layout="#21" Rect="28,116,190,156" Text="only text + ellipsis;  here is tial" />
+        <L1055 class="pushbutton" Alignment="#1" ForePic="72" TextFormat="#824" Layout="#21" Rect="28,156,190,196" Text="only text left" />
+        <L1056 class="pushbutton" Alignment="#1" ForePic="72" TextFormat="#824" Layout="#21" Rect="28,196,190,236" Text="only text left no ellipsis;  here is tial" />
+        <L1057 class="pushbutton" Alignment="#1" ForePic="72" TextFormat="#40824" Layout="#21" Rect="28,236,190,276" Text="only text left + ellipsis;  here is tial" />
+        <L1058 class="pushbutton" Alignment="#1" ForePic="72" TextFormat="#826" Layout="#21" Rect="28,276,190,316" Text="only text right" />
+        <L1059 class="pushbutton" Alignment="#1" ForePic="72" TextFormat="#826" Layout="#21" Rect="28,316,190,356" Text="only text right no ellipsis;  here is tial" />
+        <L1060 class="pushbutton" Alignment="#1" ForePic="72" TextFormat="#40826" Layout="#21" Rect="28,356,190,396" Text="only text right + ellipsis;  here is tial" />
+      </L1051>
+      <L1061 class="widget" Rect="370,38,532,405">
+        <L1062 class="pushbutton" Alignment="#3" ForePic="72" Layout="#21" Rect="370,38,532,78" Text="only text" />
+        <L1063 class="pushbutton" Alignment="#3" ForePic="72" Layout="#21" Rect="370,78,532,118" Text="only text no ellipsis;  here is tial" />
+        <L1064 class="pushbutton" Alignment="#3" ForePic="72" TextFormat="#8825" Layout="#21" Rect="370,118,532,158" Text="only text + ellipsis;  here is tial" />
+        <L1065 class="pushbutton" Alignment="#3" ForePic="72" TextFormat="#824" Layout="#21" Rect="370,158,532,198" Text="only text left" />
+        <L1066 class="pushbutton" Alignment="#3" ForePic="72" TextFormat="#824" Layout="#21" Rect="370,198,532,238" Text="only text left no ellipsis;  here is tial" />
+        <L1067 class="pushbutton" Alignment="#3" ForePic="72" TextFormat="#40824" Layout="#21" Rect="370,238,532,278" Text="only text left + ellipsis;  here is tial" />
+        <L1068 class="pushbutton" Alignment="#3" ForePic="72" TextFormat="#826" Layout="#21" Rect="370,278,532,318" Text="only text right" />
+        <L1069 class="pushbutton" Alignment="#3" ForePic="72" TextFormat="#826" Layout="#21" Rect="370,318,532,358" Text="only text right no ellipsis;  here is tial" />
+        <L1070 class="pushbutton" Alignment="#3" ForePic="72" TextFormat="#40826" Layout="#21" Rect="370,358,532,398" Text="only text right + ellipsis;  here is tial" />
+      </L1061>
+    </L1040>
+    <L1073 class="window" Rect="0,0,667,472" Font="Verdana:13" Frame="1001">
+      <L1074 class="widget" AdvStyle="#20" Rect="12,27,542,231" BkPic="1105" />
+      <L1075 class="widget" Rect="19,33,193,223">
+        <L1076 class="pushbutton" Layout="#1021" Rect="19,33,86,53" MaxWidth="162" Text="only text" />
+        <L1077 class="pushbutton" Layout="#1021" Rect="19,53,181,73" MaxWidth="162" Text="only text no ellipsis;  here is tial" />
+        <L1078 class="pushbutton" TextFormat="#8825" Layout="#1021" Rect="19,73,181,93" MaxWidth="162" Text="only text + ellipsis;  here is tial" />
+        <L1079 class="pushbutton" TextFormat="#824" Layout="#1021" Rect="19,93,113,113" MaxWidth="162" Text="only text left" />
+        <L1080 class="pushbutton" TextFormat="#824" Layout="#1021" Rect="19,113,181,133" MaxWidth="162" Text="only text left no ellipsis;  here is tial" />
+        <L1081 class="pushbutton" TextFormat="#40824" Layout="#1021" Rect="19,133,181,153" MaxWidth="162" Text="only text left + ellipsis;  here is tial" />
+        <L1082 class="pushbutton" TextFormat="#826" Layout="#1021" Rect="19,153,121,173" MaxWidth="162" Text="only text right" />
+        <L1083 class="pushbutton" TextFormat="#826" Layout="#1021" Rect="19,173,181,193" MaxWidth="162" Text="only text right no ellipsis;  here is tial" />
+        <L1084 class="pushbutton" TextFormat="#40826" Layout="#1021" Rect="19,193,181,213" MaxWidth="162" Text="only text right + ellipsis;  here is tial" />
+      </L1075>
+      <L1085 class="widget" Rect="195,36,369,225">
+        <L1086 class="pushbutton" ForePic="72" Layout="#1021" Rect="195,36,280,56" MaxWidth="162" Text="only text" />
+        <L1087 class="pushbutton" ForePic="72" Layout="#1021" Rect="195,56,357,76" MaxWidth="162" Text="only text no ellipsis;  here is tial" />
+        <L1088 class="pushbutton" ForePic="72" TextFormat="#8825" Layout="#1021" Rect="195,76,357,96" MaxWidth="162" Text="only text + ellipsis;  here is tial" />
+        <L1089 class="pushbutton" ForePic="72" TextFormat="#824" Layout="#1021" Rect="195,96,307,116" MaxWidth="162" Text="only text left" />
+        <L1090 class="pushbutton" ForePic="72" TextFormat="#824" Layout="#1021" Rect="195,116,357,136" MaxWidth="162" Text="only text left no ellipsis;  here is tial" />
+        <L1091 class="pushbutton" ForePic="72" TextFormat="#40824" Layout="#1021" Rect="195,136,357,156" MaxWidth="162" Text="only text left + ellipsis;  here is tial" />
+        <L1092 class="pushbutton" ForePic="72" TextFormat="#826" Layout="#1021" Rect="195,156,315,176" MaxWidth="162" Text="only text right" />
+        <L1093 class="pushbutton" ForePic="72" TextFormat="#826" Layout="#1021" Rect="195,176,357,196" MaxWidth="162" Text="only text right no ellipsis;  here is tial" />
+        <L1094 class="pushbutton" ForePic="72" TextFormat="#40826" Layout="#1021" Rect="195,196,357,216" MaxWidth="162" Text="only text right + ellipsis;  here is tial" />
+      </L1085>
+      <L1095 class="widget" Rect="370,38,555,227">
+        <L1096 class="pushbutton" Alignment="#2" ForePic="72" Layout="#1021" Rect="370,38,455,58" MaxWidth="162" Text="only text" />
+        <L1097 class="pushbutton" Alignment="#2" ForePic="72" Layout="#1021" Rect="370,58,532,78" MaxWidth="162" Text="only text no ellipsis;  here is tial" />
+        <L1098 class="pushbutton" Alignment="#2" ForePic="72" TextFormat="#8825" Layout="#1021" Rect="370,78,532,98" MaxWidth="162" Text="only text + ellipsis;  here is tial" />
+        <L1099 class="pushbutton" Alignment="#2" ForePic="72" TextFormat="#824" Layout="#1021" Rect="370,98,482,118" MaxWidth="162" Text="only text left" />
+        <L1100 class="pushbutton" Alignment="#2" ForePic="72" TextFormat="#824" Layout="#1021" Rect="370,118,532,138" MaxWidth="162" Text="only text left no ellipsis;  here is tial" />
+        <L1101 class="pushbutton" Alignment="#2" ForePic="72" TextFormat="#40824" Layout="#1021" Rect="370,138,532,158" MaxWidth="162" Text="only text left + ellipsis;  here is tial" />
+        <L1102 class="pushbutton" Alignment="#2" ForePic="72" TextFormat="#826" Layout="#1021" Rect="370,158,490,178" MaxWidth="162" Text="only text right" />
+        <L1103 class="pushbutton" Alignment="#2" ForePic="72" TextFormat="#826" Layout="#1021" Rect="370,178,532,198" MaxWidth="162" Text="only text right no ellipsis;  here is tial" />
+        <L1104 class="pushbutton" Alignment="#2" ForePic="72" TextFormat="#40826" Layout="#1021" Rect="370,198,532,218" MaxWidth="162" Text="only text right + ellipsis;  here is tial" />
+      </L1095>
+    </L1073>
+    <L1106 class="window" Layout="#11440" Rect="0,0,431,300" Frame="1001">
+      <L1107 class="pushbutton" Alignment="#1" ForePic="72" TextFormat="#815" Layout="#11330" Rect="70,78,170,120" MaxWidth="100" Text="only text te st df df df df df df df " />
+    </L1106>
+  </wnd>
+</tmdui>

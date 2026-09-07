@@ -1,0 +1,48 @@
+<tmdui version="20210202" encoding="utf-8">
+  <pic>
+    <L2007 class="clr" Color="#20000000" />
+    <L2008 class="bmp" FrameNum="10" FileName="mute.svg" MultiDPI="1" />
+    <L2018 class="clr" Color="#FF0000" />
+  </pic>
+  <frame>
+    <L1001 class="form" />
+  </frame>
+  <wnd>
+    <L1000 class="window" Rect="0,0,623,584" Text="Float tester" Font="Arial:14" Frame="1001">
+      <L2000 class="pushbutton" StateNumber="2" ID="2000" Style="#10016" Rect="356,439,526,459" Text="Bring B Top/Bottom" Hint="Bring B Top/Bottom" />
+      <L1010 class="widget" Style="#10C00000" Rect="51,228,303,410" Frame="1001">
+        <L1004 class="float" Style="#10C40000" Rect="44,210,290,400" MaxWidth="400" MaxHeight="300" Text="B" BkPic="2007" Frame="1001" padding="0,0,10,0">
+          <L1020 class="edit" Rect="70,366,270,386" Frame="1001" />
+          <L1003 class="pushbutton" TextFormat="#2810" Style="#10C50016" Rect="70,247,140,328" Text="Ab" Hint="hint2" BkPic="2008" Frame="1001" margin="50,50,0,50" />
+          <L2009 class="pushbutton" Style="#10010016" Rect="173,314,203,344" Hint="hint3" BkPic="2008" />
+        </L1004>
+      </L1010>
+      <L1011 class="scrollbox" Style="#C40000" Layout="#22020" Rect="354,215,595,414" Text="E" Frame="1001">
+        <L1012 class="float" Style="#10C40000" Rect="358,239,575,414" MaxWidth="400" MaxHeight="300" Text="C" Hint="hint c" Frame="1001" padding="0,0,10,0">
+          <L1013 class="pushbutton" TextFormat="#2810" Style="#10C50016" Rect="378,270,466,344" Text="D" Hint="hint d" BkPic="2018" Frame="1001" margin="50,50,0,50" />
+          <L1019 class="static" Rect="435,359,495,379" Text="hint static" Hint="hint static" />
+        </L1012>
+        <L2016 class="pushbutton" ForePic="2008" Style="#10010016" Rect="538,243,574,263" />
+      </L1011>
+      <L2015 class="widget" Rect="376,442,479,546">
+        <L2010 class="float" Style="#10CC0000" Rect="392,457,450,527" Frame="1001">
+          <L2011 class="pushbutton" Style="#10010016" Layout="#41" Rect="396,481,446,523" Text="G" Hint="hinte" BkPic="2008" />
+        </L2010>
+      </L2015>
+      <L2013 class="pushbutton" StateNumber="2" ID="2010" Style="#10010016" Rect="9,439,143,459" Text="Enable/Disable B" Hint="Enable/Disable B" />
+      <L2014 class="pushbutton" StateNumber="2" ID="2015" Style="#10010016" Rect="146,439,341,459" Text="Enable/Disable B parent" Hint="Enable/Disable B parent" />
+      <L1014 class="pushbutton" StateNumber="2" ID="1004" Style="#10010016" Rect="33,468,139,488" Text="Hide/Show B" Hint="Hide/Show B" />
+      <L1015 class="pushbutton" StateNumber="2" ID="1010" Style="#10010016" Rect="147,468,305,488" Text="Hide/Show B parent" Hint="Hide/Show B parent" />
+      <L1016 class="pushbutton" StateNumber="2" ID="1012" Style="#10010016" Rect="32,498,139,518" Text="Hide/Show C" Hint="Hide/Show C" />
+      <L2017 class="pushbutton" StateNumber="1" ID="2017" Style="#10010016" Rect="31,524,138,544" Text="hide B after 5s" />
+      <L1017 class="checkbox" State="1" DownOffsetX="1" DownOffsetY="1" ForePic="null" TextFormat="#825" ID="1011" Rect="147,498,305,518" Text="Hide/Show C parent" Hint="Hide/Show C parent" BkPic="71" />
+      <L2001 class="pushbutton" ID="2003" Style="#10010016" Layout="#20" Rect="449,4,471,24" Text="+" Hint="zoom out" />
+      <L2002 class="pushbutton" ID="2004" Style="#10010016" Layout="#20" Rect="471,4,492,24" Text="-" Hint="zoom in" />
+      <L2005 class="pushbutton" StateNumber="2" ID="2006" Style="#10010016" Layout="#20" Rect="492,4,513,24" Text="&lt;&gt;" Hint="Right To Left" />
+      <L1005 class="static" TextFormat="#810" Rect="18,31,573,183" Text="test case:&#13;&#10;1. Move B,C,E.&#13;&#10;2. move B,E out of window, can display and click.&#13;&#10;3. click hide/show B/C/parent button, B,C will show and hide.&#13;&#10;4. move mouse on A,B,C,D, will show tooltip.&#13;&#10;5. Drag E scroll bar.&#13;&#10;6. scroll mouse wheel on E,C,D&#13;&#10;7. click +,-,&lt;&gt; button&#13;&#10;8. click Set G W/H to set G's Width and Height to 0 and restore." />
+      <L2012 class="pushbutton" StateNumber="2" ID="2012" Style="#10010016" Rect="33,554,177,574" Text="Set G W/H" Hint="Set G W/H" />
+      <L1021 class="pushbutton" ID="1021" Rect="197,556,337,576" Text="change edit focus" />
+      <L1022 class="edit" Rect="347,559,419,579" Frame="1001" />
+    </L1000>
+  </wnd>
+</tmdui>

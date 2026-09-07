@@ -1,0 +1,1 @@
+sample2 is samlpe only have res file, havn't source code.

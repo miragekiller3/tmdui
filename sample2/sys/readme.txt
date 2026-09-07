@@ -1,0 +1,1 @@
+use TMDuiDesign.exe open rc file, and test it.

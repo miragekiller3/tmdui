@@ -1,0 +1,12 @@
+<tmdui version="20210202" encoding="utf-8">
+  <pic />
+  <frame>
+    <L1001 class="form" />
+  </frame>
+  <wnd>
+    <L1000 class="window" Frame="1001">
+      <L1002 class="menubar" Menu="101" Rect="4,24,496,44" />
+      <L1003 class="checkbox" ID="1003" Rect="38,167,238,187" Text="show/hide" />
+    </L1000>
+  </wnd>
+</tmdui>

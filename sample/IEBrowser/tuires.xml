@@ -1,0 +1,72 @@
+<tmdui version="20210202" encoding="utf-8">
+  <pic>
+    <L10008 class="gradient" ColorTo="#0080FF" FillMode="10" />
+    <L10017 class="gradient" />
+    <L10026 class="gradient" ColorTo="#FFFFFF" />
+    <L20018 class="clr" Color="#FFFFFF" />
+  </pic>
+  <frame>
+    <L10001 class="form" />
+  </frame>
+  <wnd>
+    <L10016 class="window" Style="#16CF0002" Rect="0,0,1001,458" BkPic="10017" Font="Arial:15" Frame="10001">
+      <L20016 class="menubar" Menu="202" Style="#1000" Rect="3,25,1001,45" />
+      <L21030 class="widget" Layout="#21" Rect="4,24,997,44">
+        <L20017 class="edit" Layout="#41" Rect="4,24,829,44" Text="http://www.youzu.com/play/main/game_id/7/server_id/1070688" BkPic="20018" Frame="10001">
+          <L21024 class="combobutton" PopDlg="21025" PopList="21026" ListItems="http://www.baidu.com&#13;&#10;http://www.google.com&#13;&#10;http://www.useragentstring.com&#13;&#10;https://websniffer.cc/my&#13;&#10;alert(&quot;aaa&quot;);&#13;&#10;window.chrome.webview.postMessage(&quot;{\&quot;Key\&quot;:\&quot;test1\&quot;,\&quot;Value\&quot;:{\&quot;X\&quot;:1,\&quot;Y\&quot;:2}}&quot;)&#13;&#10;window.external.postMessage(&quot;{\&quot;Key\&quot;:\&quot;test2\&quot;,\&quot;Value\&quot;:{\&quot;X\&quot;:3,\&quot;Y\&quot;:4}}&quot;)" Style="#10000206" Layout="#11" Rect="805,26,827,42" />
+        </L20017>
+        <L10019 class="pushbutton" ID="1" Style="#10010016" Layout="#62211" Rect="829,24,875,44" Text="OK" />
+        <L10030 class="pushbutton" StateNumber="2" ID="20014" Style="#10010016" Layout="#62211" Rect="875,24,923,44" Text="Hide" />
+        <L21005 class="pushbutton" ID="21006" Style="#10016" Layout="#62211" Rect="858,26,921,42" Text="Destroy" />
+        <L21023 class="pushbutton" StateNumber="2" ID="21023" Style="#10010000" Layout="#11" Rect="923,24,997,44" Text="Recreate" />
+      </L21030>
+      <L21007 class="widget" Layout="#21" Rect="4,44,997,64">
+        <L21008 class="pushbutton" ID="21008" Layout="#1" Rect="4,44,58,64" Text="GetSrc" />
+        <L21009 class="pushbutton" ID="21009" Layout="#1" Rect="58,44,198,64" Text="NavigateUseHeader" />
+        <L21037 class="pushbutton" ID="21037" Layout="#1" Rect="198,44,322,64" Text="NavigateToString" />
+        <L21011 class="pushbutton" ID="21011" Layout="#1" Rect="322,44,402,64" Text="ExecScript" />
+        <L21012 class="pushbutton" ID="21012" Layout="#1" Rect="402,44,456,64" Text="Reload" />
+        <L21013 class="pushbutton" ID="21013" Layout="#1" Rect="456,44,510,64" Text="GetPID" />
+        <L21036 class="pushbutton" ID="21036" Layout="#1" Rect="510,44,582,64" Text="GetHWND" />
+        <L21014 class="pushbutton" ID="21014" Layout="#1" Rect="582,44,645,64" Text="CanBack" />
+        <L21015 class="pushbutton" ID="21015" Layout="#1" Rect="645,44,726,64" Text="CanForward" />
+        <L21016 class="pushbutton" ID="21016" Layout="#1" Rect="726,44,780,64" Text="Back" />
+        <L21017 class="pushbutton" ID="21017" Layout="#1" Rect="780,44,834,64" Text="Forward" />
+        <L21018 class="pushbutton" ID="21018" Layout="#1" Rect="834,44,888,64" Text="GetTitle" />
+        <L21019 class="pushbutton" ID="21019" Layout="#1" Rect="888,44,909,64" Text="+" />
+        <L21020 class="pushbutton" ID="21020" Layout="#1" Rect="909,44,929,64" Text="-" />
+        <L21022 class="pushbutton" ID="21022" Layout="#1" Rect="929,44,999,64" Text="GetZoom" />
+      </L21007>
+      <L21031 class="widget" Layout="#21" Rect="4,64,997,84">
+        <L22000 class="pushbutton" ID="22000" Layout="#1" Rect="4,64,132,84" Text="NavagateToIEX" />
+        <L22002 class="pushbutton" ID="22002" Layout="#1" Rect="132,64,211,84" Text="JS:SetPink" Hint="call: document.body.bgColor='#ff00ff';" />
+        <L21032 class="pushbutton" ID="21032" Layout="#1" Rect="211,64,300,84" Text="JS:SetWhite" Hint="call: document.body.bgColor='white';" />
+        <L21034 class="pushbutton" ID="21034" Layout="#1" Rect="300,64,369,84" Text="JS:open1" Hint="call: window.open(url); in new pop window" />
+        <L21035 class="pushbutton" ID="21035" Layout="#1" Rect="369,64,438,84" Text="JS:open2" Hint="call: window.open(url); in self" />
+        <L21038 class="pushbutton" ID="21038" Layout="#1" Rect="438,64,504,84" Text="JS:open3" Hint="call: window.open(url); but cancel it" />
+        <L21039 class="pushbutton" ID="21039" Layout="#1" Rect="504,64,570,84" Text="JS:open4" Hint="call: window.open(url); in new WebView" />
+        <L21040 class="pushbutton" ID="21040" Layout="#1" Rect="570,64,641,84" Text="JS:GetInfo" />
+        <L21041 class="pushbutton" ID="21041" Layout="#1" Rect="641,64,695,84" Text="Stop" />
+        <L21042 class="pushbutton" ID="21008" Layout="#1" Rect="695,64,749,84" Text="GetSrc" />
+      </L21031>
+      <L20022 class="widget" Layout="#1" Rect="4,84,317,454">
+        <L10027 class="static" Layout="#21" Rect="4,84,317,104" Text="Event list" BkPic="20018">
+          <L21010 class="pushbutton" ID="21010" Layout="#11" Rect="231,84,317,104" Text="ClearEvent" />
+        </L10027>
+        <L10020 class="memo" TextFormat="#0" GrayTextColor="#000000" ID="20010" Style="#10018000" Layout="#200" Rect="4,104,317,454" BkPic="20018" Frame="10001" />
+      </L20022>
+      <L20015 class="splitter" Style="#10010004" Layout="#301" Rect="317,84,331,454" BkPic="10017" />
+      <L21028 class="widget" Layout="#41" Rect="317,84,997,454" BkPic="10008" />
+      <L21000 class="pushbutton" ID="21003" Style="#10010016" Layout="#20" Rect="852,4,874,24" Text="+" Hint="zoom out" />
+      <L21001 class="pushbutton" ID="20023" Style="#10010016" Layout="#20" Rect="874,4,895,24" Text="-" Hint="zoom in" />
+      <L21002 class="pushbutton" StateNumber="2" ID="21004" Style="#10010016" Layout="#20" Rect="895,4,916,24" Text="&lt;&gt;" Hint="Right To Left" />
+    </L10016>
+    <L21025 class="window" Style="#F0002" Layout="#10440" AdvStyle="#200" Rect="0,0,500,163" BkPic="20018" Frame="10001">
+      <L21026 class="listbox" Style="#10018004" Layout="#10021" Rect="0,0,500,300" />
+    </L21025>
+    <L21027 class="window">
+      <L10018 class="webview" ID="20009" Style="#10010134" Layout="#22041" Rect="0,0,500,300" />
+      <L21029 class="webview" ID="20009" Style="#10010133" Layout="#22041" Rect="0,0,500,300" />
+    </L21027>
+  </wnd>
+</tmdui>

@@ -1,0 +1,19 @@
+<tmdui version="20210202" encoding="utf-8">
+  <pic />
+  <frame>
+    <L1001 class="form" />
+  </frame>
+  <wnd>
+    <L1000 class="window" Layout="#10440" Rect="0,0,355,177" Frame="1001">
+      <L1002 class="rich" Layout="#11021" Rect="29,64,326,148" Text="cccc&lt;br&gt;dddd&lt;br&gt;bbbb&lt;br&gt;aaaa&lt;br&gt;" Frame="1001" margin="25,40,25,25" />
+      <L1003 class="pushbutton" ID="1003" Rect="22,30,83,50" Text="text1" />
+      <L1004 class="pushbutton" ID="1004" Rect="91,29,157,49" Text="text2" />
+      <L2005 class="widget" Rect="174,29,295,49">
+        <L2000 class="radiobutton" State="1" DownOffsetX="1" DownOffsetY="1" ForePic="null" TextFormat="#825" ID="2004" Style="#10010006" Rect="183,29,208,49" Text="âˆ? BkPic="71" />
+        <L2001 class="radiobutton" DownOffsetX="1" DownOffsetY="1" ForePic="null" TextFormat="#825" ID="2004" Style="#10010006" Layout="#12" Rect="208,29,233,49" Text="&lt;" BkPic="71" Tag="1" />
+        <L2002 class="radiobutton" DownOffsetX="1" DownOffsetY="1" ForePic="null" TextFormat="#825" ID="2004" Style="#10010006" Layout="#12" Rect="233,29,258,49" Text="&gt;" BkPic="71" Tag="2" />
+        <L2003 class="radiobutton" DownOffsetX="1" DownOffsetY="1" ForePic="null" TextFormat="#825" ID="2004" Style="#10010006" Layout="#12" Rect="258,29,283,49" Text="âˆ? BkPic="71" Tag="3" />
+      </L2005>
+    </L1000>
+  </wnd>
+</tmdui>

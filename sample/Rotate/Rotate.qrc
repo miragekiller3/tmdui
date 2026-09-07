@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/tui/Rotate">
+    <file>tuires.xml</file>
+    <file>mzl.txxudcty.320x480-75.jpg</file>
+  </qresource>
+</RCC>

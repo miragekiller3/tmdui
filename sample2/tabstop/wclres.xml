@@ -1,0 +1,65 @@
+<tmdui version="20210202" encoding="utf-8">
+  <pic />
+  <frame>
+    <L1000 class="form" />
+  </frame>
+  <wnd>
+    <L1001 class="window" Frame="1000">
+      <L1002 class="pushbutton" Style="#10010016" Rect="26,42,226,62" Text="1" />
+      <L1003 class="pushbutton" Style="#10010016" Rect="33,101,233,193" Text="2">
+        <L1004 class="pushbutton" Style="#10010016" Rect="63,158,190,178" Text="3" />
+      </L1003>
+      <L1005 class="pushbutton" Style="#10010016" Rect="255,46,455,225" Text="4">
+        <L1006 class="pushbutton" Style="#10010016" Rect="285,58,412,121" Text="5">
+          <L1007 class="pushbutton" Style="#10010016" Rect="286,92,334,118" Text="6" />
+        </L1006>
+        <L1008 class="pushbutton" Style="#10010016" Rect="291,176,418,196" Text="7" />
+      </L1005>
+    </L1001>
+    <L1010 class="window" Frame="1000">
+      <L1011 class="pushbutton" Style="#10010016" Rect="26,42,226,62" Text="1" />
+      <L1012 class="pushbutton" Style="#10010016" Rect="33,101,233,193" Text="2">
+        <L1013 class="pushbutton" Style="#10010016" Rect="63,158,190,178" Text="3" />
+      </L1012>
+      <L1014 class="pushbutton" Style="#10010016" AdvStyle="#10000" Rect="255,46,455,225" Text="4">
+        <L1015 class="pushbutton" Style="#10010016" Rect="285,58,412,121" Text="5">
+          <L1016 class="pushbutton" Style="#10010016" Rect="286,92,334,118" Text="6" />
+        </L1015>
+        <L1017 class="pushbutton" Style="#10010016" Rect="291,176,418,196" Text="7" />
+      </L1014>
+    </L1010>
+    <L1018 class="window" Frame="1000">
+      <L1019 class="pushbutton" Style="#10010016" Rect="26,42,226,62" Text="1" />
+      <L1020 class="pushbutton" Style="#10010016" Rect="33,101,233,193" Text="2">
+        <L1021 class="pushbutton" Style="#10010016" Rect="63,158,190,178" Text="3" />
+      </L1020>
+      <L1022 class="pushbutton" Style="#10000016" AdvStyle="#10000" Rect="255,46,455,225" Text="4">
+        <L1023 class="pushbutton" Style="#10010016" Rect="285,58,412,121" Text="5">
+          <L1024 class="pushbutton" Style="#10010016" Rect="286,92,334,118" Text="6" />
+        </L1023>
+        <L1025 class="pushbutton" Style="#10010016" Rect="291,176,418,196" Text="7" />
+      </L1022>
+    </L1018>
+    <L1027 class="window" Frame="1000">
+      <L1028 class="pushbutton" Style="#10010016" Rect="26,42,226,62" Text="1" />
+      <L1035 class="pushbutton" Style="#10010016" Rect="25,67,225,87" Text="2" />
+      <L1031 class="pushbutton" Style="#10000016" AdvStyle="#4000" Rect="255,46,455,225" Text="arror group">
+        <L1032 class="pushbutton" Style="#10210016" Rect="285,58,412,121" Text="auto tab stop">
+          <L1033 class="pushbutton" Style="#10210016" Rect="286,92,334,118" Text="6" />
+        </L1032>
+        <L1034 class="pushbutton" Style="#10210016" Rect="291,176,418,196" Text="auto tab stop" />
+      </L1031>
+      <L1036 class="widget" Rect="36,124,224,225" BkPic="71">
+        <L1037 class="pushbutton" Style="#10210006" Rect="63,150,174,192" Text="auto tab stop" />
+      </L1036>
+    </L1027>
+    <L1038 class="window" Frame="1000">
+      <L1039 class="widget" Rect="78,63,444,261">
+        <L1041 class="radiobutton" Style="#10210010" Rect="120,131,320,151" Text="a" />
+        <L1042 class="radiobutton" Style="#10210016" Rect="112,169,312,189" Text="a" />
+        <L1043 class="radiobutton" Style="#10210010" Rect="116,214,316,234" Text="a" />
+        <L1040 class="radiobutton" Style="#10210010" Rect="115,95,315,115" Text="a" />
+      </L1039>
+    </L1038>
+  </wnd>
+</tmdui>

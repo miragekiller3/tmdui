@@ -1,0 +1,88 @@
+<tmdui version="20210202" encoding="utf-8">
+  <pic />
+  <frame>
+    <L1001 class="form" />
+  </frame>
+  <wnd>
+    <L1000 class="window" Layout="#10440" Rect="0,0,601,628" Text="test case 1" Frame="1001" padding="0,300,0,0">
+      <L1004 class="widget" Style="#10C40000" Layout="#10131" Rect="4,324,404,624" MaxWidth="400" MaxHeight="300" Text="B" Frame="1001" padding="0,0,10,0">
+        <L1003 class="pushbutton" TextFormat="#2810" Style="#10C50006" Layout="#2200121" Rect="58,398,390,570" Text="A" Frame="1001" margin="50,50,0,50" />
+      </L1004>
+      <L1005 class="static" TextFormat="#810" Rect="18,31,576,359" Text="test case:&#13;&#10;1. A set LAYOUT_SCROLLPARENTRIGHT &amp; LAYOUT_SCROLLPARENTBOTTOM.&#13;&#10;2. B set ANCHOR_LEFT &amp; ANCHOR_TOP.&#13;&#10;3. move A, the B will keep left &amp; top, move right &amp; bottom.&#13;&#10;4. drag A right &amp; bottom, the B will keep left &amp; top, move right &amp; bottom.&#13;&#10;5. drag A left &amp; top, the B do nothing.&#13;&#10;6. change B min max width height, and test 3-5.&#13;&#10;7. change B padding and A margin, and test 3-5. make sure B right = A right + A right marging + B right padding + B right border." />
+    </L1000>
+    <L1006 class="window" Rect="0,0,623,585" Text="test LAYOUT_SCROLLPARENTRIGHT &amp; LAYOUT_SCROLLPARENTBOTTOM" Frame="1001">
+      <L1007 class="widget" Style="#10C40000" Layout="#11220" Rect="99,164,435,464" MaxWidth="400" MaxHeight="300" Text="2" Frame="1001" padding="0,0,10,0">
+        <L1008 class="pushbutton" TextFormat="#2810" Style="#10C50006" Layout="#1100000" Rect="139,325,421,529" Text="1" Frame="1001" margin="50,50,0,50" />
+      </L1007>
+      <L1009 class="static" TextFormat="#810" Rect="18,31,576,359" Text="test case:&#13;&#10;1. move window 1, the window 2 will reset width &amp; height.&#13;&#10;2. drag window 1 left &amp; top, the  window 2 will reset width &amp; height.&#13;&#10;3. drag window 1 right &amp; bottom, the window 2 don't reset width &amp; height.&#13;&#10;4. reset window 2 min max width height, and test 1-3.&#13;&#10;4. reset window 2 padding and window 1 margin, and test 1-3. make sure parent right = child right + child right marging + parent right padding." />
+    </L1006>
+    <L1010 class="window" Layout="#10440" Rect="0,0,268,492" Frame="1001" padding="0,0,50,0">
+      <L1011 class="widget" Style="#10C40000" Layout="#90031" Rect="4,34,204,483" Frame="1001" margin="0,10,10,5">
+        <L1012 class="widget" Style="#10C40000" Layout="#90031" Rect="8,68,190,474" Frame="1001" margin="0,10,10,5">
+          <L1013 class="widget" Style="#10C40000" Layout="#90031" Rect="12,102,176,465" Frame="1001" margin="0,10,10,5">
+            <L1014 class="widget" Style="#10C40000" Layout="#90031" Rect="16,136,162,456" Frame="1001" margin="0,10,10,5">
+              <L1015 class="widget" Style="#10C40000" Layout="#90031" Rect="20,170,148,447" Frame="1001" margin="0,10,10,5" />
+            </L1014>
+          </L1013>
+        </L1012>
+      </L1011>
+    </L1010>
+    <L1016 class="window" Layout="#10440" Rect="0,0,268,492" Frame="1001" padding="0,0,50,0">
+      <L1017 class="widget" Style="#10C40000" Layout="#90031" Rect="4,34,204,483" Frame="1001" margin="0,10,10,5">
+        <L1018 class="widget" Style="#10C40000" Layout="#90021" Rect="8,68,190,474" Frame="1001" margin="0,10,10,5">
+          <L1019 class="widget" Style="#10C40000" Layout="#90031" Rect="12,102,176,465" Frame="1001" margin="0,10,10,5">
+            <L1020 class="widget" Style="#10C40000" Layout="#90021" Rect="16,136,162,456" Frame="1001" margin="0,10,10,5">
+              <L1021 class="widget" Style="#10C40000" Layout="#90031" Rect="20,170,148,447" Frame="1001" margin="0,10,10,5" />
+            </L1020>
+          </L1019>
+        </L1018>
+      </L1017>
+    </L1016>
+    <L1022 class="window" Layout="#10440" AdvStyle="#80000" Rect="0,0,268,492" Frame="1001" padding="0,0,50,0">
+      <L1023 class="widget" Style="#10C40000" Layout="#90031" Rect="4,34,204,483" Frame="1001" margin="0,10,10,5">
+        <L1024 class="widget" Style="#10C40000" Layout="#90021" Rect="8,68,190,474" Frame="1001" margin="0,10,10,5">
+          <L1025 class="widget" Style="#10C40000" Layout="#90031" Rect="12,102,176,465" Frame="1001" margin="0,10,10,5">
+            <L1026 class="widget" Style="#10C40000" Layout="#90021" Rect="16,136,162,456" Frame="1001" margin="0,10,10,5">
+              <L1027 class="widget" Style="#10C40000" Layout="#90031" Rect="20,170,148,447" Frame="1001" margin="0,10,10,5" />
+            </L1026>
+          </L1025>
+        </L1024>
+      </L1023>
+    </L1022>
+    <L1028 class="window" Style="#50CF0002" Layout="#10440" Rect="0,0,268,492" Frame="1001" padding="0,0,50,0">
+      <L1029 class="widget" Style="#10C40000" Layout="#90031" Rect="4,34,204,483" Frame="1001" margin="0,10,10,5">
+        <L1030 class="widget" Style="#10C40000" Layout="#90021" Rect="8,68,190,474" Frame="1001" margin="0,10,10,5">
+          <L1031 class="widget" Style="#10C40000" Layout="#90031" Rect="12,102,176,465" Frame="1001" margin="0,10,10,5">
+            <L1032 class="widget" Style="#10C40000" Layout="#90021" Rect="16,136,162,456" Frame="1001" margin="0,10,10,5">
+              <L1033 class="widget" Style="#10C40000" Layout="#90031" Rect="20,170,148,447" Frame="1001" margin="0,10,10,5" />
+            </L1032>
+          </L1031>
+        </L1030>
+      </L1029>
+    </L1028>
+    <L1034 class="window" Layout="#10440" Rect="0,0,500,212" Frame="1001">
+      <L1035 class="pushbutton" Layout="#2" Rect="4,24,127,116" />
+      <L1036 class="pushbutton" Layout="#2" Rect="127,24,250,116" />
+      <L1037 class="pushbutton" Layout="#2" Rect="250,24,373,116" />
+      <L1038 class="pushbutton" Layout="#2" Rect="373,24,496,116" />
+      <L1039 class="pushbutton" Layout="#2" Rect="4,116,127,208" />
+      <L1040 class="pushbutton" Layout="#2" Rect="127,116,250,208" />
+      <L1041 class="pushbutton" Layout="#2" Rect="250,116,373,208" />
+    </L1034>
+    <L1042 class="window" BkPic="71" Font="微软雅黑:16:b" Frame="1001">
+      <L1043 class="static" Layout="#11330" Rect="102,134,200,150" Text="ROLE_DEFAULT" BkPic="90" />
+    </L1042>
+    <L2000 class="window" Layout="#1440" Rect="0,0,268,305" Frame="1001" padding="0,0,50,0">
+      <L2001 class="widget" Style="#10C40000" Layout="#80001" Rect="4,24,204,301" Frame="1001" margin="0,0,10,0" />
+    </L2000>
+    <L2002 class="window" Layout="#1420" Rect="0,0,333,334" Frame="1001" padding="0,0,50,0">
+      <L2003 class="widget" Style="#10C40000" Layout="#80011" Rect="54,24,269,330" Frame="1001" margin="50,0,10,0" />
+    </L2002>
+    <L2004 class="window" Layout="#10240" Rect="0,0,268,305" Frame="1001" padding="0,0,50,0">
+      <L2005 class="widget" Style="#10C40000" Layout="#80021" Rect="4,24,204,301" Frame="1001" margin="0,0,10,0" />
+    </L2004>
+    <L2006 class="window" Layout="#10440" Rect="0,0,268,305" Frame="1001" padding="0,0,50,0">
+      <L2007 class="widget" Style="#10C40000" Layout="#80031" Rect="4,24,204,301" Frame="1001" margin="0,0,10,0" />
+    </L2006>
+  </wnd>
+</tmdui>

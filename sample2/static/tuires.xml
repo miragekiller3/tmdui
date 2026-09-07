@@ -1,0 +1,17 @@
+<tmdui version="20210202" encoding="utf-8">
+  <pic>
+    <L1007 class="bmp" FileName="arrow_down_12.svg" MultiDPI="1" />
+  </pic>
+  <frame>
+    <L1006 class="form" />
+  </frame>
+  <wnd>
+    <L1000 class="window" Frame="1006">
+      <L1001 class="static" Rect="116,90,136,150" BkPic="1007" />
+      <L1002 class="static" State="1" Layout="#2" Rect="136,90,156,150" BkPic="1007" />
+      <L1003 class="static" State="2" Layout="#2" Rect="156,90,176,150" BkPic="1007" />
+      <L1004 class="static" State="3" Layout="#2" Rect="176,90,196,150" BkPic="1007" />
+      <L1005 class="static" State="4" Layout="#2" Rect="196,90,216,150" BkPic="1007" />
+    </L1000>
+  </wnd>
+</tmdui>

@@ -1,0 +1,56 @@
+<tmdui version="20210202" encoding="utf-8">
+  <pic>
+    <L10008 class="gradient" ColorTo="#80FF" FillMode="10" />
+    <L20060 class="clr" Color="#FFFFFF" />
+    <L20064 class="bmp" FrameNum="1" FileName="panda.gif" />
+  </pic>
+  <frame>
+    <L10001 class="form" />
+  </frame>
+  <wnd>
+    <L10002 class="window" Style="#10CF0802" Rect="0,0,876,532" BkPic="10008" Font="Arial:13" Frame="10001">
+      <L20022 class="pushbutton" ID="20022" Style="#10010016" Rect="30,5,52,25" Text="+" Hint="zoom out" />
+      <L20023 class="pushbutton" ID="20023" Style="#10010016" Rect="53,5,74,25" Text="-" Hint="zoom in" />
+      <L21000 class="pushbutton" StateNumber="2" ID="21001" Style="#10010016" Rect="75,5,96,25" Text="&lt;&gt;" Hint="Right to Left" />
+      <L20055 class="widget" Layout="#41" Rect="4,24,872,528">
+        <L20066 class="widget" Layout="#41" Rect="4,24,872,344" />
+        <L20041 class="widget" Layout="#31" Rect="4,344,872,528">
+          <L20068 class="groupbox" Rect="13,353,301,519" Text="Format">
+            <L22000 class="listbox" ID="22000" Style="#10010008" Layout="#20000" AdvStyle="#200" Rect="140,379,292,506" Frame="10001" />
+            <L20043 class="static" Style="#10010000" AdvStyle="#200" Rect="22,376,94,396" Text="Arial" Frame="10001" />
+            <L20030 class="pushbutton" ID="20048" Style="#10010016" Rect="102,376,125,396" Text="..." />
+            <L20052 class="pushbutton" StateNumber="2" Style="#10010016" Rect="22,400,45,420" Text="B" Font="::b" />
+            <L20053 class="pushbutton" StateNumber="2" Style="#10010016" Rect="45,400,67,420" Text="I" Font="::i" />
+            <L20054 class="pushbutton" StateNumber="2" Style="#10010016" Rect="67,400,87,420" Text="U" Font="::u" />
+            <L20046 class="edit" Rect="95,400,125,420" Text="18" Frame="10001" />
+            <L20031 class="pushbutton" ID="20049" Style="#10010016" Rect="22,425,125,445" Text="select text font" />
+            <L21019 class="pushbutton" ID="21020" Style="#10010016" Rect="22,444,125,464" Text="control font" />
+            <L20037 class="pushbutton" ID="20045" Rect="22,467,44,487" />
+            <L20047 class="pushbutton" ID="20050" Rect="22,492,125,512" Text="select text color" />
+          </L20068>
+          <L20057 class="widget" Layout="#330" Rect="309,344,872,528">
+            <L20058 class="memo" Layout="#60021" Rect="309,344,872,502" Text="支持列表😍：&#13;&#10;&lt;div align=right&gt;div&lt;/div&gt;&#13;&#10;&lt;p align=center&gt;p&lt;/p&gt;&#13;&#10;&lt;a href=&quot;http://www.sohu.com&quot;&gt;a   sohu.com&lt;/a&gt;&lt;br&gt;&#13;&#10;&lt;a id=&quot;20048&quot;&gt;change font&lt;/a&gt;&lt;br&gt;&#13;&#10;&lt;font face=&quot;Comic Sans MS&quot; size=&quot;5&quot; color=&quot;#Ffffff00&quot; &gt; font color, face, size &lt;/font&gt;&#13;&#10;&lt;p style=&quot;background-color:#ff0000&quot;&gt;&#13;&#10; &lt;strong&gt; strong &lt;/strong&gt;&#13;&#10; &lt;big&gt; big &lt;/big&gt;&#13;&#10; &lt;small&gt; small &lt;/small&gt;&#13;&#10;&lt;/p&gt;&#13;&#10;&lt;em&gt; em &lt;/em&gt; &lt;u&gt; u &lt;/u&gt; &lt;strike&gt; strike &lt;/strike&gt; &lt;del&gt; del &lt;/del&gt; &#13;&#10;&lt;h1&gt;h1 - h6 &lt;/h1&gt;&#13;&#10;&lt;b&gt;بعد شانغهاي وتشونغتشينغ... بكين تبدأ &lt;/b&gt;&#13;&#10;&lt;b&gt;जब दुनिया बोलती है तो Unicode में बोलती है&lt;/b&gt;&#13;&#10;&lt;br&gt;&#13;&#10;br&#13;&#10;&lt;br&gt;&#13;&#10;&lt;div style=&quot;background-color:rgb(0,0,255)&quot;&gt;&#13;&#10;  img&lt;br&gt; &#13;&#10;  &lt;img src=&quot;c:\1.gif&quot;&gt;&#13;&#10;  TMDui &lt;widget src=&quot;20070&quot; /&gt;&lt;widget src=&quot;20064&quot; /&gt;&#13;&#10;&lt;/div&gt;&#13;&#10;おはようздравствуйтеمرحبًا여보세요buenos días你好" Frame="10001" />
+            <L21007 class="widget" Layout="#41" Rect="309,502,872,528">
+              <L20059 class="pushbutton" ID="20061" Rect="312,505,387,525" Text="Send HTML" />
+              <L20062 class="pushbutton" ID="20063" Layout="#2" Rect="387,505,455,525" Text="Send Text" />
+              <L21006 class="radiobutton" ID="21006" Layout="#2" Rect="455,505,517,525" Text="Memo" Tag="21003" />
+              <L21008 class="radiobutton" ID="21006" Layout="#2" Rect="517,505,568,525" Text="Edit" Tag="20039" />
+              <L21009 class="radiobutton" State="1" ID="21006" Layout="#2" Rect="568,505,626,525" Text="Rich" Tag="21004" />
+              <L21010 class="radiobutton" ID="21006" Style="#10016" Layout="#2" Rect="303,576,388,596" Text="HyperLink" Tag="21005" />
+            </L21007>
+          </L20057>
+        </L20041>
+      </L20055>
+    </L10002>
+    <L20069 class="window">
+      <L21002 class="widget" Rect="301,37,398,87">
+        <L20039 class="edit" TextFormat="#0" ID="21011" Style="#10018040" Layout="#20041" Rect="301,37,398,87" Text="this is edit" BkPic="20060" Frame="10001" padding="10,10,10,10" Tag="10" />
+        <L21003 class="memo" ID="21011" Layout="#60041" Rect="301,37,398,87" Text="this is memo" BkPic="20060" Frame="10001" padding="10,10,10,10" Tag="10" />
+        <L21004 class="rich" ID="21011" Layout="#60041" Rect="301,37,398,87" Text="this is rich " BkPic="20060" Frame="10001" padding="10,10,10,10" Tag="10" />
+        <L21005 class="rich" TextFormat="#0" ID="21011" Style="#10018A40" Layout="#60041" Rect="301,37,398,87" Text="this is hyperlink " BkPic="20060" Frame="10001" padding="10,10,10,10" Tag="10" />
+      </L21002>
+      <L20070 class="animate" Style="#10000004" Rect="89,63,138,127" Hint="tooltip - ani" BkPic="20064" />
+      <L20072 class="edit" Rect="76,177,196,197" BkPic="20060" Frame="10001" />
+    </L20069>
+  </wnd>
+</tmdui>

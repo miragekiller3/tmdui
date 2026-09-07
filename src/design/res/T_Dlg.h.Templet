@@ -1,0 +1,54 @@
+/**
+ *  @file
+ *  @brief  WIZARD_CLASSNAME
+ *
+ *  @author WIZARD_USERNAME
+ *  @date   WIZARD_DATA
+ *
+ *  Copyright (C) WIZARD_YEAR WIZARD_USERNAME
+ */
+
+#pragma once
+
+#ifndef WIZARD_FILEMACRO_H
+#define WIZARD_FILEMACRO_H
+
+#include "WIZARD_RES_XML_HFILE.h"
+
+
+class WIZARD_CLASSNAME
+    : public TM::CTuiWidgetImpl<WIZARD_CLASSNAME> //, TM::CTuiWindow>
+//     : public TM::CTuiDialogImpl<WIZARD_CLASSNAME>
+//     , public TM::CTuiMsgFilter
+{
+public:
+    WIZARD_CLASSNAME();
+    ~WIZARD_CLASSNAME();
+    
+public:
+    enum { IDD = WIZARD_MACRONAME };
+    
+    BEGIN_TUIMSG_MAP (WIZARD_CLASSNAME)
+//     BEGIN_MSG_MAP (WIZARD_CLASSNAME)
+//         MESSAGE_HANDLER     (WM_INITDIALOG,             OnInitDialog)
+//         MESSAGE_HANDLER     (WM_DESTROY,                OnDestroy)
+//         ROUTE_ID_HANDLER    (ID_OK, WM_PRINTCLIENT,     OnPrintClient)
+//         CMNOTIFY_HANDLER    (IDC_HD, HDN_ITEMCLICK,     OnHeaderClicked)
+        COMMAND_ID_HANDLER  (IDOK,                      OnOk)
+        COMMAND_ID_HANDLER  (IDCANCEL,                  OnCancel)
+    END_MSG_MAP()
+    
+    TMResult OnInitDialog(TMUInt uMsg, TMWParam wParam, TMLParam lParam, TMBool& bHandled);
+    TMResult OnDestroy(TMUInt uMsg, TMWParam wParam, TMLParam lParam, TMBool& bHandled);
+//     TMResult OnPrintClient(int idCtrl, TM::TUIMSG* pMsg, TMBool& bHandled);
+//     TMResult OnHeaderClicked(int idCtrl, TM::NMBASE* pnmh, TMBool& bHandled);
+    TMResult OnOk(TMUShort wNotifyCode, TMUShort wID, void* hWndCtl, TMBool& bHandled);
+    TMResult OnCancel(TMUShort wNotifyCode, TMUShort wID, void* hWndCtl, TMBool& bHandled);
+
+    //CTuiMsgFilter
+//     virtual BOOL PreTranslateMessage(TM::TUIMSG* pMsg, TMResult& lResult);
+
+};
+
+
+#endif // WIZARD_FILEMACRO_H

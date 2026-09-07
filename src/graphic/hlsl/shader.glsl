@@ -1,0 +1,25 @@
+#version 450
+
+out gl_PerVertex
+{
+    vec4 gl_Position;
+};
+
+layout(binding = 0, std140) uniform type_CBuffer
+{
+    mat4 proj;
+} CBuffer;
+
+layout(location = 0) in vec2 in_var_POSITION0;
+layout(location = 1) in vec4 in_var_COLOR0;
+layout(location = 2) in vec2 in_var_TEXCOORD0;
+layout(location = 0) out vec4 varying_COLOR0;
+layout(location = 1) out vec2 varying_TEXCOORD;
+
+void main()
+{
+    gl_Position = CBuffer.proj * vec4(in_var_POSITION0, 1.0, 1.0);
+    varying_COLOR0 = in_var_COLOR0;
+    varying_TEXCOORD = in_var_TEXCOORD0;
+}
+

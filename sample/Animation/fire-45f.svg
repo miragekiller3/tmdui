@@ -1,0 +1,786 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Keyshape -->
+<svg xmlns="http://www.w3.org/2000/svg" id="fire-45f" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" viewBox="0 0 160 160" style="white-space: pre;">
+    <defs>
+        <radialGradient id="Gradient-0" cx="3.147" cy="73.735" r="125.479" fx="3.147" fy="73.735" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#ffffb5"/>
+            <stop offset="0.372" stop-color="#ffb45b"/>
+            <stop offset="0.743" stop-color="#ff6900"/>
+            <stop offset="0.872" stop-color="#df4e20"/>
+            <stop offset="1" stop-color="#bf3240"/>
+        </radialGradient>
+        <radialGradient id="Gradient-1" cx="0.122" cy="40.66" r="216.813" fx="0.122" fy="40.66" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#ffffb5"/>
+            <stop offset="0.153" stop-color="#ffda88"/>
+            <stop offset="0.306" stop-color="#ffb45b"/>
+            <stop offset="0.653" stop-color="#ff8f2d"/>
+            <stop offset="1" stop-color="#ff6900"/>
+        </radialGradient>
+    </defs>
+    <style>
+@keyframes fire_o { 0% { opacity: 1; animation-timing-function: steps(1); } 66.6667% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-7_o { 0% { opacity: 1; animation-timing-function: steps(1); } 2.2% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-8_o { 0% { opacity: 0; animation-timing-function: steps(1); } 2.2% { opacity: 1; animation-timing-function: steps(1); } 4.4667% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-9_o { 0% { opacity: 0; animation-timing-function: steps(1); } 4.4667% { opacity: 1; animation-timing-function: steps(1); } 6.6667% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-10_o { 0% { opacity: 0; animation-timing-function: steps(1); } 6.6667% { opacity: 1; animation-timing-function: steps(1); } 8.8667% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-11_o { 0% { opacity: 0; animation-timing-function: steps(1); } 8.8667% { opacity: 1; animation-timing-function: steps(1); } 11.1333% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-12_o { 0% { opacity: 0; animation-timing-function: steps(1); } 11.1333% { opacity: 1; animation-timing-function: steps(1); } 13.3333% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-13_o { 0% { opacity: 0; animation-timing-function: steps(1); } 13.3333% { opacity: 1; animation-timing-function: steps(1); } 15.5333% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-14_o { 0% { opacity: 0; animation-timing-function: steps(1); } 15.5333% { opacity: 1; animation-timing-function: steps(1); } 17.8% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-15_o { 0% { opacity: 0; animation-timing-function: steps(1); } 17.8% { opacity: 1; animation-timing-function: steps(1); } 20% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-16_o { 0% { opacity: 0; animation-timing-function: steps(1); } 20% { opacity: 1; animation-timing-function: steps(1); } 22.2% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-17_o { 0% { opacity: 0; animation-timing-function: steps(1); } 22.2% { opacity: 1; animation-timing-function: steps(1); } 24.4667% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-18_o { 0% { opacity: 0; animation-timing-function: steps(1); } 24.4667% { opacity: 1; animation-timing-function: steps(1); } 26.6667% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-19_o { 0% { opacity: 0; animation-timing-function: steps(1); } 26.6667% { opacity: 1; animation-timing-function: steps(1); } 28.8667% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-20_o { 0% { opacity: 0; animation-timing-function: steps(1); } 28.8667% { opacity: 1; animation-timing-function: steps(1); } 31.1333% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-21_o { 0% { opacity: 0; animation-timing-function: steps(1); } 31.1333% { opacity: 1; animation-timing-function: steps(1); } 33.3333% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-22_o { 0% { opacity: 0; animation-timing-function: steps(1); } 33.3333% { opacity: 1; animation-timing-function: steps(1); } 35.5333% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-23_o { 0% { opacity: 0; animation-timing-function: steps(1); } 35.5333% { opacity: 1; animation-timing-function: steps(1); } 37.8% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-24_o { 0% { opacity: 0; animation-timing-function: steps(1); } 37.8% { opacity: 1; animation-timing-function: steps(1); } 40% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-25_o { 0% { opacity: 0; animation-timing-function: steps(1); } 40% { opacity: 1; animation-timing-function: steps(1); } 42.2% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-26_o { 0% { opacity: 0; animation-timing-function: steps(1); } 42.2% { opacity: 1; animation-timing-function: steps(1); } 44.4667% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-27_o { 0% { opacity: 0; animation-timing-function: steps(1); } 44.4667% { opacity: 1; animation-timing-function: steps(1); } 46.6667% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-28_o { 0% { opacity: 0; animation-timing-function: steps(1); } 46.6667% { opacity: 1; animation-timing-function: steps(1); } 48.8667% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-29_o { 0% { opacity: 0; animation-timing-function: steps(1); } 48.8667% { opacity: 1; animation-timing-function: steps(1); } 51.1333% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-30_o { 0% { opacity: 0; animation-timing-function: steps(1); } 51.1333% { opacity: 1; animation-timing-function: steps(1); } 53.3333% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-31_o { 0% { opacity: 0; animation-timing-function: steps(1); } 53.3333% { opacity: 1; animation-timing-function: steps(1); } 55.5333% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-32_o { 0% { opacity: 0; animation-timing-function: steps(1); } 55.5333% { opacity: 1; animation-timing-function: steps(1); } 57.8% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-33_o { 0% { opacity: 0; animation-timing-function: steps(1); } 57.8% { opacity: 1; animation-timing-function: steps(1); } 60% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-34_o { 0% { opacity: 0; animation-timing-function: steps(1); } 60% { opacity: 1; animation-timing-function: steps(1); } 62.2% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-35_o { 0% { opacity: 0; animation-timing-function: steps(1); } 62.2% { opacity: 1; animation-timing-function: steps(1); } 64.4667% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-36_o { 0% { opacity: 0; animation-timing-function: steps(1); } 64.4667% { opacity: 1; animation-timing-function: steps(1); } 66.6667% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-37_o { 0% { opacity: 0; animation-timing-function: steps(1); } 66.6667% { opacity: 1; animation-timing-function: steps(1); } 67.3333% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-3_o { 0% { opacity: 1; animation-timing-function: steps(1); } 2.2% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-38_o { 0% { opacity: 0; animation-timing-function: steps(1); } 2.2% { opacity: 1; animation-timing-function: steps(1); } 4.4667% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-39_o { 0% { opacity: 0; animation-timing-function: steps(1); } 4.4667% { opacity: 1; animation-timing-function: steps(1); } 6.6667% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-40_o { 0% { opacity: 0; animation-timing-function: steps(1); } 6.6667% { opacity: 1; animation-timing-function: steps(1); } 8.8667% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-41_o { 0% { opacity: 0; animation-timing-function: steps(1); } 8.8667% { opacity: 1; animation-timing-function: steps(1); } 11.1333% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-42_o { 0% { opacity: 0; animation-timing-function: steps(1); } 11.1333% { opacity: 1; animation-timing-function: steps(1); } 13.3333% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-43_o { 0% { opacity: 0; animation-timing-function: steps(1); } 13.3333% { opacity: 1; animation-timing-function: steps(1); } 15.5333% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-44_o { 0% { opacity: 0; animation-timing-function: steps(1); } 15.5333% { opacity: 1; animation-timing-function: steps(1); } 17.8% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-45_o { 0% { opacity: 0; animation-timing-function: steps(1); } 17.8% { opacity: 1; animation-timing-function: steps(1); } 20% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-46_o { 0% { opacity: 0; animation-timing-function: steps(1); } 20% { opacity: 1; animation-timing-function: steps(1); } 22.2% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-47_o { 0% { opacity: 0; animation-timing-function: steps(1); } 22.2% { opacity: 1; animation-timing-function: steps(1); } 24.4667% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-48_o { 0% { opacity: 0; animation-timing-function: steps(1); } 24.4667% { opacity: 1; animation-timing-function: steps(1); } 26.6667% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-49_o { 0% { opacity: 0; animation-timing-function: steps(1); } 26.6667% { opacity: 1; animation-timing-function: steps(1); } 28.8667% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-50_o { 0% { opacity: 0; animation-timing-function: steps(1); } 28.8667% { opacity: 1; animation-timing-function: steps(1); } 31.1333% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-51_o { 0% { opacity: 0; animation-timing-function: steps(1); } 31.1333% { opacity: 1; animation-timing-function: steps(1); } 33.3333% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-52_o { 0% { opacity: 0; animation-timing-function: steps(1); } 33.3333% { opacity: 1; animation-timing-function: steps(1); } 35.5333% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-53_o { 0% { opacity: 0; animation-timing-function: steps(1); } 35.5333% { opacity: 1; animation-timing-function: steps(1); } 37.8% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-54_o { 0% { opacity: 0; animation-timing-function: steps(1); } 37.8% { opacity: 1; animation-timing-function: steps(1); } 40% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-55_o { 0% { opacity: 0; animation-timing-function: steps(1); } 40% { opacity: 1; animation-timing-function: steps(1); } 42.2% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-56_o { 0% { opacity: 0; animation-timing-function: steps(1); } 42.2% { opacity: 1; animation-timing-function: steps(1); } 44.4667% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-57_o { 0% { opacity: 0; animation-timing-function: steps(1); } 44.4667% { opacity: 1; animation-timing-function: steps(1); } 46.6667% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-58_o { 0% { opacity: 0; animation-timing-function: steps(1); } 46.6667% { opacity: 1; animation-timing-function: steps(1); } 48.8667% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-59_o { 0% { opacity: 0; animation-timing-function: steps(1); } 48.8667% { opacity: 1; animation-timing-function: steps(1); } 51.1333% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-60_o { 0% { opacity: 0; animation-timing-function: steps(1); } 51.1333% { opacity: 1; animation-timing-function: steps(1); } 53.3333% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-61_o { 0% { opacity: 0; animation-timing-function: steps(1); } 53.3333% { opacity: 1; animation-timing-function: steps(1); } 55.5333% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-62_o { 0% { opacity: 0; animation-timing-function: steps(1); } 55.5333% { opacity: 1; animation-timing-function: steps(1); } 57.8% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-63_o { 0% { opacity: 0; animation-timing-function: steps(1); } 57.8% { opacity: 1; animation-timing-function: steps(1); } 60% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-64_o { 0% { opacity: 0; animation-timing-function: steps(1); } 60% { opacity: 1; animation-timing-function: steps(1); } 62.2% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-65_o { 0% { opacity: 0; animation-timing-function: steps(1); } 62.2% { opacity: 1; animation-timing-function: steps(1); } 64.4667% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-66_o { 0% { opacity: 0; animation-timing-function: steps(1); } 64.4667% { opacity: 1; animation-timing-function: steps(1); } 66.6667% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-67_o { 0% { opacity: 0; animation-timing-function: steps(1); } 66.6667% { opacity: 1; animation-timing-function: steps(1); } 67.3333% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-5_t { 0% { transform: translate(79.179px,156.71px) scale(1.1718,1.0137) translateY(-20.43px); animation-timing-function: cubic-bezier(0.333,0,0.667,1); } 7.8% { transform: translate(79.179px,156.71px) scale(1.1718,0.7739) translateY(-20.43px); animation-timing-function: cubic-bezier(0.333,0,0.667,1); } 16.6666% { transform: translate(79.179px,156.71px) scale(1.1718,1.0137) translateY(-20.43px); animation-timing-function: cubic-bezier(0.333,0,0.667,1); } 24.4666% { transform: translate(79.179px,156.71px) scale(1.1718,0.7739) translateY(-20.43px); animation-timing-function: cubic-bezier(0.333,0,0.667,1); } 33.3333% { transform: translate(79.179px,156.71px) scale(1.1718,1.0137) translateY(-20.43px); animation-timing-function: cubic-bezier(0.333,0,0.667,1); } 41.1333% { transform: translate(79.179px,156.71px) scale(1.1718,0.7739) translateY(-20.43px); animation-timing-function: cubic-bezier(0.333,0,0.667,1); } 50% { transform: translate(79.179px,156.71px) scale(1.1718,1.0137) translateY(-20.43px); animation-timing-function: cubic-bezier(0.333,0,0.667,1); } 57.8% { transform: translate(79.179px,156.71px) scale(1.1718,0.7739) translateY(-20.43px); animation-timing-function: cubic-bezier(0.333,0,0.667,1); } 66.6666% { transform: translate(79.179px,156.71px) scale(1.1718,1.0137) translateY(-20.43px); } 100% { transform: translate(79.179px,156.71px) scale(1.1718,1.0137) translateY(-20.43px); } }
+@keyframes Layer-5_o { 0% { opacity: 1; animation-timing-function: steps(1); } 66.6667% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes fire-2_o { 0% { opacity: 0; animation-timing-function: steps(1); } 66.6667% { opacity: 1; animation-timing-function: steps(1); } 100% { opacity: 1; } }
+@keyframes Layer-7-2_o { 0% { opacity: 0; animation-timing-function: steps(1); } 66.6667% { opacity: 1; animation-timing-function: steps(1); } 68.8667% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-8-2_o { 0% { opacity: 0; animation-timing-function: steps(1); } 68.8667% { opacity: 1; animation-timing-function: steps(1); } 71.1333% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-9-2_o { 0% { opacity: 0; animation-timing-function: steps(1); } 71.1333% { opacity: 1; animation-timing-function: steps(1); } 73.3333% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-10-2_o { 0% { opacity: 0; animation-timing-function: steps(1); } 73.3333% { opacity: 1; animation-timing-function: steps(1); } 75.5333% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-11-2_o { 0% { opacity: 0; animation-timing-function: steps(1); } 75.5333% { opacity: 1; animation-timing-function: steps(1); } 77.8% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-12-2_o { 0% { opacity: 0; animation-timing-function: steps(1); } 77.8% { opacity: 1; animation-timing-function: steps(1); } 80% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-13-2_o { 0% { opacity: 0; animation-timing-function: steps(1); } 80% { opacity: 1; animation-timing-function: steps(1); } 82.2% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-14-2_o { 0% { opacity: 0; animation-timing-function: steps(1); } 82.2% { opacity: 1; animation-timing-function: steps(1); } 84.4667% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-15-2_o { 0% { opacity: 0; animation-timing-function: steps(1); } 84.4667% { opacity: 1; animation-timing-function: steps(1); } 86.6667% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-16-2_o { 0% { opacity: 0; animation-timing-function: steps(1); } 86.6667% { opacity: 1; animation-timing-function: steps(1); } 88.8667% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-17-2_o { 0% { opacity: 0; animation-timing-function: steps(1); } 88.8667% { opacity: 1; animation-timing-function: steps(1); } 91.1333% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-18-2_o { 0% { opacity: 0; animation-timing-function: steps(1); } 91.1333% { opacity: 1; animation-timing-function: steps(1); } 93.3333% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-19-2_o { 0% { opacity: 0; animation-timing-function: steps(1); } 93.3333% { opacity: 1; animation-timing-function: steps(1); } 95.5333% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-20-2_o { 0% { opacity: 0; animation-timing-function: steps(1); } 95.5333% { opacity: 1; animation-timing-function: steps(1); } 97.8% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-21-2_o { 0% { opacity: 0; animation-timing-function: steps(1); } 97.8% { opacity: 1; animation-timing-function: steps(1); } 100% { opacity: 0; } }
+@keyframes Layer-22-2_o { 0% { opacity: 0; animation-timing-function: steps(1); } 100% { opacity: 1; } }
+@keyframes Layer-23-2_o { 0% { opacity: 0; animation-timing-function: steps(1); } 100% { opacity: 0; } }
+@keyframes Layer-24-2_o { 0% { opacity: 0; animation-timing-function: steps(1); } 100% { opacity: 0; } }
+@keyframes Layer-25-2_o { 0% { opacity: 0; animation-timing-function: steps(1); } 100% { opacity: 0; } }
+@keyframes Layer-26-2_o { 0% { opacity: 0; animation-timing-function: steps(1); } 100% { opacity: 0; } }
+@keyframes Layer-27-2_o { 0% { opacity: 0; animation-timing-function: steps(1); } 100% { opacity: 0; } }
+@keyframes Layer-28-2_o { 0% { opacity: 0; animation-timing-function: steps(1); } 100% { opacity: 0; } }
+@keyframes Layer-29-2_o { 0% { opacity: 0; animation-timing-function: steps(1); } 100% { opacity: 0; } }
+@keyframes Layer-30-2_o { 0% { opacity: 0; animation-timing-function: steps(1); } 100% { opacity: 0; } }
+@keyframes Layer-31-2_o { 0% { opacity: 0; animation-timing-function: steps(1); } 100% { opacity: 0; } }
+@keyframes Layer-32-2_o { 0% { opacity: 0; animation-timing-function: steps(1); } 100% { opacity: 0; } }
+@keyframes Layer-33-2_o { 0% { opacity: 0; animation-timing-function: steps(1); } 100% { opacity: 0; } }
+@keyframes Layer-34-2_o { 0% { opacity: 0; animation-timing-function: steps(1); } 100% { opacity: 0; } }
+@keyframes Layer-35-2_o { 0% { opacity: 0; animation-timing-function: steps(1); } 100% { opacity: 0; } }
+@keyframes Layer-36-2_o { 0% { opacity: 0; animation-timing-function: steps(1); } 100% { opacity: 0; } }
+@keyframes Layer-37-2_o { 0% { opacity: 0; animation-timing-function: steps(1); } 100% { opacity: 0; } }
+@keyframes Layer-3-2_o { 0% { opacity: 0; animation-timing-function: steps(1); } 66.6667% { opacity: 1; animation-timing-function: steps(1); } 68.8667% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-38-2_o { 0% { opacity: 0; animation-timing-function: steps(1); } 68.8667% { opacity: 1; animation-timing-function: steps(1); } 71.1333% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-39-2_o { 0% { opacity: 0; animation-timing-function: steps(1); } 71.1333% { opacity: 1; animation-timing-function: steps(1); } 73.3333% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-40-2_o { 0% { opacity: 0; animation-timing-function: steps(1); } 73.3333% { opacity: 1; animation-timing-function: steps(1); } 75.5333% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-41-2_o { 0% { opacity: 0; animation-timing-function: steps(1); } 75.5333% { opacity: 1; animation-timing-function: steps(1); } 77.8% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-42-2_o { 0% { opacity: 0; animation-timing-function: steps(1); } 77.8% { opacity: 1; animation-timing-function: steps(1); } 80% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-43-2_o { 0% { opacity: 0; animation-timing-function: steps(1); } 80% { opacity: 1; animation-timing-function: steps(1); } 82.2% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-44-2_o { 0% { opacity: 0; animation-timing-function: steps(1); } 82.2% { opacity: 1; animation-timing-function: steps(1); } 84.4667% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-45-2_o { 0% { opacity: 0; animation-timing-function: steps(1); } 84.4667% { opacity: 1; animation-timing-function: steps(1); } 86.6667% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-46-2_o { 0% { opacity: 0; animation-timing-function: steps(1); } 86.6667% { opacity: 1; animation-timing-function: steps(1); } 88.8667% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-47-2_o { 0% { opacity: 0; animation-timing-function: steps(1); } 88.8667% { opacity: 1; animation-timing-function: steps(1); } 91.1333% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-48-2_o { 0% { opacity: 0; animation-timing-function: steps(1); } 91.1333% { opacity: 1; animation-timing-function: steps(1); } 93.3333% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-49-2_o { 0% { opacity: 0; animation-timing-function: steps(1); } 93.3333% { opacity: 1; animation-timing-function: steps(1); } 95.5333% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-50-2_o { 0% { opacity: 0; animation-timing-function: steps(1); } 95.5333% { opacity: 1; animation-timing-function: steps(1); } 97.8% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes Layer-51-2_o { 0% { opacity: 0; animation-timing-function: steps(1); } 97.8% { opacity: 1; animation-timing-function: steps(1); } 100% { opacity: 0; } }
+@keyframes Layer-52-2_o { 0% { opacity: 0; animation-timing-function: steps(1); } 100% { opacity: 1; } }
+@keyframes Layer-53-2_o { 0% { opacity: 0; animation-timing-function: steps(1); } 100% { opacity: 0; } }
+@keyframes Layer-54-2_o { 0% { opacity: 0; animation-timing-function: steps(1); } 100% { opacity: 0; } }
+@keyframes Layer-55-2_o { 0% { opacity: 0; animation-timing-function: steps(1); } 100% { opacity: 0; } }
+@keyframes Layer-56-2_o { 0% { opacity: 0; animation-timing-function: steps(1); } 100% { opacity: 0; } }
+@keyframes Layer-57-2_o { 0% { opacity: 0; animation-timing-function: steps(1); } 100% { opacity: 0; } }
+@keyframes Layer-58-2_o { 0% { opacity: 0; animation-timing-function: steps(1); } 100% { opacity: 0; } }
+@keyframes Layer-59-2_o { 0% { opacity: 0; animation-timing-function: steps(1); } 100% { opacity: 0; } }
+@keyframes Layer-60-2_o { 0% { opacity: 0; animation-timing-function: steps(1); } 100% { opacity: 0; } }
+@keyframes Layer-61-2_o { 0% { opacity: 0; animation-timing-function: steps(1); } 100% { opacity: 0; } }
+@keyframes Layer-62-2_o { 0% { opacity: 0; animation-timing-function: steps(1); } 100% { opacity: 0; } }
+@keyframes Layer-63-2_o { 0% { opacity: 0; animation-timing-function: steps(1); } 100% { opacity: 0; } }
+@keyframes Layer-64-2_o { 0% { opacity: 0; animation-timing-function: steps(1); } 100% { opacity: 0; } }
+@keyframes Layer-65-2_o { 0% { opacity: 0; animation-timing-function: steps(1); } 100% { opacity: 0; } }
+@keyframes Layer-66-2_o { 0% { opacity: 0; animation-timing-function: steps(1); } 100% { opacity: 0; } }
+@keyframes Layer-67-2_o { 0% { opacity: 0; animation-timing-function: steps(1); } 100% { opacity: 0; } }
+@keyframes Layer-5-2_t { 0% { transform: translate(79.179px,156.71px) scale(1.1718,1.0137) translateY(-20.43px); } 66.6666% { transform: translate(79.179px,156.71px) scale(1.1718,1.0137) translateY(-20.43px); animation-timing-function: cubic-bezier(0.333,0,0.667,1); } 74.4666% { transform: translate(79.179px,156.71px) scale(1.1718,0.7739) translateY(-20.43px); animation-timing-function: cubic-bezier(0.333,0,0.667,1); } 83.3333% { transform: translate(79.179px,156.71px) scale(1.1718,1.0137) translateY(-20.43px); animation-timing-function: cubic-bezier(0.333,0,0.667,1); } 91.1333% { transform: translate(79.179px,156.71px) scale(1.1718,0.7739) translateY(-20.43px); animation-timing-function: cubic-bezier(0.333,0,0.667,1); } 100% { transform: translate(79.179px,156.71px) scale(1.1718,1.0137) translateY(-20.43px); } }
+@keyframes Layer-5-2_o { 0% { opacity: 0; animation-timing-function: steps(1); } 66.6667% { opacity: 1; animation-timing-function: steps(1); } 100% { opacity: 1; } }
+    </style>
+    <g id="fire" opacity="1" transform="translate(80,80) translate(-80,-80)" style="animation: 1.5s linear infinite both fire_o;">
+        <g id="Layer-7" opacity="1" transform="translate(79.939,79.957) scale(1.05,1.0109)" style="animation: 1.5s linear infinite both Layer-7_o;">
+            <g id="Group-1" opacity="1">
+                <path id="Path-1" fill="url(#Gradient-0)" d="M-73.388,21.476C-73.388,21.476,-82.322,-6.882,-30.957,-34.523C-22.129,-38.95,-2.323,-58.074,-7.246,-79.061C6.025,-72.12,16.121,-64.078,21.385,-57.037C34.106,-40.021,26.061,-29.112,27.189,-23.532C27.189,-23.532,41.011,-39.936,62.668,-39.985C47.261,-15.444,67.382,11.236,72.744,19.809C76.239,28.325,70.019,42.549,70.019,42.549C70.019,42.549,66.799,52.375,57.047,60.551C45.617,69.194,35.376,79.061,1.742,79.061C-31.892,79.061,-74.371,57.179,-73.388,21.476Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-8" opacity="0" transform="translate(79.939,79.957) scale(1.05,1.0109)" style="animation: 1.5s linear infinite both Layer-8_o;">
+            <g id="Group-1-2" opacity="1">
+                <path id="Path-1-2" fill="url(#Gradient-0)" d="M-73.388,21.476C-73.388,21.476,-80.894,-8.778,-29.529,-36.419C-20.701,-40.846,-2.323,-58.074,-7.246,-79.061C6.025,-72.12,19.309,-62.547,22.258,-54.976C29.186,-35.651,25.585,-28.535,26.713,-22.955C26.713,-22.955,39.106,-37.656,58.223,-40.232C46.447,-17.783,67.382,11.236,72.744,19.809C76.239,28.325,70.019,42.549,70.019,42.549C70.019,42.549,66.799,52.375,57.047,60.551C45.617,69.194,35.376,79.061,1.742,79.061C-31.892,79.061,-74.371,57.179,-73.388,21.476Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-9" opacity="0" transform="translate(79.939,79.957) scale(1.05,1.0109)" style="animation: 1.5s linear infinite both Layer-9_o;">
+            <g id="Group-1-3" opacity="1">
+                <path id="Path-1-3" fill="url(#Gradient-0)" d="M-73.388,21.476C-73.388,21.476,-79.465,-10.674,-28.1,-38.315C-19.272,-42.742,-2.323,-58.074,-7.246,-79.061C6.025,-72.12,22.496,-61.015,23.131,-52.915C24.265,-31.282,25.109,-27.958,26.237,-22.378C26.237,-22.378,37.202,-35.376,53.779,-40.48C45.634,-20.123,67.382,11.236,72.744,19.809C76.239,28.325,70.019,42.549,70.019,42.549C70.019,42.549,66.799,52.375,57.047,60.551C45.617,69.194,35.376,79.061,1.742,79.061C-31.892,79.061,-74.371,57.179,-73.388,21.476Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-10" opacity="0" transform="translate(79.939,79.957) scale(1.05,1.0109)" style="animation: 1.5s linear infinite both Layer-10_o;">
+            <g id="Group-1-4" opacity="1">
+                <path id="Path-1-4" fill="url(#Gradient-0)" d="M-73.388,21.476C-73.388,21.476,-78.036,-12.57,-26.671,-40.211C-17.843,-44.638,-2.323,-58.074,-7.246,-79.061C6.025,-72.12,25.684,-59.483,24.004,-50.854C19.344,-26.913,24.633,-27.381,25.761,-21.801C25.761,-21.801,35.296,-33.096,49.334,-40.727C44.82,-22.462,67.382,11.236,72.744,19.809C76.239,28.325,70.019,42.549,70.019,42.549C70.019,42.549,66.799,52.375,57.047,60.551C45.617,69.194,35.376,79.061,1.742,79.061C-31.892,79.061,-74.371,57.179,-73.388,21.476Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-11" opacity="0" transform="translate(79.939,79.957) scale(1.05,1.0109)" style="animation: 1.5s linear infinite both Layer-11_o;">
+            <g id="Group-1-5" opacity="1">
+                <path id="Path-1-5" fill="url(#Gradient-0)" d="M-73.388,21.476C-73.388,18.536,-76.132,-11.993,-30.402,-38.068C-21.638,-43.264,-2.323,-58.074,-7.246,-79.061C6.258,-71.56,21.439,-58.899,21.226,-50.36C19.962,-28.736,26.907,-26.143,28.618,-21.966C28.618,-21.966,36.566,-33.261,49.096,-40.645C51.328,-20.813,69.068,8.989,72.744,19.809C75.074,29.12,70.019,42.549,70.019,42.549C70.019,42.549,66.799,52.375,57.047,60.551C45.617,69.194,35.376,79.061,1.742,79.061C-31.892,79.061,-74.044,57.094,-73.388,21.476Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-12" opacity="0" transform="translate(79.939,79.957) scale(1.05,1.0109)" style="animation: 1.5s linear infinite both Layer-12_o;">
+            <g id="Group-1-6" opacity="1">
+                <path id="Path-1-6" fill="url(#Gradient-0)" d="M-73.388,21.476C-73.388,15.596,-74.228,-11.415,-34.132,-35.924C-25.433,-41.889,-2.323,-58.074,-7.246,-79.061C6.492,-70.999,17.194,-58.315,18.448,-49.865C20.581,-30.559,29.181,-24.905,31.475,-22.131C31.475,-22.131,37.836,-33.425,48.858,-40.562C57.836,-19.164,70.754,6.742,72.744,19.809C73.909,29.914,70.019,42.549,70.019,42.549C70.019,42.549,66.799,52.375,57.047,60.551C45.617,69.194,35.376,79.061,1.742,79.061C-31.892,79.061,-73.716,57.009,-73.388,21.476Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-13" opacity="0" transform="translate(79.939,79.957) scale(1.05,1.0109)" style="animation: 1.5s linear infinite both Layer-13_o;">
+            <g id="Group-1-7" opacity="1">
+                <path id="Path-1-7" fill="url(#Gradient-0)" d="M-73.388,21.476C-73.388,12.656,-72.323,-10.839,-37.862,-33.781C-29.227,-40.515,-2.323,-58.074,-7.246,-79.061C6.725,-70.439,12.95,-57.73,15.671,-49.37C21.2,-32.381,31.455,-23.667,34.332,-22.296C34.332,-22.296,39.106,-33.591,48.62,-40.48C64.344,-17.516,72.44,4.495,72.744,19.809C72.744,30.709,70.019,42.549,70.019,42.549C70.019,42.549,66.799,52.375,57.047,60.551C45.617,69.194,35.376,79.061,1.742,79.061C-31.892,79.061,-73.388,56.923,-73.388,21.476Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-14" opacity="0" transform="translate(79.939,79.957) scale(1.05,1.0109)" style="animation: 1.5s linear infinite both Layer-14_o;">
+            <g id="Group-1-8" opacity="1">
+                <path id="Path-1-8" fill="url(#Gradient-0)" d="M-73.388,21.476C-73.388,12.656,-73.434,-8.448,-38.973,-31.39C-30.338,-38.124,-4.148,-56.013,-8.198,-76.835C5.54,-68.773,13.456,-56.635,17.02,-48.711C23.518,-33.609,34.482,-22.688,36.634,-19.905C36.634,-19.905,44.186,-31.694,51.636,-40.15C67.979,-18.98,72.541,6.308,72.744,19.809C72.744,30.379,70.019,42.549,70.019,42.549C70.019,42.549,66.799,52.375,57.047,60.551C45.617,69.194,35.376,79.061,1.742,79.061C-31.892,79.061,-73.388,56.923,-73.388,21.476Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-15" opacity="0" transform="translate(79.939,79.957) scale(1.05,1.0109)" style="animation: 1.5s linear infinite both Layer-15_o;">
+            <g id="Group-1-9" opacity="1">
+                <path id="Path-1-9" fill="url(#Gradient-0)" d="M-73.388,21.476C-73.388,12.656,-74.545,-6.058,-40.084,-29C-31.449,-35.734,-5.974,-53.952,-9.151,-74.609C4.353,-67.108,13.962,-55.538,18.369,-48.051C25.835,-34.836,37.508,-21.71,38.935,-17.515C38.935,-17.515,49.265,-29.798,54.652,-39.82C71.614,-20.445,72.643,8.122,72.744,19.809C72.744,30.049,70.019,42.549,70.019,42.549C70.019,42.549,66.799,52.375,57.047,60.551C45.617,69.194,35.376,79.061,1.742,79.061C-31.892,79.061,-73.388,56.923,-73.388,21.476Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-16" opacity="0" transform="translate(79.939,79.957) scale(1.05,1.0109)" style="animation: 1.5s linear infinite both Layer-16_o;">
+            <g id="Group-1-10" opacity="1">
+                <path id="Path-1-10" fill="url(#Gradient-0)" d="M-73.388,21.476C-73.388,12.656,-75.656,-3.667,-41.195,-26.609C-32.56,-33.343,-7.799,-51.891,-10.103,-72.384C3.168,-65.443,14.467,-54.443,19.718,-47.392C28.153,-36.064,40.535,-20.731,41.237,-15.124C41.237,-15.124,54.345,-27.903,57.668,-39.491C75.249,-21.91,72.744,9.935,72.744,19.809C72.744,29.72,70.019,42.549,70.019,42.549C70.019,42.549,66.799,52.375,57.047,60.551C45.617,69.194,35.376,79.061,1.742,79.061C-31.892,79.061,-73.388,56.923,-73.388,21.476Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-17" opacity="0" transform="translate(79.939,79.957) scale(1.05,1.0109)" style="animation: 1.5s linear infinite both Layer-17_o;">
+            <g id="Group-1-11" opacity="1">
+                <path id="Path-1-11" fill="url(#Gradient-0)" d="M-73.388,21.476C-73.388,12.656,-74.307,-6.387,-40.64,-27.433C-31.212,-33.59,-9.545,-48.264,-9.23,-72.219C4.041,-65.278,13.449,-56.305,18.845,-49.37C28.233,-37.382,38.868,-23.039,39.57,-17.432C39.57,-17.432,53.392,-28.644,59.334,-39.655C73.915,-21.764,72.744,9.523,72.744,19.809C72.744,30.956,70.019,42.549,70.019,42.549C70.019,42.549,66.799,52.375,57.047,60.551C45.617,69.194,35.376,79.061,1.742,79.061C-31.892,79.061,-73.388,56.923,-73.388,21.476Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-18" opacity="0" transform="translate(79.939,79.957) scale(1.05,1.0109)" style="animation: 1.5s linear infinite both Layer-18_o;">
+            <g id="Group-1-12" opacity="1">
+                <path id="Path-1-12" fill="url(#Gradient-0)" d="M-73.388,21.476C-73.388,12.656,-72.957,-9.108,-40.084,-28.258C-29.862,-33.838,-11.291,-44.637,-8.357,-72.054C4.914,-65.113,12.43,-58.168,17.972,-51.349C28.312,-38.702,37.201,-25.347,37.903,-19.74C37.903,-19.74,52.44,-29.386,61.001,-39.82C72.582,-21.618,72.744,9.111,72.744,19.809C72.744,32.193,70.019,42.549,70.019,42.549C70.019,42.549,66.799,52.375,57.047,60.551C45.617,69.194,35.376,79.061,1.742,79.061C-31.892,79.061,-73.388,56.923,-73.388,21.476Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-19" opacity="0" transform="translate(79.939,79.957) scale(1.05,1.0109)" style="animation: 1.5s linear infinite both Layer-19_o;">
+            <g id="Group-1-13" opacity="1">
+                <path id="Path-1-13" fill="url(#Gradient-0)" d="M-73.388,21.476C-73.388,12.656,-71.609,-11.828,-39.529,-29.082C-28.513,-34.085,-13.037,-41.01,-7.484,-71.889C5.787,-64.948,11.411,-60.03,17.099,-53.327C28.392,-40.02,35.535,-27.655,36.237,-22.048C36.237,-22.048,51.488,-30.128,62.668,-39.985C71.249,-21.472,72.744,8.699,72.744,19.809C72.744,33.429,70.019,42.549,70.019,42.549C70.019,42.549,66.799,52.375,57.047,60.551C45.617,69.194,35.376,79.061,1.742,79.061C-31.892,79.061,-73.388,56.923,-73.388,21.476Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-20" opacity="0" transform="translate(79.939,79.957) scale(1.05,1.0109)" style="animation: 1.5s linear infinite both Layer-20_o;">
+            <g id="Group-1-14" opacity="1">
+                <path id="Path-1-14" fill="url(#Gradient-0)" d="M-73.388,21.476C-73.388,10.43,-69.783,-13.971,-40.481,-29.824C-25.894,-36.888,-13.117,-42.411,-6.294,-72.548C6.977,-65.607,12.072,-60.697,17.417,-53.657C27.953,-39.806,31.884,-27.326,32.586,-21.719C32.586,-21.719,47.042,-31.612,61.318,-39.161C65.376,-19.082,70.817,10.018,72.744,19.809C73.909,31.728,70.019,42.549,70.019,42.549C70.019,42.549,66.799,52.375,57.047,60.551C45.617,69.194,35.376,79.061,1.742,79.061C-31.892,79.061,-73.388,56.923,-73.388,21.476Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-21" opacity="0" transform="translate(79.939,79.957) scale(1.05,1.0109)" style="animation: 1.5s linear infinite both Layer-21_o;">
+            <g id="Group-1-15" opacity="1">
+                <path id="Path-1-15" fill="url(#Gradient-0)" d="M-73.388,21.476C-73.388,8.204,-67.957,-16.114,-41.433,-30.566C-23.275,-39.691,-13.195,-43.812,-5.103,-73.208C8.168,-66.267,12.731,-61.364,17.734,-53.987C27.514,-39.592,28.233,-26.996,28.935,-21.389C28.935,-21.389,42.598,-33.095,59.969,-38.336C59.503,-16.691,68.89,11.337,72.744,19.809C75.074,30.026,70.019,42.549,70.019,42.549C70.019,42.549,66.799,52.375,57.047,60.551C45.617,69.194,35.376,79.061,1.742,79.061C-31.892,79.061,-73.388,56.923,-73.388,21.476Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-22" opacity="0" transform="translate(79.939,79.957) scale(1.05,1.0109)" style="animation: 1.5s linear infinite both Layer-22_o;">
+            <g id="Group-1-16" opacity="1">
+                <path id="Path-1-16" fill="url(#Gradient-0)" d="M-73.388,21.476C-73.388,5.979,-66.132,-18.258,-42.386,-31.308C-20.656,-42.494,-13.275,-45.213,-3.913,-73.867C9.358,-66.926,13.392,-62.03,18.052,-54.316C27.076,-39.377,24.582,-26.666,25.284,-21.059C25.284,-21.059,38.154,-34.58,58.62,-37.512C53.63,-14.301,66.964,12.656,72.744,19.809C76.239,28.325,70.019,42.549,70.019,42.549C70.019,42.549,66.799,52.375,57.047,60.551C45.617,69.194,35.376,79.061,1.742,79.061C-31.892,79.061,-73.388,56.923,-73.388,21.476Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-23" opacity="0" transform="translate(79.939,79.957) scale(1.05,1.0109)" style="animation: 1.5s linear infinite both Layer-23_o;">
+            <g id="Group-1-17" opacity="1">
+                <path id="Path-1-17" fill="url(#Gradient-0)" d="M-73.388,21.476C-73.388,5.979,-66.132,-18.258,-42.386,-31.308C-21.37,-43.071,-11.608,-46.533,0.135,-73.043C12.052,-65.954,15.911,-59.602,19.639,-51.596C26.403,-38.191,24.741,-28.726,25.284,-21.471C25.284,-21.471,39.821,-36.146,55.525,-38.172C50.694,-15.373,66.964,12.656,72.744,19.809C76.239,28.325,70.019,42.549,70.019,42.549C70.019,42.549,66.799,52.375,57.047,60.551C45.617,69.194,35.376,79.061,1.742,79.061C-31.892,79.061,-73.388,56.923,-73.388,21.476Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-24" opacity="0" transform="translate(79.939,79.957) scale(1.05,1.0109)" style="animation: 1.5s linear infinite both Layer-24_o;">
+            <g id="Group-1-18" opacity="1">
+                <path id="Path-1-18" fill="url(#Gradient-0)" d="M-73.388,21.476C-73.388,5.979,-66.132,-18.258,-42.386,-31.308C-22.085,-43.648,-9.941,-47.852,4.183,-72.219C14.746,-64.982,18.429,-57.175,21.226,-48.876C25.731,-37.004,24.899,-30.788,25.284,-21.884C25.284,-21.884,41.487,-37.712,52.429,-38.831C47.756,-16.444,66.964,12.656,72.744,19.809C76.239,28.325,70.019,42.549,70.019,42.549C70.019,42.549,66.799,52.375,57.047,60.551C45.617,69.194,35.376,79.061,1.742,79.061C-31.892,79.061,-73.388,56.923,-73.388,21.476Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-25" opacity="0" transform="translate(79.939,79.957) scale(1.05,1.0109)" style="animation: 1.5s linear infinite both Layer-25_o;">
+            <g id="Group-1-19" opacity="1">
+                <path id="Path-1-19" fill="url(#Gradient-0)" d="M-73.388,21.476C-73.388,5.979,-66.132,-18.258,-42.386,-31.308C-22.799,-44.225,-8.275,-49.17,8.23,-71.394C17.439,-64.009,20.949,-54.746,22.814,-46.155C25.059,-35.816,25.058,-32.849,25.284,-22.296C25.284,-22.296,43.154,-39.279,49.334,-39.491C44.82,-17.516,66.964,12.656,72.744,19.809C76.239,28.325,70.019,42.549,70.019,42.549C70.019,42.549,66.799,52.375,57.047,60.551C45.617,69.194,35.376,79.061,1.742,79.061C-31.892,79.061,-73.388,56.923,-73.388,21.476Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-26" opacity="0" transform="translate(79.939,79.957) scale(1.05,1.0109)" style="animation: 1.5s linear infinite both Layer-26_o;">
+            <g id="Group-1-20" opacity="1">
+                <path id="Path-1-20" fill="url(#Gradient-0)" d="M-73.388,21.476C-73.388,5.979,-66.053,-17.516,-42.465,-30.896C-22.878,-43.813,-7.481,-51.067,3.072,-73.95C12.44,-65.658,16.337,-53.581,19.321,-45.496C23.788,-34.58,25.614,-30.458,28.062,-22.543C28.062,-22.543,41.566,-39.113,49.175,-39.985C46.09,-19.494,68.89,9.111,72.744,19.809C75.074,29.944,70.019,42.549,70.019,42.549C70.019,42.549,66.799,52.375,57.047,60.551C45.617,69.194,35.376,79.061,1.742,79.061C-31.892,79.061,-73.388,56.923,-73.388,21.476Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-27" opacity="0" transform="translate(79.939,79.957) scale(1.05,1.0109)" style="animation: 1.5s linear infinite both Layer-27_o;">
+            <g id="Group-1-21" opacity="1">
+                <path id="Path-1-21" fill="url(#Gradient-0)" d="M-73.388,21.476C-73.388,5.979,-65.973,-16.774,-42.544,-30.484C-22.957,-43.401,-6.687,-52.962,-2.087,-76.505C7.44,-67.306,11.726,-52.415,15.829,-44.836C22.518,-33.343,26.17,-28.067,30.84,-22.79C30.84,-22.79,39.979,-38.949,49.017,-40.48C47.36,-21.473,70.817,5.566,72.744,19.809C73.909,31.563,70.019,42.549,70.019,42.549C70.019,42.549,66.799,52.375,57.047,60.551C45.617,69.194,35.376,79.061,1.742,79.061C-31.892,79.061,-73.388,56.923,-73.388,21.476Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-28" opacity="0" transform="translate(79.939,79.957) scale(1.05,1.0109)" style="animation: 1.5s linear infinite both Layer-28_o;">
+            <g id="Group-1-22" opacity="1">
+                <path id="Path-1-22" fill="url(#Gradient-0)" d="M-73.388,21.476C-73.388,5.979,-65.894,-16.031,-42.624,-30.071C-23.037,-42.988,-5.894,-54.859,-7.246,-79.061C2.439,-68.955,7.115,-51.249,12.337,-44.177C21.249,-32.107,26.725,-25.677,33.618,-23.038C33.618,-23.038,38.392,-38.783,48.858,-40.974C48.63,-23.451,72.744,2.021,72.744,19.809C72.744,33.182,70.019,42.549,70.019,42.549C70.019,42.549,66.799,52.375,57.047,60.551C45.617,69.194,35.376,79.061,1.742,79.061C-31.892,79.061,-73.388,56.923,-73.388,21.476Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-29" opacity="0" transform="translate(79.939,79.957) scale(1.05,1.0109)" style="animation: 1.5s linear infinite both Layer-29_o;">
+            <g id="Group-1-23" opacity="1">
+                <path id="Path-1-23" fill="url(#Gradient-0)" d="M-73.388,21.476C-73.35,4.989,-64.703,-13.477,-42.544,-28.835C-22.878,-43.895,-9.147,-51.314,-7.563,-75.434C3.317,-66.383,9.121,-51.492,14.798,-44.836C24.265,-33.673,30.535,-26.253,35.364,-22.625C35.364,-22.625,42.281,-35.981,51.477,-41.139C57.101,-23.68,72.744,3.835,72.744,19.809C72.744,31.793,70.019,42.549,70.019,42.549C70.019,42.549,66.799,52.375,57.047,60.551C45.617,69.194,35.376,79.061,1.742,79.061C-31.892,79.061,-73.461,56.923,-73.388,21.476Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-30" opacity="0" transform="translate(79.939,79.957) scale(1.05,1.0109)" style="animation: 1.5s linear infinite both Layer-30_o;">
+            <g id="Group-1-24" opacity="1">
+                <path id="Path-1-24" fill="url(#Gradient-0)" d="M-73.388,21.476C-73.312,4,-63.513,-10.921,-42.465,-27.598C-22.719,-44.801,-12.402,-47.77,-7.881,-71.807C4.195,-63.811,11.126,-51.735,17.258,-45.496C27.281,-35.239,34.345,-26.83,37.11,-22.213C37.11,-22.213,46.169,-33.178,54.096,-41.304C65.573,-23.91,72.744,5.649,72.744,19.809C72.744,30.403,70.019,42.549,70.019,42.549C70.019,42.549,66.799,52.375,57.047,60.551C45.617,69.194,35.376,79.061,1.742,79.061C-31.892,79.061,-73.533,56.923,-73.388,21.476Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-31" opacity="0" transform="translate(79.939,79.957) scale(1.05,1.0109)" style="animation: 1.5s linear infinite both Layer-31_o;">
+            <g id="Group-1-25" opacity="1">
+                <path id="Path-1-25" fill="url(#Gradient-0)" d="M-73.388,21.476C-73.274,3.011,-62.323,-8.366,-42.386,-26.362C-22.561,-45.709,-15.656,-44.224,-8.198,-68.179C5.073,-61.238,13.131,-51.977,19.718,-46.155C30.296,-36.805,38.154,-27.408,38.856,-21.801C38.856,-21.801,50.058,-30.376,56.715,-41.469C74.044,-24.14,72.744,7.462,72.744,19.809C72.744,29.014,70.019,42.549,70.019,42.549C70.019,42.549,66.799,52.375,57.047,60.551C45.617,69.194,35.376,79.061,1.742,79.061C-31.892,79.061,-73.606,56.923,-73.388,21.476Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-32" opacity="0" transform="translate(79.939,79.957) scale(1.05,1.0109)" style="animation: 1.5s linear infinite both Layer-32_o;">
+            <g id="Group-1-26" opacity="1">
+                <path id="Path-1-26" fill="url(#Gradient-0)" d="M-73.388,21.476C-73.312,1.692,-62.799,-9.849,-42.386,-26.362C-22.878,-43.73,-12.719,-46.038,-8.198,-70.075C5.073,-63.134,13.11,-54.62,19.242,-48.381C29.265,-38.124,37.043,-27.573,37.745,-21.966C37.745,-21.966,47.042,-33.315,58.699,-40.727C66.525,-21.355,70.42,8.287,72.744,19.809C74.514,28.452,70.019,42.549,70.019,42.549C70.019,42.549,66.799,52.375,57.047,60.551C45.617,69.194,35.376,79.061,1.742,79.061C-31.892,79.061,-73.533,56.923,-73.388,21.476Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-33" opacity="0" transform="translate(79.939,79.957) scale(1.05,1.0109)" style="animation: 1.5s linear infinite both Layer-33_o;">
+            <g id="Group-1-27" opacity="1">
+                <path id="Path-1-27" fill="url(#Gradient-0)" d="M-73.388,21.476C-73.35,0.373,-63.275,-11.333,-42.386,-26.362C-23.196,-41.752,-9.782,-47.851,-8.198,-71.971C5.073,-65.03,13.089,-57.263,18.766,-50.607C28.233,-39.443,35.932,-27.738,36.634,-22.131C36.634,-22.131,44.026,-36.255,60.683,-39.985C59.006,-18.57,68.097,9.111,72.744,19.809C76.283,27.891,70.019,42.549,70.019,42.549C70.019,42.549,66.799,52.375,57.047,60.551C45.617,69.194,35.376,79.061,1.742,79.061C-31.892,79.061,-73.461,56.923,-73.388,21.476Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-34" opacity="0" transform="translate(79.939,79.957) scale(1.05,1.0109)" style="animation: 1.5s linear infinite both Layer-34_o;">
+            <g id="Group-1-28" opacity="1">
+                <path id="Path-1-28" fill="url(#Gradient-0)" d="M-73.388,21.476C-73.388,-0.946,-63.751,-12.817,-42.386,-26.362C-23.513,-39.773,-6.846,-49.665,-8.198,-73.867C5.073,-66.926,13.068,-59.905,18.29,-52.833C27.202,-40.763,34.82,-27.903,35.522,-22.296C35.522,-22.296,41.01,-39.194,62.667,-39.243C51.487,-15.784,65.773,9.935,72.744,19.809C78.053,27.329,70.019,42.549,70.019,42.549C70.019,42.549,66.799,52.375,57.047,60.551C45.618,69.194,35.376,79.061,1.742,79.061C-31.892,79.061,-73.388,56.923,-73.388,21.476Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-35" opacity="0" transform="translate(79.939,79.957) scale(1.05,1.0109)" style="animation: 1.5s linear infinite both Layer-35_o;">
+            <g id="Group-1-29" opacity="1">
+                <path id="Path-1-29" fill="url(#Gradient-0)" d="M-73.388,21.476C-73.388,6.528,-69.941,-10.838,-38.576,-29.082C-23.052,-39.499,-5.339,-52.468,-7.881,-75.599C5.39,-68.658,14.085,-61.296,19.321,-54.234C29.502,-40.515,31.901,-28.306,32.745,-22.708C32.745,-22.708,41.011,-39.443,62.668,-39.491C50.079,-15.672,66.309,10.369,72.744,19.809C77.448,27.661,70.019,42.549,70.019,42.549C70.019,42.549,66.799,52.375,57.047,60.551C45.617,69.194,35.376,79.061,1.742,79.061C-31.892,79.061,-73.716,57.009,-73.388,21.476Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-36" opacity="0" transform="translate(79.939,79.957) scale(1.05,1.0109)" style="animation: 1.5s linear infinite both Layer-36_o;">
+            <g id="Group-1-30" opacity="1">
+                <path id="Path-1-30" fill="url(#Gradient-0)" d="M-73.388,21.476C-73.388,14.002,-76.132,-8.86,-34.767,-31.802C-22.591,-39.224,-3.83,-55.271,-7.563,-77.33C5.708,-70.389,15.103,-62.687,20.353,-55.635C31.804,-40.267,28.981,-28.709,29.967,-23.12C29.967,-23.12,41.011,-39.689,62.668,-39.738C48.67,-15.558,66.845,10.803,72.744,19.809C76.844,27.993,70.019,42.549,70.019,42.549C70.019,42.549,66.799,52.375,57.047,60.551C45.618,69.194,35.376,79.061,1.742,79.061C-31.892,79.061,-74.044,57.094,-73.388,21.476Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-37" opacity="0" transform="translate(79.939,79.957) scale(1.05,1.0109)" style="animation: 1.5s linear infinite both Layer-37_o;">
+            <g id="Group-1-31" opacity="1">
+                <path id="Path-1-31" fill="url(#Gradient-0)" d="M-73.388,21.476C-73.388,21.476,-82.322,-6.882,-30.957,-34.523C-22.129,-38.95,-2.323,-58.074,-7.246,-79.061C6.025,-72.12,16.121,-64.078,21.385,-57.037C34.106,-40.021,26.061,-29.112,27.189,-23.532C27.189,-23.532,41.011,-39.936,62.668,-39.985C47.261,-15.444,67.382,11.236,72.744,19.809C76.239,28.325,70.019,42.549,70.019,42.549C70.019,42.549,66.799,52.375,57.047,60.551C45.617,69.194,35.376,79.061,1.742,79.061C-31.892,79.061,-74.371,57.179,-73.388,21.476Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-3" opacity="1" transform="translate(81.635,104.707) scale(0.99,1)" style="animation: 1.5s linear infinite both Layer-3_o;">
+            <g id="Group-1-32" opacity="1">
+                <path id="Path-1-32" fill="url(#Gradient-1)" d="M26.104,-18.495C14.429,-24.878,9.95,-38.045,14.872,-54.386C5.111,-51.6,-27.041,-27.489,-35.791,-15.996C-40.417,-19.109,-49.431,-24.99,-54.68,-30.319C-61.646,-24.99,-64.692,-14.044,-55.532,6.741C-50.881,19.644,-55.784,31.855,-55.784,31.855C-50.881,38.799,-38.824,54.386,-3.813,54.386C31.198,54.386,55.556,35.549,61.24,19.821C59.271,1.808,32.804,-13.755,26.104,-18.495Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-38" opacity="0" transform="translate(81.635,104.707) scale(0.99,1)" style="animation: 1.5s linear infinite both Layer-38_o;">
+            <g id="Group-1-33" opacity="1">
+                <path id="Path-1-33" fill="url(#Gradient-1)" d="M19.784,-27.091C12.033,-32.863,11.767,-42.577,14.872,-54.386C-0.503,-51.358,-29.081,-27.408,-34.359,-16.066C-38.943,-18.544,-49.431,-24.99,-54.68,-30.319C-60.376,-24.384,-61.504,-13.971,-54.928,4.287C-51.558,17.294,-57.992,27.869,-57.992,27.869C-53.613,36.818,-38.824,54.386,-3.813,54.386C31.198,54.386,56.068,34.103,60.091,17.999C60.115,-2.632,27.615,-19.582,19.784,-27.091Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-39" opacity="0" transform="translate(81.635,104.707) scale(0.99,1)" style="animation: 1.5s linear infinite both Layer-39_o;">
+            <g id="Group-1-34" opacity="1">
+                <path id="Path-1-34" fill="url(#Gradient-1)" d="M21.626,-27.222C14.584,-32.646,10.419,-41.104,13.216,-54.373C-8.174,-48.888,-26.99,-26.944,-32.356,-16.1C-37.219,-18.44,-47.931,-25.725,-54.312,-30.139C-57.182,-22.853,-59.33,-13.309,-55.014,2.502C-54.566,15.919,-59.464,25.876,-59.464,25.876C-55.347,35.827,-38.824,54.386,-3.813,54.386C31.198,54.386,53.361,35.667,58.067,21.02C58.971,1.093,31.99,-17.925,21.626,-27.222Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-40" opacity="0" transform="translate(81.635,104.707) scale(0.99,1)" style="animation: 1.5s linear infinite both Layer-40_o;">
+            <g id="Group-1-35" opacity="1">
+                <path id="Path-1-35" fill="url(#Gradient-1)" d="M23.469,-27.354C17.137,-32.431,9.072,-39.631,11.56,-54.361C-15.844,-46.42,-24.898,-26.481,-30.352,-16.135C-35.494,-18.337,-46.43,-26.459,-53.944,-29.959C-53.989,-21.322,-57.156,-12.649,-55.1,0.716C-57.574,14.542,-60.936,23.883,-60.936,23.883C-57.081,34.836,-38.824,54.386,-3.813,54.386C31.198,54.386,50.655,37.232,56.043,24.041C57.827,4.818,36.366,-16.269,23.469,-27.354Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-41" opacity="0" transform="translate(81.635,104.707) scale(0.99,1)" style="animation: 1.5s linear infinite both Layer-41_o;">
+            <g id="Group-1-36" opacity="1">
+                <path id="Path-1-36" fill="url(#Gradient-1)" d="M25.311,-27.485C19.689,-32.214,7.724,-38.158,9.904,-54.348C-23.514,-43.95,-22.807,-26.017,-28.348,-16.169C-33.768,-18.232,-44.93,-27.194,-53.576,-29.779C-50.795,-19.791,-54.982,-11.987,-55.186,-1.069C-60.582,13.166,-62.408,21.89,-62.408,21.89C-58.815,33.845,-38.824,54.386,-3.813,54.386C31.198,54.386,47.948,38.797,54.019,27.062C56.684,8.543,40.74,-14.613,25.311,-27.485Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-42" opacity="0" transform="translate(81.635,104.707) scale(0.99,1)" style="animation: 1.5s linear infinite both Layer-42_o;">
+            <g id="Group-1-37" opacity="1">
+                <path id="Path-1-37" fill="url(#Gradient-1)" d="M27.153,-27.617C22.24,-31.999,6.377,-36.685,8.248,-54.336C-31.185,-41.482,-20.715,-25.553,-26.344,-16.204C-32.043,-18.129,-43.43,-27.93,-53.208,-29.6C-47.602,-18.261,-52.809,-11.327,-55.272,-2.855C-63.59,11.789,-63.88,19.897,-63.88,19.897C-60.549,32.854,-38.824,54.386,-3.813,54.386C31.198,54.386,45.242,40.361,51.995,30.083C55.54,12.268,45.115,-12.957,27.153,-27.617Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-43" opacity="0" transform="translate(81.635,104.707) scale(0.99,1)" style="animation: 1.5s linear infinite both Layer-43_o;">
+            <g id="Group-1-38" opacity="1">
+                <path id="Path-1-38" fill="url(#Gradient-1)" d="M26.658,-27.159C19.24,-31.457,1.865,-29.206,4.936,-54.31C-40.912,-36.785,-14.49,-24.707,-23.768,-16.204C-30.066,-18.487,-40.429,-29.399,-52.472,-29.24C-42.485,-15.806,-51.651,-10.079,-56.049,-3.973C-68.93,11.385,-64.616,19.897,-64.616,19.897C-61.285,32.854,-38.824,54.386,-3.813,54.386C31.198,54.386,39.318,44.937,49.096,37.947C52.408,24.157,50.365,-12.207,26.658,-27.159Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-44" opacity="0" transform="translate(81.635,104.707) scale(0.99,1)" style="animation: 1.5s linear infinite both Layer-44_o;">
+            <g id="Group-1-39" opacity="1">
+                <path id="Path-1-39" fill="url(#Gradient-1)" d="M29.513,-25.184C20.718,-32.17,3.532,-39.54,-0.084,-55.563C-30.32,-37.926,-14.49,-24.707,-23.768,-16.204C-30.066,-18.487,-39.01,-27.276,-49.896,-29.505C-43.392,-18.301,-51.84,-12.043,-56.238,-5.937C-69.119,9.421,-64.616,19.897,-64.616,19.897C-61.285,32.854,-38.824,54.386,-3.813,54.386C31.198,54.386,42.636,43.313,52.04,34.34C51.283,18.029,48.491,-11.206,29.513,-25.184Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-45" opacity="0" transform="translate(81.635,104.707) scale(0.99,1)" style="animation: 1.5s linear infinite both Layer-45_o;">
+            <g id="Group-1-40" opacity="1">
+                <path id="Path-1-40" fill="url(#Gradient-1)" d="M32.367,-23.21C22.195,-32.885,5.199,-49.873,-5.104,-56.816C-19.727,-39.066,-14.49,-24.707,-23.768,-16.204C-30.066,-18.487,-37.591,-25.154,-47.32,-29.77C-44.299,-20.797,-52.03,-14.008,-56.428,-7.902C-69.309,7.456,-64.616,19.897,-64.616,19.897C-61.285,32.854,-38.824,54.386,-3.813,54.386C31.198,54.386,45.953,41.688,54.984,30.732C50.158,11.9,46.615,-10.207,32.367,-23.21Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-46" opacity="0" transform="translate(81.635,104.707) scale(0.99,1)" style="animation: 1.5s linear infinite both Layer-46_o;">
+            <g id="Group-1-41" opacity="1">
+                <path id="Path-1-41" fill="url(#Gradient-1)" d="M35.222,-21.235C23.672,-33.598,6.865,-60.207,-10.124,-58.069C-9.135,-40.207,-14.49,-24.707,-23.768,-16.204C-30.066,-18.487,-36.172,-23.032,-44.744,-30.035C-45.206,-23.292,-52.219,-15.973,-56.617,-9.867C-69.498,5.491,-64.616,19.897,-64.616,19.897C-61.285,32.854,-38.824,54.386,-3.813,54.386C31.198,54.386,49.271,40.062,57.928,27.124C49.033,5.772,44.74,-9.207,35.222,-21.235Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-47" opacity="0" transform="translate(81.635,104.707) scale(0.99,1)" style="animation: 1.5s linear infinite both Layer-47_o;">
+            <g id="Group-1-42" opacity="1">
+                <path id="Path-1-42" fill="url(#Gradient-1)" d="M32.895,-20.492C23.277,-32.633,8.777,-55.21,-3.083,-56.406C-5.305,-45.504,-15.664,-23.702,-27.776,-16.135C-33.516,-18.694,-36.872,-23.59,-44.336,-30.035C-46.966,-23.763,-58.419,-14.274,-59.253,-4.25C-67.421,6.978,-61.264,18.295,-61.264,18.295C-59.008,32.855,-38.824,54.386,-3.813,54.386C31.198,54.386,54.321,38.564,57.968,22.11C47.638,5.478,41.04,-9.56,32.895,-20.492Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-48" opacity="0" transform="translate(81.635,104.707) scale(0.99,1)" style="animation: 1.5s linear infinite both Layer-48_o;">
+            <g id="Group-1-43" opacity="1">
+                <path id="Path-1-43" fill="url(#Gradient-1)" d="M30.568,-19.748C22.882,-31.667,10.688,-50.213,3.958,-54.743C-1.476,-50.802,-16.836,-22.697,-31.783,-16.066C-36.966,-18.902,-37.57,-24.148,-43.927,-30.035C-48.725,-24.235,-64.621,-12.576,-61.89,1.366C-65.344,8.465,-57.911,16.693,-57.911,16.693C-56.73,32.855,-38.824,54.386,-3.813,54.386C31.198,54.386,59.373,37.065,58.009,17.096C46.244,5.184,37.339,-9.913,30.568,-19.748Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-49" opacity="0" transform="translate(81.635,104.707) scale(0.99,1)" style="animation: 1.5s linear infinite both Layer-49_o;">
+            <g id="Group-1-44" opacity="1">
+                <path id="Path-1-44" fill="url(#Gradient-1)" d="M28.241,-19.005C22.487,-30.702,12.599,-45.216,10.999,-53.08C2.354,-56.1,-18.009,-21.691,-35.791,-15.996C-40.417,-19.109,-38.27,-24.706,-43.519,-30.035C-50.485,-24.706,-70.821,-10.877,-64.526,6.983C-63.267,9.953,-54.559,15.091,-54.559,15.091C-54.453,32.855,-38.824,54.386,-3.813,54.386C31.198,54.386,64.423,35.567,58.049,12.082C44.849,4.891,33.638,-10.267,28.241,-19.005Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-50" opacity="0" transform="translate(81.635,104.707) scale(0.99,1)" style="animation: 1.5s linear infinite both Layer-50_o;">
+            <g id="Group-1-45" opacity="1">
+                <path id="Path-1-45" fill="url(#Gradient-1)" d="M23.417,-23.684C19.364,-34.454,13.89,-45.557,12.29,-53.421C3.645,-56.441,-20.654,-24.023,-35.791,-15.996C-40.417,-19.109,-41.99,-24.706,-47.239,-30.035C-54.205,-24.706,-68.854,-11.089,-61.515,7.044C-59.194,12.485,-54.967,20.773,-54.967,20.773C-54.658,34.504,-38.824,54.386,-3.813,54.386C31.198,54.386,62.18,35.929,59.113,14.756C49.765,3.163,27.539,-14.005,23.417,-23.684Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-51" opacity="0" transform="translate(81.635,104.707) scale(0.99,1)" style="animation: 1.5s linear infinite both Layer-51_o;">
+            <g id="Group-1-46" opacity="1">
+                <path id="Path-1-46" fill="url(#Gradient-1)" d="M18.592,-28.364C16.24,-38.207,15.181,-45.898,13.581,-53.762C4.936,-56.782,-23.299,-26.355,-35.791,-15.996C-40.417,-19.109,-45.711,-24.706,-50.96,-30.035C-57.926,-24.706,-66.885,-11.301,-58.503,7.106C-55.119,15.018,-55.376,26.456,-55.376,26.456C-54.863,36.154,-38.824,54.386,-3.813,54.386C31.198,54.386,59.935,36.291,60.176,17.43C54.68,1.435,21.439,-17.743,18.592,-28.364Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-52" opacity="0" transform="translate(81.635,104.707) scale(0.99,1)" style="animation: 1.5s linear infinite both Layer-52_o;">
+            <g id="Group-1-47" opacity="1">
+                <path id="Path-1-47" fill="url(#Gradient-1)" d="M13.768,-33.044C11.865,-39.207,10.99,-46.207,14.872,-54.103C6.227,-57.123,-25.945,-28.687,-35.791,-15.996C-40.417,-19.109,-49.431,-24.706,-54.68,-30.035C-61.646,-24.706,-64.917,-11.512,-55.492,7.168C-51.045,17.552,-55.784,32.138,-55.784,32.138C-55.067,37.804,-38.824,54.386,-3.813,54.386C31.198,54.386,57.692,36.654,61.24,20.105C59.597,-0.293,15.34,-21.481,13.768,-33.044Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-53" opacity="0" transform="translate(81.635,104.707) scale(0.99,1)" style="animation: 1.5s linear infinite both Layer-53_o;">
+            <g id="Group-1-48" opacity="1">
+                <path id="Path-1-48" fill="url(#Gradient-1)" d="M14.227,-30.507C11.199,-36.04,9.615,-47.54,14.872,-54.103C6.227,-57.123,-27.155,-31.329,-34.359,-16.116C-38.985,-19.229,-48.648,-23.721,-54.68,-30.035C-60.39,-24.175,-61.714,-12.76,-54.901,4.522C-51.266,14.873,-57.992,28.007,-57.992,28.007C-57.514,35.897,-38.824,54.386,-3.813,54.386C31.198,54.386,57.771,35.35,60.136,17.969C59.04,-5.134,19.182,-19.473,14.227,-30.507Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-54" opacity="0" transform="translate(81.635,104.707) scale(0.99,1)" style="animation: 1.5s linear infinite both Layer-54_o;">
+            <g id="Group-1-49" opacity="1">
+                <path id="Path-1-49" fill="url(#Gradient-1)" d="M14.685,-27.97C10.532,-32.873,8.24,-48.874,14.872,-54.103C6.227,-57.123,-28.367,-33.971,-32.928,-16.235C-37.554,-19.348,-47.865,-22.736,-54.68,-30.035C-59.135,-23.643,-58.511,-14.009,-54.309,1.876C-51.486,12.194,-60.2,23.877,-60.2,23.877C-59.961,33.991,-38.824,54.386,-3.813,54.386C31.198,54.386,57.849,34.047,59.032,15.834C58.484,-9.974,23.023,-17.465,14.685,-27.97Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-55" opacity="0" transform="translate(81.635,104.707) scale(0.99,1)" style="animation: 1.5s linear infinite both Layer-55_o;">
+            <g id="Group-1-50" opacity="1">
+                <path id="Path-1-50" fill="url(#Gradient-1)" d="M15.144,-25.433C9.865,-29.707,6.865,-50.207,14.872,-54.103C6.227,-57.123,-29.578,-36.614,-31.496,-16.355C-36.122,-19.468,-47.082,-21.751,-54.68,-30.035C-57.879,-23.112,-55.308,-15.257,-53.718,-0.77C-51.706,9.515,-62.408,19.746,-62.408,19.746C-62.408,32.084,-38.824,54.386,-3.813,54.386C31.198,54.386,57.928,32.744,57.928,13.698C57.928,-14.816,26.865,-15.457,15.144,-25.433Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-56" opacity="0" transform="translate(81.635,104.707) scale(0.99,1)" style="animation: 1.5s linear infinite both Layer-56_o;">
+            <g id="Group-1-51" opacity="1">
+                <path id="Path-1-51" fill="url(#Gradient-1)" d="M19.065,-24.392C10.865,-29.873,4.956,-42.868,11.56,-54.222C-7.965,-53.038,-23.523,-32.045,-28.92,-16.355C-34.381,-18.798,-45.266,-24.063,-53.944,-29.821C-54.389,-22.803,-52.594,-15.337,-54.761,-0.98C-55.34,8.1,-63.155,17.196,-63.144,19.746C-63.144,31.093,-38.824,54.386,-3.813,54.386C31.198,54.386,52.495,36.307,54.984,21.731C57.074,-2.113,37.532,-13.207,19.065,-24.392Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-57" opacity="0" transform="translate(81.635,104.707) scale(0.99,1)" style="animation: 1.5s linear infinite both Layer-57_o;">
+            <g id="Group-1-52" opacity="1">
+                <path id="Path-1-52" fill="url(#Gradient-1)" d="M22.987,-23.351C11.866,-30.04,3.047,-35.53,8.248,-54.342C-22.157,-48.955,-17.468,-27.476,-26.344,-16.355C-32.64,-18.128,-43.449,-26.375,-53.208,-29.606C-50.899,-22.493,-49.881,-15.417,-55.804,-1.19C-58.974,6.684,-63.901,14.647,-63.88,19.746C-63.88,30.102,-38.824,54.386,-3.813,54.386C31.198,54.386,47.062,39.871,52.04,29.764C56.22,10.591,48.199,-10.957,22.987,-23.351Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-58" opacity="0" transform="translate(81.635,104.707) scale(0.99,1)" style="animation: 1.5s linear infinite both Layer-58_o;">
+            <g id="Group-1-53" opacity="1">
+                <path id="Path-1-53" fill="url(#Gradient-1)" d="M26.908,-22.31C12.865,-30.207,1.138,-28.191,4.936,-54.461C-36.348,-44.87,-11.412,-22.907,-23.768,-16.355C-30.899,-17.458,-41.633,-28.687,-52.472,-29.391C-47.409,-22.182,-47.167,-15.497,-56.847,-1.399C-62.608,5.269,-64.648,12.097,-64.616,19.746C-64.616,29.111,-38.824,54.386,-3.813,54.386C31.198,54.386,41.629,43.433,49.096,37.796C55.365,23.293,58.865,-8.707,26.908,-22.31Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-59" opacity="0" transform="translate(81.635,104.707) scale(0.99,1)" style="animation: 1.5s linear infinite both Layer-59_o;">
+            <g id="Group-1-54" opacity="1">
+                <path id="Path-1-54" fill="url(#Gradient-1)" d="M27.346,-21.988C14.188,-29.768,1.252,-33.199,0.616,-52.891C-23.944,-43.733,-12.148,-22.907,-24.504,-16.355C-31.635,-17.458,-39.412,-27.769,-49.896,-29.725C-44.833,-22.516,-56.294,-11.564,-58.701,5.649C-60.928,10.941,-59.717,16.148,-59.685,23.797C-59.447,31.441,-38.824,54.386,-3.813,54.386C31.198,54.386,43.274,41.785,50.741,36.148C54.127,21.529,52.615,-9.082,27.346,-21.988Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-60" opacity="0" transform="translate(81.635,104.707) scale(0.99,1)" style="animation: 1.5s linear infinite both Layer-60_o;">
+            <g id="Group-1-55" opacity="1">
+                <path id="Path-1-55" fill="url(#Gradient-1)" d="M27.784,-21.666C15.51,-29.329,1.366,-38.206,-3.704,-51.32C-11.539,-42.594,-12.884,-22.907,-25.24,-16.355C-32.371,-17.458,-37.192,-26.852,-47.32,-30.06C-42.257,-22.851,-65.42,-7.629,-60.554,12.698C-59.247,16.615,-54.785,20.199,-54.753,27.848C-54.277,33.771,-38.824,54.386,-3.813,54.386C31.198,54.386,44.919,40.136,52.386,34.499C52.889,19.764,46.365,-9.457,27.784,-21.666Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-61" opacity="0" transform="translate(81.635,104.707) scale(0.99,1)" style="animation: 1.5s linear infinite both Layer-61_o;">
+            <g id="Group-1-56" opacity="1">
+                <path id="Path-1-56" fill="url(#Gradient-1)" d="M33.472,-21.344C22.115,-32.457,6.366,-50.457,-8.024,-49.75C0.866,-41.457,-13.62,-22.907,-25.976,-16.355C-33.107,-17.458,-34.972,-25.935,-44.744,-30.394C-39.681,-23.185,-74.547,-3.696,-62.408,19.746C-57.566,22.287,-49.854,24.25,-49.822,31.899C-49.108,36.101,-38.824,54.386,-3.813,54.386C31.198,54.386,46.564,38.487,54.031,32.85C51.651,18,41.615,-11.957,33.472,-21.344Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-62" opacity="0" transform="translate(81.635,104.707) scale(0.99,1)" style="animation: 1.5s linear infinite both Layer-62_o;">
+            <g id="Group-1-57" opacity="1">
+                <path id="Path-1-57" fill="url(#Gradient-1)" d="M31.688,-20.683C23.637,-32.191,9.687,-48.888,-1.864,-51.32C-2.273,-42.741,-14.499,-22.452,-29.288,-16.355C-36.419,-17.458,-35.779,-25.201,-44.744,-30.394C-43.102,-23.221,-76.909,-5.164,-59.832,18.075C-56.497,22.119,-51.091,24.7,-49.822,31.899C-49.108,36.101,-38.824,54.386,-3.813,54.386C31.198,54.386,50.626,38.297,55.33,25.808C50.689,13.909,38.178,-11.405,31.688,-20.683Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-63" opacity="0" transform="translate(81.635,104.707) scale(0.99,1)" style="animation: 1.5s linear infinite both Layer-63_o;">
+            <g id="Group-1-58" opacity="1">
+                <path id="Path-1-58" fill="url(#Gradient-1)" d="M29.904,-20.023C25.158,-31.925,13.009,-47.32,4.296,-52.891C-5.412,-44.026,-15.378,-21.997,-32.6,-16.355C-39.731,-17.458,-36.587,-24.467,-44.744,-30.394C-46.523,-23.257,-79.272,-6.632,-57.256,16.403C-55.428,21.949,-52.329,25.149,-49.822,31.899C-49.108,36.101,-38.824,54.386,-3.813,54.386C31.198,54.386,54.688,38.108,56.629,18.766C49.726,9.818,34.741,-10.853,29.904,-20.023Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-64" opacity="0" transform="translate(81.635,104.707) scale(0.99,1)" style="animation: 1.5s linear infinite both Layer-64_o;">
+            <g id="Group-1-59" opacity="1">
+                <path id="Path-1-59" fill="url(#Gradient-1)" d="M28.12,-19.363C26.679,-31.659,16.331,-45.751,10.456,-54.461C-8.55,-45.311,-16.257,-21.542,-35.912,-16.355C-43.043,-17.458,-37.394,-23.733,-44.744,-30.394C-49.945,-23.292,-81.635,-8.1,-54.68,14.732C-54.359,21.781,-53.566,25.599,-49.822,31.899C-49.108,36.101,-38.824,54.386,-3.813,54.386C31.198,54.386,58.75,37.919,57.928,11.724C48.764,5.727,31.303,-10.301,28.12,-19.363Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-65" opacity="0" transform="translate(81.635,104.707) scale(0.99,1)" style="animation: 1.5s linear infinite both Layer-65_o;">
+            <g id="Group-1-60" opacity="1">
+                <path id="Path-1-60" fill="url(#Gradient-1)" d="M27.448,-19.074C22.596,-29.399,14.204,-43.182,11.928,-54.436C-3.997,-47.407,-19.852,-23.524,-35.872,-16.235C-42.168,-18.008,-41.406,-24.152,-48.056,-30.369C-53.845,-23.858,-75.987,-10.082,-54.964,12.068C-53.199,21.068,-54.305,27.684,-51.809,31.884C-49.699,37,-38.824,54.386,-3.813,54.386C31.198,54.386,57.685,37.129,59.032,14.423C52.266,4.421,31.803,-11.453,27.448,-19.074Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-66" opacity="0" transform="translate(81.635,104.707) scale(0.99,1)" style="animation: 1.5s linear infinite both Layer-66_o;">
+            <g id="Group-1-61" opacity="1">
+                <path id="Path-1-61" fill="url(#Gradient-1)" d="M26.776,-18.784C18.512,-27.138,12.077,-40.614,13.4,-54.411C0.557,-49.504,-23.446,-25.507,-35.831,-16.116C-41.292,-18.559,-45.419,-24.571,-51.368,-30.344C-57.745,-24.424,-70.339,-12.063,-55.248,9.405C-52.04,20.356,-55.045,29.77,-53.797,31.87C-50.29,37.9,-38.824,54.386,-3.813,54.386C31.198,54.386,56.621,36.339,60.136,17.122C55.769,3.114,32.304,-12.604,26.776,-18.784Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-67" opacity="0" transform="translate(81.635,104.707) scale(0.99,1)" style="animation: 1.5s linear infinite both Layer-67_o;">
+            <g id="Group-1-62" opacity="1">
+                <path id="Path-1-62" fill="url(#Gradient-1)" d="M26.104,-18.495C14.429,-24.878,9.95,-38.045,14.872,-54.386C5.111,-51.6,-27.041,-27.489,-35.791,-15.996C-40.417,-19.109,-49.431,-24.99,-54.68,-30.319C-61.646,-24.99,-64.692,-14.044,-55.532,6.741C-50.881,19.644,-55.784,31.855,-55.784,31.855C-50.881,38.799,-38.824,54.386,-3.813,54.386C31.198,54.386,55.556,35.549,61.24,19.821C59.271,1.808,32.804,-13.755,26.104,-18.495Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-5" opacity="1" transform="translate(79.179,156.71) scale(1.1718,1.0137) translate(0,-20.43)" style="animation: 1.5s linear infinite both Layer-5_t, 1.5s linear infinite both Layer-5_o;">
+            <g id="Group-1-63" opacity="1">
+                <path id="Path-1-63" fill="#ffffab" d="M0,-22.137C-15.932,-7.6,-18.638,3.924,-18.638,8.265C-18.638,15.926,-10.293,22.137,0,22.137C10.294,22.137,18.638,15.926,18.638,8.265C18.638,3.75,16.019,-8.013,0,-22.137Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+    </g>
+    <g id="fire-2" opacity="0" transform="translate(80,80) translate(-80,-80)" style="animation: 1.5s linear infinite both fire-2_o;">
+        <g id="Layer-7-2" opacity="0" transform="translate(79.939,79.957) scale(1.05,1.0109)" style="animation: 1.5s linear infinite both Layer-7-2_o;">
+            <g id="Group-1-64" opacity="1">
+                <path id="Path-1-64" fill="url(#Gradient-0)" d="M-73.388,21.476C-73.388,21.476,-82.322,-6.882,-30.957,-34.523C-22.129,-38.95,-2.323,-58.074,-7.246,-79.061C6.025,-72.12,16.121,-64.078,21.385,-57.037C34.106,-40.021,26.061,-29.112,27.189,-23.532C27.189,-23.532,41.011,-39.936,62.668,-39.985C47.261,-15.444,67.382,11.236,72.744,19.809C76.239,28.325,70.019,42.549,70.019,42.549C70.019,42.549,66.799,52.375,57.047,60.551C45.617,69.194,35.376,79.061,1.742,79.061C-31.892,79.061,-74.371,57.179,-73.388,21.476Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-8-2" opacity="0" transform="translate(79.939,79.957) scale(1.05,1.0109)" style="animation: 1.5s linear infinite both Layer-8-2_o;">
+            <g id="Group-1-65" opacity="1">
+                <path id="Path-1-65" fill="url(#Gradient-0)" d="M-73.388,21.476C-73.388,21.476,-80.894,-8.778,-29.529,-36.419C-20.701,-40.846,-2.323,-58.074,-7.246,-79.061C6.025,-72.12,19.309,-62.547,22.258,-54.976C29.186,-35.651,25.585,-28.535,26.713,-22.955C26.713,-22.955,39.106,-37.656,58.223,-40.232C46.447,-17.783,67.382,11.236,72.744,19.809C76.239,28.325,70.019,42.549,70.019,42.549C70.019,42.549,66.799,52.375,57.047,60.551C45.617,69.194,35.376,79.061,1.742,79.061C-31.892,79.061,-74.371,57.179,-73.388,21.476Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-9-2" opacity="0" transform="translate(79.939,79.957) scale(1.05,1.0109)" style="animation: 1.5s linear infinite both Layer-9-2_o;">
+            <g id="Group-1-66" opacity="1">
+                <path id="Path-1-66" fill="url(#Gradient-0)" d="M-73.388,21.476C-73.388,21.476,-79.465,-10.674,-28.1,-38.315C-19.272,-42.742,-2.323,-58.074,-7.246,-79.061C6.025,-72.12,22.496,-61.015,23.131,-52.915C24.265,-31.282,25.109,-27.958,26.237,-22.378C26.237,-22.378,37.202,-35.376,53.779,-40.48C45.634,-20.123,67.382,11.236,72.744,19.809C76.239,28.325,70.019,42.549,70.019,42.549C70.019,42.549,66.799,52.375,57.047,60.551C45.617,69.194,35.376,79.061,1.742,79.061C-31.892,79.061,-74.371,57.179,-73.388,21.476Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-10-2" opacity="0" transform="translate(79.939,79.957) scale(1.05,1.0109)" style="animation: 1.5s linear infinite both Layer-10-2_o;">
+            <g id="Group-1-67" opacity="1">
+                <path id="Path-1-67" fill="url(#Gradient-0)" d="M-73.388,21.476C-73.388,21.476,-78.036,-12.57,-26.671,-40.211C-17.843,-44.638,-2.323,-58.074,-7.246,-79.061C6.025,-72.12,25.684,-59.483,24.004,-50.854C19.344,-26.913,24.633,-27.381,25.761,-21.801C25.761,-21.801,35.296,-33.096,49.334,-40.727C44.82,-22.462,67.382,11.236,72.744,19.809C76.239,28.325,70.019,42.549,70.019,42.549C70.019,42.549,66.799,52.375,57.047,60.551C45.617,69.194,35.376,79.061,1.742,79.061C-31.892,79.061,-74.371,57.179,-73.388,21.476Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-11-2" opacity="0" transform="translate(79.939,79.957) scale(1.05,1.0109)" style="animation: 1.5s linear infinite both Layer-11-2_o;">
+            <g id="Group-1-68" opacity="1">
+                <path id="Path-1-68" fill="url(#Gradient-0)" d="M-73.388,21.476C-73.388,18.536,-76.132,-11.993,-30.402,-38.068C-21.638,-43.264,-2.323,-58.074,-7.246,-79.061C6.258,-71.56,21.439,-58.899,21.226,-50.36C19.962,-28.736,26.907,-26.143,28.618,-21.966C28.618,-21.966,36.566,-33.261,49.096,-40.645C51.328,-20.813,69.068,8.989,72.744,19.809C75.074,29.12,70.019,42.549,70.019,42.549C70.019,42.549,66.799,52.375,57.047,60.551C45.617,69.194,35.376,79.061,1.742,79.061C-31.892,79.061,-74.044,57.094,-73.388,21.476Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-12-2" opacity="0" transform="translate(79.939,79.957) scale(1.05,1.0109)" style="animation: 1.5s linear infinite both Layer-12-2_o;">
+            <g id="Group-1-69" opacity="1">
+                <path id="Path-1-69" fill="url(#Gradient-0)" d="M-73.388,21.476C-73.388,15.596,-74.228,-11.415,-34.132,-35.924C-25.433,-41.889,-2.323,-58.074,-7.246,-79.061C6.492,-70.999,17.194,-58.315,18.448,-49.865C20.581,-30.559,29.181,-24.905,31.475,-22.131C31.475,-22.131,37.836,-33.425,48.858,-40.562C57.836,-19.164,70.754,6.742,72.744,19.809C73.909,29.914,70.019,42.549,70.019,42.549C70.019,42.549,66.799,52.375,57.047,60.551C45.617,69.194,35.376,79.061,1.742,79.061C-31.892,79.061,-73.716,57.009,-73.388,21.476Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-13-2" opacity="0" transform="translate(79.939,79.957) scale(1.05,1.0109)" style="animation: 1.5s linear infinite both Layer-13-2_o;">
+            <g id="Group-1-70" opacity="1">
+                <path id="Path-1-70" fill="url(#Gradient-0)" d="M-73.388,21.476C-73.388,12.656,-72.323,-10.839,-37.862,-33.781C-29.227,-40.515,-2.323,-58.074,-7.246,-79.061C6.725,-70.439,12.95,-57.73,15.671,-49.37C21.2,-32.381,31.455,-23.667,34.332,-22.296C34.332,-22.296,39.106,-33.591,48.62,-40.48C64.344,-17.516,72.44,4.495,72.744,19.809C72.744,30.709,70.019,42.549,70.019,42.549C70.019,42.549,66.799,52.375,57.047,60.551C45.617,69.194,35.376,79.061,1.742,79.061C-31.892,79.061,-73.388,56.923,-73.388,21.476Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-14-2" opacity="0" transform="translate(79.939,79.957) scale(1.05,1.0109)" style="animation: 1.5s linear infinite both Layer-14-2_o;">
+            <g id="Group-1-71" opacity="1">
+                <path id="Path-1-71" fill="url(#Gradient-0)" d="M-73.388,21.476C-73.388,12.656,-73.434,-8.448,-38.973,-31.39C-30.338,-38.124,-4.148,-56.013,-8.198,-76.835C5.54,-68.773,13.456,-56.635,17.02,-48.711C23.518,-33.609,34.482,-22.688,36.634,-19.905C36.634,-19.905,44.186,-31.694,51.636,-40.15C67.979,-18.98,72.541,6.308,72.744,19.809C72.744,30.379,70.019,42.549,70.019,42.549C70.019,42.549,66.799,52.375,57.047,60.551C45.617,69.194,35.376,79.061,1.742,79.061C-31.892,79.061,-73.388,56.923,-73.388,21.476Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-15-2" opacity="0" transform="translate(79.939,79.957) scale(1.05,1.0109)" style="animation: 1.5s linear infinite both Layer-15-2_o;">
+            <g id="Group-1-72" opacity="1">
+                <path id="Path-1-72" fill="url(#Gradient-0)" d="M-73.388,21.476C-73.388,12.656,-74.545,-6.058,-40.084,-29C-31.449,-35.734,-5.974,-53.952,-9.151,-74.609C4.353,-67.108,13.962,-55.538,18.369,-48.051C25.835,-34.836,37.508,-21.71,38.935,-17.515C38.935,-17.515,49.265,-29.798,54.652,-39.82C71.614,-20.445,72.643,8.122,72.744,19.809C72.744,30.049,70.019,42.549,70.019,42.549C70.019,42.549,66.799,52.375,57.047,60.551C45.617,69.194,35.376,79.061,1.742,79.061C-31.892,79.061,-73.388,56.923,-73.388,21.476Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-16-2" opacity="0" transform="translate(79.939,79.957) scale(1.05,1.0109)" style="animation: 1.5s linear infinite both Layer-16-2_o;">
+            <g id="Group-1-73" opacity="1">
+                <path id="Path-1-73" fill="url(#Gradient-0)" d="M-73.388,21.476C-73.388,12.656,-75.656,-3.667,-41.195,-26.609C-32.56,-33.343,-7.799,-51.891,-10.103,-72.384C3.168,-65.443,14.467,-54.443,19.718,-47.392C28.153,-36.064,40.535,-20.731,41.237,-15.124C41.237,-15.124,54.345,-27.903,57.668,-39.491C75.249,-21.91,72.744,9.935,72.744,19.809C72.744,29.72,70.019,42.549,70.019,42.549C70.019,42.549,66.799,52.375,57.047,60.551C45.617,69.194,35.376,79.061,1.742,79.061C-31.892,79.061,-73.388,56.923,-73.388,21.476Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-17-2" opacity="0" transform="translate(79.939,79.957) scale(1.05,1.0109)" style="animation: 1.5s linear infinite both Layer-17-2_o;">
+            <g id="Group-1-74" opacity="1">
+                <path id="Path-1-74" fill="url(#Gradient-0)" d="M-73.388,21.476C-73.388,12.656,-74.307,-6.387,-40.64,-27.433C-31.212,-33.59,-9.545,-48.264,-9.23,-72.219C4.041,-65.278,13.449,-56.305,18.845,-49.37C28.233,-37.382,38.868,-23.039,39.57,-17.432C39.57,-17.432,53.392,-28.644,59.334,-39.655C73.915,-21.764,72.744,9.523,72.744,19.809C72.744,30.956,70.019,42.549,70.019,42.549C70.019,42.549,66.799,52.375,57.047,60.551C45.617,69.194,35.376,79.061,1.742,79.061C-31.892,79.061,-73.388,56.923,-73.388,21.476Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-18-2" opacity="0" transform="translate(79.939,79.957) scale(1.05,1.0109)" style="animation: 1.5s linear infinite both Layer-18-2_o;">
+            <g id="Group-1-75" opacity="1">
+                <path id="Path-1-75" fill="url(#Gradient-0)" d="M-73.388,21.476C-73.388,12.656,-72.957,-9.108,-40.084,-28.258C-29.862,-33.838,-11.291,-44.637,-8.357,-72.054C4.914,-65.113,12.43,-58.168,17.972,-51.349C28.312,-38.702,37.201,-25.347,37.903,-19.74C37.903,-19.74,52.44,-29.386,61.001,-39.82C72.582,-21.618,72.744,9.111,72.744,19.809C72.744,32.193,70.019,42.549,70.019,42.549C70.019,42.549,66.799,52.375,57.047,60.551C45.617,69.194,35.376,79.061,1.742,79.061C-31.892,79.061,-73.388,56.923,-73.388,21.476Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-19-2" opacity="0" transform="translate(79.939,79.957) scale(1.05,1.0109)" style="animation: 1.5s linear infinite both Layer-19-2_o;">
+            <g id="Group-1-76" opacity="1">
+                <path id="Path-1-76" fill="url(#Gradient-0)" d="M-73.388,21.476C-73.388,12.656,-71.609,-11.828,-39.529,-29.082C-28.513,-34.085,-13.037,-41.01,-7.484,-71.889C5.787,-64.948,11.411,-60.03,17.099,-53.327C28.392,-40.02,35.535,-27.655,36.237,-22.048C36.237,-22.048,51.488,-30.128,62.668,-39.985C71.249,-21.472,72.744,8.699,72.744,19.809C72.744,33.429,70.019,42.549,70.019,42.549C70.019,42.549,66.799,52.375,57.047,60.551C45.617,69.194,35.376,79.061,1.742,79.061C-31.892,79.061,-73.388,56.923,-73.388,21.476Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-20-2" opacity="0" transform="translate(79.939,79.957) scale(1.05,1.0109)" style="animation: 1.5s linear infinite both Layer-20-2_o;">
+            <g id="Group-1-77" opacity="1">
+                <path id="Path-1-77" fill="url(#Gradient-0)" d="M-73.388,21.476C-73.388,10.43,-69.783,-13.971,-40.481,-29.824C-25.894,-36.888,-13.117,-42.411,-6.294,-72.548C6.977,-65.607,12.072,-60.697,17.417,-53.657C27.953,-39.806,31.884,-27.326,32.586,-21.719C32.586,-21.719,47.042,-31.612,61.318,-39.161C65.376,-19.082,70.817,10.018,72.744,19.809C73.909,31.728,70.019,42.549,70.019,42.549C70.019,42.549,66.799,52.375,57.047,60.551C45.617,69.194,35.376,79.061,1.742,79.061C-31.892,79.061,-73.388,56.923,-73.388,21.476Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-21-2" opacity="0" transform="translate(79.939,79.957) scale(1.05,1.0109)" style="animation: 1.5s linear infinite both Layer-21-2_o;">
+            <g id="Group-1-78" opacity="1">
+                <path id="Path-1-78" fill="url(#Gradient-0)" d="M-73.388,21.476C-73.388,8.204,-67.957,-16.114,-41.433,-30.566C-23.275,-39.691,-13.195,-43.812,-5.103,-73.208C8.168,-66.267,12.731,-61.364,17.734,-53.987C27.514,-39.592,28.233,-26.996,28.935,-21.389C28.935,-21.389,42.598,-33.095,59.969,-38.336C59.503,-16.691,68.89,11.337,72.744,19.809C75.074,30.026,70.019,42.549,70.019,42.549C70.019,42.549,66.799,52.375,57.047,60.551C45.617,69.194,35.376,79.061,1.742,79.061C-31.892,79.061,-73.388,56.923,-73.388,21.476Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-22-2" opacity="0" transform="translate(79.939,79.957) scale(1.05,1.0109)" style="animation: 1.5s linear infinite both Layer-22-2_o;">
+            <g id="Group-1-79" opacity="1">
+                <path id="Path-1-79" fill="url(#Gradient-0)" d="M-73.388,21.476C-73.388,5.979,-66.132,-18.258,-42.386,-31.308C-20.656,-42.494,-13.275,-45.213,-3.913,-73.867C9.358,-66.926,13.392,-62.03,18.052,-54.316C27.076,-39.377,24.582,-26.666,25.284,-21.059C25.284,-21.059,38.154,-34.58,58.62,-37.512C53.63,-14.301,66.964,12.656,72.744,19.809C76.239,28.325,70.019,42.549,70.019,42.549C70.019,42.549,66.799,52.375,57.047,60.551C45.617,69.194,35.376,79.061,1.742,79.061C-31.892,79.061,-73.388,56.923,-73.388,21.476Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-23-2" opacity="0" transform="translate(79.939,79.957) scale(1.05,1.0109)" style="animation: 1.5s linear infinite both Layer-23-2_o;">
+            <g id="Group-1-80" opacity="1">
+                <path id="Path-1-80" fill="url(#Gradient-0)" d="M-73.388,21.476C-73.388,5.979,-66.132,-18.258,-42.386,-31.308C-21.37,-43.071,-11.608,-46.533,0.135,-73.043C12.052,-65.954,15.911,-59.602,19.639,-51.596C26.403,-38.191,24.741,-28.726,25.284,-21.471C25.284,-21.471,39.821,-36.146,55.525,-38.172C50.694,-15.373,66.964,12.656,72.744,19.809C76.239,28.325,70.019,42.549,70.019,42.549C70.019,42.549,66.799,52.375,57.047,60.551C45.617,69.194,35.376,79.061,1.742,79.061C-31.892,79.061,-73.388,56.923,-73.388,21.476Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-24-2" opacity="0" transform="translate(79.939,79.957) scale(1.05,1.0109)" style="animation: 1.5s linear infinite both Layer-24-2_o;">
+            <g id="Group-1-81" opacity="1">
+                <path id="Path-1-81" fill="url(#Gradient-0)" d="M-73.388,21.476C-73.388,5.979,-66.132,-18.258,-42.386,-31.308C-22.085,-43.648,-9.941,-47.852,4.183,-72.219C14.746,-64.982,18.429,-57.175,21.226,-48.876C25.731,-37.004,24.899,-30.788,25.284,-21.884C25.284,-21.884,41.487,-37.712,52.429,-38.831C47.756,-16.444,66.964,12.656,72.744,19.809C76.239,28.325,70.019,42.549,70.019,42.549C70.019,42.549,66.799,52.375,57.047,60.551C45.617,69.194,35.376,79.061,1.742,79.061C-31.892,79.061,-73.388,56.923,-73.388,21.476Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-25-2" opacity="0" transform="translate(79.939,79.957) scale(1.05,1.0109)" style="animation: 1.5s linear infinite both Layer-25-2_o;">
+            <g id="Group-1-82" opacity="1">
+                <path id="Path-1-82" fill="url(#Gradient-0)" d="M-73.388,21.476C-73.388,5.979,-66.132,-18.258,-42.386,-31.308C-22.799,-44.225,-8.275,-49.17,8.23,-71.394C17.439,-64.009,20.949,-54.746,22.814,-46.155C25.059,-35.816,25.058,-32.849,25.284,-22.296C25.284,-22.296,43.154,-39.279,49.334,-39.491C44.82,-17.516,66.964,12.656,72.744,19.809C76.239,28.325,70.019,42.549,70.019,42.549C70.019,42.549,66.799,52.375,57.047,60.551C45.617,69.194,35.376,79.061,1.742,79.061C-31.892,79.061,-73.388,56.923,-73.388,21.476Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-26-2" opacity="0" transform="translate(79.939,79.957) scale(1.05,1.0109)" style="animation: 1.5s linear infinite both Layer-26-2_o;">
+            <g id="Group-1-83" opacity="1">
+                <path id="Path-1-83" fill="url(#Gradient-0)" d="M-73.388,21.476C-73.388,5.979,-66.053,-17.516,-42.465,-30.896C-22.878,-43.813,-7.481,-51.067,3.072,-73.95C12.44,-65.658,16.337,-53.581,19.321,-45.496C23.788,-34.58,25.614,-30.458,28.062,-22.543C28.062,-22.543,41.566,-39.113,49.175,-39.985C46.09,-19.494,68.89,9.111,72.744,19.809C75.074,29.944,70.019,42.549,70.019,42.549C70.019,42.549,66.799,52.375,57.047,60.551C45.617,69.194,35.376,79.061,1.742,79.061C-31.892,79.061,-73.388,56.923,-73.388,21.476Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-27-2" opacity="0" transform="translate(79.939,79.957) scale(1.05,1.0109)" style="animation: 1.5s linear infinite both Layer-27-2_o;">
+            <g id="Group-1-84" opacity="1">
+                <path id="Path-1-84" fill="url(#Gradient-0)" d="M-73.388,21.476C-73.388,5.979,-65.973,-16.774,-42.544,-30.484C-22.957,-43.401,-6.687,-52.962,-2.087,-76.505C7.44,-67.306,11.726,-52.415,15.829,-44.836C22.518,-33.343,26.17,-28.067,30.84,-22.79C30.84,-22.79,39.979,-38.949,49.017,-40.48C47.36,-21.473,70.817,5.566,72.744,19.809C73.909,31.563,70.019,42.549,70.019,42.549C70.019,42.549,66.799,52.375,57.047,60.551C45.617,69.194,35.376,79.061,1.742,79.061C-31.892,79.061,-73.388,56.923,-73.388,21.476Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-28-2" opacity="0" transform="translate(79.939,79.957) scale(1.05,1.0109)" style="animation: 1.5s linear infinite both Layer-28-2_o;">
+            <g id="Group-1-85" opacity="1">
+                <path id="Path-1-85" fill="url(#Gradient-0)" d="M-73.388,21.476C-73.388,5.979,-65.894,-16.031,-42.624,-30.071C-23.037,-42.988,-5.894,-54.859,-7.246,-79.061C2.439,-68.955,7.115,-51.249,12.337,-44.177C21.249,-32.107,26.725,-25.677,33.618,-23.038C33.618,-23.038,38.392,-38.783,48.858,-40.974C48.63,-23.451,72.744,2.021,72.744,19.809C72.744,33.182,70.019,42.549,70.019,42.549C70.019,42.549,66.799,52.375,57.047,60.551C45.617,69.194,35.376,79.061,1.742,79.061C-31.892,79.061,-73.388,56.923,-73.388,21.476Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-29-2" opacity="0" transform="translate(79.939,79.957) scale(1.05,1.0109)" style="animation: 1.5s linear infinite both Layer-29-2_o;">
+            <g id="Group-1-86" opacity="1">
+                <path id="Path-1-86" fill="url(#Gradient-0)" d="M-73.388,21.476C-73.35,4.989,-64.703,-13.477,-42.544,-28.835C-22.878,-43.895,-9.147,-51.314,-7.563,-75.434C3.317,-66.383,9.121,-51.492,14.798,-44.836C24.265,-33.673,30.535,-26.253,35.364,-22.625C35.364,-22.625,42.281,-35.981,51.477,-41.139C57.101,-23.68,72.744,3.835,72.744,19.809C72.744,31.793,70.019,42.549,70.019,42.549C70.019,42.549,66.799,52.375,57.047,60.551C45.617,69.194,35.376,79.061,1.742,79.061C-31.892,79.061,-73.461,56.923,-73.388,21.476Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-30-2" opacity="0" transform="translate(79.939,79.957) scale(1.05,1.0109)" style="animation: 1.5s linear infinite both Layer-30-2_o;">
+            <g id="Group-1-87" opacity="1">
+                <path id="Path-1-87" fill="url(#Gradient-0)" d="M-73.388,21.476C-73.312,4,-63.513,-10.921,-42.465,-27.598C-22.719,-44.801,-12.402,-47.77,-7.881,-71.807C4.195,-63.811,11.126,-51.735,17.258,-45.496C27.281,-35.239,34.345,-26.83,37.11,-22.213C37.11,-22.213,46.169,-33.178,54.096,-41.304C65.573,-23.91,72.744,5.649,72.744,19.809C72.744,30.403,70.019,42.549,70.019,42.549C70.019,42.549,66.799,52.375,57.047,60.551C45.617,69.194,35.376,79.061,1.742,79.061C-31.892,79.061,-73.533,56.923,-73.388,21.476Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-31-2" opacity="0" transform="translate(79.939,79.957) scale(1.05,1.0109)" style="animation: 1.5s linear infinite both Layer-31-2_o;">
+            <g id="Group-1-88" opacity="1">
+                <path id="Path-1-88" fill="url(#Gradient-0)" d="M-73.388,21.476C-73.274,3.011,-62.323,-8.366,-42.386,-26.362C-22.561,-45.709,-15.656,-44.224,-8.198,-68.179C5.073,-61.238,13.131,-51.977,19.718,-46.155C30.296,-36.805,38.154,-27.408,38.856,-21.801C38.856,-21.801,50.058,-30.376,56.715,-41.469C74.044,-24.14,72.744,7.462,72.744,19.809C72.744,29.014,70.019,42.549,70.019,42.549C70.019,42.549,66.799,52.375,57.047,60.551C45.617,69.194,35.376,79.061,1.742,79.061C-31.892,79.061,-73.606,56.923,-73.388,21.476Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-32-2" opacity="0" transform="translate(79.939,79.957) scale(1.05,1.0109)" style="animation: 1.5s linear infinite both Layer-32-2_o;">
+            <g id="Group-1-89" opacity="1">
+                <path id="Path-1-89" fill="url(#Gradient-0)" d="M-73.388,21.476C-73.312,1.692,-62.799,-9.849,-42.386,-26.362C-22.878,-43.73,-12.719,-46.038,-8.198,-70.075C5.073,-63.134,13.11,-54.62,19.242,-48.381C29.265,-38.124,37.043,-27.573,37.745,-21.966C37.745,-21.966,47.042,-33.315,58.699,-40.727C66.525,-21.355,70.42,8.287,72.744,19.809C74.514,28.452,70.019,42.549,70.019,42.549C70.019,42.549,66.799,52.375,57.047,60.551C45.617,69.194,35.376,79.061,1.742,79.061C-31.892,79.061,-73.533,56.923,-73.388,21.476Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-33-2" opacity="0" transform="translate(79.939,79.957) scale(1.05,1.0109)" style="animation: 1.5s linear infinite both Layer-33-2_o;">
+            <g id="Group-1-90" opacity="1">
+                <path id="Path-1-90" fill="url(#Gradient-0)" d="M-73.388,21.476C-73.35,0.373,-63.275,-11.333,-42.386,-26.362C-23.196,-41.752,-9.782,-47.851,-8.198,-71.971C5.073,-65.03,13.089,-57.263,18.766,-50.607C28.233,-39.443,35.932,-27.738,36.634,-22.131C36.634,-22.131,44.026,-36.255,60.683,-39.985C59.006,-18.57,68.097,9.111,72.744,19.809C76.283,27.891,70.019,42.549,70.019,42.549C70.019,42.549,66.799,52.375,57.047,60.551C45.617,69.194,35.376,79.061,1.742,79.061C-31.892,79.061,-73.461,56.923,-73.388,21.476Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-34-2" opacity="0" transform="translate(79.939,79.957) scale(1.05,1.0109)" style="animation: 1.5s linear infinite both Layer-34-2_o;">
+            <g id="Group-1-91" opacity="1">
+                <path id="Path-1-91" fill="url(#Gradient-0)" d="M-73.388,21.476C-73.388,-0.946,-63.751,-12.817,-42.386,-26.362C-23.513,-39.773,-6.846,-49.665,-8.198,-73.867C5.073,-66.926,13.068,-59.905,18.29,-52.833C27.202,-40.763,34.82,-27.903,35.522,-22.296C35.522,-22.296,41.01,-39.194,62.667,-39.243C51.487,-15.784,65.773,9.935,72.744,19.809C78.053,27.329,70.019,42.549,70.019,42.549C70.019,42.549,66.799,52.375,57.047,60.551C45.618,69.194,35.376,79.061,1.742,79.061C-31.892,79.061,-73.388,56.923,-73.388,21.476Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-35-2" opacity="0" transform="translate(79.939,79.957) scale(1.05,1.0109)" style="animation: 1.5s linear infinite both Layer-35-2_o;">
+            <g id="Group-1-92" opacity="1">
+                <path id="Path-1-92" fill="url(#Gradient-0)" d="M-73.388,21.476C-73.388,6.528,-69.941,-10.838,-38.576,-29.082C-23.052,-39.499,-5.339,-52.468,-7.881,-75.599C5.39,-68.658,14.085,-61.296,19.321,-54.234C29.502,-40.515,31.901,-28.306,32.745,-22.708C32.745,-22.708,41.011,-39.443,62.668,-39.491C50.079,-15.672,66.309,10.369,72.744,19.809C77.448,27.661,70.019,42.549,70.019,42.549C70.019,42.549,66.799,52.375,57.047,60.551C45.617,69.194,35.376,79.061,1.742,79.061C-31.892,79.061,-73.716,57.009,-73.388,21.476Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-36-2" opacity="0" transform="translate(79.939,79.957) scale(1.05,1.0109)" style="animation: 1.5s linear infinite both Layer-36-2_o;">
+            <g id="Group-1-93" opacity="1">
+                <path id="Path-1-93" fill="url(#Gradient-0)" d="M-73.388,21.476C-73.388,14.002,-76.132,-8.86,-34.767,-31.802C-22.591,-39.224,-3.83,-55.271,-7.563,-77.33C5.708,-70.389,15.103,-62.687,20.353,-55.635C31.804,-40.267,28.981,-28.709,29.967,-23.12C29.967,-23.12,41.011,-39.689,62.668,-39.738C48.67,-15.558,66.845,10.803,72.744,19.809C76.844,27.993,70.019,42.549,70.019,42.549C70.019,42.549,66.799,52.375,57.047,60.551C45.618,69.194,35.376,79.061,1.742,79.061C-31.892,79.061,-74.044,57.094,-73.388,21.476Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-37-2" opacity="0" transform="translate(79.939,79.957) scale(1.05,1.0109)" style="animation: 1.5s linear infinite both Layer-37-2_o;">
+            <g id="Group-1-94" opacity="1">
+                <path id="Path-1-94" fill="url(#Gradient-0)" d="M-73.388,21.476C-73.388,21.476,-82.322,-6.882,-30.957,-34.523C-22.129,-38.95,-2.323,-58.074,-7.246,-79.061C6.025,-72.12,16.121,-64.078,21.385,-57.037C34.106,-40.021,26.061,-29.112,27.189,-23.532C27.189,-23.532,41.011,-39.936,62.668,-39.985C47.261,-15.444,67.382,11.236,72.744,19.809C76.239,28.325,70.019,42.549,70.019,42.549C70.019,42.549,66.799,52.375,57.047,60.551C45.617,69.194,35.376,79.061,1.742,79.061C-31.892,79.061,-74.371,57.179,-73.388,21.476Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-3-2" opacity="0" transform="translate(81.635,104.707) scale(0.99,1)" style="animation: 1.5s linear infinite both Layer-3-2_o;">
+            <g id="Group-1-95" opacity="1">
+                <path id="Path-1-95" fill="url(#Gradient-1)" d="M26.104,-18.495C14.429,-24.878,9.95,-38.045,14.872,-54.386C5.111,-51.6,-27.041,-27.489,-35.791,-15.996C-40.417,-19.109,-49.431,-24.99,-54.68,-30.319C-61.646,-24.99,-64.692,-14.044,-55.532,6.741C-50.881,19.644,-55.784,31.855,-55.784,31.855C-50.881,38.799,-38.824,54.386,-3.813,54.386C31.198,54.386,55.556,35.549,61.24,19.821C59.271,1.808,32.804,-13.755,26.104,-18.495Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-38-2" opacity="0" transform="translate(81.635,104.707) scale(0.99,1)" style="animation: 1.5s linear infinite both Layer-38-2_o;">
+            <g id="Group-1-96" opacity="1">
+                <path id="Path-1-96" fill="url(#Gradient-1)" d="M19.784,-27.091C12.033,-32.863,11.767,-42.577,14.872,-54.386C-0.503,-51.358,-29.081,-27.408,-34.359,-16.066C-38.943,-18.544,-49.431,-24.99,-54.68,-30.319C-60.376,-24.384,-61.504,-13.971,-54.928,4.287C-51.558,17.294,-57.992,27.869,-57.992,27.869C-53.613,36.818,-38.824,54.386,-3.813,54.386C31.198,54.386,56.068,34.103,60.091,17.999C60.115,-2.632,27.615,-19.582,19.784,-27.091Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-39-2" opacity="0" transform="translate(81.635,104.707) scale(0.99,1)" style="animation: 1.5s linear infinite both Layer-39-2_o;">
+            <g id="Group-1-97" opacity="1">
+                <path id="Path-1-97" fill="url(#Gradient-1)" d="M21.626,-27.222C14.584,-32.646,10.419,-41.104,13.216,-54.373C-8.174,-48.888,-26.99,-26.944,-32.356,-16.1C-37.219,-18.44,-47.931,-25.725,-54.312,-30.139C-57.182,-22.853,-59.33,-13.309,-55.014,2.502C-54.566,15.919,-59.464,25.876,-59.464,25.876C-55.347,35.827,-38.824,54.386,-3.813,54.386C31.198,54.386,53.361,35.667,58.067,21.02C58.971,1.093,31.99,-17.925,21.626,-27.222Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-40-2" opacity="0" transform="translate(81.635,104.707) scale(0.99,1)" style="animation: 1.5s linear infinite both Layer-40-2_o;">
+            <g id="Group-1-98" opacity="1">
+                <path id="Path-1-98" fill="url(#Gradient-1)" d="M23.469,-27.354C17.137,-32.431,9.072,-39.631,11.56,-54.361C-15.844,-46.42,-24.898,-26.481,-30.352,-16.135C-35.494,-18.337,-46.43,-26.459,-53.944,-29.959C-53.989,-21.322,-57.156,-12.649,-55.1,0.716C-57.574,14.542,-60.936,23.883,-60.936,23.883C-57.081,34.836,-38.824,54.386,-3.813,54.386C31.198,54.386,50.655,37.232,56.043,24.041C57.827,4.818,36.366,-16.269,23.469,-27.354Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-41-2" opacity="0" transform="translate(81.635,104.707) scale(0.99,1)" style="animation: 1.5s linear infinite both Layer-41-2_o;">
+            <g id="Group-1-99" opacity="1">
+                <path id="Path-1-99" fill="url(#Gradient-1)" d="M25.311,-27.485C19.689,-32.214,7.724,-38.158,9.904,-54.348C-23.514,-43.95,-22.807,-26.017,-28.348,-16.169C-33.768,-18.232,-44.93,-27.194,-53.576,-29.779C-50.795,-19.791,-54.982,-11.987,-55.186,-1.069C-60.582,13.166,-62.408,21.89,-62.408,21.89C-58.815,33.845,-38.824,54.386,-3.813,54.386C31.198,54.386,47.948,38.797,54.019,27.062C56.684,8.543,40.74,-14.613,25.311,-27.485Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-42-2" opacity="0" transform="translate(81.635,104.707) scale(0.99,1)" style="animation: 1.5s linear infinite both Layer-42-2_o;">
+            <g id="Group-1-100" opacity="1">
+                <path id="Path-1-100" fill="url(#Gradient-1)" d="M27.153,-27.617C22.24,-31.999,6.377,-36.685,8.248,-54.336C-31.185,-41.482,-20.715,-25.553,-26.344,-16.204C-32.043,-18.129,-43.43,-27.93,-53.208,-29.6C-47.602,-18.261,-52.809,-11.327,-55.272,-2.855C-63.59,11.789,-63.88,19.897,-63.88,19.897C-60.549,32.854,-38.824,54.386,-3.813,54.386C31.198,54.386,45.242,40.361,51.995,30.083C55.54,12.268,45.115,-12.957,27.153,-27.617Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-43-2" opacity="0" transform="translate(81.635,104.707) scale(0.99,1)" style="animation: 1.5s linear infinite both Layer-43-2_o;">
+            <g id="Group-1-101" opacity="1">
+                <path id="Path-1-101" fill="url(#Gradient-1)" d="M26.658,-27.159C19.24,-31.457,1.865,-29.206,4.936,-54.31C-40.912,-36.785,-14.49,-24.707,-23.768,-16.204C-30.066,-18.487,-40.429,-29.399,-52.472,-29.24C-42.485,-15.806,-51.651,-10.079,-56.049,-3.973C-68.93,11.385,-64.616,19.897,-64.616,19.897C-61.285,32.854,-38.824,54.386,-3.813,54.386C31.198,54.386,39.318,44.937,49.096,37.947C52.408,24.157,50.365,-12.207,26.658,-27.159Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-44-2" opacity="0" transform="translate(81.635,104.707) scale(0.99,1)" style="animation: 1.5s linear infinite both Layer-44-2_o;">
+            <g id="Group-1-102" opacity="1">
+                <path id="Path-1-102" fill="url(#Gradient-1)" d="M29.513,-25.184C20.718,-32.17,3.532,-39.54,-0.084,-55.563C-30.32,-37.926,-14.49,-24.707,-23.768,-16.204C-30.066,-18.487,-39.01,-27.276,-49.896,-29.505C-43.392,-18.301,-51.84,-12.043,-56.238,-5.937C-69.119,9.421,-64.616,19.897,-64.616,19.897C-61.285,32.854,-38.824,54.386,-3.813,54.386C31.198,54.386,42.636,43.313,52.04,34.34C51.283,18.029,48.491,-11.206,29.513,-25.184Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-45-2" opacity="0" transform="translate(81.635,104.707) scale(0.99,1)" style="animation: 1.5s linear infinite both Layer-45-2_o;">
+            <g id="Group-1-103" opacity="1">
+                <path id="Path-1-103" fill="url(#Gradient-1)" d="M32.367,-23.21C22.195,-32.885,5.199,-49.873,-5.104,-56.816C-19.727,-39.066,-14.49,-24.707,-23.768,-16.204C-30.066,-18.487,-37.591,-25.154,-47.32,-29.77C-44.299,-20.797,-52.03,-14.008,-56.428,-7.902C-69.309,7.456,-64.616,19.897,-64.616,19.897C-61.285,32.854,-38.824,54.386,-3.813,54.386C31.198,54.386,45.953,41.688,54.984,30.732C50.158,11.9,46.615,-10.207,32.367,-23.21Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-46-2" opacity="0" transform="translate(81.635,104.707) scale(0.99,1)" style="animation: 1.5s linear infinite both Layer-46-2_o;">
+            <g id="Group-1-104" opacity="1">
+                <path id="Path-1-104" fill="url(#Gradient-1)" d="M35.222,-21.235C23.672,-33.598,6.865,-60.207,-10.124,-58.069C-9.135,-40.207,-14.49,-24.707,-23.768,-16.204C-30.066,-18.487,-36.172,-23.032,-44.744,-30.035C-45.206,-23.292,-52.219,-15.973,-56.617,-9.867C-69.498,5.491,-64.616,19.897,-64.616,19.897C-61.285,32.854,-38.824,54.386,-3.813,54.386C31.198,54.386,49.271,40.062,57.928,27.124C49.033,5.772,44.74,-9.207,35.222,-21.235Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-47-2" opacity="0" transform="translate(81.635,104.707) scale(0.99,1)" style="animation: 1.5s linear infinite both Layer-47-2_o;">
+            <g id="Group-1-105" opacity="1">
+                <path id="Path-1-105" fill="url(#Gradient-1)" d="M32.895,-20.492C23.277,-32.633,8.777,-55.21,-3.083,-56.406C-5.305,-45.504,-15.664,-23.702,-27.776,-16.135C-33.516,-18.694,-36.872,-23.59,-44.336,-30.035C-46.966,-23.763,-58.419,-14.274,-59.253,-4.25C-67.421,6.978,-61.264,18.295,-61.264,18.295C-59.008,32.855,-38.824,54.386,-3.813,54.386C31.198,54.386,54.321,38.564,57.968,22.11C47.638,5.478,41.04,-9.56,32.895,-20.492Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-48-2" opacity="0" transform="translate(81.635,104.707) scale(0.99,1)" style="animation: 1.5s linear infinite both Layer-48-2_o;">
+            <g id="Group-1-106" opacity="1">
+                <path id="Path-1-106" fill="url(#Gradient-1)" d="M30.568,-19.748C22.882,-31.667,10.688,-50.213,3.958,-54.743C-1.476,-50.802,-16.836,-22.697,-31.783,-16.066C-36.966,-18.902,-37.57,-24.148,-43.927,-30.035C-48.725,-24.235,-64.621,-12.576,-61.89,1.366C-65.344,8.465,-57.911,16.693,-57.911,16.693C-56.73,32.855,-38.824,54.386,-3.813,54.386C31.198,54.386,59.373,37.065,58.009,17.096C46.244,5.184,37.339,-9.913,30.568,-19.748Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-49-2" opacity="0" transform="translate(81.635,104.707) scale(0.99,1)" style="animation: 1.5s linear infinite both Layer-49-2_o;">
+            <g id="Group-1-107" opacity="1">
+                <path id="Path-1-107" fill="url(#Gradient-1)" d="M28.241,-19.005C22.487,-30.702,12.599,-45.216,10.999,-53.08C2.354,-56.1,-18.009,-21.691,-35.791,-15.996C-40.417,-19.109,-38.27,-24.706,-43.519,-30.035C-50.485,-24.706,-70.821,-10.877,-64.526,6.983C-63.267,9.953,-54.559,15.091,-54.559,15.091C-54.453,32.855,-38.824,54.386,-3.813,54.386C31.198,54.386,64.423,35.567,58.049,12.082C44.849,4.891,33.638,-10.267,28.241,-19.005Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-50-2" opacity="0" transform="translate(81.635,104.707) scale(0.99,1)" style="animation: 1.5s linear infinite both Layer-50-2_o;">
+            <g id="Group-1-108" opacity="1">
+                <path id="Path-1-108" fill="url(#Gradient-1)" d="M23.417,-23.684C19.364,-34.454,13.89,-45.557,12.29,-53.421C3.645,-56.441,-20.654,-24.023,-35.791,-15.996C-40.417,-19.109,-41.99,-24.706,-47.239,-30.035C-54.205,-24.706,-68.854,-11.089,-61.515,7.044C-59.194,12.485,-54.967,20.773,-54.967,20.773C-54.658,34.504,-38.824,54.386,-3.813,54.386C31.198,54.386,62.18,35.929,59.113,14.756C49.765,3.163,27.539,-14.005,23.417,-23.684Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-51-2" opacity="0" transform="translate(81.635,104.707) scale(0.99,1)" style="animation: 1.5s linear infinite both Layer-51-2_o;">
+            <g id="Group-1-109" opacity="1">
+                <path id="Path-1-109" fill="url(#Gradient-1)" d="M18.592,-28.364C16.24,-38.207,15.181,-45.898,13.581,-53.762C4.936,-56.782,-23.299,-26.355,-35.791,-15.996C-40.417,-19.109,-45.711,-24.706,-50.96,-30.035C-57.926,-24.706,-66.885,-11.301,-58.503,7.106C-55.119,15.018,-55.376,26.456,-55.376,26.456C-54.863,36.154,-38.824,54.386,-3.813,54.386C31.198,54.386,59.935,36.291,60.176,17.43C54.68,1.435,21.439,-17.743,18.592,-28.364Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-52-2" opacity="0" transform="translate(81.635,104.707) scale(0.99,1)" style="animation: 1.5s linear infinite both Layer-52-2_o;">
+            <g id="Group-1-110" opacity="1">
+                <path id="Path-1-110" fill="url(#Gradient-1)" d="M13.768,-33.044C11.865,-39.207,10.99,-46.207,14.872,-54.103C6.227,-57.123,-25.945,-28.687,-35.791,-15.996C-40.417,-19.109,-49.431,-24.706,-54.68,-30.035C-61.646,-24.706,-64.917,-11.512,-55.492,7.168C-51.045,17.552,-55.784,32.138,-55.784,32.138C-55.067,37.804,-38.824,54.386,-3.813,54.386C31.198,54.386,57.692,36.654,61.24,20.105C59.597,-0.293,15.34,-21.481,13.768,-33.044Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-53-2" opacity="0" transform="translate(81.635,104.707) scale(0.99,1)" style="animation: 1.5s linear infinite both Layer-53-2_o;">
+            <g id="Group-1-111" opacity="1">
+                <path id="Path-1-111" fill="url(#Gradient-1)" d="M14.227,-30.507C11.199,-36.04,9.615,-47.54,14.872,-54.103C6.227,-57.123,-27.155,-31.329,-34.359,-16.116C-38.985,-19.229,-48.648,-23.721,-54.68,-30.035C-60.39,-24.175,-61.714,-12.76,-54.901,4.522C-51.266,14.873,-57.992,28.007,-57.992,28.007C-57.514,35.897,-38.824,54.386,-3.813,54.386C31.198,54.386,57.771,35.35,60.136,17.969C59.04,-5.134,19.182,-19.473,14.227,-30.507Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-54-2" opacity="0" transform="translate(81.635,104.707) scale(0.99,1)" style="animation: 1.5s linear infinite both Layer-54-2_o;">
+            <g id="Group-1-112" opacity="1">
+                <path id="Path-1-112" fill="url(#Gradient-1)" d="M14.685,-27.97C10.532,-32.873,8.24,-48.874,14.872,-54.103C6.227,-57.123,-28.367,-33.971,-32.928,-16.235C-37.554,-19.348,-47.865,-22.736,-54.68,-30.035C-59.135,-23.643,-58.511,-14.009,-54.309,1.876C-51.486,12.194,-60.2,23.877,-60.2,23.877C-59.961,33.991,-38.824,54.386,-3.813,54.386C31.198,54.386,57.849,34.047,59.032,15.834C58.484,-9.974,23.023,-17.465,14.685,-27.97Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-55-2" opacity="0" transform="translate(81.635,104.707) scale(0.99,1)" style="animation: 1.5s linear infinite both Layer-55-2_o;">
+            <g id="Group-1-113" opacity="1">
+                <path id="Path-1-113" fill="url(#Gradient-1)" d="M15.144,-25.433C9.865,-29.707,6.865,-50.207,14.872,-54.103C6.227,-57.123,-29.578,-36.614,-31.496,-16.355C-36.122,-19.468,-47.082,-21.751,-54.68,-30.035C-57.879,-23.112,-55.308,-15.257,-53.718,-0.77C-51.706,9.515,-62.408,19.746,-62.408,19.746C-62.408,32.084,-38.824,54.386,-3.813,54.386C31.198,54.386,57.928,32.744,57.928,13.698C57.928,-14.816,26.865,-15.457,15.144,-25.433Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-56-2" opacity="0" transform="translate(81.635,104.707) scale(0.99,1)" style="animation: 1.5s linear infinite both Layer-56-2_o;">
+            <g id="Group-1-114" opacity="1">
+                <path id="Path-1-114" fill="url(#Gradient-1)" d="M19.065,-24.392C10.865,-29.873,4.956,-42.868,11.56,-54.222C-7.965,-53.038,-23.523,-32.045,-28.92,-16.355C-34.381,-18.798,-45.266,-24.063,-53.944,-29.821C-54.389,-22.803,-52.594,-15.337,-54.761,-0.98C-55.34,8.1,-63.155,17.196,-63.144,19.746C-63.144,31.093,-38.824,54.386,-3.813,54.386C31.198,54.386,52.495,36.307,54.984,21.731C57.074,-2.113,37.532,-13.207,19.065,-24.392Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-57-2" opacity="0" transform="translate(81.635,104.707) scale(0.99,1)" style="animation: 1.5s linear infinite both Layer-57-2_o;">
+            <g id="Group-1-115" opacity="1">
+                <path id="Path-1-115" fill="url(#Gradient-1)" d="M22.987,-23.351C11.866,-30.04,3.047,-35.53,8.248,-54.342C-22.157,-48.955,-17.468,-27.476,-26.344,-16.355C-32.64,-18.128,-43.449,-26.375,-53.208,-29.606C-50.899,-22.493,-49.881,-15.417,-55.804,-1.19C-58.974,6.684,-63.901,14.647,-63.88,19.746C-63.88,30.102,-38.824,54.386,-3.813,54.386C31.198,54.386,47.062,39.871,52.04,29.764C56.22,10.591,48.199,-10.957,22.987,-23.351Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-58-2" opacity="0" transform="translate(81.635,104.707) scale(0.99,1)" style="animation: 1.5s linear infinite both Layer-58-2_o;">
+            <g id="Group-1-116" opacity="1">
+                <path id="Path-1-116" fill="url(#Gradient-1)" d="M26.908,-22.31C12.865,-30.207,1.138,-28.191,4.936,-54.461C-36.348,-44.87,-11.412,-22.907,-23.768,-16.355C-30.899,-17.458,-41.633,-28.687,-52.472,-29.391C-47.409,-22.182,-47.167,-15.497,-56.847,-1.399C-62.608,5.269,-64.648,12.097,-64.616,19.746C-64.616,29.111,-38.824,54.386,-3.813,54.386C31.198,54.386,41.629,43.433,49.096,37.796C55.365,23.293,58.865,-8.707,26.908,-22.31Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-59-2" opacity="0" transform="translate(81.635,104.707) scale(0.99,1)" style="animation: 1.5s linear infinite both Layer-59-2_o;">
+            <g id="Group-1-117" opacity="1">
+                <path id="Path-1-117" fill="url(#Gradient-1)" d="M27.346,-21.988C14.188,-29.768,1.252,-33.199,0.616,-52.891C-23.944,-43.733,-12.148,-22.907,-24.504,-16.355C-31.635,-17.458,-39.412,-27.769,-49.896,-29.725C-44.833,-22.516,-56.294,-11.564,-58.701,5.649C-60.928,10.941,-59.717,16.148,-59.685,23.797C-59.447,31.441,-38.824,54.386,-3.813,54.386C31.198,54.386,43.274,41.785,50.741,36.148C54.127,21.529,52.615,-9.082,27.346,-21.988Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-60-2" opacity="0" transform="translate(81.635,104.707) scale(0.99,1)" style="animation: 1.5s linear infinite both Layer-60-2_o;">
+            <g id="Group-1-118" opacity="1">
+                <path id="Path-1-118" fill="url(#Gradient-1)" d="M27.784,-21.666C15.51,-29.329,1.366,-38.206,-3.704,-51.32C-11.539,-42.594,-12.884,-22.907,-25.24,-16.355C-32.371,-17.458,-37.192,-26.852,-47.32,-30.06C-42.257,-22.851,-65.42,-7.629,-60.554,12.698C-59.247,16.615,-54.785,20.199,-54.753,27.848C-54.277,33.771,-38.824,54.386,-3.813,54.386C31.198,54.386,44.919,40.136,52.386,34.499C52.889,19.764,46.365,-9.457,27.784,-21.666Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-61-2" opacity="0" transform="translate(81.635,104.707) scale(0.99,1)" style="animation: 1.5s linear infinite both Layer-61-2_o;">
+            <g id="Group-1-119" opacity="1">
+                <path id="Path-1-119" fill="url(#Gradient-1)" d="M33.472,-21.344C22.115,-32.457,6.366,-50.457,-8.024,-49.75C0.866,-41.457,-13.62,-22.907,-25.976,-16.355C-33.107,-17.458,-34.972,-25.935,-44.744,-30.394C-39.681,-23.185,-74.547,-3.696,-62.408,19.746C-57.566,22.287,-49.854,24.25,-49.822,31.899C-49.108,36.101,-38.824,54.386,-3.813,54.386C31.198,54.386,46.564,38.487,54.031,32.85C51.651,18,41.615,-11.957,33.472,-21.344Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-62-2" opacity="0" transform="translate(81.635,104.707) scale(0.99,1)" style="animation: 1.5s linear infinite both Layer-62-2_o;">
+            <g id="Group-1-120" opacity="1">
+                <path id="Path-1-120" fill="url(#Gradient-1)" d="M31.688,-20.683C23.637,-32.191,9.687,-48.888,-1.864,-51.32C-2.273,-42.741,-14.499,-22.452,-29.288,-16.355C-36.419,-17.458,-35.779,-25.201,-44.744,-30.394C-43.102,-23.221,-76.909,-5.164,-59.832,18.075C-56.497,22.119,-51.091,24.7,-49.822,31.899C-49.108,36.101,-38.824,54.386,-3.813,54.386C31.198,54.386,50.626,38.297,55.33,25.808C50.689,13.909,38.178,-11.405,31.688,-20.683Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-63-2" opacity="0" transform="translate(81.635,104.707) scale(0.99,1)" style="animation: 1.5s linear infinite both Layer-63-2_o;">
+            <g id="Group-1-121" opacity="1">
+                <path id="Path-1-121" fill="url(#Gradient-1)" d="M29.904,-20.023C25.158,-31.925,13.009,-47.32,4.296,-52.891C-5.412,-44.026,-15.378,-21.997,-32.6,-16.355C-39.731,-17.458,-36.587,-24.467,-44.744,-30.394C-46.523,-23.257,-79.272,-6.632,-57.256,16.403C-55.428,21.949,-52.329,25.149,-49.822,31.899C-49.108,36.101,-38.824,54.386,-3.813,54.386C31.198,54.386,54.688,38.108,56.629,18.766C49.726,9.818,34.741,-10.853,29.904,-20.023Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-64-2" opacity="0" transform="translate(81.635,104.707) scale(0.99,1)" style="animation: 1.5s linear infinite both Layer-64-2_o;">
+            <g id="Group-1-122" opacity="1">
+                <path id="Path-1-122" fill="url(#Gradient-1)" d="M28.12,-19.363C26.679,-31.659,16.331,-45.751,10.456,-54.461C-8.55,-45.311,-16.257,-21.542,-35.912,-16.355C-43.043,-17.458,-37.394,-23.733,-44.744,-30.394C-49.945,-23.292,-81.635,-8.1,-54.68,14.732C-54.359,21.781,-53.566,25.599,-49.822,31.899C-49.108,36.101,-38.824,54.386,-3.813,54.386C31.198,54.386,58.75,37.919,57.928,11.724C48.764,5.727,31.303,-10.301,28.12,-19.363Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-65-2" opacity="0" transform="translate(81.635,104.707) scale(0.99,1)" style="animation: 1.5s linear infinite both Layer-65-2_o;">
+            <g id="Group-1-123" opacity="1">
+                <path id="Path-1-123" fill="url(#Gradient-1)" d="M27.448,-19.074C22.596,-29.399,14.204,-43.182,11.928,-54.436C-3.997,-47.407,-19.852,-23.524,-35.872,-16.235C-42.168,-18.008,-41.406,-24.152,-48.056,-30.369C-53.845,-23.858,-75.987,-10.082,-54.964,12.068C-53.199,21.068,-54.305,27.684,-51.809,31.884C-49.699,37,-38.824,54.386,-3.813,54.386C31.198,54.386,57.685,37.129,59.032,14.423C52.266,4.421,31.803,-11.453,27.448,-19.074Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-66-2" opacity="0" transform="translate(81.635,104.707) scale(0.99,1)" style="animation: 1.5s linear infinite both Layer-66-2_o;">
+            <g id="Group-1-124" opacity="1">
+                <path id="Path-1-124" fill="url(#Gradient-1)" d="M26.776,-18.784C18.512,-27.138,12.077,-40.614,13.4,-54.411C0.557,-49.504,-23.446,-25.507,-35.831,-16.116C-41.292,-18.559,-45.419,-24.571,-51.368,-30.344C-57.745,-24.424,-70.339,-12.063,-55.248,9.405C-52.04,20.356,-55.045,29.77,-53.797,31.87C-50.29,37.9,-38.824,54.386,-3.813,54.386C31.198,54.386,56.621,36.339,60.136,17.122C55.769,3.114,32.304,-12.604,26.776,-18.784Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-67-2" opacity="0" transform="translate(81.635,104.707) scale(0.99,1)" style="animation: 1.5s linear infinite both Layer-67-2_o;">
+            <g id="Group-1-125" opacity="1">
+                <path id="Path-1-125" fill="url(#Gradient-1)" d="M26.104,-18.495C14.429,-24.878,9.95,-38.045,14.872,-54.386C5.111,-51.6,-27.041,-27.489,-35.791,-15.996C-40.417,-19.109,-49.431,-24.99,-54.68,-30.319C-61.646,-24.99,-64.692,-14.044,-55.532,6.741C-50.881,19.644,-55.784,31.855,-55.784,31.855C-50.881,38.799,-38.824,54.386,-3.813,54.386C31.198,54.386,55.556,35.549,61.24,19.821C59.271,1.808,32.804,-13.755,26.104,-18.495Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+        <g id="Layer-5-2" opacity="0" transform="translate(79.179,156.71) scale(1.1718,1.0137) translate(0,-20.43)" style="animation: 1.5s linear infinite both Layer-5-2_t, 1.5s linear infinite both Layer-5-2_o;">
+            <g id="Group-1-126" opacity="1">
+                <path id="Path-1-126" fill="#ffffab" d="M0,-22.137C-15.932,-7.6,-18.638,3.924,-18.638,8.265C-18.638,15.926,-10.293,22.137,0,22.137C10.294,22.137,18.638,15.926,18.638,8.265C18.638,3.75,16.019,-8.013,0,-22.137Z" fill-opacity="1" fill-rule="nonzero"/>
+            </g>
+        </g>
+    </g>
+</svg>

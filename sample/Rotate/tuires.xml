@@ -1,0 +1,14 @@
+<tmdui version="20210202" encoding="utf-8">
+  <pic>
+    <L1002 class="bmp" FrameNum="1" FileName="mzl.txxudcty.320x480-75.jpg" />
+  </pic>
+  <frame>
+    <L1001 class="form" />
+  </frame>
+  <wnd>
+    <L1000 class="window" Frame="1001">
+      <L1003 class="widget" Style="#10C40000" AdvStyle="#200" Rect="31,42,225,186" Text="window" Frame="1001" />
+      <L1004 class="float" Style="#10C40000" AdvStyle="#200" Rect="253,49,453,180" Text="float" Frame="1001" />
+    </L1000>
+  </wnd>
+</tmdui>

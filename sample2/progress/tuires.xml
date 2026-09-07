@@ -1,0 +1,14 @@
+<tmdui version="20191018" encoding="utf-8">
+  <pic />
+  <frame>
+    <L1001 class="form" />
+  </frame>
+  <wnd>
+    <L1000 class="window" Frame="1001">
+      <L1002 class="progress" BarPic="71" Max="2" Pos="1" BuddyID="1004" Format="aaa %x ddd" Style="#10011010" Rect="58,119,225,155" BkPic="71" padding="4,4,4,4" />
+      <L1005 class="edit" Rect="213,180,317,200" Frame="1001" />
+      <L1003 class="progress" BarPic="71" Max="100" Pos="50" Style="#10012004" Rect="354,122,433,244" />
+      <L1004 class="edit" Rect="52,64,227,84" Frame="1001" />
+    </L1000>
+  </wnd>
+</tmdui>

@@ -1,0 +1,894 @@
+<html>
+
+<head>
+ <title></title>
+ <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+ <link rel="stylesheet"  href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/vs2015.min.css">
+ <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"></script>
+ <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
+ <style type="text/css">
+  .h1 { font-weight:bold; font-size:110%; }
+  ol,ul { margin-left:1em; padding-left:0.5em; }
+  li { margin-top:10; }
+  pre { margin-top:0; margin-bottom:0; }
+ </style>
+</head>
+
+<body leftmargin="30">
+
+<ol>
+
+<h1 align="center">从划水到放弃<br>- TMDUI上班摸鱼福音书（一）</h1><br><br>
+
+<li class="h1">AT库概览</li>
+<ol type="a">
+ <li>本库包含了TM、DUI、GX三大模块。</li>
+ <li>TM为基本库，包含了调试，线程，文件，字符串，时钟，定时器，GDI等基本模块。</li>
+ <li>GX为图形渲染库，内核可动态切换为GDI、Direct3D、OpenGL。</li>
+ <li>DUI为UI库，有以下特色:</li>
+   1. 消息机制与windows相同。</br>
+   2. 接口与ATL兼容。</br>
+   3. 渲染使用GX库，支持内核动态切换。</br>
+   4. 支持HIDPI，多屏幕，高对比度，暗黑模式。</br>
+   5. 支持MSAA，UIA。<br>
+   6. 支持svg动画。<br>
+   7. 支持动态语言切换，动态换肤。<br>
+   8. 自带所见即所得的编辑器及功能强大的调试工具。<br>
+ <li>DUI与GX不支持多线程，所有的DUI函数，除了PostMessage外，都不能跨线程调用。<br>
+ 不支持多线程的意思是：load TMDui dll，LoadXml，Create等操作都必须在同一线程内。</br>
+ 如果想在其他线程中与主线程交互，第一种方法：CTuiWidget::PostMessage。第二种方法：使用Callxxx系列函数，把跨线程调用转成主线程调用，此函数支持Lambda语法。
+ </li>
+ <li>DUI不对传入参数作出校验，也就是说，如果传入的HTUI句柄是无效的，代码可能崩溃。</li>
+ <li>DUI函数和消息定义处一般都有简单的帮助，另外，由于DUI与ATL接口兼容，大多数帮助可以在MSDN上找到。</li>
+ <li>使用中如果觉得TMDUI有Bug，请联系作者进行控诉，尽量不要用奇技淫巧来回避问题。</li>
+</ol><br />
+
+
+<li class="h1">DUI编程如何避坑</li>
+<ol type="a">
+ <li>尽量减少成员变量：
+  <table border="1" cellspacing="0" cellpadding="0" width="795">
+   <tr>
+    <td>避免</td>
+    <td>推荐</td>
+   </tr>
+   <tr>
+    <td>
+<pre><code>class CFoo {
+    CTuiWidget m_wnd1;
+    void foo() {
+        m_wnd1.Show();
+    }
+};
+</code></pre>
+    </td>
+    <td>
+<pre><code>class CFoo {
+    // CTuiWidget m_wnd1; // 不要缓存控件句柄
+    void foo() {
+        Item(id).Show(); // 需要时才实时获取
+    }
+};
+</code></pre>
+    </td>
+   </tr>
+  </table>
+ </li>
+ <li>坚持即用即建。视觉上不可见的控件，最优选项是destroy掉。<br>
+ 不推荐hide。会有无谓的layout、广播消息、Accessiblity、动画，降低item函数效率。<br>
+ 比较糟糕的选项是把控件大小改成0，同上。<br>
+ 最糟糕的做法是用其他控件盖住，因为盖住了也还是会参与渲染和tabstop。<br>
+ 虚假不可见控件可以通过MSAA hack到，产生安全隐患。
+ </li>
+ <li>尽量不要调用ChangFrame、SetFocus、InvalidateRect、UpdateWindow、SetForegroundWindow这类残害系统自然和谐的函数。</li>
+ <li>尽量不要自己MoveWindow，充分利用DUI的Layout属性，或者arrow控件。阿拉伯语中MoveWindow很容易发生坐标计算错误。</li>
+ <li>代码尽量和资源放在一个模块。</li>
+ <li>单个资源释放应该调用unloadxml()。全部资源释放应该调用Term()。</li>
+ <li>Term()函数必须调用，但是禁止写在dllMain的ProcessDetach中，必须在exe的释放函数链中调用(dll Detach前)。</li>
+ <li>切换DUI版本后一定要用那个版本的编辑器打开资源文件再保存一遍，千万不要手工merge。否则会发生不可描述的事情。</li>
+ <li>由于渲染优化，响应WM_PRINTCLENT不允许设置bHandled=false；否则此消息只会响应一次。</li>
+ <li>窗口自绘不要忘记支持高对比度和暗黑模式。</li>
+ <li>响应WM_DESTROY和WM_NCDESTRY必须设置bHandled=false；</li>
+ <li>基于优化，很多属性在paint后才能拿到正确值，比如说窗口rect，scroll，rich文字位置，tree item位置信息等，请注意鉴别。</li>
+ <li>不要在dllmain中创建UI，应该在LoadDll返回后再创建。</li>
+</ol><br />
+
+
+<li class="h1">调试</li>
+<ol type="a">
+ <li>TM调试宏TM_DBG，默认在debug模式下打开，在Release模式下关闭，在工程设置中加入此宏可以强行打开调试模式。</li>
+ <li>没有TM_DBG宏将关闭以下功能：tmAssert，tmTrace，tmVerfiy(校验函数返回值)，InstanceCheck(内存泄露)，Analysis(性能分析)。</li>
+ <li>DUI调试宏TM_PROTECTED，默认release模式下打开，在debug模式下关闭。作用是调用CTuiWidget函数时，如果wnd值为0，则直接返回，防止代码崩溃。</li>
+ <li>多模块编程中，不同的DLL使用不同的调试宏并且互相引用不会造成程序问题。</li>
+ <li>在自己的类中加上public: TM_CLASS_INSTANCE_CHECK(类名);可以自动检查此类是否内存泄露</li>
+ <li>DUI提供了一个调试工具：<br>
+  在bin\uidesign目录下找到TMDui.dll，或者用TMDui_DebugTool.sln自己编译一个dll。替换掉应用程序的TMDui.dll即可。<br>
+  可以在运行中动态查看和编辑DUI控件、资源、事件，及其他强大功能。
+ </li>
+ <li>简单的方法查看内存泄露：<br>
+  把调试工具拷贝到应用程序目录下，替换掉原配的TMDui.dll。<br>
+  启动程序，用VC调试进去。或者打开第三方trace查看工具。<br>
+  退出程序，查看调试工具打印的内存泄露trace信息。<br>
+  退出时断点下在tmdebug.cpp::~CDebugLeak()，中断后看m_aInfo.items.m_addrCallStack，右键加载符号文件，可看到内存分配时的调用堆栈。<br>
+  如果既没有看到泄露，也没有看到“no object leaks”这句话，那就是退出过程中发生了异常，dll未正常卸载。
+ </li>
+</ol><br />
+
+
+<li class="h1">DUI应用发布的条件</li>
+<ol>
+	<li>清理编译警告4996，确保没有调用已经废弃的函数。</li>
+	<li>用debug模式运行一遍，或者用dll替换法跑一遍，解决掉assert、内存泄露。</li>
+	<li>用DUI调试工具替换TMDui.dll，启动后打开调试工具的Log Message。</li>
+	<li>不要动键盘鼠标，让程序自己运行，要求在没有输入的情况下，meesage spy里没有频繁的消息。</li>
+	<li>message spy里点击Other，勾选Function。</li>
+	<li>不要动键盘鼠标，让程序自己运行，要求在没有输入的情况下，meesage spy里没有频繁的函数调用。</li>
+	<li>打开调试工具，点击performance，然后切换device，要求从d3d9，d3d11切换到其他模式后，TM Object Count里不出现老的模式的对象。</li>
+</ol><br />
+
+
+<li class="h1">最简编译sample</li>
+<ol>
+ <li>打开sample目录。</li>
+ <li>双击Sample.dsw或者Sample_DTools.dsw。后者为带调试工具版。不要开现成的sln文件。</li>
+ <li>vc会把vc6的工程文件转换成新版工程文件。</li>
+ <li>新版vc打开转换完成后，选择所有工程，更改SDK版本为当前使用版本。</li>
+ <li>编译运行。</li>
+</ol><br />
+
+
+<li class="h1">DUI与ATL的CXXXImpl</li>
+<table border="1" cellspacing="0" cellpadding="0" width="795">
+ <tr>
+  <td>&nbsp;</td>
+  <td>CTuiWidgetImpl</td>
+  <td>CTuiDialogImpl</td>
+  <td>ATL::CWindowImpl</td>
+ </tr>
+ <tr>
+  <td>应用范围</td>
+  <td>各级dui控件，包含window控件</td>
+  <td>仅window对应的实体窗口</td>
+  <td>实体窗口</td>
+ </tr>
+ <tr>
+  <td>句柄类型</td>
+  <td>HTUI</td>
+  <td>HWND</td>
+  <td>HWND</td>
+ </tr>
+ <tr>
+  <td>消息处理宏</td>
+  <td>BEGIN_DUIMSG_MAP<br>END_DUIMSG_MAP</td>
+  <td>BEGIN_MSG_MAP<br>END_MSG_MAP</td>
+  <td>BEGIN_MSG_MAP<br>END_MSG_MAP</td>
+ </tr>
+ <tr>
+  <td>取实体窗口句柄</td>
+  <td>GetHWND();</td>
+  <td>GetHWND();<br>m_hWnd</td>
+  <td>m_hWnd</td>
+ </tr>
+ <tr>
+  <td>取Mananger控件HTUI</td>
+  <td>GetWindow(GW_OWNER)</td>
+  <td>m_tuiWindow</td>
+  <td>SendMessage(CM_GET_DUIWIN)</td>
+ </tr>
+ <tr>
+  <td>取子控件</td>
+  <td>Item()<br>GetDlgItem()</td>
+  <td>Item()<br>m_tuiWindow.GetDlgItem()</td>
+  <td>GetDlgItem()</td>
+ </tr>
+ <tr>
+  <td>创建函数</td>
+  <td>Create(HTUI)<br>Create(HWND)<br>SubclassWindow(HTUI)<br>DoModal()<br>CreateByHWND()*</td>
+  <td>Create(HWND)<br>SubclassWindow(HTUI)<br>SubclassWindow(HWND)<br>DoModal()<br>CreateByHWND()*</td>
+  <td>Create(HWND)<br>SubclassWindow(HWND)<br>DoModal()</td>
+ </tr>
+ <tr>
+  <td>最后调用函数</td>
+  <td>OnSubclass()</td>
+  <td>OnSubclass()</td>
+  <td>OnFinalMessage()</td>
+ </tr>
+</table>
+* CreateByHWND为在用户自己的窗口上创建DUI控件，可以解决用户需要自定义窗口类的问题。<br><br>
+
+
+<li class="h1">DUI常用window类</li>
+<table border="1" cellspacing="0" cellpadding="0" width="795">
+ <tr>
+   <td>&nbsp;</td>
+   <td>m_hWnd同步</td>
+   <td>销毁即析构</td>
+   <td>引用计数支持</td>
+   <td>必须包含头文件</td>
+   <td>消息重入风险</td>
+ </tr>
+ <tr>
+   <td>CTuiWidget</td>
+   <td>0</td>
+   <td>0</td>
+   <td>0</td>
+   <td>0</td>
+   <td>0</td>
+ </tr>
+ <tr>
+   <td>CAutoTuiWidget</td>
+   <td>1</td>
+   <td>0</td>
+   <td>0</td>
+   <td>0</td>
+   <td>0</td>
+ </tr>
+ <tr>
+   <td>CTuiWidgetImpl<br>CTuiDialogImpl</td>
+   <td>1</td>
+   <td>0</td>
+   <td>0</td>
+   <td>1</td>
+   <td>1</td>
+ </tr>
+ <tr>
+   <td>CTuiWidgetImpl::CPtr<br>CTuiDialogImpl::CPtr</td>
+   <td>1</td>
+   <td>1</td>
+   <td>1</td>
+   <td>0</td>
+   <td>0</td>
+ </tr>
+  <tr>
+   <td>std::shared_ptr&lt;CTuiWidgetImpl><br>std::shared_ptr&lt;CTuiDialogImpl></td>
+   <td>1</td>
+   <td>1</td>
+   <td>0.5</td>
+   <td>0</td>
+   <td>0</td>
+ </tr>
+</table>
+<ol type="a">
+ <li>m_hWnd同步是指控件销毁时m_hWnd自动置0。</li>
+ <li>销毁即析构是指控件销毁时不但m_hWnd置0，同时自动delete instance。
+<pre><code>// CPtr用法：
+CTuiXXXImpl::CPtr ptrAA; // 不推荐，只适合小项目
+CTuiPtr&lt;class CTuiXXXImpl> ptrAA; // 推荐，不用包含头文件TuiXXXImpl.h，减少编译时间。
+ptrAA.CreateInstance()-&gt;Create(...); // 创建窗口。
+ptrAA.CreateInstance(); ptrAA-&gt;Init(...); ptrAA-&gt;DoModal(...); // 初始化类并创建窗口。
+ptrAA.SetFreeOnDestroy(); //启用或关闭销毁即析构功能，必须在CreateInstance后调用。
+ptrAA.IsWindow(); // 判断类是否有效。
+ptrAA.Release();  // 类变成悬浮内存，直到窗口关闭自动释放。
+ptrAA->DestroyWindow();ptrAA.Release();ptrAA.CreateInstance()->Create(); // 重新创建窗口。
+ptrAA->DestroyWindow();ptrAA.CreateInstance()->Create(); // 错误，创建新窗口应该重开新内存，旧内存可能仍有代码在跑。
+</code></pre>
+ </li>
+ <li>引用计数支持:</li>
+<pre><code>class CA1 : public CTuiWidgetImpl&lt;CA1&gt;, public IUnknown {}
+CA1 a; CComPtr&lt;CA1&gt; b = &amp;a; // 编译通不过，除非用户手工实现AddRef,Release。
+CA1::CPtr a; a.CreateInstance(); CComPtr&lt;CA1&gt; b = a; // 成功，Ptr创建的类会自动实现引用计数。
+// 当类拥有引用计数时，销毁即析构功能关闭，当且仅当引用计数为0时才析构。
+</code></pre>
+ <li>消息重入风险
+<pre><code>class WinA {
+    class WinB m_winB;
+    m_winB.OnMessage(...) { delete WinA; } // 消息处理中删除自己，debug模式下会assert，release模式下崩溃。
+};
+</code></pre>
+ </li>
+ <li>CAutoTuiWidget一般用于接口传递上
+<pre><code>// CAutoTuiWidget用于存放自己不知道生命周期的HTUI句柄。
+CAutoTuiWidget m_wnd;
+...
+m_wnd = hWnd; // hWnd为外部传入的句柄。
+...
+if(m_wnd)...或if(!m_wnd)... // 控件销毁后m_wnd自动置0，保护程序不会崩溃。
+</code></pre>
+ </li>
+ <li id="shared_ptr">支持std::shared_ptr
+<pre><code>class CDemoDlg
+    : public TM::CTuiDialogImpl&lt;CDemoDlg>
+    , public std::enable_shared_from_this<CDemoDlg> // 必须
+{ ... };
+auto x = std::make_shared&lt;CDemoDlg>();
+x->Create(hParent);
+x.reset();        // 虽然指针释放了，但是实例不会销毁，会在窗口销毁后自动销毁。
+CDemoDlg::CPtr x; // 错误，继承了std::enable_shared_from_this后，使用CPtr编译会出错。
+CDemoDlg x;       // 错误，继承了std::enable_shared_from_this后，不使用std::make_shared会导致运行出错。
+</code></pre>
+ </li>
+  <li>导致程序崩溃的代码:
+<pre><code>class CDemoDlg
+    : public TM::CTuiDialogImpl&lt;CDemoDlg> { ... };
+std::shared_ptr<CDemoDlg> x(new CDemoDlg());
+x->Create(hParent);
+x.reset(); // 窗口在，实例销毁，程序崩溃。正确创建方法为auto x = std::make_shared&lt;CDemoDlg>();
+
+class CDemoDlg : public TM::CTuiDialogImpl&lt;CDemoDlg> { ... }
+CDemoDlg* dlg = new CDemoDlg();
+dlg->Create(hParent);
+delete dlg; // 窗口在，实例销毁，程序崩溃。正确创建方法为CDemoDlg::CPtr dlg;
+
+//为安全起见，CTuiXXXImpl屏蔽了operator new(); 推荐使用CTuiXXXImpl::CPtr。
+</code></pre>
+ </li>
+</ol><br>
+
+
+<li class="h1">定制tooltip的3种方式</li>
+<ol type="a">
+  <li>方法1：适用单窗口，在对话框中抓取CM_HINTONXXX消息:
+<pre><code>ROUTE_HANDLER   (CM_HINTONADDTOOL, OnHintAddTool)
+ROUTE_HANDLER   (CM_HINTONSHOW,    OnHintShow)
+...
+ATResult CMain::OnHintAddTool(int idCtrl, TM::DUIMSG* pMsg, ATBool& bHandled)
+{
+    TOOLINFO* p = (TOOLINFO*)pMsg->lParam;
+    CTuiWidget((TM::HTUI)pMsg->wParam).Item(IDC_STATIC_1000).SetWindowText(p->lpszText); // 将文本同步到tooltip
+    return 0;
+}
+
+ATResult CMain::OnHintShow(int idCtrl, TM::DUIMSG* pMsg, ATBool& bHandled)
+{
+    WINDOWPOS* wp = (WINDOWPOS*)pMsg->lParam;
+    ResetPos(wp); // 把tooltip移动到指定位置
+    return 0;
+}
+
+void ResetPos(WINDOWPOS* wp)
+{
+    TM::CRect rc;
+    ::GetWindowRect(wp->hwnd, &rc);
+    POINT pt;
+    GetCursorPos(&pt);
+    rc.MoveToX(pt.x - rc.Width() / 2);
+    rc.MoveToY(pt.y + 20);
+    wp->x = rc.Left();
+    wp->y = rc.Top();
+    wp->flags &= ~SWP_NOMOVE;
+}
+</code></pre>
+  </li>
+  <li>方法2：适用多窗口，创建全局autocreate类:
+  	<pre><code>class CDlgTooltip2
+    : public TM::CTuiDialogImpl<CDlgTooltip2>
+{
+public:
+    enum { IDD = IDC_MANAGE_TOOLTIP2 };
+    
+    BEGIN_MSG_MAP (CDlgTooltip2)
+        MESSAGE_HANDLER     (TTM_ADDTOOL,             OnAddTool)
+        MESSAGE_HANDLER     (WM_WINDOWPOSCHANGING,    OnWindowPosChanging)
+    END_MSG_MAP()
+    
+    ATResult OnAddTool (ATUInt uMsg, ATWParam wParam, ATLParam lParam, ATBool& bHandled);
+    ATResult OnWindowPosChanging (ATUInt uMsg, ATWParam wParam, ATLParam lParam, ATBool& bHandled);
+};
+
+ATResult CDlgTooltip2::OnAddTool(ATUInt uMsg, ATWParam wParam, ATLParam lParam, ATBool& bHandled)
+{
+    bHandled = false;
+    TOOLINFO* p = (TOOLINFO*)lParam;
+    Item(IDC_STATIC_1000).SetWindowText(p->lpszText); // 将文本同步到tooltip
+    return 0;
+}
+
+ATResult CDlgTooltip2::OnWindowPosChanging(ATUInt uMsg, ATWParam wParam, ATLParam lParam, ATBool& bHandled)
+{
+    WINDOWPOS* p = (WINDOWPOS*)lParam;
+    ResetPos(p); // 把tooltip移动到指定位置
+    bHandled = false;
+    return 0;
+}
+
+int main()
+{
+    ...
+    CDlgTooltip2::RegisterAutoCreate(); // 自动窗口必须事先注册.
+}
+</code></pre>
+  </li>
+  <li>方法3：用MessageFilter捕捉上述4个消息处理。不推荐，因为影响全局性能。</li>
+  <li>如果用arrow来实现定位，则不用响应CM_HINTONSHOW和WM_WINDOWPOSCHANGING消息。</li>
+  <li>tooltip例子见sample:Tooltip。</li>
+</ol><br>
+
+
+<li class="h1">自动宽/高度(window,widget,float)</li>
+当父控件拥有LAYOUT_AUTOWIDTH(HEIGHT)属性并且子控件拥有ALIGN、FOLLOW布局属性时，子控件会在完成布局计算后自动调整父控件位置和大小。
+<ol>
+例如：align left的子控件集合计算完布局后，DUI算出第一个align left子控件左边框减左marge位置是-10，最后一个align left子控件右边框加右margin是100，得到长度110。然后根据这个值更改父控件的scroll width。<br>
+align left、right可以调整父控件宽度，align top、bottom可调整父控件高度，align client不可调整。<br>
+子控件算出理论长宽后，向父控件发送CM_SETSCROLLRANGE消息，父控件在收到这个消息后异步movewindow。
+</ol>
+<table border="1" cellspacing="0" cellpadding="0" width="795">
+ <tr>
+   <td>父窗口</td>
+   <td>子窗口</td>
+   <td>父窗口高度</td>
+   <td>父窗口宽度</td>
+ </tr>
+ <tr>
+   <td>autoheight</td>
+   <td>ALIGN_TOP_XXX</td>
+   <td>所有ALIGN_TOP_XXX的子窗口高度相加</td>
+   <td>n/a</td>
+ </tr>
+ <tr>
+   <td>autoheight</br>autowidth</td>
+   <td>同上</td>
+   <td>同上</td>
+   <td>所有ALIGN_TOP_XXX+autowidth的子窗口宽度最大值</td>
+ </tr>
+ <tr>
+   <td>autoheight</td>
+   <td>ALIGN_BOTTOM_XXX</td>
+   <td>所有ALIGN_BOTTOM_XXX的子窗口高度相加</td>
+   <td>n/a</td>
+ </tr>
+  <tr>
+   <td>autoheight</br>autowidth</td>
+   <td>同上</td>
+   <td>同上</td>
+   <td>所有ALIGN_BOTTOM_XXX+autowidth的子窗口宽度最大值</td>
+ </tr>
+ <td>autowidth</td>
+   <td>ALIGN_LEFT_XXX</td>
+   <td>所有ALIGN_LEFT_XXX的子窗口宽度相加</td>
+   <td>n/a</td>
+ </tr>
+ <td>autowidth</br>autoheight</td>
+   <td>同上</td>
+   <td>同上</td>
+   <td>所有ALIGN_LEFT_XXX+autoheight的子窗口高度最大值</td>
+ </tr>
+ <tr>
+   <td>autowidth</td>
+   <td>ALIGN_RIGHT_XXX</td>
+   <td>所有ALIGN_RIGHT_XXX的子窗口宽度相加</td>
+   <td>n/a</td>
+ </tr>
+ <td>autowidth</br>autoheight</td>
+   <td>同上</td>
+   <td>同上</td>
+   <td>所有ALIGN_RIGHT_XXX+autoheight的子窗口高度最大值</td>
+ </tr>
+  <td>autowidth</br>autoheight</td>
+   <td>同时存在横向和纵向ALIGN</td>
+   <td>所有纵向ALIGN的子窗口高度相加(忽略子窗口自动宽度)</td>
+   <td>所有横向ALIGN的子窗口宽度相加(忽略子窗口自动高度)</td>
+ </tr>
+</table>
+<br>注意事项：
+<ol type="a">
+ <li>FOLLOW属性的子窗口只能让父窗口自动高度，不能让父窗口自动宽度。
+ <li>父控件的调整方向跟子控件的align方向无关，父控件根据自己的的锚定情况来决定往哪个方向拉升或缩小。<br>
+     例如：如果父控件是靠右的，那么就是移动父控件的左边框，如果父控件是靠左的，那么就是移动父控件的右边框。如果父控件是居中或者frame的，则使父控件向两边同时收缩或者扩张，跟子控件是否align left、right无关。
+ <li>自动大小支持dialog，并且这种调整也符合注意事项b：<br>
+     例如：如果用户希望对话框自动调整时保持底部坐标不变，那么可以设置dialog的layout属性为align bottom或者anchor bottom。
+ <li>自动大小支持递归调用：第5层子控件决定第4层子控件，第4层子控件决定第三层子控件...，直到dialog。
+ <li>不推荐自己响应size消息来手动move父控件。
+ <li>align client的意思是自己的大小由父控件决定，自动宽/高度的意思是自己的大小由子控件决定。这两者逻辑上互相矛盾，所以align client属性不会影响父控件的自动宽/高度。
+ <li>static，button的自动宽/高度由控件内容决定，跟子窗口无关。
+</ol><br>
+
+
+<li class="h1">让子控件Align模式不影响父控件视觉效果.</li>
+举例: 在edit中嵌入一个align left的按钮，按钮会挡住edit的文字。<br>
+此时可以设置edit的pading left比如为30，然后设置按钮的magin left为-30，就可以让edit的文字避开按钮。<br>
+comb button就属于这个技巧的典型应用。<br><br>
+
+
+
+<li class="h1">CTimer与CAni，CVni</li>
+<table border="1" cellspacing="0" cellpadding="0" width="795">
+ <tr>
+  <td>&nbsp;</td>
+  <td>CTimer</td>
+  <td>CAni</td>
+  <td>CVni</td>
+ </tr>
+ <tr>
+  <td>实现方式</td>
+  <td>操作系统函数</td>
+  <td>自己创建后台线程</td>
+  <td>显卡垂直同步线程</td>
+ </tr>
+ <tr>
+  <td>精度</td>
+  <td>低</td>
+  <td>高</td>
+  <td>最高</td>
+ </tr>
+ <tr>
+  <td>优先级</td>
+  <td>低于WM_PAINT</td>
+  <td>与SendMessage相同</td>
+  <td>最高</td>
+ </tr>
+ <tr>
+  <td>线程</td>
+  <td>支持有消息队列的线程</td>
+  <td>只支持主线程</td>
+  <td>只支持主线程</td>
+ </tr>
+ <tr>
+  <td>创建</td>
+  <td>CreateTimer</td>
+  <td>CreateAni</td>
+  <td>CreateAni</td>
+ </tr>
+ <tr>
+  <td>销毁</td>
+  <td>KillTimer</td>
+  <td>KillAni</td>
+  <td>KillAni</td>
+ </tr>
+ <tr>
+  <td>回调</td>
+  <td>OnTimer</td>
+  <td>OnAni</td>
+  <td>OnAni</td>
+ </tr>
+ <tr>
+  <td>扩展</td>
+  <td>n/a</td>
+  <td>Set/GetDelay<br>
+   Set/GetCurrentFrame<br>
+   Pause/Resume</td>
+  <td>GetClock<br>GetDelay</td>
+ </tr>
+ <tr>
+  <td>推荐度</td>
+  <td>推荐</td>
+  <td>不推荐。仅用于高精度或者需要用到扩展函数</td>
+  <td>不推荐。仅用于动画</td>
+ </tr>
+</table><br>
+
+
+<li class="h1">ObjectID与CommandID</li>
+<table border="1" cellspacing="0" cellpadding="0" width="795">
+<tbody>
+ <tr>
+  <td width="20">&nbsp;</td>
+  <td width="130">&nbsp;</td>
+  <td>object ID</td>
+  <td>command ID</td>
+ </tr>
+ <tr>
+  <td>1</td>
+  <td>编辑器中位置</td>
+  <td>左边树控件中</td>
+  <td>右边属性栏中</td>
+ </tr>
+ <tr>
+  <td>2</td>
+  <td>编辑器中唯一性</td>
+  <td>唯一</td>
+  <td>不唯一，可以使用IDOK等宏</td>
+ </tr>
+ <tr>
+  <td>3</td>
+  <td>运行时唯一性</td>
+  <td>多次Create会导致重复</td>
+  <td>编辑时就可以重复</td>
+ </tr>
+ <tr>
+  <td>4</td>
+  <td>Item()函数</td>
+  <td>支持</td>
+  <td>支持</td>
+ </tr>
+ <tr>
+  <td>5</td>
+  <td>route message</td>
+  <td>ROUTE_OID_HANDLER</td>
+  <td>ROUTE_ID_HANDLER</td>
+ </tr>
+ <tr>
+  <td>6</td>
+  <td>command handler</td>
+  <td>不支持</td>
+  <td>COMMAND_XXX_HANDLER</td>
+ </tr>
+ <tr>
+  <td>7</td>
+  <td>Item()可靠性</td>
+  <td>比较高，但要避免第3条</td>
+  <td>可能得到意外的控件句柄</td>
+ </tr>
+ <tr>
+  <td>8</td>
+  <td>替换性</td>
+  <td>换语言，换skin，要根据oid来查找目标，所以不能用cid代替oid</td>
+  <td>因为要支持IDOK等宏，所以不能用oid代替cid</td>
+ </tr>
+ <tr>
+  <td>9</td>
+  <td>取值范围</td>
+  <td>32位</td>
+  <td>16位，不得大于65535</td>
+ </tr>
+</tbody>
+</table><br>
+
+
+<li class="h1">绑定窗口</li>
+<ul type="disc">
+ <li>绑定窗口是用复杂的窗口来显示一个简单的物件。
+ <li>绑定窗口目前有4个应用：显示listbox item，显示tree item，rich控件显示item，窗口转ITuiPic。
+ <li>list和rich可以用XXXBindItemWindow系列函数绑定窗口。
+ <li>rich可以用HTML之扩展"widget"标签来实现窗口绑定: "&lt;widget src='object id' /> "。
+ <li>任何窗口调用函数ConvertToPic后，可以把ITuiPic指针传给任何可以使用ITuiPic渲染的地方，例如button的forepic。
+ <li>绑定窗口的原理是在要画的时候把窗口移动到那个地方，然后进行渲染。
+ <li>绑定窗口不在全局窗口列表内，所以不能用Item函数拿到窗口句柄，tabstop需要特殊实现。
+ <li>一个绑定窗口一次只能渲染一个地方，如果要渲染2个地方，就要创建2个实例。
+ <li>list绑定窗口的例子：sample目录下的ListBindWnd。
+ <li>tree绑定窗口的例子：sample目录下的TreeBindWnd。
+ <li>rich绑定窗口的例子：sample目录下的RichEdit。
+ <li>ConvertToPic的例子：sample目录下的Win2Pic。
+</ul><br>
+
+
+<li class="h1">DUI键盘消息</li>
+<ol>
+ <li>DUI收到键盘消息后，首先以CM_APPMESSAGE分发给MessageFilter,用户可以用_tuiApp.AddMessageFilter来拦截消息。
+ <li>然后消息进入实体窗口的WindowProc,用户可以在dialog上用BEGIN_MSG_MAP拦截消息。
+ <li>消息发送给当前focus控件。(分发给MessageFilter,然后route,然后WidgetProc)。
+ <li>用户可以拦截focus控件收到消息并自己处理回车、tab、箭头、esc、加速键。此时设置bhandle=true可以中断消息传递。
+ <li>DUI控件处理完key消息后，会向父控件发送CM_MSGBUBBLE消息，这个就是DUI的冒泡机制。冒泡的意思是会向父控件转发，直到mgr窗口。
+ <li>mgr收到冒泡消息后会处理默认键盘事件，比如tab和箭头键会切换focus控件，回车键会发送IDOK，ESC键会发送IDCANCEL，加速键会发送相应COMMAND消息。
+ <li>如果当前对话框没有focus控件，那么键盘消息会直接以CM_MSGBUBBLE发送到mgr窗口上。<br>
+ <li>如果想事先拦截当前窗口的键盘消息，可以使用ROUTE_HANDLER。<br>
+ <li>如果想事先拦截所有窗口的键盘消息，可以使用MessageFilter。<br>
+</ol><br>
+
+
+<li class="h1">Tab键控制</li>
+<ol>
+	<li>TabGroup与ArrowGroup</li>
+  <table border="1" cellspacing="0" cellpadding="0" width="795">
+  <tr>
+    <td>&nbsp;</td>
+    <td>tab group</td>
+    <td>arrow group</td>
+  </tr>
+  <tr>
+    <td>属性</td>
+    <td>WS_ADV_TABGROUP</td>
+    <td>WS_ADV_ARROWGROUP</td>
+  </tr>
+  <tr>
+    <td>设置后</td>
+    <td>按tab键不会跳出此控件<br>所有子控件循环focus</td>
+    <td>按箭头键不会跳出此控件<br>所有子控件循环focus</td>
+  </tr>
+  <tr>
+    <td>不设置</td>
+    <td>按tab键全对话框循环focus</td>
+    <td>不响应箭头键</td>
+  </tr>
+  </table>
+  <li>WS_GROUPTABSTOP</li>
+  同一个父窗口下的所有带WS_AUTOTABSTOP的窗口为一个整体，按tab键只会进入这个整体一次，再按tab键就切出了这个整体。</br>
+  可以配合ArrowGroup在整体内用箭头键切换tab。</br>
+  典型的应用有radio控件组，tab button控件组.
+</ol><br>
+
+
+<li class="h1">定制光标形状</li>
+与Windows标准不同，DUI的WM_SETCURSOR是在CM_MOUSEENTRY后发送的，而且只发一次，直到鼠标进入另外一个控件。<br>
+响应WM_SETCURSOR->调用SetCursor->return 1。就能定制控件光标。<br>
+如果想在同一个控件内设置不同的光标，比如左边超链接右边箭头，可以拦截WM_SETCURSOR，同时在WM_MOUSEMOVE中SetCursor。<br><br>
+
+
+
+<li class="h1">多语言相关</li>
+<ol type="a">
+  <li>加载语言包实例：_tuiApp.LoadXml(_Module.m_hInst, 0, L"Lang1.xml");</li>
+  <li>在已经加载过基础包的情况下，加载语言包时不要重复加载基础包(上面第二个参数为0)。</li>
+  <li>_tuiApp.LoadMenu, _tuiApp.LoadString返回均为当前语言。</li>
+  <li>CTuiString类可以加载字符串资源。</li>
+  <li>CTuiWidget的字符串函数：WindowText, AccText, HInt, Item Text都可以直接使用资源ID。</li>
+  <li>Window Text, Item Text, Prompt都支持HTML的显示(无HTML的DUI扩展)。</li>
+  <li>窗口属性AdvStyle::WS_ADV_L2RHINT强制窗口tooltip正向。</li>
+  <li>窗口属性TextFormat::DT_L2RREADING强制文本显示正向。</li>
+  <li>图片属性Valid::L2RReading强制图片显示正向。</li>
+  <li>自绘文本IGXText::SetFormat(DT_L2RREADING)强制文本显示正向。</li>
+  <li>阿拉伯语下CTuiWidget::ClientToScreen返回的rect方向是反的（width为负数），解决方案为调用CRect::NormallizeRect()。</li>
+</ol><br/>
+
+
+<li class="h1">避免重复加载字串表</li>
+ DUI可以提取rc中的字符串表到语言包中。<br>
+ 在这种情况下，编译出来的exe中就会产生2份字符串表：一份是rc编译出来的，一份写在xml中的，造成了不必要的重复。<br>
+ 为了避免这种情况发生，可以如下处理rc文件：<br>
+<ol>
+ <li>假设原来的默认语言是英语（ENU）。</li>
+ <li>用VC打开资源，在string table上右键属性，然后选择一个其他的语言，比如韩语。</li>
+ <li>在VC工程设置里选择资源选项，在预处理定义中加入宏：AFX_RESOURCE_DLL,AFX_TARG_ENU。</li>
+ <li>指定英语的rc编译出来后不带韩语字串表，又可以被DUI导出，完美解决问题。</li>
+</ol><br/>
+
+
+
+<li class="h1">高对比度模式下的行为</li>
+<br />几个相关的style:
+<table border="1" cellspacing="0" cellpadding="0" width="795">
+  <tr>
+    <td>SS_WINDOWBKONHC</td>
+    <td>高对比度下显示COLOR_WINDOW</td>
+  </tr>
+  <tr>
+    <td>SS_DLGBKONHC</td>
+    <td>高对比度下显示COLOR_BTNFACE</td>
+  </tr>
+  <tr>
+    <td>SS_CLEARBKONHC</td>
+    <td>高对比度下用RGBA(0,0,0,0)清除背景</td>
+  </tr>
+  <tr>
+    <td>SS_NULLBKONHC</td>
+    <td>高对比度下不画背景</td>
+  </tr>
+  <tr>
+    <td>SS_NULLBKONNORMAL</td>
+    <td>正常情况下不画背景</td>
+  </tr>
+  <tr>
+    <td>无</td>
+    <td>高对比度下画bkpic</td>
+  </tr>
+</table>
+<br />控件行为:
+<table border="1" cellspacing="0" cellpadding="0" width="795">
+  <tr>
+    <td>对象</td>
+    <td>背景</td>
+    <td>前景</td>
+  </tr>
+  <tr>
+    <td>Frame; Sys; GroupBox</td>
+    <td>系统</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>PushButton; TabButton; ComboButton</td>
+    <td>系统</td>
+    <td>无影响</td>
+  </tr>
+  <tr>
+    <td>Widget; Dummy; ActiveX; ScrollBox; Video</td>
+    <td>COLOR_3DFACE</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>MenuBar</td>
+    <td>COLOR_3DFACE</td>
+    <td>系统</td>
+  </tr>
+  <tr>
+    <td>Rich; Edit; Memo</td>
+    <td>COLOR_WINDOW</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Tree; ListBox</td>
+    <td>COLOR_WINDOW</td>
+    <td>系统</td>
+  </tr>
+  <tr>
+    <td>Window; Static; Float; Arrow</td>
+    <td>用户指定<br>
+    </td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Splitter</td>
+    <td>COLOR_SCROLLBAR</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>CheckBox; RadioButton</td>
+    <td>透明</td>
+    <td>系统</td>
+  </tr>
+  <tr>
+    <td>Animate</td>
+    <td>无影响</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Progress; TrackBar; UpDown</td>
+    <td>无影响</td>
+    <td>无影响</td>
+  </tr>
+</table>
+上述表格的前提是设置了前景pic和背景pic，无pic则忽略上述行为。<br>
+高对比模式下的颜色值详情，请查看CAppColor(atcolor.h)。<br>
+DUI bitmap有一个属性MonochromeOnHC，勾上后可以在高对比度模式下把位图颜色按像素alpha值改成当前的文字颜色。<br>
+算法: dest.R = 字.R * 图.A; dest.G = 字.G * 图.A; dest.B = 字.B * 图.A; dest.A = 图.A;（字的RGB由系统决定）<br>
+这个模式仅适用于线框模式的图，不适用于色块模式的图。<br>
+色块模式的图在高对比度下有可能跟背景色无法区分，所以色块图在设计的时候就应该用其他颜色描边。<br>
+小技巧：
+<ul type="disc">
+ <li>如果一个PushButton的需求是正常状态无背景，高对比度要求显示成标准按钮，可以把bkpic设置成IDP_PRE_PIC_NULL。</li>
+ <li>如果一个半透明窗口的需求是正常状态有阴影，高对比度要求显示正常对话框，可以把bkpic设置成阴影，但是frame里的pic设置成DP_PRE_PIC_NULL。</li>
+ <li>如果一个edit要求正常状态有4态边框，高对比度下变成正常边框，可以把bkpic设置成4态边框，但是frame里的pic设置成DP_PRE_PIC_NULL。</li>
+</ul><br/>
+
+<li class="h1">颜色</li>
+ DUI颜色属性同时支持色彩模式、索引模式、默认模式、继承模式。<br>
+ 色彩模式为预乘ARGB。例如:alpha为0xF0的白色值为0xf0f0f0f0，而不是0xf0ffffff。<br>
+ 索引模式为windows预定义的COLOR_XXX宏，用户可以用ColorFromSys()来取得实际的颜色值。<br>
+ 默认模式表示使用控件默认颜色。<br>
+ 继承模式表示使用父控件当前的颜色，继承模式支持高对比度，其他都不支持。<br>
+ TMColor除了RGBA(0,0,0,0)外，不能使用其他alpha为0的颜色，比如RGBA(255,255,255,0)，可以用RGBA(255,255,255,1)代替。<br>
+ 索引与继承模式会忽略高对比度。也就是说，在高对比下，这两种模式使用用户配置，不用系统配置。<br>
+ 案例1：button设置成索引色可以模拟hyperlink的效果。<br>
+ 案例2：static成为button的子窗口并且设置成继承可以让文字颜色与button同步。<br>
+ <br/>
+
+
+<li class="h1">动态换肤及暗黑模式</li>
+<ol type="a">
+<li>DUI有三大方法可以实现动态换肤：<br/>
+1. 用_tuiApp.LoadXml的第3个参数加载皮肤。具体例子可以参考sample目录里的SkinLanguage。维护繁琐，不推荐。<br/>
+2. 动态调用函数设置对象颜色，背景等。维护麻烦，不推荐。<br/>
+3. 使用_tuiApp.SetColorTransform函数：推荐。<br/>
+<pre><code>// 这是DUI编辑器实现暗黑模式的代码，这种方法相对简单。
+void SetDark(ATBool bUIDark)
+{
+    // TM::CColorTransformDark为DUI内置的dark类，作用是反转颜色值。
+    struct CDarkStyle : public TM::CColorTransformDark
+    {
+        virtual TMColor ConvertColor(ATLParam context, TMColor clr) at_override
+        {
+            // context为颜色拥有者的object id，可以是pic，frame或window。
+            if (context == IDC_CLR_TOOLBAR || context == IDP_GRADIENT_10003)
+                return TMRGB(0,0,0);
+            else if (context == IDO_DUI_MENUBAR_10004 && clr != TMRGB(255,255,255))
+                return clr;
+            return CColorTransformDark::ConvertColor(context, clr);
+        }
+    };
+        
+    static CDarkStyle style;
+    _tuiApp.SetColorTransform(_Module.m_hInstResource, bUIDark ? &style : 0);
+}
+</code></pre>
+<li>调用SetColorTransform后，当前module的所有窗口都会收到CM_USERINTERFACE消息。
+<li>把Pic对象的Valid::ColorTransform属性勾上后就可以启用Pic的色彩转换。否则Pic在dark模式里维持原样，不会转换颜色。
+<li>点击DUI编辑器工具栏上的"Test - High contrast/Dark mode"可以实际观察测试对象的效果。
+<li>DUI编辑器菜单View->Dark Mode可以把编辑器设置成暗黑模式。
+<li>以上3种方法可视需求自由组合使用。
+</ol><br/>
+
+
+<li class="h1">支持读屏软件</li>
+<ol>
+ <li>DUI所有窗口role默认都是window。
+ <li>系统主窗口role应该设置成application。
+ <li>对话框role应该设置成dialog。
+ <li>list,tree的role可以设置成PAGETABLIST,LIST,WINDOW,GROUP,对应的item分别为PAGETAB,LISTITEM,STATICTEXT。
+</ol><br/>
+
+
+<li class="h1">SVG动画限制</li>
+<ol>
+ <li>不支持任何滤镜。(阴影可用渐变代替)
+ <li>不支持文字。(可用path代替)
+ <li>不支持嵌入图像。
+ <li>不支持mask,clip。(可改变物体Z顺序或建一个遮挡物体代替)
+ <li>不支持属性animation_delay,animation_iteration_count,animation_direction,animation_fill_mode。
+ <li>不支持&lt;animateMotion>&lt;animateColor>。(可用CSS @keyframes代替)
+ <li>&lt;animateXXX>属性只支持attributeName,type,from,to,dur,keyTimes,values。
+ 
+</ol><br>
+
+</ol>
+
+
+</body>
+</html>

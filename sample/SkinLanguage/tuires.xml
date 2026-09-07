@@ -1,0 +1,20 @@
+<tmdui version="20210202" encoding="utf-8">
+  <pic>
+    <L1001 class="bmp" FrameNum="1" FileName="strawberry.png" Valid="#9FF" />
+    <L1002 class="bmp" FrameNum="1" FileName="girl.png" Valid="#19FF" />
+    <L1003 class="bmp" FrameNum="10" Left="5" Top="5" Right="5" Bottom="5" FileName="button.png" />
+    <L1004 class="bmp" FileName="close.png" />
+    <L1005 class="bmp" FrameNum="1" FileName="button2.png" />
+    <L1006 class="bmp" FrameNum="1" FileName="button3.png" />
+    <L1007 class="bmp" FileName="close2.png" />
+  </pic>
+  <frame />
+  <wnd>
+    <L1000 class="window" ID="1015" AdvStyle="#80000" Rect="0,0,420,440" Text="TUI Demo" BkPic="1002">
+      <L1014 class="static" TextColor="#80FFFF" Rect="109,124,327,176" Text="TUI Demo" Font="Verdana:37" />
+      <L1008 class="pushbutton" HighlightTextColor="#80FF" ID="1011" Rect="94,271,220,302" Text="Change Skin" BkPic="1003" />
+      <L1009 class="pushbutton" HighlightTextColor="#80FF" ID="1012" Rect="95,316,221,347" Text="Change Language" BkPic="1003" />
+      <L1010 class="pushbutton" ID="1013" Rect="351,74,375,98" BkPic="1004" />
+    </L1000>
+  </wnd>
+</tmdui>

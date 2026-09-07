@@ -1,0 +1,58 @@
+<tmdui version="20210202" encoding="utf-8">
+  <pic>
+    <L10008 class="gradient" ColorTo="#80FF" FillMode="10" />
+    <L20029 class="bmp" Left="15" Right="14" FileName="button2.png" />
+    <L21002 class="clr" Color="#FFFFFF" />
+  </pic>
+  <frame>
+    <L10001 class="form" />
+  </frame>
+  <wnd>
+    <L10002 class="window" Style="#10CF0802" Layout="#22020" Rect="0,0,633,440" BkPic="10008" Frame="10001">
+      <L20008 class="widget" Style="#10400000" AdvStyle="#14000" Rect="59,43,379,230" Frame="10001">
+        <L10003 class="pushbutton" StateNumber="2" HighlightTextColor="#FF0000" DisableTextColor="#C0C0C0" FocusTextColor="#FFFF80" ID="20007" Style="#10050016" AdvStyle="#10" Rect="69,96,216,127" Text="Menu Pop Window">
+          <L21006 class="pushbutton" Style="#10010016" Rect="70,97,90,111" Text="c" />
+        </L10003>
+        <L20015 class="pushbutton" ID="20016" Style="#10010016" Rect="67,135,213,160" Text="Menu Pop Dialog" />
+        <L10011 class="checkbox" Style="#10050016" Rect="222,202,361,222" Text="check(Tooltip)" HintDlg="21012" Hint="check(Tooltip)" />
+        <L10012 class="radiobutton" Style="#10050016" Rect="76,173,196,193" Text="radio 1" />
+        <L10013 class="radiobutton" Style="#10050016" Rect="75,204,195,224" Text="radio 2" />
+        <L10014 class="edit" TextFormat="#0" Style="#10050000" Rect="236,97,368,125" Text="edit" Frame="10001" />
+        <L20017 class="pushbutton" ID="20018" Style="#10010016" Rect="242,136,362,156" Text="Close Self" />
+        <L20020 class="pushbutton" ID="20021" Style="#10010016" Rect="243,167,363,187" Text="Close Child" />
+        <L21007 class="float" Rect="69,54,144,74">
+          <L21008 class="edit" Layout="#41" Rect="69,54,144,74" Text="float" BkPic="21002" Frame="10001" />
+        </L21007>
+        <L21011 class="dummy" BindDlg="21009" Rect="155,54,355,74" />
+      </L20008>
+      <L21004 class="pushbutton" Rect="8,268,213,288" Text="Move In To Destroy Menu2" />
+      <L21005 class="pushbutton" Rect="8,289,263,309" Text="Move In To Destroy Menu3 owner" />
+      <L21014 class="pushbutton" ID="21014" Rect="11,379,265,399" Text="other process window embed TUI" />
+      <L21015 class="pushbutton" ID="21015" Rect="10,404,264,424" Text="TUI embed other process window" />
+    </L10002>
+    <L20010 class="window" DefaultItem="21016" AdvStyle="#4080" Rect="0,0,236,383" BkPic="10008">
+      <L21016 class="widget" Style="#0" Rect="81,13,281,33" />
+      <L20023 class="menuitem" StateNumber="2" CheckSize="16,16" ID="20025" Style="#10010016" Rect="0,0,236,28" Text="aaa" BkPic="20029" />
+      <L20024 class="menuitem" submenu="20010" Style="#10010016" Rect="0,28,236,48" Text="bbbb" BkPic="20029" />
+      <L20026 class="menuitem" Style="#10010016" Rect="0,48,236,68" Text="ccccc" BkPic="20029" />
+      <L20027 class="menuitem" DownOffsetX="2" DownOffsetY="2" Style="#10010016" Rect="0,68,236,88" Text="ssss" BkPic="20029" />
+      <L20011 class="pushbutton" ID="20016" Style="#10010016" Rect="38,85,203,110" Text="Menu Pop Dialog" />
+      <L20012 class="edit" Rect="66,122,186,142" Frame="10001" />
+      <L20013 class="checkbox" Rect="57,151,177,171" Text="aaa" />
+      <L20014 class="radiobutton" Rect="56,186,176,206" Text="bbb" />
+      <L20019 class="pushbutton" ID="20018" Style="#10010016" Rect="49,229,169,249" Text="Close Self" />
+      <L20022 class="pushbutton" ID="20021" Style="#10010016" Rect="49,261,169,281" Text="Close Child" />
+      <L20028 class="radiobutton" Rect="48,295,168,315" Text="ccc" />
+      <L21000 class="float" Rect="27,327,201,347">
+        <L21001 class="edit" Rect="44,330,177,350" Text="This is Float" BkPic="21002" Frame="10001" />
+      </L21000>
+      <L21003 class="static" Rect="29,359,212,379" Text="static(Tooltip)" HintDlg="21012" Hint="static(Tooltip)" />
+    </L20010>
+    <L21009 class="window" Style="#50000002" Rect="0,0,68,25" Frame="10001">
+      <L21010 class="edit" Layout="#41" Rect="0,0,68,25" Text="dummy mgr" BkPic="21002" Frame="10001" />
+    </L21009>
+    <L21012 class="window" Style="#CF0002" AdvStyle="#8000000" Rect="0,0,295,415" Text="tooltip" Frame="10001">
+      <L21013 class="pushbutton" Rect="32,53,171,73" Text="ok" />
+    </L21012>
+  </wnd>
+</tmdui>

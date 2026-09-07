@@ -1,0 +1,26 @@
+<tmdui version="20191219" encoding="utf-8">
+  <pic>
+    <L1001 class="bmp" FrameNum="1" FileName="about.gif" />
+    <L1003 class="ani" Delay="1000" FrameNum="5" FileName="vscroll.png" />
+  </pic>
+  <frame />
+  <wnd>
+    <L1000 class="window">
+      <L1002 class="animate" Repeat="1" Style="#10000004" Rect="82,58,216,177" BkPic="1003" />
+    </L1000>
+    <L1004 class="window">
+      <L1005 class="pushbutton" Rect="64,48,367,213">
+        <L1006 class="animate" Style="#4" Rect="116,71,250,190" BkPic="1003" />
+      </L1005>
+    </L1004>
+    <L1007 class="window">
+      <L1008 class="pushbutton" Rect="75,48,378,213">
+        <L1009 class="animate" Style="#10000004" Rect="127,71,199,150" BkPic="1003" />
+        <L1010 class="animate" Repeat="1" Style="#10000004" Rect="242,79,314,158" BkPic="1001" />
+      </L1008>
+    </L1007>
+    <L1011 class="window">
+      <L1012 class="animate" Style="#4" Rect="159,51,231,130" BkPic="1001" />
+    </L1011>
+  </wnd>
+</tmdui>

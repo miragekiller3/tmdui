@@ -1,0 +1,111 @@
+/**
+ *  @file
+ *  @brief
+ *
+ *  @author WIZARD_USERNAME
+ *  @date   WIZARD_DATA
+ *
+ *  Copyright (C) WIZARD_YEAR WIZARD_USERNAME
+ *  All rights reserved  
+ */
+
+#include "stdafx.h"
+//#include "resource.h"
+#include "WIZARD_RES_XML_HFILE.h"
+#include "WIZARD_PROJECTNAME_global.h"
+
+
+CComModule _Module;
+
+
+#ifdef TM_QT
+
+//extern "C"
+//{
+// WIZARD_PROJECTUPPERNAME_API void sample() {}
+//}
+
+// class WIZARD_PROJECTUPPERNAME_API samele {};
+
+#else
+
+
+// BEGIN_OBJECT_MAP(ObjectMap)
+// END_OBJECT_MAP()
+
+/////////////////////////////////////////////////////////////////////////////
+// DLL Entry Point
+
+extern "C" BOOL WINAPI DllMain(HINSTANCE hInstance, DWORD dwReason, LPVOID /*lpReserved*/)
+{
+    if (dwReason == DLL_PROCESS_ATTACH)
+    {
+        DisableThreadLibraryCalls(hInstance);
+        _Module.Init(0, hInstance, 0);
+        _tuiApp.LoadXml(hInstance, TM_T("WIZARD_RES_XML_NAME"));
+    }
+    else if (dwReason == DLL_PROCESS_DETACH)
+    {
+        _tuiApp.UnLoadXml(hInstance);
+        _Module.Term();
+    }
+    return TRUE;    // ok
+}
+
+
+/*
+/////////////////////////////////////////////////////////////////////////////
+// Used to determine whether the DLL can be unloaded by OLE
+
+STDAPI DllCanUnloadNow(void)
+{
+    return (_Module.GetLockCount()==0) ? S_OK : S_FALSE;
+}
+
+/////////////////////////////////////////////////////////////////////////////
+// Returns a class factory to create an object of the requested type
+
+STDAPI DllGetClassObject(REFCLSID rclsid, REFIID riid, LPVOID* ppv)
+{
+    return _Module.GetClassObject(rclsid, riid, ppv);
+}
+
+/////////////////////////////////////////////////////////////////////////////
+// DllRegisterServer - Adds entries to the system registry
+
+#ifdef MOZILLA_STRICT_API
+#   include "tmregkey.h"
+#   include "tmdll.h"
+#endif // MOZILLA_STRICT_API
+
+STDAPI DllRegisterServer(void)
+{
+#ifdef MOZILLA_STRICT_API
+    TM::CRegKey key;
+    key.OpenAlways(TM::CRegKey::HKLM(), TM_T("SOFTWARE\\MozillaPlugins\\@cisco.com/npWIZARD_PROJECTNAME"), key.e_kaWrite);
+
+    TMCharT fn[PATH_MAX] = {0};
+    DllName(_Module.GetModuleInstance(), fn);
+//     key.SetValue(TM_T("XPTPath"), fn);
+    key.SetValue(TM_T("Path"), fn);
+#endif // MOZILLA_STRICT_API
+
+    // registers object, typelib and all interfaces in typelib
+    return _Module.RegisterServer(TRUE);
+}
+
+/////////////////////////////////////////////////////////////////////////////
+// DllUnregisterServer - Removes entries from the system registry
+
+STDAPI DllUnregisterServer(void)
+{
+#ifdef MOZILLA_STRICT_API
+    TM::CRegKey::HKLM().DeleteDir(TM_T("SOFTWARE\\MozillaPlugins\\@cisco.com/npWIZARD_PROJECTNAME"));
+#endif // MOZILLA_STRICT_API
+
+    return _Module.UnregisterServer(TRUE);
+}
+
+*/
+
+#endif // #ifdef TM_QT

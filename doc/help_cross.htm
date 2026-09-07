@@ -1,0 +1,130 @@
+<html>
+
+<head>
+ <title></title>
+ <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+ <link rel="stylesheet"  href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/vs2015.min.css">
+ <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"></script>
+ <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
+ <style type="text/css">
+  .h1 { font-weight:bold; font-size:110%; }
+  ol { margin-left:1em; padding-left:0.5em; }
+  li { margin-top:10; }
+  pre { margin-top:0; margin-bottom:0; }
+ </style>
+</head>
+
+<body leftmargin="30">
+
+<ol>
+
+<h1 align="center">从划水到放弃<br>- TMDUI上班摸鱼福音书（三）</h1><br><br>
+
+
+<li class="h1">自动生成工程及代码</li>
+<ol type="a">
+ <li>打开编辑器，创建一个window。菜单->文件->另存为，指定一个资源文件名，资源文件名就是工程名</li>
+ <li>如果想工作在vc下，则保存成rc，如果想工作在Qt下，则保存成qrc</li>
+ <li>在编辑器中选中当前编辑的对话框，选择右键属性，打开后有3个功能：</li>
+ 	1：为这个对话框指定名字<br/>
+ 	2：为对话框生成代码<br/>
+ 	3：生成工程文件，此工程文件可以直接被vc或Qt Creator打开<br/>
+ 	<li>编辑器打开的rc可以另存为qrc，打开的qrc也可以另存为rc。但是要注意另存后会冲掉文件中的非DUI信息。
+ </ol><br />
+
+	
+<li class="h1">类型及文件命名规范</li>
+<ol type="a">
+ <li>"Native"结尾的类型，表示这是一个native的类型，可以与平台函数交互。例：TMFloatNative、TMHWndNative、CRectNative</li>
+ <li>"TM"结尾的类型，或不以"Natvie"结尾的类型，表示平台无关，保证跨平台，但是不保证能与平台函数交互。例：TMFloat、TMHWnd、CRect、CWindowTM</li>
+ <li>有些类之所以使用"TM"结尾，是因为这些类名已经被平台占用。比如"CWindow"已经被TML占用，所以只能用"CWindowTM"。</li>
+ <li>源码文件名以"tm"开头的，表示这个文件跨平台。</li>
+</ol><br />
+	
+<li class="h1">坐标系统</li>
+<table border="1" cellspacing="0" cellpadding="0" width="795">
+<tr>
+  <td> </td>
+  <td>windows</td>
+  <td>macosx</td>
+  <td>其他</td>
+  <td>Qt</td>
+  <td>全平台</td>
+</tr>
+<tr>
+  <td>int型</td>
+  <td>LONG<br>TMIntNative</td>
+  <td>int<br>TMIntNative</td>
+  <td>int<br>TMIntNative</td>
+  <td>int<br>GXInt</td>
+  <td> <br>GXInt</td>
+</tr>
+<tr>
+  <td>float型</td>
+  <td>float<br>TMFloatNative</td>
+  <td>CGFloat<br>TMFloatNative</td>
+  <td>float<br>TMFloatNative</td>
+  <td>qreal<br>GXFloat</td>
+  <td> <br>GXFloat</td>
+</tr>
+<tr>
+  <td>int型rect</td>
+  <td>RECT<br>TMRectNative<br>CRectNative</td>
+  <td><br>TMRectNative<br>CRectNative</td>
+  <td><br>TMRectNative<br>CRectNative</td>
+  <td>QRect<br>TMRect<br>CRect</td>
+  <td><br>TMRect<br>CRect</td>
+</tr>
+<tr>
+  <td>float型rect</td>
+  <td><br>TMRectFNative<br>CRectFNative</td>
+  <td>CGRect<br>TMRectFNative<br>CRectFNative</td>
+  <td><br>TMRectFNative<br>CRectFNative</td>
+  <td>QRectF<br>TMRectF<br>CRectF</td>
+  <td><br>TMRectF<br>CRectF</td>
+</tr>
+<tr>
+  <td>int型point</td>
+  <td>POINT<br>TMPointNative<br>CPointNative</td>
+  <td><br>TMPointNative<br>CPointNative</td>
+  <td><br>TMPointNative<br>CPointNative</td>
+  <td>QPoint<br>TMPoint<br>CPoint</td>
+  <td><br>TMPoint<br>CPoint</td>
+</tr>
+<tr>
+  <td>float型point</td>
+  <td><br>TMPointFNative<br>CPointFNative</td>
+  <td>CGPoint<br>TMPointFNative<br>CPointFNative</td>
+  <td><br>TMPointFNative<br>CPointFNative</td>
+  <td>QPointF<br>TMPointF<br>CPointF</td>
+  <td><br>TMPointF<br>CPointF</td>
+</tr>
+<tr>
+  <td>int型size</td>
+  <td>SIZE<br>TMSizeNative<br>CSizeNative</td>
+  <td><br>TMSizeNative<br>CSizeNative</td>
+  <td><br>TMSizeNative<br>CSizeNative</td>
+  <td>QSize<br>TMSize<br>CSize</td>
+  <td><br>TMSize<br>CSize</td>
+</tr>
+<tr>
+  <td>float型size</td>
+  <td><br>TMSizeFNative<br>CSizeFNative</td>
+  <td>CGSize<br>TMSizeFNative<br>CSizeFNative</td>
+  <td><br>TMSizeFNative<br>CSizeFNative</td>
+  <td>QSizeF<br>TMSizeF<br>CSizeF</td>
+  <td><br>TMSizeF<br>CSizeF</td>
+</tr>
+</table><br>
+
+
+
+
+
+
+
+</ol>
+
+
+</body>
+</html>

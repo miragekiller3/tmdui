@@ -1,0 +1,27 @@
+<tmdui version="20210202" encoding="utf-8">
+  <pic />
+  <frame>
+    <L1001 class="form" />
+  </frame>
+  <wnd>
+    <L1000 class="window" Style="#10CF0402" Text="play frequency" Frame="1001">
+      <L1002 class="pushbutton" ID="1002" Rect="63,226,136,246" Text="play" />
+      <L1003 class="pushbutton" ID="1003" Rect="148,226,221,246" Text="stop" />
+      <L1009 class="widget" Rect="99,37,374,162">
+        <L1010 class="widget" Layout="#1" Rect="99,37,199,162">
+          <L1011 class="static" Layout="#21" Rect="99,37,199,57" Text="frequency" />
+          <L1012 class="static" Layout="#21" Rect="99,57,199,77" Text="+/-1" />
+          <L1013 class="static" Layout="#21" Rect="99,77,199,97" Text="+/-10" />
+          <L1014 class="static" Layout="#21" Rect="99,97,199,117" Text="+/-100" />
+          <L1015 class="static" Layout="#21" Rect="99,117,199,137" Text="+/-1000" />
+        </L1010>
+        <L1004 class="edit" ID="1004" Layout="#21" Rect="199,37,374,57" Text="40" Frame="1001" />
+        <L1005 class="updown" UpPic="81" DwonPic="82" Min="10" Max="20000" BuddyID="1004" Style="#10010040" Layout="#21" Rect="199,57,374,77" />
+        <L1006 class="updown" UpPic="81" DwonPic="82" Min="10" Max="20000" Step="10" BuddyID="1004" Style="#10010040" Layout="#21" Rect="199,77,374,97" />
+        <L1007 class="updown" UpPic="81" DwonPic="82" Min="10" Max="20000" Step="100" BuddyID="1004" Style="#10010040" Layout="#21" Rect="199,97,374,117" />
+        <L1008 class="updown" UpPic="81" DwonPic="82" Min="10" Max="20000" Step="1000" BuddyID="1004" Style="#10010040" Layout="#21" Rect="199,117,374,137" />
+      </L1009>
+      <L1016 class="edit" Style="#10010800" Layout="#31" Rect="4,276,496,296" Frame="1001" />
+    </L1000>
+  </wnd>
+</tmdui>

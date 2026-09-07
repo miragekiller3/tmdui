@@ -1,0 +1,386 @@
+<html>
+
+<head>
+ <title></title>
+ <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+ <link rel="stylesheet"  href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/vs2015.min.css">
+ <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"></script>
+ <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
+ <style type="text/css">
+  .h1 { font-weight:bold; font-size:110%; }
+  ol,ul { margin-left:1em; padding-left:0.5em; }
+  li { margin-top:10; }
+  pre { margin-top:0; margin-bottom:0; }
+ </style>
+</head>
+
+<body leftmargin="30">
+
+<ol>
+
+<h1 align="center">从划水到放弃<br>- TMDUI上班摸鱼福音书（二）</h1><br><br>
+
+<li class="h1">控件表</li>
+<table border="1" cellspacing="0" cellpadding="0" width="795">
+  <tr>
+    <td>控件</td>
+    <td>基类</td>
+    <td>window对应</td>
+    <td>作用和扩展</td>
+  </tr>
+  <tr>
+    <td>widget</td>
+    <td>n/a</td>
+    <td>window</td>
+    <td>Frame; Layout; HTML text; Hint; AccText; BkPic; Tag; DPI; MenuPop; 增强Scroll; DragDrop; Sort; 
+    Padding; Margin; MinMaxSize; AutoSize; SetWindowZOrder; WS_ADV_ARROWGROUP; WS_ADV_TABGROUP;</td>
+  </tr>
+  <tr>
+    <td>GroupBox</td>
+    <td>widget</td>
+    <td rowspan="4">button</td>
+    <td>　</td>
+  </tr>
+  <tr>
+    <td>PushButton</td>
+    <td>widget</td>
+    <td>ForePic; Checks; BS_DRAWFOCURECT; BS_WINDOWFOREONHC; BS_NOCLICKFOCUS; BS_PRESSCLICK</td>
+  </tr>
+  <tr>
+    <td>CheckBox</td>
+    <td>PushButton</td>
+    <td>同PushButton</td>
+  </tr>
+  <tr>
+    <td>RadioButton</td>
+    <td>PushButton</td>
+    <td>同PushButton; 改成同一个父控件内循环; 以组为单位切换tab;</td>
+  </tr>
+  <tr>
+    <td>TabButton</td>
+    <td>RadioButton </td>
+    <td>WC_TABCONTROL</td>
+    <td>同PushButton; TS_NOCTRLTAB; 自动show/hide目标窗口;</td>
+  </tr>
+  <tr>
+    <td><a href="#combox">ComboButton</a></td>
+    <td>PushButton</td>
+    <td>ComboBox</td>
+    <td>需要与父控件和弹出窗口共同组成组合按钮;<br>
+    父控件可以是任意类型窗口; <br>
+    弹出窗口可以是listbox,tree,或者dialog;<br>
+    CTuiComboUnitWindow可以挂在任何Combo组件上;<br>
+    Refer;</td>
+  </tr>
+  <tr>
+    <td>Sys</td>
+    <td>PushButton</td>
+    <td>　</td>
+    <td>模拟frame行为，如最大化，caption,sizebox;</td>
+  </tr>
+  <tr>
+    <td>Rich</td>
+    <td>widget</td>
+    <td>RICHEDIT</td>
+    <td>EN_CHANGEEX; 支持html; BindWindow;</td>
+  </tr>
+  <tr>
+    <td>Edit</td>
+    <td rowspan="2">Rich</td>
+    <td rowspan="2">Edit</td>
+    <td>EN_CHANGEEX;</td>
+  </tr>
+  <tr>
+    <td>Memo</td>
+    <td>EN_CHANGEEX; 多行;</td>
+  </tr>
+  <tr>
+    <td>static</td>
+    <td rowspan="18">widget<br>
+    </td>
+    <td>static</td>
+    <td>Check; SS_XXXBKONXXX</td>
+  </tr>
+  <tr>
+    <td><a href="#trackbar">Progress</a></td>
+    <td>PROGRESS_CLASS</td>
+    <td>ForePic;Buddy;Format</td>
+  </tr>
+  <tr>
+    <td><a href="#trackbar">TrackBar</a></td>
+    <td>TRACKBAR_CLASS</td>
+    <td>ForePic;Buddy;Format</td>
+  </tr>
+  <tr>
+    <td><a href="#trackbar">UpDown</a></td>
+    <td>UPDOWN_CLASS</td>
+    <td>ForePic;Buddy;Format</td>
+  </tr>
+  <tr>
+    <td>Animate</td>
+    <td>ANIMATE_CLASS</td>
+    <td>　</td>
+  </tr>
+  <tr>
+    <td>Tree</td>
+    <td>WC_TREEVIEW</td>
+    <td>item操作全部使用类CTVItem(DOM标准); TVIS_HIDE; TVIS_DISABLE; TVIS_AUTOHEIGHT; 
+    TVIS_NODRAWTEXT; BindWindow; TVS_MULTIPLESEL; TVS_MENUITEM; TVS_TRACKMOUSE; 自动删除ItemData;</td>
+  </tr>
+  <tr>
+    <td>ListBox</td>
+    <td>ListBox</td>
+    <td>BindWindow; DisableItem; LBS_TRACKSEL; LBS_MENUITEM; LBS_TRACKMOUSE; 自动删除ItemData;</td>
+  </tr>
+  <tr>
+    <td><a href="#mgr">Window</a></td>
+    <td>Dialog</td>
+    <td>对实体窗口的封装，所有控件的root。<br>
+    Alpha; Theme; DS_FULLSCREEN; DS_NODWMSHADOW, DS_CENTEROWNER; DS_CENTERSCREEN; DS_DWMBLUR; DS_NODWMTRANSPARENT; SS_XXXBKONXXX</td>
+  </tr>
+  <tr>
+    <td>Splitter</td>
+    <td>　</td>
+    <td>分割2个控件</td>
+  </tr>
+  <tr>
+    <td>ScrollBox</td>
+    <td>　</td>
+    <td>让子控件在父控件内滚动</td>
+  </tr>
+  <tr>
+    <td>MenuBar</td>
+    <td>　</td>
+    <td>菜单条,可以绑定菜单资源ID</td>
+  </tr>
+  <tr>
+    <td>Video</td>
+    <td>　</td>
+    <td>视频播放，需操作系统带解码器</td>
+  </tr>
+  <tr>
+    <td>Dummy</td>
+    <td>　</td>
+    <td>控制实体窗口的RECT、Show/Hide、Enable/Disable;</td>
+  </tr>
+  <tr>
+    <td>Float</td>
+    <td>　</td>
+    <td>以实体弹出窗口的形式显示控件，<br>
+    例如可以在第三方实体子窗口上显示一个控件。<br>
+    可以显示在主窗口边界外面。<br>
+    SS_XXXBKONXXX</td>
+  </tr>
+  <tr>
+    <td>Arrow</td>
+    <td>　</td>
+    <td>让一个控件永远指向另外一个控件</td>
+  </tr>
+  <tr>
+    <td><a href="#hotkey">HotKey</a></td>
+    <td>　</td>
+    <td>热键支持</td>
+  </tr>
+  <tr>
+    <td>ActiveX</td>
+    <td>　</td>
+    <td>ActiveX容器，支持非窗口模式</td>
+  </tr>
+    <tr>
+    <td><a href="#webview">WebView</a></td>
+    <td>　</td>
+    <td>浏览器容器</td>
+  </tr>
+</table>
+*<br>
+XXX_TRACKMOUSE：鼠标移动的时候Item高亮。<br>
+XXX_TRACKSEL：鼠标移动到哪个Item这个Item自动选中。<br>
+XXX_MENUITEM：鼠标移出窗口后Item选中状态消失。<br>
+XXX_PRESSCLICK：鼠标按下的时候发送BN_CLICKED,SetCheck。<br>
+SS_XXXONXXX：高对比度/正常模式下显示背景模式。<br>
+<br>
+
+<li class="h1" id="combox">Combox</li>
+<ol type="a">
+  <li>实现<br />
+    1. comb拥有一个父窗口(任意，建议edit，非必须)，一个列表框(listbox或tree，必须)，一个列表框的window(非必须)。<br />
+    2. comb中listbox选择后，list内容会提交到父窗口上。<br />
+    3. 如果同时指定了poplist和popdlg，comb会创建一个新弹出窗口作为下拉列表。<br />
+    4. 如果只指定了poplist，则使用指定窗口作为下拉列表。<br />
+  <li>下拉框定位<br />
+ 	  1. 下拉框的定位由参照控件(refer)决定，编辑器中的Refer属性可以设置参照控件的objid或id，默认为edit控件(Refer属性为0)。<br />
+    2. 下拉框左右margin边框与refer控件左右margin边框重合。<br />
+    3. 下拉框的上margin边框值等于refer控件的下margin边框值。<br />
+    4. 高对比度模式下下拉框margin值自动改成0。<br />
+    5. 如果下面空间不够，下拉框会朝上弹出。此时2个magin边框反一下，规律同上。<br />
+    6. 如果下拉框设置了autowidth、MaxWidth、MinWidth并且这些属性起了作用，则下拉框的一条margin边框与refer控件的其中一条左右margin边框重合，具体是左边还是右边由下拉框layout属性决定。<br />
+    7. 如果下拉框拥有autoheight和LAYOUT_VNONE属性，那么下拉框在往上和往下弹出时会自动处理纵向对齐。<br />
+    8. 如果refer属性设置了一个无效的objectid，比如说-1，那么combox不会自动定位，用户可以在WM_COMMAND+CBN_DROPDOWN消息中自己移动下拉框到指定位置。<br />
+  <li>通知消息(WM_COMMAND)：<br />
+  	弹出下拉列表前：CBN_DROPDOWN。<br />
+    单击列表或者按下回车键：BN_CLICKED -> CBN_SELCHANGE -> CBN_SELENDOK -> CBN_CLOSEUP。<br />
+    取消弹出列表：CBN_SELENDCANCEL -> CBN_CLOSEUP。<br />
+    列表不弹出，按上下箭头键，鼠标滚轮：CBN_SELCHANGE -> CBN_SELENDOK。<br />
+  <li>style：<br />
+    CBS_CLICKTOPOP：鼠标点击edit弹出下拉列表。否则只能点击按钮弹出。<br />
+	  CBS_ARROWTOPOP：上下键弹出下拉列表。<br />
+	  CBS_SPACETOPOP：空格键弹出下拉列表。<br />
+	  CCB_FILTER：当edit内容发生改变时发送CCB_FILTER消息。<br />
+	  CBS_NOIMEDIALTY：下拉列表上按上下键不会立即提交到edit上。<br />
+	  CBS_NOEDIT：不需要父窗口，列表内容提交到控件自己。<br />
+  <li>Combox例子见sample/Combo<br />
+</ol><br/>
+
+
+<li class="h1" id="mgr">window</li>
+<ol type="a">
+  <li>DefaultItem<br />
+    1. 当窗口创建时，DefaultItem会转成default focus。窗口显示时，default focus会变成真正的focus。<br />
+    2. 窗口上的按钮如果是DefaultItem，则在焦点处于其他非按钮控件上时，按钮会显示成focus状态。（windows标准）<br />
+    3. 如果DefaultItem设为0或者无效值，则窗口创建时不设置默认焦点。<br />
+    4. 如果DefaultItem指向一个隐藏或者disable的控件，默认焦点会指向下一个控件。<br />
+  <li>图标<br />
+    1. 图标分为窗口左上角显示的图标、任务栏图标、Alt+Tab显示的图标3种。<br />
+    2. Alt+Tab图标用windows API::WM_SETICON+ICON_BIG设置。<br />
+    3. 任务栏图标windows API::WM_SETICON+ICON_SMALL设置。如果没有设置则使用Alt+Tab图标。<br />
+    4. 窗口左上角图标在属性frame::SysBk设置。如果没有设置则使用任务栏图标。<br />
+    5. frame::SysBk支持active、非active 2态。其他2种图标只支持1态。<br />
+  <li>窗口主题<br />
+    1. eThemeTypeSystem：窗口不使用编辑器中指定的frame，而是使用系统的窗口边框。子窗口，layered窗口，blur窗口不支持这种类型。<br />
+    2. eThemeTypeXP：经典窗口类型。子窗口或者操作系统在win7以下的普通窗口使用此主题。<br />
+    3. eThemeTypeLayered：用于半透明窗口，编辑器中要设置WS_ADV_LAYERED属性。<br />
+    4. eThemeTypeDWM：win7以上并且开启了DWM，特点是窗口带一个阴影。<br />
+    5. eThemeTypeDWMBlur：毛玻璃窗口。win7以上并且开启了DWM，编辑器中要设置DS_DWMBLUR属性。<br />
+    6. eThemeTypeDWMTransparent：用DWM实现的半透明窗口。win10以上并且开启了DWM，编辑器中要设置WS_ADV_LAYERED属性但是不能设置DS_NODWMTRANSPARENT。<br />
+    CTuiWindow::GetThemeType可以得到当前窗口主题类型。<br />
+    如果编辑器同时设置了WS_ADV_LAYERED和DS_DWMBLUR，窗口默认会先尝试加载毛玻璃效果，如果不成功，则加载半透明窗口。<br />
+    毛玻璃实际效果是窗口生成的背景位图的像素alpha值与系统毛玻璃管理器进行混合。<br />
+    因为系统不一定支持毛玻璃，所以对于毛玻璃效果要进行预防性处理: 
+<pre><code>ATResult CDlgXXX::OnInitDialog(ATUInt uMsg, ATWParam wParam, ATLParam lParam, ATBool& bHandled)
+{
+    EThemeType eType = this->GetThemeType();
+    if (eType != eThemeTypeBlur)
+        this->SetBkPic(IDC_BMP_NORAML);
+    bHandled = false;
+    return 0;
+}
+</code></pre>
+  <li>半透明窗口背景<br>
+    因为每次渲染都要把背景的alpha通道清除，所以半透明窗口背景图必须是srccopy属性。否则窗口阴影会不停地叠加变黑。<br>
+    带layered，DWMBlur，DWMTransparent属性的window和float控件都是半透明窗口。<br>
+    color类型的pic天然带srccopy属性，其他类型pic用srccopy属性勾选。<br/>
+  <li>半透明窗口阴影与高对比度模式<br>
+  	半透明窗口在高对比度模式下会变成不透明，此时窗口阴影会变成窗口颜色。所以会感觉窗口变大了。<br>
+  	为解决这个问题，用window的margin属性来表示窗口阴影宽度。高对比模式下会自动把窗口缩小。注意：<br>
+  	1. margin值必须为负数。<br>
+  	2. window必须设置frame。<br>
+
+</ol><br/>
+
+
+<li class="h1" id="hotkey">快捷键及hotkey控件</li>
+<ol type="a">
+  <li>按钮自带属性"hotkey"，可以为按钮增加热键功能。其生命周期与按钮的生命周期一致。
+  <li>菜单未来会实现自动关联快捷键，目前还不支持。
+  <li>每个hotkey控件里可以存放10组热键，热键的生命周期也与控件一致。
+  <li>热键有3种模式：当前对话框有效，当前应用有效(app)，整个操作系统有效(sys)。
+  <li>键盘响应顺序依次为sys->app->其他进程的sys->控件->对话框热键.
+  <li>sys热键当发生两个进程争抢时，前台进程生效。（不像windows的hotkey，重复注册热键注册不成功）
+  <li>根据windows标准，sys与app热键优先级高于控件。例：设置热键'A'，当在edit中输入'A'时，热键生效，edit中无法输入字符。
+  <li>热键触发后会在热键所在的对话框收到WM_COMMAND消息。
+  <li>windows下用vc生成的accelerator因为不跨平台，未来可能会取消支持。
+</ol><br/>
+
+
+<li class="h1" id="webview">webview控件</li>
+<ol type="a">
+  <li>webview可以使用微软chrome或者IE引擎显示网页。
+  <li>chrome引擎运行环境配置：<br/>
+    1. 安装微软最新版edge浏览器。<br/>
+    2. 打开https://developer.microsoft.com/zh-cn/microsoft-edge/webview2/，选择“常青版引导程序”下载并安装。<br />
+    3. 解压源代码目录下的import.rar。<br/>
+    4. 把import->webview->runtimes下的相应WebView2Loader.dll拷贝至程序运行目录。<br/>
+    5. 确保程序运行目录有写权限。如果没有权限，要响应CWV_ONCRGETFOLDER消息指定userData目录。<br/>
+  <li>属性：<br />
+  	1. DM_NODELAYLOAD: 不使用延迟加载。默认为延迟加载，当控件及所有父控件都为visible时才创建对象。<br />
+    2. WVS_NOCHROME: 不使用chrome内核。<br />
+    3. WVS_NOIE: 不使用IE内核，如果2个属性都不勾选，控件默认先尝试加载chrome，不成功则加载IE。<br />
+    4. WVS_NOSCRIPT: 禁止控件调用脚本。<br />
+    5. WVS_EXTENDMODE: 扩展模式。这个模式下支持各种回调事件。<br />
+    6. WVS_EXTNOCONTEXTMENU: 关闭默认右键菜单，但是会发送WM_CONTEXTMENU消息。仅支持扩展模式。<br />
+    7. WVS_PRIVATEMODE: 私有模式。<br />
+    8. 以上属性可以在WM_CREATE或以前改变。之后再改无效。<br />
+  <li>回调消息：<br />
+    1. CWV_ONOBJINIT: 由于chrome是异步内核或者延迟加载，所以在OnCreate的时候不保证拿到接口，必须在此消息后才能QueryControl。<br />
+    2. CWV_ONGETFOLDER: 为用户自己发布chrome引擎指定执行目录和数据目录，可以指定2组，空为系统默认。顺序为0,1。<br />
+    3. CWV_ONCR开头的消息仅支持chrome内核。<br />
+    4. CWV_ONIE开头的消息仅支持IE内核。<br />
+    5. 其他以CWV_ON开头的消息同时支持2个内核。<br />
+    6. tmdui.h中回调消息定义的地方可以看到相关帮助。<br />
+  <li>_tuiApp::SetWebview2XXX系列函数可以设置chrome引擎的一些全局属性。
+  <li>函数QueryControl可以取得如下内核接口:ICoreWebView2Environment, ICoreWebView2Controller, ICoreWebView2, IWebBrowser2。
+  <li>控件还封装了一批2个内核通用的函数，如Navigate。
+  <li>SetExtUnkown函数可以实现自定义的IDocHostXXX,IOleCommandTarget,IDispatch接口(IE内核)。
+  <li>控制弹出窗口(仅扩展模式)：
+ <pre><code>ROUTE_ID_HANDLER(IDC_IECONTROL, CWV_ONNEWWINDOW,    OnNewWidnow)
+ATResult OnNewWidnow(int idCtrl, AT::TUIMSG* pMsg, ATBool& bHandled)
+{
+   模式1：return true; // 阻止弹出窗口
+   模式2：return false; // 默认,在新的浏览器中打开url.
+   模式3: *(AT::HTUI*)pMsg->lParam = hWnd; return false; // 在指定Webview中打开url. 可以是自己.
+}</code></pre>
+  <li>编程建议：<br />
+    1. 不应该依赖DocumentComplete事件。替代方案是函数AddScriptToExecuteOnDocumentCreated(javaScript)。<br />
+    2. 不应该直接对dom进行读写操作。替代方案是函数ExecuteScript(javaScript)。<br />
+    3. html向容器发送消息，推荐使用“window.chrome.webview.postMessage(json字符串)”，不建议IE版的external模式。<br />
+ <pre><code>window.chrome.webview.postMessage("{\"Key\":\"test1\",\"Value\":{\"X\":1,\"Y\":2}}"); // 正确，IE内核扩展模式及chrome内核;
+window.chrome.webview.postMessage({"Key":"test1","Value":{"X":1,"Y":2}});             // 避免，直接传json对象不支持IE内核;
+window.external.postMessage("{\"Key\":\"test3\",\"Value\":{\"X\":3,\"Y\":4}}");       // 避免，只支持IE内核;</code></pre>
+    4. 容器向html发送消息，推荐ExecuteScript函数。不推荐chrome的PostWebMessageAsJson，因为不通用。<br />
+    5. 无论是容器向html发消息，还是html向容器发消息，都是异步操作。<br />
+  <li>在网页中判断是webbrowser还是webview控件:
+ <pre><code>if (typeof window.chrome != "object")
+    this is webbrowser;
+else
+    this is webview;</code></pre>
+  <li>IE内核的网页中调用"document.write"会冲掉所有的js，造成window.chrome.webview.postMessage失败。<br />
+  <li>微软规范：不同配置的webview2控件使用相同的user目录会创建失败。（配置指_tuiApp::SetWebview2XXX函数）<br />
+  <li>webview例子见sample/IEBrowser。
+</ol><br/>
+
+
+<li class="h1" id="trackbar">progress, up-down, track-bar</li>
+<ol type="a">
+  <li>用户输入改变控件pos前会发送CM_POSCHANGING消息，可以在这个消息中更改pos值，可以把pos新值改成跟旧值相同。
+  <li>用户输入改变控件pos完毕通知消息为WM_COMMAND + SB_ENDSCROLL(鼠标拖动时还会收到SB_LINEUP,SB_PAGEUP,SB_LINEDOWN,SB_PAGEDOWN,SB_THUMBPOSITION,SB_THUMBTRACK)。
+	<li>任何方法改变控件pos都会产生通知消息WM_COMMAND + CN_VALUECHANGE。
+  <li>异步设置pos方法1(例：设置操作系统音量)： <br />
+  	<pre><code>ROUTE_OID_HANDLER   (IDC_TRACKBAR, CM_POSCHANGING, OnPosChanging)
+...
+ATResult CMain::OnPosChanging(int idCtrl, AT::TUIMSG* pMsg, ATBool& bHandled)
+{
+    int old = pMsg->wParam;
+    int* pnew = (int*)pMsg->lParam;
+    PostSetSystemVolume(*pNew); // 异步设置系统音量
+    *pnew = old;                // 让控件维持原来的pos
+    return 0;
+}
+void CMain::OnSystemVolumeChanged(int pos) // 系统音量回调
+{
+    CTuiTrackBarCtrl(Item(IDC_TRACKBAR)).SetPos(pos); // 等系统音量设置完毕后再把pos同步到控件上
+}
+</code></pre>
+  <li>异步设置pos方法2：<br />
+  	在编辑器中建立2个trackbar控件，位置重叠。<br />
+  	前面控件设置成鼠标穿透，后面控件前景图和背景图设置成透明。<br />
+  	响应后面控件的WM_COMMAND + SB_XXX，得到控件的pos，用pos设置系统音量。<br />
+  	在系统音量回调中，设置前面控件的pos。<br />
+</ol><br/>
+
+
+
+</ol>
+
+
+</body>
+</html>

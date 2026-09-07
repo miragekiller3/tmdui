@@ -1,0 +1,675 @@
+<tmdui version="20210202" encoding="utf-8">
+  <pic>
+    <L10003 class="gradient" ColorFrom="#FFFFFE" ColorTo="#ADC4FE" FillMode="1" />
+    <L10008 class="clr" Color="#FFFFFF" />
+    <L10009 class="clr" Color="#CCD9EC" />
+    <L20006 class="bmp" FrameNum="1" FileName="open.png" Valid="#10011FF" />
+    <L20007 class="bmp" FrameNum="1" FileName="save.png" Valid="#10011FF" />
+    <L20040 class="bmp" FrameNum="1" FileName="test.png" Valid="#10011FF" />
+    <L20043 class="bmp" FrameNum="1" FileName="prev.png" Valid="#10011FF" />
+    <L20044 class="bmp" FrameNum="1" FileName="next.png" Valid="#10011FF" />
+    <L20049 class="bmp" FrameNum="1" FileName="zoomin.png" Valid="#10011FF" />
+    <L20050 class="bmp" FrameNum="1" FileName="zoomout.png" Valid="#10011FF" />
+    <L20073 class="scrollbar" FrameNum="5" ButtonHeight="14" ThumbTop="7" ThumbBottom="6" ThumbCore="8" FileName="vscroll.png" Alpha="210" Valid="#8000" />
+    <L20074 class="bmp" FrameNum="10" Left="4" Top="4" Right="3" Bottom="3" FileName="Button_Commmon.png" Valid="#1FE91FF" />
+    <L20085 class="bmp" FrameNum="1" FileName="r2l.png" Valid="#1FE11FF" />
+    <L30092 class="tile" FileName="bk_1pixel.bmp" />
+    <L30104 class="clr" Color="#0000FF" />
+    <L30105 class="bmp" FrameNum="1" Left="6" Top="6" Right="6" Bottom="6" FileName="select.bmp" Alpha="128" Valid="#5FF" />
+    <L30113 class="bmp" FrameNum="31" FileName="controls.bmp" Valid="#85FF" />
+    <L30144 class="bmp" FrameNum="1" FileName="ResEditor.ico" MultiDPI="1" />
+    <L30145 class="bmp" FrameNum="1" FileName="erase.png" />
+    <L30146 class="bmp" FrameNum="1" Left="8" Top="8" Right="8" Bottom="8" FileName="iborder.png" Valid="#81FF" />
+    <L30149 class="bmp" FrameNum="1" FileName="spy_copy.png" />
+    <L30166 class="bmp" FrameNum="1" FileName="test_settings.png" />
+    <L30179 class="bmp" FrameNum="1" FileName="txt_up.png" />
+    <L30180 class="bmp" FrameNum="1" FileName="txt_down.png" />
+    <L30181 class="bmp" FrameNum="1" FileName="txt_wordbreak.png" />
+    <L30195 class="tile" FileName="bk_noise.png" />
+    <L30196 class="tile" FileName="bk_floral.bmp" />
+    <L30198 class="tile" FileName="bk_slash.bmp" />
+    <L30199 class="tile" FileName="bk_grid.bmp" />
+    <L30202 class="bmp" FrameNum="1" Left="1" Top="1" Right="1" Bottom="1" FileName="border1p.png" Alpha="200" Valid="#81FF" />
+    <L30205 class="bmp" FrameNum="1" Left="6" Top="6" Right="6" Bottom="6" FileName="bkfloat.png" Valid="#80FF" />
+    <L30208 class="clr" Color="#4F5C8A" />
+    <L30210 class="bmp" FileName="button2.png" />
+    <L30228 class="bmp" FrameNum="1" FileName="target.PNG" />
+    <L30236 class="bmp" FrameNum="1" FileName="about.gif" />
+    <L30271 class="clr" Color="#00000000" />
+    <L30273 class="bmp" FrameNum="1" FileName="spy_break.png" />
+    <L30275 class="bmp" FrameNum="1" FileName="spy_pause.png" />
+    <L30279 class="bmp" FrameNum="1" FileName="goto.PNG" />
+    <L30282 class="clr" Color="#7F7F7F7F" />
+    <L30335 class="bmp" FrameNum="1" Left="1" Top="1" Right="1" Bottom="1" FileName="border1p.png" Valid="#80FF" />
+    <L30337 class="clr" Color="#4F5C8A" />
+    <L30345 class="bmp" FrameNum="3" FileName="spy_remote.png" Valid="#41FF" />
+    <L31023 class="bmp" FrameNum="1" Left="24" Top="24" Right="24" Bottom="24" FileName="shadow.png" Valid="#9FF" />
+    <L31028 class="clr" Color="#000000" />
+    <L31031 class="bmp" FrameNum="1" FileName="cross.gif" />
+    <L31033 class="bmp" FrameNum="1" Left="5" Top="5" Right="5" Bottom="5" FileName="border1p.png" Valid="#80FF" />
+    <L31034 class="bmp" FileName="butclose.svg" MultiDPI="1" />
+    <L31035 class="bmp" FileName="butmax.svg" MultiDPI="1" />
+    <L31036 class="bmp" FileName="butmin.svg" MultiDPI="1" />
+    <L31113 class="bmp" FrameNum="1" FileName="spy_refresh.png" />
+    <L31126 class="bmp" FrameNum="1" FileName="spy_message.png" />
+    <L31132 class="bmp" FrameNum="1" FileName="spy_clear.png" />
+    <L31214 class="gradient" ColorTo="#FF8040" FillMode="10" />
+    <L31215 class="bmp" FrameNum="1" FileName="easing.png" Valid="#81FF" />
+    <L31245 class="bmp" FrameNum="1" FileName="spy_delsel.PNG" />
+  </pic>
+  <frame>
+    <L10002 class="form" OutterBk="31033" OutterLeft="5" OutterRight="5" OutterBottom="5" CaptionBk="30208" CaptionHeight="19" CaptionTextColor="#808080" SysBk="30144" SysWidth="20" CloseBk="31034" MaxBk="31035" MaxLeft="-42" MinBk="31036" MinLeft="-64" InnerBk="30146" SBWidth="13" SBButtonHeight="14" SBThumbMin="21" SBBk="20073" />
+    <L30200 class="form" InnerLeft="1" InnerRight="1" InnerTop="1" InnerBottom="1" SBWidth="13" SBButtonHeight="14" />
+    <L30206 class="form" InnerBk="30205" InnerLeft="6" InnerRight="6" InnerTop="6" InnerBottom="6" SBWidth="13" SBButtonHeight="14" SBThumbMin="21" SBBk="20073" SizeBoxBk="null" />
+    <L30207 class="form" OutterBk="31023" OutterLeft="24" OutterRight="24" OutterTop="24" OutterBottom="24" CaptionBk="null" SBWidth="13" SBButtonHeight="14" />
+    <L30217 class="form" OutterBk="null" OutterLeft="0" OutterRight="0" OutterTop="0" OutterBottom="0" InnerBk="null" InnerLeft="0" InnerRight="0" InnerTop="0" InnerBottom="0" SBWidth="13" SBButtonHeight="14" SBThumbMin="21" SBBk="20073" SizeBoxBk="null" />
+    <L30219 class="form" OutterBk="31033" OutterLeft="5" OutterRight="5" OutterBottom="5" CaptionBk="30208" CaptionHeight="19" CaptionTextFormat="#48826" CaptionTextColor="#808080" CaptionRightMargin="80" SysBk="30144" SysWidth="20" CloseBk="31034" MaxBk="31035" MaxLeft="-42" MinBk="31036" MinLeft="-64" InnerBk="30146" SBWidth="13" SBButtonHeight="14" SBThumbMin="21" SBBk="20073" />
+    <L30237 class="form" OutterBk="31033" OutterLeft="5" OutterRight="5" OutterBottom="5" CaptionBk="30208" CaptionHeight="19" CaptionTextColor="#808080" CaptionRightMargin="80" SysBk="30144" SysWidth="20" CloseBk="31034" MaxBk="31035" MaxLeft="-42" MinBk="31036" MinLeft="-64" InnerBk="30146" SBWidth="13" SBButtonHeight="14" SBThumbMin="21" SBBk="20073" />
+    <L31238 class="form" OutterBk="30105" />
+  </frame>
+  <wnd>
+    <L1000 class="window" Style="#10CF0802" Rect="0,0,296,305" Text="block inject" BkPic="10008" Font="Verdana:13" Frame="30237">
+      <L1001 class="memo" Rect="18,112,275,257" Frame="10002" />
+      <L1002 class="pushbutton" ID="1" Rect="66,270,217,290" Text="apply" BkPic="20074" />
+      <L1003 class="static" TextFormat="#810" Rect="14,30,276,119" Text=" make sure &quot;minHook64.dll&quot; and &quot;minHook32.dll&quot; have already copy to current directory.&#13;&#10;then add dll name here, split by \r\n." />
+    </L1000>
+    <L10001 class="window" Style="#6CF0002" Layout="#0" Rect="0,0,944,562" BkPic="10003" Font="Verdana:13" Frame="30219">
+      <L30387 class="listbox" ItemHeight="18" Style="#18004" Layout="#13000" Rect="610,66,670,109" BkPic="30202" Frame="30200" margin="0,0,-40,0" padding="1,1,1,1" />
+      <L30389 class="listbox" ItemHeight="18" Style="#18004" Layout="#13000" Rect="688,67,748,110" BkPic="30202" Frame="30200" margin="0,0,-40,0" padding="1,1,1,1" />
+      <L30191 class="listbox" ItemHeight="18" Style="#18004" Layout="#13000" Rect="820,51,880,94" BkPic="30202" Frame="30200" margin="0,0,-40,0" padding="1,1,1,1" />
+      <L31114 class="listbox" ItemHeight="18" Style="#18004" Layout="#10000" Rect="290,51,350,94" BkPic="30202" Frame="30200" margin="0,0,2,0" padding="1,1,1,1" />
+      <L10004 class="menubar" Menu="109" TextColor="#FFFFFF" HighlightTextColor="#FFA87D" ID="20003" Layout="#1000" Rect="32,5,476,22" />
+      <L31077 class="widget" Layout="#41" Rect="5,23,939,557">
+        <L20004 class="widget" Layout="#22021" AdvStyle="#200" Rect="5,25,939,62" BkPic="30337" margin="0,2,0,0">
+          <L31091 class="widget" Layout="#22001" AdvStyle="#200" Rect="5,27,110,62" margin="0,2,0,0">
+            <L20005 class="pushbutton" PicWidth="22" PicHeight="22" ForePic="20006" ID="40002" Layout="#1" Rect="5,27,40,62" Hint="Open" BkPic="30210" padding="0,0,0,0" />
+            <L20008 class="pushbutton" PicWidth="22" PicHeight="22" ForePic="20007" ID="40001" Layout="#1" Rect="40,27,75,62" Hint="Save" BkPic="30210" padding="0,0,0,0" />
+            <L20039 class="pushbutton" PicWidth="22" PicHeight="22" ForePic="20040" ID="40016" Layout="#1" Rect="75,27,110,62" Hint="Test" BkPic="30210" padding="0,0,0,0" />
+          </L31091>
+          <L31109 class="widget" Layout="#22001" AdvStyle="#200" Rect="110,27,367,62" margin="0,2,0,0">
+            <L31110 class="edit" TextFormat="#2" Style="#10010002" Layout="#1" Rect="110,34,319,55" BkPic="10003" Frame="30200" margin="0,7,10,7" padding="0,0,22,0">
+              <L31111 class="combobutton" PopList="31114" ID="31111" Style="#10000206" Layout="#11" Rect="298,35,318,54" margin="0,0,-22,0" />
+            </L31110>
+            <L31112 class="pushbutton" PicWidth="22" PicHeight="22" ForePic="31113" ID="31112" Layout="#1" Rect="329,27,364,62" Hint="Refresh module list" BkPic="30210" padding="0,0,0,0" />
+          </L31109>
+          <L31108 class="widget" Layout="#22001" AdvStyle="#200" Rect="377,27,769,62" margin="10,2,0,0">
+            <L31125 class="pushbutton" PicWidth="22" PicHeight="22" ForePic="31126" ID="31125" Layout="#1" Rect="377,27,412,62" Hint="Log Message" BkPic="30210" padding="0,0,0,0" />
+            <L20041 class="pushbutton" PicWidth="22" PicHeight="22" ForePic="20043" ID="40036" Layout="#1" Rect="412,27,447,62" Hint="Prev" BkPic="30210" padding="0,0,0,0" />
+            <L20042 class="pushbutton" PicWidth="22" PicHeight="22" ForePic="20044" ID="40037" Layout="#1" Rect="447,27,482,62" Hint="Next" BkPic="30210" padding="0,0,0,0" />
+            <L20046 class="pushbutton" PicWidth="22" PicHeight="22" ForePic="20049" ID="40034" Layout="#1" Rect="492,27,527,62" Hint="Test - Zoom In" BkPic="30210" margin="10,0,0,0" padding="0,0,0,0" />
+            <L20047 class="pushbutton" PicWidth="22" PicHeight="22" ForePic="20050" ID="40035" Layout="#1" Rect="527,27,562,62" Hint="Test - Zoom Out" BkPic="30210" padding="0,0,0,0" />
+            <L20083 class="pushbutton" PicWidth="22" PicHeight="22" ForePic="20085" ID="20084" Layout="#1" Rect="562,27,597,62" Hint="Test - RTL Reading" BkPic="30210" padding="0,0,0,0" />
+            <L30165 class="pushbutton" PicWidth="22" PicHeight="22" ForePic="30166" ID="33089" Layout="#1" Rect="597,27,632,62" Hint="Test - Setting" BkPic="30210" padding="0,0,0,0" />
+            <L31176 class="combobutton" PopList="30387" PicWidth="22" PicHeight="14" PicMargin="-22" ForePic="10003" ID="31177" Style="#1001A006" Layout="#1" Rect="642,27,677,62" Hint="change display device&#13;&#10;the setting will keep after restart" BkPic="30210" Font=":9:b" margin="10,0,0,0" padding="0,0,0,0" />
+            <L33096 class="combobutton" PopList="30389" PicWidth="22" PicHeight="14" PicMargin="-22" ForePic="10003" ID="33099" Style="#1001A006" Layout="#1" Rect="687,27,722,62" Hint="change text device&#13;&#10;the setting will keep after restart" BkPic="30210" Font=":9:b" margin="10,0,0,0" padding="0,0,0,0" />
+            <L30194 class="widget" Layout="#1" Rect="732,27,767,62" margin="10,0,0,0">
+              <L30193 class="combobutton" PopList="30191" ForePic="30198" ID="30193" Style="#10010306" Layout="#41" Rect="732,27,767,62" Hint="Select Backgroud" BkPic="30210" padding="0,0,0,0" />
+            </L30194>
+            <L30214 class="widget" Layout="#1" Rect="775,33,777,56" margin="8,6,8,6" />
+          </L31108>
+        </L20004>
+        <L30203 class="widget" Layout="#41" AdvStyle="#200" Rect="5,62,939,557" BkPic="30146" padding="8,8,8,8">
+          <L10010 class="widget" ID="10010" Layout="#22001" Rect="13,70,251,549">
+            <L10011 class="edit" GrayTextColor="#C0C0C0" Prompt="Search... splite by &quot;;&quot;" ID="20068" Layout="#21" Rect="13,70,251,100" BkPic="10008" Frame="30206">
+              <L30278 class="pushbutton" ForePic="30279" ID="30280" Style="#10010046" Layout="#66011" Rect="207,76,226,94" Hint="Goto Next Filter" BkPic="null" />
+              <L20055 class="pushbutton" ForePic="30145" ID="20072" Style="#10010046" Layout="#66011" Rect="226,76,245,94" Hint="Clean Filter" BkPic="null" />
+            </L10011>
+            <L30221 class="static" Style="#10000001" Layout="#41" AdvStyle="#200" Rect="13,100,251,529" BkPic="10008" Frame="30206">
+              <L10005 class="tree" ID="20001" Style="#10010001" Layout="#3AA041" Rect="19,106,245,523" Frame="30217" />
+              <L31138 class="scrollbox" Style="#0" Layout="#A0041" AdvStyle="#280" Rect="13,100,251,531" Frame="30217">
+                <L31018 class="widget" Layout="#10430" AdvStyle="#280" Rect="13,100,237,540">
+                  <L20107 class="pushbutton" NormalTextColor="#400000" HighlightTextColor="#FFFFFF" Style="#10006" Layout="#21" Rect="54,567,180,594" BkPic="20074" />
+                </L31018>
+              </L31138>
+            </L30221>
+            <L30155 class="widget" Layout="#31" Rect="13,529,251,549">
+              <L30156 class="tabbutton" Target="10005" State="1" Style="#10210096" Layout="#1001" Rect="13,529,89,549" Text="Resource" BkPic="20074" padding="8,4,8,4" />
+              <L30159 class="tabbutton" Target="31138" Style="#10210096" Layout="#1001" Rect="89,529,159,549" Text="Controls" BkPic="20074" padding="8,4,8,4" />
+            </L30155>
+          </L10010>
+          <L10006 class="splitter" Min="100" Style="#10010004" Layout="#22001" Rect="251,70,258,549">
+            <L20075 class="checkbox" ForePic="null" ID="20076" Layout="#100" Rect="251,280,258,317" BkPic="20074" />
+          </L10006>
+          <L31016 class="widget" Layout="#41" Rect="258,70,682,549">
+            <L30334 class="static" Layout="#41" AdvStyle="#200" Rect="258,70,682,347" BkPic="30198" Frame="30206">
+              <L10007 class="scrollbox" ID="30101" Layout="#3AA041" AdvStyle="#280" Rect="264,76,676,341" Frame="30217" />
+            </L30334>
+            <L31017 class="splitter" Style="#10010005" Layout="#31" Rect="258,347,682,357" />
+            <L31121 class="static" Style="#10000001" Layout="#31" AdvStyle="#200" Rect="258,357,682,529" BkPic="10008" Frame="30206">
+              <L30175 class="memo" TextFormat="#0" Style="#18140" Layout="#22041" Rect="258,359,682,531" Font="Courier New" Frame="30217" padding="30,0,0,0">
+                <L30176 class="widget" Layout="#1" Rect="264,365,287,525" BkPic="10009" margin="-30,0,0,0" padding="1,0,1,0">
+                  <L30182 class="pushbutton" ForePic="30181" ID="30182" Layout="#21" Rect="263,365,288,388" Hint="Auto Word Break" BkPic="30210" margin="-2,0,-2,0" />
+                  <L30178 class="pushbutton" ForePic="30180" ID="30178" Layout="#21" Rect="263,398,288,421" Hint="Refresh" BkPic="30210" margin="-2,10,-2,0" />
+                  <L30177 class="pushbutton" ForePic="30179" ID="30177" Layout="#21" Rect="263,421,288,444" Hint="Commit" BkPic="30210" margin="-2,0,-2,0" />
+                </L30176>
+              </L30175>
+              <L31123 class="memo" Layout="#22041" Rect="264,363,676,523" Font="Courier New" Frame="30217" />
+              <L30277 class="rich" TextFormat="#0" Style="#18040" Layout="#22041" Rect="258,359,682,531" Font="Courier New" Frame="30217" />
+              <L30382 class="memo" TextFormat="#0" Style="#18040" Layout="#22041" Rect="258,359,682,531" Frame="30217" />
+              <L31180 class="memo" TextFormat="#0" Style="#18040" Layout="#22041" Rect="258,359,682,531" Font="Courier New" Frame="30217" />
+              <L31236 class="scrollbox" Style="#10000" Layout="#22041" AdvStyle="#200" Rect="285,381,656,513" Frame="30217">
+                <L31237 class="widget" Rect="285,381,635,507" padding="0,20,0,0">
+                  <L30332 class="radiobutton" ForePic="null" TextFormat="#825" ID="30332" Rect="88,21,228,41" BkPic="20074" />
+                </L31237>
+              </L31236>
+              <L31294 class="memo" TextFormat="#0" Style="#18040" Layout="#22041" Rect="258,359,682,531" Font="Courier New" Frame="30217" />
+              <L30385 class="widget" Style="#0" Layout="#41" Rect="264,363,676,523" BkPic="30198" padding="0,20,0,0" />
+            </L31121>
+            <L31117 class="widget" Layout="#31" Rect="263,529,682,549" margin="5,0,0,0">
+              <L31120 class="tabbutton" Target="31123" State="1" Style="#10210096" Layout="#1001" Rect="263,529,325,549" Text="Output" BkPic="20074" padding="8,4,8,4" />
+              <L31118 class="tabbutton" Target="30175" Style="#10210096" Layout="#1001" Rect="325,529,368,549" Text="XML" BkPic="20074" padding="8,4,8,4" />
+              <L30276 class="tabbutton" Target="30277" Style="#10210096" Layout="#1001" Rect="368,529,466,549" Text="Performance" BkPic="20074" padding="8,4,8,4" />
+              <L30383 class="tabbutton" Target="30382" Style="#210096" Layout="#1001" Rect="466,529,512,549" Text="Mem" BkPic="20074" padding="8,4,8,4" />
+              <L31179 class="tabbutton" Target="31180" Style="#10210096" Layout="#1001" Rect="466,529,508,549" Text="Info" BkPic="20074" padding="8,4,8,4" />
+              <L30330 class="tabbutton" Target="31236" Style="#10210096" Layout="#1001" Rect="508,529,579,549" Text="Selector" BkPic="20074" padding="8,4,8,4" />
+              <L31293 class="tabbutton" Target="31294" Style="#10210096" Layout="#1001" Rect="579,529,620,549" Text="Acc" BkPic="20074" padding="8,4,8,4" />
+              <L30384 class="tabbutton" Target="30385" Style="#10210096" Layout="#1001" Rect="620,529,680,549" Text="Thumb" BkPic="20074" padding="8,4,8,4" />
+            </L31117>
+          </L31016>
+          <L20069 class="splitter" Style="#10010004" Layout="#11" Rect="682,70,689,549">
+            <L20076 class="checkbox" ForePic="null" ID="20077" Layout="#100" Rect="682,280,689,317" BkPic="20074" />
+          </L20069>
+          <L20011 class="widget" ID="20011" Style="#10CC0000" Layout="#11" AdvStyle="#80" Rect="689,70,931,549">
+            <L20012 class="edit" Prompt="Search... splite by &quot;;&quot;" ID="20068" Layout="#21" Rect="689,70,931,100" BkPic="10008" Frame="30206">
+              <L20065 class="pushbutton" ForePic="30145" ID="20072" Layout="#11" Rect="906,76,925,94" BkPic="null" />
+            </L20012>
+            <L20013 class="tree" ItemHeight="22" ID="20070" Style="#10010800" Layout="#20041" AdvStyle="#200" Rect="689,100,931,549" BkPic="10008" Frame="30206">
+              <L20015 class="edit" TextFormat="#0" ID="20016" Style="#10000" Layout="#60" Rect="721,183,798,205" BkPic="10008" Frame="10002" margin="100,0,0,0" padding="0,0,15,0">
+                <L30188 class="combobutton" PopDlg="30186" PopList="30187" Alignment="#3" TextFormat="#805" Style="#10000406" Layout="#11" Rect="775,185,793,203" margin="0,0,-15,0" />
+                <L20066 class="pushbutton" ID="20067" Style="#10010046" Layout="#11" Rect="778,185,796,203" Text="..." margin="0,0,-15,0" />
+              </L20015>
+            </L20013>
+          </L20011>
+        </L30203>
+      </L31077>
+    </L10001>
+    <L20058 class="window" Layout="#22041" Rect="0,0,365,341" BkPic="10008" Font="Verdana:13" Frame="10002" padding="10,10,0,0">
+      <L31220 class="checkbox" State="1" Layout="#21" Rect="15,33,360,53" Text="random lbutton click/dblclick" />
+      <L31221 class="checkbox" State="1" Layout="#21" Rect="15,53,360,73" Text="random rbutton click/dblclick" />
+      <L31222 class="checkbox" State="1" Layout="#21" Rect="15,73,360,93" Text="random mouse move/drag" />
+      <L31223 class="checkbox" State="1" Layout="#21" Rect="15,93,360,113" Text="random mouse wheel" />
+      <L31224 class="checkbox" State="1" Layout="#21" Rect="15,113,360,133" Text="random key input" />
+      <L31225 class="checkbox" State="1" Layout="#21" Rect="15,133,360,153" Text="random suspend thread" />
+      <L31226 class="checkbox" State="1" Layout="#21" Rect="15,153,360,173" Text="random block network(not support XP)" />
+      <L31232 class="listbox" Layout="#22021" AdvStyle="#200" Rect="35,173,340,243" Frame="10002" margin="20,0,20,0" />
+      <L31227 class="checkbox" State="1" Layout="#21" Rect="15,243,360,263" Text="random change display mode" />
+      <L31228 class="checkbox" State="1" Layout="#21" Rect="15,263,360,283" Text="random change display DPI" />
+      <L31181 class="pushbutton" NormalTextColor="255" HighlightTextColor="255" DownTextColor="255" FocusTextColor="255" ID="1" Rect="43,306,323,326" Text="start(press pause key to stop)" />
+    </L20058>
+    <L30086 class="window" Layout="#0" Rect="0,0,1177,739" Text="Log Message" BkPic="10008" Font="Verdana:13" Frame="10002">
+      <L31156 class="widget" Style="#0" Layout="#10000" AdvStyle="#200" Rect="143,42,399,531" BkPic="10008" Frame="30206" padding="4,4,4,4">
+        <L31134 class="checkbox" ID="31134" Layout="#21" Rect="153,52,389,72" Text="TRACE" Hint="Log widget message&#13;&#10;message can be caught by CDuiWidgetImpl" />
+        <L31241 class="checkbox" ID="31241" Layout="#21" Rect="153,72,389,92" Text="Function" Hint="Log widget function call" />
+        <L31247 class="checkbox" ID="31247" Layout="#21" Rect="153,92,389,112" Text="Invalidate" Hint="Log widget Invalidate call" />
+        <L31157 class="widget" Layout="#21" Rect="153,112,389,115" BkPic="71" />
+        <L31159 class="checkbox" ID="31159" Layout="#21" Rect="153,115,389,135" Text="Hook WH_CALLWNDPROC" />
+        <L31160 class="checkbox" ID="31160" Layout="#21" Rect="153,135,389,155" Text="Hook WH_CALLWNDPROCRET" />
+        <L31161 class="checkbox" ID="31161" Layout="#21" Rect="153,155,389,175" Text="Hook WH_CBT" />
+        <L31162 class="checkbox" ID="31162" Style="#18010016" Layout="#21" Rect="153,175,389,195" Text="Hook WH_DEBUG" />
+        <L31163 class="checkbox" ID="31163" Layout="#21" Rect="153,195,389,215" Text="Hook WH_FOREGROUNDIDLE" />
+        <L31164 class="checkbox" ID="31164" Layout="#21" Rect="153,215,389,235" Text="Hook WH_GETMESSAGE" />
+        <L31165 class="checkbox" ID="31165" Style="#18010016" Layout="#21" Rect="153,235,389,255" Text="Hook WH_JOURNALPLAYBACK" />
+        <L31166 class="checkbox" ID="31166" Style="#18010016" Layout="#21" Rect="153,255,389,275" Text="Hook WH_JOURNALRECORD" />
+        <L31167 class="checkbox" ID="31167" Layout="#21" Rect="153,275,389,295" Text="Hook WH_KEYBOARD" />
+        <L31168 class="checkbox" ID="31168" Layout="#21" Rect="153,295,389,315" Text="Hook WH_KEYBOARD_LL" />
+        <L31169 class="checkbox" ID="31169" Layout="#21" Rect="153,315,389,335" Text="Hook WH_MOUSE" />
+        <L31170 class="checkbox" ID="31170" Layout="#21" Rect="153,335,389,355" Text="Hook WH_MOUSE_LL" />
+        <L31171 class="checkbox" ID="31171" Layout="#21" Rect="153,355,389,375" Text="Hook WH_MSGFILTER" />
+        <L31172 class="checkbox" ID="31172" Layout="#21" Rect="153,375,389,395" Text="Hook WH_SHELL" />
+        <L31173 class="checkbox" ID="31173" Layout="#21" Rect="153,395,389,415" Text="Hook WH_SYSMSGFILTER" />
+        <L31174 class="checkbox" ID="31174" Layout="#21" Rect="153,415,389,435" Text="Hook ShellUser32" />
+        <L33043 class="widget" Layout="#21" Rect="153,435,389,438" BkPic="71" />
+        <L31256 class="checkbox" ID="31256" Layout="#21" Rect="153,438,389,458" Text="Hook Win Event(InContext)" />
+        <L33093 class="checkbox" ID="33093" Layout="#21" Rect="153,458,389,478" Text="Hook Win Event(OutContext)" />
+        <L30435 class="checkbox" ID="30435" Layout="#21" Rect="153,478,389,498" Text="Hook Event Function" />
+        <L30419 class="widget" Layout="#21" Rect="153,498,389,501" BkPic="71" />
+        <L30420 class="pushbutton" DownOffsetX="0" DownOffsetY="0" TextFormat="#824" ID="30420" Style="#10010016" Layout="#21" Rect="153,501,389,521" Text="Paste From Clipborder" BkPic="null" />
+      </L31156>
+      <L30088 class="widget" Layout="#21" AdvStyle="#200" Rect="5,25,1172,50" BkPic="30337" margin="0,2,0,0">
+        <L30344 class="pushbutton" StateNumber="3" PicMargin="0" ForePic="30345" ID="30344" Rect="5,27,25,47" Hint="log self/to remote/from remote" margin="0,0,8,0" />
+        <L31133 class="pushbutton" PicMargin="0" ForePic="31132" ID="31133" Layout="#12" Rect="33,27,53,47" Hint="Clear all messages" />
+        <L31246 class="pushbutton" PicMargin="0" ForePic="31245" ID="31246" Layout="#12" Rect="53,27,73,47" Hint="Delete selected messages" />
+        <L30274 class="pushbutton" StateNumber="2" PicMargin="0" ForePic="30275" ID="30274" Layout="#12" Rect="73,27,93,47" Hint="Clear all messages" />
+        <L31234 class="pushbutton" PicMargin="0" ForePic="30149" ID="31234" Layout="#12" Rect="93,27,113,47" Hint="copy select text" />
+        <L31127 class="checkbox" State="1" NormalTextColor="209" HighlightTextColor="209" DownTextColor="209" FocusTextColor="209" ID="31127" Layout="#12" Rect="113,27,162,47" Text="APP" Hint="Log APP Message&#13;&#10;APP message can be caught by CTuiDialogImpl" />
+        <L31128 class="checkbox" State="1" NormalTextColor="209" HighlightTextColor="209" DownTextColor="209" FocusTextColor="209" ID="31127" Layout="#12" Rect="162,27,217,47" Text="ITM" Hint="Log widget/QT message&#13;&#10;" />
+        <L31158 class="pushbutton" StateNumber="1" HighlightTextColor="#FFFFFF" PicMargin="0" ID="31158" Layout="#12" Rect="217,27,263,47" Text="Other" Hint="Clear all messages" />
+        <L31130 class="edit" Prompt="Include, splite by &quot;;&quot;" ID="31130" Layout="#12" Rect="268,27,505,47" BkPic="10008" Frame="30200" margin="5,0,0,0" />
+        <L31131 class="edit" Prompt="exclude, splite by &quot;;&quot;" ID="31131" Layout="#12" Rect="515,27,726,47" BkPic="10008" Frame="30200" margin="10,0,0,0" />
+        <L30428 class="widget" Layout="#30" Rect="740,27,1163,47">
+          <L30272 class="pushbutton" PicMargin="0" ForePic="30273" ID="30272" Layout="#12" Rect="740,27,760,47" Hint="Debug break on message and object" />
+          <L31175 class="pushbutton" StateNumber="2" PicMargin="0" ForePic="30275" ID="31175" Layout="#12" Rect="760,27,780,47" Hint="pause break/block; press &quot;Pause break&quot; key to open/close it." />
+          <L30434 class="checkbox" NormalTextColor="209" HighlightTextColor="209" DownTextColor="209" FocusTextColor="209" ID="30434" Layout="#12" Rect="780,27,838,47" Text="block" />
+          <L31135 class="edit" Prompt="break or block, splite by &quot;;&quot;" ID="31135" Layout="#30" Rect="838,27,1161,47" BkPic="10008" Frame="30200" />
+        </L30428>
+      </L30088>
+      <L31124 class="tree" Style="#10010801" Layout="#22041" AdvStyle="#200" Rect="5,50,1172,734" Font="Courier New" Frame="10002" padding="16,0,0,0" />
+    </L30086>
+    <L30090 class="window" Layout="#44041" AdvStyle="#80200">
+      <L30163 class="widget" Style="#108C0000" Rect="0,0,541,345" Frame="31238" />
+    </L30090>
+    <L30093 class="window" Layout="#0" AdvStyle="#80000" Rect="0,0,770,491" BkPic="30271">
+      <L30164 class="widget" Style="#108C0000" AdvStyle="#80" Rect="0,0,770,491" Frame="31238">
+        <L30094 class="widget" ID="30100" Layout="#41" AdvStyle="#200" Rect="4,4,766,348" Tag="1" />
+        <L30095 class="splitter" Style="#10010005" Layout="#31" Rect="4,348,766,356" BkPic="10003" />
+        <L30096 class="widget" Layout="#31" Rect="4,356,766,487">
+          <L30098 class="pushbutton" ID="30099" Layout="#110" Rect="318,364,436,458" BkPic="null" Frame="10002" />
+          <L30338 class="widget" Layout="#31" Rect="4,467,766,487">
+            <L31242 class="pushbutton" PicWidth="12" PicHeight="12" ID="31242" Layout="#1" Rect="4,467,44,487" Text="&lt;&lt;&lt;" />
+            <L31243 class="pushbutton" PicWidth="12" PicHeight="12" ID="31243" Layout="#1" Rect="44,467,84,487" Text="&lt;&lt;" />
+            <L30339 class="pushbutton" StateNumber="2" PicWidth="12" PicHeight="12" ID="30339" Layout="#1" Rect="84,467,124,487" Text="||" />
+            <L30342 class="pushbutton" PicWidth="12" PicHeight="12" ID="30342" Layout="#1" Rect="124,467,164,487" Text="&gt;&gt;" />
+            <L30343 class="pushbutton" PicWidth="12" PicHeight="12" ID="30343" Layout="#1" Rect="164,467,204,487" Text="&gt;&gt;&gt;" />
+            <L33021 class="pushbutton" PicWidth="12" PicHeight="12" ID="33021" Layout="#1" Rect="204,467,244,487" Text="edit" />
+            <L31244 class="static" TextFormat="#805" Layout="#21" Rect="244,467,766,487" BkPic="10008" />
+          </L30338>
+        </L30096>
+      </L30164>
+    </L30093>
+    <L30122 class="window" Layout="#0" AdvStyle="#80" Rect="0,0,334,113" Text="set user name and email" BkPic="10008" Font="Verdana:13" Frame="10002">
+      <L30124 class="pushbutton" ID="1" Rect="261,72,321,97" Text="Ok" BkPic="20074" />
+      <L30123 class="edit" ID="30125" Rect="60,36,253,67" BkPic="10008" Frame="30206" />
+      <L32000 class="edit" Rect="60,68,253,99" BkPic="10008" Frame="30206" />
+      <L32001 class="static" Rect="13,42,57,62" Text="name:" />
+      <L32002 class="static" Rect="13,74,59,94" Text="email:" />
+    </L30122>
+    <L30126 class="window" Style="#10CB0802" Layout="#0" AdvStyle="#80" Rect="0,0,616,296" Text="Wizard" BkPic="10008" Font="Verdana:13" Frame="10002">
+      <L31002 class="groupbox" Rect="17,187,583,280" Text="Create Project">
+        <L31010 class="pushbutton" ID="31012" Rect="463,215,571,237" Text="Create exe" BkPic="20074" />
+        <L31008 class="edit" ID="31009" Rect="142,215,440,235" Frame="10002" />
+        <L31007 class="static" Rect="31,219,133,236" Text="Project Name:" />
+        <L31005 class="pushbutton" ID="31011" Rect="463,244,573,265" Text="Create dll" BkPic="20074" />
+        <L31004 class="edit" TextFormat="#0" ID="31013" Style="#10010800" Rect="142,244,440,264" Text="stdafx.h(cpp);&lt;PRJ&gt;.cpp;&lt;PRJ&gt;.dsw;.pro" Frame="10002" />
+        <L31003 class="static" Rect="30,245,118,265" Text="File Name:" />
+      </L31002>
+      <L31001 class="groupbox" Rect="17,83,582,176" Text="Create Code">
+        <L30141 class="pushbutton" ID="30142" Rect="461,142,573,164" Text="Create" BkPic="20074" />
+        <L30131 class="static" Rect="30,112,127,132" Text="Class Name:" />
+        <L30132 class="static" Rect="30,145,119,165" Text="File Name:" />
+        <L30134 class="edit" TextFormat="#0" ID="30139" Style="#10010800" Rect="142,112,440,132" Frame="10002" />
+        <L30135 class="edit" TextFormat="#0" ID="30140" Style="#10010800" Rect="142,144,440,164" Frame="10002" />
+      </L31001>
+      <L30136 class="pushbutton" ID="1" Rect="461,51,568,73" Text="OK" BkPic="20074" />
+      <L30130 class="static" Rect="30,52,126,72" Text="Macro Name:" />
+      <L30129 class="edit" ID="30138" Rect="142,51,440,72" Frame="10002" />
+    </L30126>
+    <L30186 class="window" Style="#2" Layout="#20" AdvStyle="#8000080" Rect="0,0,232,300" Font="Verdana:13">
+      <L30187 class="tree" Style="#10000016" Layout="#22041" AdvStyle="#200" Rect="0,0,232,300" BkPic="10008" Frame="30207" />
+    </L30186>
+    <L30222 class="window" Style="#10C80802" Rect="0,0,236,252" Text="Find Target" BkPic="10008" Font="Verdana:13" Frame="10002">
+      <L30223 class="static" Rect="52,39,100,87" Hint="Drag to Target window" BkPic="30228" />
+      <L30224 class="pushbutton" ID="30224" Style="#10010016" Rect="149,41,203,61" Text="Parent" Hint="Get Parent Window" BkPic="20074" />
+      <L30230 class="pushbutton" ID="30230" Style="#10010016" Rect="148,65,202,85" Text="Child" Hint="Get child Window" BkPic="20074" />
+      <L30226 class="memo" Rect="31,101,202,213" Frame="30219" />
+      <L30227 class="pushbutton" ID="1" Style="#10010016" Rect="54,221,174,241" Text="Import" BkPic="20074" />
+    </L30222>
+    <L30229 class="window" Style="#CF0000" AdvStyle="#80800A8" BkPic="30271">
+      <L30281 class="static" Layout="#41" Rect="0,0,500,300" BkPic="30105" />
+    </L30229>
+    <L30231 class="window" Style="#10C01802" AdvStyle="#80" Rect="0,0,449,291" Text="Template Direct UI Library" BkPic="10008" Font="Verdana:13" Frame="10002">
+      <L30233 class="rich" TextFormat="#40000" Style="#10018A04" Layout="#0" AdvStyle="#0" Rect="29,103,301,122" Text="BDFLYAO(bdflyao@foxmail.com) " margin="8,0,0,0" />
+      <L30238 class="pushbutton" TextFormat="#814" ID="30238" Rect="24,147,443,174" Text="https://github.com" BkPic="null" Font="::u" Tag="1" />
+      <L30232 class="static" Rect="20,39,447,211" Text="刻苦编程:&#13;&#10;  miragekiller(3916345933@qq.com)&#13;&#10;&#13;&#10;华丽美术:&#13;&#10;&#13;&#10;&#13;&#10;git:&#13;&#10;" />
+      <L30235 class="animate" Style="#10000004" Layout="#20" Rect="313,30,433,150" BkPic="30236" />
+      <L30241 class="static" TextFormat="#802" Rect="13,193,433,247" Text="Product Version: %d&#13;&#10;Editor Version: %d&#13;&#10;©2008-2021 miragekiller" Font="Courier New" />
+      <L30242 class="pushbutton" ForePic="31034" ID="3" Layout="#20" Rect="422,4,441,22" BkPic="null" />
+      <L30239 class="pushbutton" ID="1" Rect="58,262,196,286" Text="Don't Close" BkPic="20074" />
+      <L30240 class="pushbutton" ID="2" Rect="256,262,394,286" Text="Close" BkPic="20074" />
+    </L30231>
+    <L30243 class="window" Style="#10CF0802" Layout="#0" AdvStyle="#80" Rect="0,0,328,98" Text="Save Language" BkPic="10008" Font="Verdana:13" Frame="10002">
+      <L30244 class="pushbutton" ID="1" Rect="249,52,309,77" Text="Ok" BkPic="20074" />
+      <L31037 class="checkbox" State="1" Rect="23,34,232,54" Text="Save string table on RC file " />
+      <L31038 class="checkbox" State="1" Rect="22,60,231,80" Text="Save Menu String On RC file" />
+    </L30243>
+    <L30251 class="window" Style="#10CF0802" Rect="0,0,649,399" Text="Seach keyword on special directory." BkPic="10008" Font="Verdana:13" Frame="10002">
+      <L31090 class="listbox" ItemHeight="16" Style="#18000" Layout="#60000" AdvStyle="#200" Rect="274,279,394,355" Text="Import Dialog&#13;&#10;PreSeach Macro&#13;&#10;PreSeach Class&#13;&#10;PreSeach Member&#13;&#10;PreSeach Function" BkPic="10003" Frame="30237" />
+      <L30253 class="edit" Prompt="Select directory, splite by &quot;;&quot;" Layout="#30" Rect="12,31,630,59" Frame="30206">
+        <L30261 class="pushbutton" TextFormat="#40829" ID="30261" Layout="#11" Rect="596,37,624,53" Text="..." BkPic="20074" />
+      </L30253>
+      <L30262 class="widget" Layout="#330" AdvStyle="#200" Rect="12,67,542,384">
+        <L30252 class="tree" Indent="4" ID="30252" Style="#10010" Layout="#20041" AdvStyle="#200" Rect="12,67,485,282" Frame="30206" padding="0,0,0,60">
+          <L31081 class="widget" Layout="#31" Rect="18,216,479,276" BkPic="10008" margin="0,0,0,-60">
+            <L31084 class="widget" Rect="18,216,122,250">
+              <L31082 class="radiobutton" State="1" ID="31082" Rect="18,216,94,233" Text="by Ref" Hint="Sort by refrence" />
+              <L31083 class="radiobutton" ID="31082" Rect="18,234,98,250" Text="by file" Hint="Sort by file" />
+            </L31084>
+            <L31085 class="checkbox" ID="31085" Rect="18,253,120,271" Text="Merge line" Hint="merge same keyword in same file" />
+            <L30269 class="memo" Prompt="exclude before%0d%0asplite by new line" ID="30269" Rect="131,219,279,268" Hint="if have text before keyword, then hide it." Frame="30237" />
+            <L30270 class="memo" Prompt="exclude after%0d%0asplite by new line" ID="30270" Rect="286,219,433,268" Hint="if have text after keyword, then hide it." Frame="30237" />
+          </L31081>
+        </L30252>
+        <L30264 class="memo" Prompt="Parst txt to here" Layout="#22041" Rect="12,67,542,384" Frame="30206" padding="0,0,0,20">
+          <L30257 class="widget" Layout="#31" Rect="18,358,536,378" BkPic="10008" margin="0,0,0,-20">
+            <L31080 class="widget" Layout="#1" Rect="18,358,256,378">
+              <L30258 class="radiobutton" State="1" Layout="#1" Rect="18,358,94,378" Text="normal" Hint="KEYWORD, splite by line " />
+              <L30259 class="radiobutton" Layout="#1" Rect="94,358,174,378" Text="function" Hint="KEYWORD or class::KEYWORD, splite by line" />
+              <L30260 class="radiobutton" Layout="#1" Rect="174,358,246,378" Text="macro" Hint="#define KEYWORD xxxx, splite by line" />
+            </L31080>
+            <L30268 class="pushbutton" ID="30268" Layout="#1" Rect="256,358,430,378" Text="Import Dialog" Hint="Import current dialogs" BkPic="20074">
+              <L33000 class="static" Layout="#11" Rect="411,362,412,374" BkPic="31028" margin="0,0,3,0" />
+              <L31086 class="combobutton" PopList="31090" DownOffsetX="0" DownOffsetY="0" ForePic="null" Style="#10010096" Layout="#11" Rect="415,362,426,374" Text="▼" BkPic="null" Font=":10" />
+            </L30268>
+            <L30254 class="pushbutton" ID="30254" Layout="#1" Rect="430,358,510,378" Text="Start" BkPic="20074" />
+          </L30257>
+        </L30264>
+        <L33002 class="memo" TextFormat="#0" Style="#18040" Layout="#20041" Rect="151,119,351,200" Text="keyword import have 2 ways:&#13;&#10;1. Import Dilalog: get keyword in current opened xml.&#13;&#10;   the operator will import:&#13;&#10;     all dialog object id&#13;&#10;     all unvisible control object id&#13;&#10;     all unused frame,pic id&#13;&#10;     all dialog and control id&#13;&#10;     control id only used in WM_COMMAND, if not used, please remove it in property edit.&#13;&#10;2. PreSeach XXXX: get keyword in source code from special directory.&#13;&#10;&#13;&#10;keyword search step:&#13;&#10;1. select source code director.&#13;&#10;2. click combox right button to select mode.&#13;&#10;3. click combox left button to import keyword.&#13;&#10;4. click &quot;start&quot;button to start seach.&#13;&#10;&#13;&#10;result:&#13;&#10;1. the 4 number is: All Keyword Count - Child Keyword Count - Keyword in Files Count - Keyword in Same Files Body Count&#13;&#10;   Child Keyword Count only use in &quot;Import Dilalog&quot;.&#13;&#10;   sample:&#13;&#10;   aa.h: #define AAA &quot;a&quot;&#13;&#10;   aa.cpp: print(AAA); output(AAA);&#13;&#10;   cc.cpp: print(AAA);&#13;&#10;   the out put number is: 4-3-2&#13;&#10;     4: all keyword count.&#13;&#10;     3: there have 3 files: aa.h, aa.cpp, cc.cpp;&#13;&#10;     2: there have 2 files body: aa, cc;&#13;&#10;2. click item can display info in VC or DebugTrace.&#13;&#10;   click VC output item can jump to file." Frame="30206" />
+      </L30262>
+      <L30267 class="widget" Layout="#320" Rect="549,74,638,376">
+        <L30256 class="pushbutton" ID="2" Rect="549,238,629,258" Text="Exit" BkPic="20074" />
+        <L30265 class="tabbutton" Target="30264" State="1" Rect="549,302,629,322" Text="keywords" BkPic="20074" />
+        <L30266 class="tabbutton" Target="30252" Rect="549,327,629,347" Text="result" BkPic="20074" />
+        <L33001 class="tabbutton" Target="33002" Rect="549,352,629,372" Text="help" BkPic="20074" />
+      </L30267>
+    </L30251>
+    <L30390 class="window" Style="#10CF0802" Rect="0,0,1228,629" Text="Analysis Memory" BkPic="10008" Font="Verdana:13" Frame="30237">
+      <L30393 class="memo" Style="#18040" Layout="#22330" Rect="17,61,864,515" Frame="30206" />
+      <L30391 class="edit" Prompt="Select file" Style="#10000" Layout="#30" Rect="19,31,1211,59" Frame="30206">
+        <L30392 class="pushbutton" TextFormat="#40829" ID="31297" Layout="#11" Rect="597,37,625,53" Text="..." BkPic="20074" />
+      </L30391>
+      <L30394 class="widget" Layout="#21" Rect="5,23,1223,397">
+        <L30395 class="listbox" ID="30395" Layout="#22001" AdvStyle="#200" Rect="5,23,794,397" Font="Courier New" Frame="30206" padding="10,20,10,10">
+          <L30401 class="header" Style="#10000042" Layout="#121" Rect="21,29,778,49" margin="0,-20,0,0" />
+        </L30395>
+        <L30396 class="splitter" Style="#10010004" Layout="#1" Rect="794,23,800,397" />
+        <L30397 class="listbox" ID="30397" Layout="#22041" AdvStyle="#200" Rect="800,23,1223,397" Font="Courier New" Frame="30206" padding="10,10,10,10" />
+      </L30394>
+      <L30400 class="splitter" Style="#10010001" Layout="#21" Rect="5,397,1223,407" />
+      <L30399 class="widget" Layout="#41" Rect="5,407,1223,624" />
+    </L30390>
+    <L30402 class="window" Style="#10CF0802" Layout="#420" Rect="0,0,1228,629" Text="Analysis DLL" BkPic="10008" Font="Verdana:13" Frame="30237">
+      <L30406 class="widget" Layout="#41" Rect="5,23,1223,624">
+        <L30415 class="widget" Layout="#1" Rect="5,23,707,624">
+          <L30407 class="listbox" ID="30407" Style="#10010020" Layout="#22041" AdvStyle="#200" Rect="5,23,707,421" Font="Courier New" Frame="30206" padding="10,20,10,10">
+            <L30408 class="header" Style="#10000042" Layout="#121" Rect="21,29,691,49" margin="0,-20,0,0" />
+            <L30414 class="splitter" Rect="119,518,319,538" />
+          </L30407>
+          <L30416 class="splitter" Style="#10010005" Layout="#31" Rect="5,421,707,431" />
+          <L30417 class="memo" Layout="#200B1" Rect="5,431,707,624" Frame="30206" />
+        </L30415>
+        <L30409 class="splitter" Style="#10010004" Layout="#1" Rect="707,23,713,624" />
+        <L30410 class="listbox" ID="30410" Layout="#22041" AdvStyle="#200" Rect="713,23,1223,624" Font="Courier New" Frame="30206" padding="10,20,10,10">
+          <L30413 class="header" Style="#10000042" Layout="#21" Rect="729,29,1207,49" margin="0,-20,0,0" />
+        </L30410>
+      </L30406>
+      <L30418 class="pushbutton" ID="30418" Layout="#20" Rect="1065,5,1137,25" Text="export" Hint="export CSV to c:\temp" />
+    </L30402>
+    <L31024 class="window" Style="#10000000" Layout="#0" AdvStyle="#80800A8" Rect="0,0,133,165" BkPic="31023" Font="Arial:10" padding="17,20,17,20">
+      <L31025 class="widget" ID="31029" Layout="#300" Rect="17,20,116,145">
+        <L31032 class="static" Layout="#30" Rect="17,19,116,118" BkPic="31031" />
+      </L31025>
+      <L31026 class="static" Layout="#230" Rect="17,119,116,145" BkPic="31028" />
+    </L31024>
+    <L31040 class="window" Style="#10CB0802" Rect="0,0,535,568" Text="View All System Color" BkPic="10008" Font="Verdana:13" Frame="30237">
+      <L30249 class="widget" Layout="#330" Rect="5,23,524,510" Font=":10">
+        <L30347 class="widget" Layout="#1" Rect="5,23,265,510">
+          <L31041 class="edit" TextFormat="#822" ID="31071" Style="#10000000" Layout="#21" AdvStyle="#0" Rect="5,23,265,39" Text="COLOR_SCROLLBAR" padding="40,0,0,0" />
+          <L31042 class="edit" TextFormat="#822" ID="31071" Style="#10000000" Layout="#21" AdvStyle="#0" Rect="5,39,265,55" Text="COLOR_BACKGROUND" padding="40,0,0,0" Tag="1" />
+          <L31043 class="edit" TextFormat="#822" ID="31071" Style="#10000000" Layout="#21" AdvStyle="#0" Rect="5,55,265,71" Text="COLOR_ACTIVECAPTION" padding="40,0,0,0" Tag="2" />
+          <L31045 class="edit" TextFormat="#822" ID="31071" Style="#10000000" Layout="#21" AdvStyle="#0" Rect="5,71,265,87" Text="COLOR_INACTIVECAPTION" padding="40,0,0,0" Tag="3" />
+          <L31046 class="edit" TextFormat="#822" ID="31071" Style="#10000000" Layout="#21" AdvStyle="#0" Rect="5,87,265,103" Text="COLOR_MENU" padding="40,0,0,0" Tag="4" />
+          <L31047 class="edit" TextFormat="#822" ID="31071" Style="#10000000" Layout="#21" AdvStyle="#0" Rect="5,103,265,119" Text="COLOR_WINDOW" padding="40,0,0,0" Tag="5" />
+          <L31048 class="edit" TextFormat="#822" ID="31071" Style="#10000000" Layout="#21" AdvStyle="#0" Rect="5,119,265,135" Text="COLOR_WINDOWFRAME" padding="40,0,0,0" Tag="6" />
+          <L31049 class="edit" TextFormat="#822" ID="31071" Style="#10000000" Layout="#21" AdvStyle="#0" Rect="5,135,265,151" Text="COLOR_MENUTEXT" padding="40,0,0,0" Tag="7" />
+          <L31050 class="edit" TextFormat="#822" ID="31071" Style="#10000000" Layout="#21" AdvStyle="#0" Rect="5,151,265,167" Text="COLOR_WINDOWTEXT" padding="40,0,0,0" Tag="8" />
+          <L31051 class="edit" TextFormat="#822" ID="31071" Style="#10000000" Layout="#21" AdvStyle="#0" Rect="5,167,265,183" Text="COLOR_CAPTIONTEXT" padding="40,0,0,0" Tag="9" />
+          <L31052 class="edit" TextFormat="#822" ID="31071" Style="#10000000" Layout="#21" AdvStyle="#0" Rect="5,183,265,199" Text="COLOR_ACTIVEBORDER" padding="40,0,0,0" Tag="10" />
+          <L31053 class="edit" TextFormat="#822" ID="31071" Style="#10000000" Layout="#21" AdvStyle="#0" Rect="5,199,265,215" Text="COLOR_INACTIVEBORDER" padding="40,0,0,0" Tag="11" />
+          <L31054 class="edit" TextFormat="#822" ID="31071" Style="#10000000" Layout="#21" AdvStyle="#0" Rect="5,215,265,231" Text="COLOR_APPWORKSPACE" padding="40,0,0,0" Tag="12" />
+          <L31055 class="edit" TextFormat="#822" ID="31071" Style="#10000000" Layout="#21" AdvStyle="#0" Rect="5,231,265,247" Text="COLOR_HIGHLIGHT" padding="40,0,0,0" Tag="13" />
+          <L31056 class="edit" TextFormat="#822" ID="31071" Style="#10000000" Layout="#21" AdvStyle="#0" Rect="5,247,265,263" Text="COLOR_HIGHLIGHTTEXT" padding="40,0,0,0" Tag="14" />
+          <L31057 class="edit" TextFormat="#822" ID="31071" Style="#10000000" Layout="#21" AdvStyle="#0" Rect="5,263,265,279" Text="COLOR_BTNFACE" padding="40,0,0,0" Tag="15" />
+          <L31058 class="edit" TextFormat="#822" ID="31071" Style="#10000000" Layout="#21" AdvStyle="#0" Rect="5,279,265,295" Text="COLOR_BTNSHADOW" padding="40,0,0,0" Tag="16" />
+          <L31059 class="edit" TextFormat="#822" ID="31071" Style="#10000000" Layout="#21" AdvStyle="#0" Rect="5,295,265,311" Text="COLOR_GRAYTEXT" padding="40,0,0,0" Tag="17" />
+          <L31060 class="edit" TextFormat="#822" ID="31071" Style="#10000000" Layout="#21" AdvStyle="#0" Rect="5,311,265,327" Text="COLOR_BTNTEXT" padding="40,0,0,0" Tag="18" />
+          <L31061 class="edit" TextFormat="#822" ID="31071" Style="#10000000" Layout="#21" AdvStyle="#0" Rect="5,327,265,343" Text="COLOR_INACTIVECAPTIONTEXT" padding="40,0,0,0" Tag="19" />
+          <L31062 class="edit" TextFormat="#822" ID="31071" Style="#10000000" Layout="#21" AdvStyle="#0" Rect="5,343,265,359" Text="COLOR_BTNHIGHLIGHT" padding="40,0,0,0" Tag="20" />
+          <L31063 class="edit" TextFormat="#822" ID="31071" Style="#10000000" Layout="#21" AdvStyle="#0" Rect="5,359,265,375" Text="COLOR_3DDKSHADOW" padding="40,0,0,0" Tag="21" />
+          <L31064 class="edit" TextFormat="#822" ID="31071" Style="#10000000" Layout="#21" AdvStyle="#0" Rect="5,375,265,391" Text="COLOR_3DLIGHT" padding="40,0,0,0" Tag="22" />
+          <L31065 class="edit" TextFormat="#822" ID="31071" Style="#10000000" Layout="#21" AdvStyle="#0" Rect="5,391,265,407" Text="COLOR_INFOTEXT" padding="40,0,0,0" Tag="23" />
+          <L31066 class="edit" TextFormat="#822" ID="31071" Style="#10000000" Layout="#21" AdvStyle="#0" Rect="5,407,265,423" Text="COLOR_INFOBK" padding="40,0,0,0" Tag="24" />
+          <L31067 class="edit" TextFormat="#822" ID="31071" Style="#10000000" Layout="#21" AdvStyle="#0" Rect="5,423,265,439" Text="COLOR_HOTLIGHT" padding="40,0,0,0" Tag="26" />
+          <L31068 class="edit" TextFormat="#822" ID="31071" Style="#10000000" Layout="#21" AdvStyle="#0" Rect="5,439,265,455" Text="COLOR_GRADIENTACTIVECAPTION" padding="40,0,0,0" Tag="27" />
+          <L31069 class="edit" TextFormat="#822" ID="31071" Style="#10000000" Layout="#21" AdvStyle="#0" Rect="5,455,265,471" Text="COLOR_GRADIENTINACTIVECAPTION" padding="40,0,0,0" Tag="28" />
+          <L30348 class="edit" TextFormat="#822" ID="31071" Style="#10000000" Layout="#21" AdvStyle="#0" Rect="5,471,265,487" Text="COLOR_MENUHILIGHT" padding="40,0,0,0" Tag="28" />
+          <L30349 class="edit" TextFormat="#822" ID="31071" Style="#10000000" Layout="#21" AdvStyle="#0" Rect="5,487,265,503" Text="COLOR_MENUBAR" padding="40,0,0,0" Tag="28" />
+        </L30347>
+        <L30350 class="widget" Layout="#1" Rect="265,23,525,510">
+          <L30351 class="edit" TextFormat="#822" ID="31071" Style="#10000000" Layout="#21" AdvStyle="#0" Rect="265,23,525,39" Text="AccentColor" padding="40,0,0,0" />
+          <L30352 class="edit" TextFormat="#822" ID="31071" Style="#10000000" Layout="#21" AdvStyle="#0" Rect="265,39,525,55" Text="AccentColorText" padding="40,0,0,0" Tag="1" />
+          <L30353 class="edit" TextFormat="#822" ID="31071" Style="#10000000" Layout="#21" AdvStyle="#0" Rect="265,55,525,71" Text="ActiveText" padding="40,0,0,0" Tag="2" />
+          <L30354 class="edit" TextFormat="#822" ID="31071" Style="#10000000" Layout="#21" AdvStyle="#0" Rect="265,71,525,87" Text="ButtonBorder" padding="40,0,0,0" Tag="3" />
+          <L30355 class="edit" TextFormat="#822" ID="31071" Style="#10000000" Layout="#21" AdvStyle="#0" Rect="265,87,525,103" Text="ButtonFace" padding="40,0,0,0" Tag="4" />
+          <L30356 class="edit" TextFormat="#822" ID="31071" Style="#10000000" Layout="#21" AdvStyle="#0" Rect="265,103,525,119" Text="ButtonText" padding="40,0,0,0" Tag="5" />
+          <L30357 class="edit" TextFormat="#822" ID="31071" Style="#10000000" Layout="#21" AdvStyle="#0" Rect="265,119,525,135" Text="Canvas" padding="40,0,0,0" Tag="6" />
+          <L30358 class="edit" TextFormat="#822" ID="31071" Style="#10000000" Layout="#21" AdvStyle="#0" Rect="265,135,525,151" Text="CanvasText" padding="40,0,0,0" Tag="7" />
+          <L30359 class="edit" TextFormat="#822" ID="31071" Style="#10000000" Layout="#21" AdvStyle="#0" Rect="265,151,525,167" Text="Field" padding="40,0,0,0" Tag="8" />
+          <L30360 class="edit" TextFormat="#822" ID="31071" Style="#10000000" Layout="#21" AdvStyle="#0" Rect="265,167,525,183" Text="FieldText" padding="40,0,0,0" Tag="9" />
+          <L30361 class="edit" TextFormat="#822" ID="31071" Style="#10000000" Layout="#21" AdvStyle="#0" Rect="265,183,525,199" Text="GrayText" padding="40,0,0,0" Tag="10" />
+          <L30362 class="edit" TextFormat="#822" ID="31071" Style="#10000000" Layout="#21" AdvStyle="#0" Rect="265,199,525,215" Text="Highlight" padding="40,0,0,0" Tag="11" />
+          <L30363 class="edit" TextFormat="#822" ID="31071" Style="#10000000" Layout="#21" AdvStyle="#0" Rect="265,215,525,231" Text="HighlightText" padding="40,0,0,0" Tag="12" />
+          <L30364 class="edit" TextFormat="#822" ID="31071" Style="#10000000" Layout="#21" AdvStyle="#0" Rect="265,231,525,247" Text="LinkText" padding="40,0,0,0" Tag="13" />
+          <L30365 class="edit" TextFormat="#822" ID="31071" Style="#10000000" Layout="#21" AdvStyle="#0" Rect="265,247,525,263" Text="Mark" padding="40,0,0,0" Tag="14" />
+          <L30366 class="edit" TextFormat="#822" ID="31071" Style="#10000000" Layout="#21" AdvStyle="#0" Rect="265,263,525,279" Text="MarkText" padding="40,0,0,0" Tag="15" />
+          <L30367 class="edit" TextFormat="#822" ID="31071" Style="#10000000" Layout="#21" AdvStyle="#0" Rect="265,279,525,295" Text="SelectedItem" padding="40,0,0,0" Tag="16" />
+          <L30368 class="edit" TextFormat="#822" ID="31071" Style="#10000000" Layout="#21" AdvStyle="#0" Rect="265,295,525,311" Text="SelectedItemText" padding="40,0,0,0" Tag="17" />
+          <L30369 class="edit" TextFormat="#822" ID="31071" Style="#10000000" Layout="#21" AdvStyle="#0" Rect="265,311,525,327" Text="VisitedText" padding="40,0,0,0" Tag="18" />
+          <L30370 class="edit" TextFormat="#822" ID="31071" Style="#0" Layout="#21" AdvStyle="#0" Rect="246,327,487,343" Text="COLOR_INACTIVECAPTIONTEXT" padding="40,0,0,0" Tag="19" />
+          <L30371 class="edit" TextFormat="#822" ID="31071" Style="#0" Layout="#21" AdvStyle="#0" Rect="246,343,487,359" Text="COLOR_BTNHIGHLIGHT" padding="40,0,0,0" Tag="20" />
+          <L30372 class="edit" TextFormat="#822" ID="31071" Style="#0" Layout="#21" AdvStyle="#0" Rect="246,359,487,375" Text="COLOR_3DDKSHADOW" padding="40,0,0,0" Tag="21" />
+          <L30373 class="edit" TextFormat="#822" ID="31071" Style="#0" Layout="#21" AdvStyle="#0" Rect="246,375,487,391" Text="COLOR_3DLIGHT" padding="40,0,0,0" Tag="22" />
+          <L30374 class="edit" TextFormat="#822" ID="31071" Style="#0" Layout="#21" AdvStyle="#0" Rect="246,391,487,407" Text="COLOR_INFOTEXT" padding="40,0,0,0" Tag="23" />
+          <L30375 class="edit" TextFormat="#822" ID="31071" Style="#0" Layout="#21" AdvStyle="#0" Rect="246,407,487,423" Text="COLOR_INFOBK" padding="40,0,0,0" Tag="24" />
+          <L30376 class="edit" TextFormat="#822" ID="31071" Style="#0" Layout="#21" AdvStyle="#0" Rect="246,423,487,439" Text="COLOR_HOTLIGHT" padding="40,0,0,0" Tag="26" />
+          <L30377 class="edit" TextFormat="#822" ID="31071" Style="#0" Layout="#21" AdvStyle="#0" Rect="246,439,487,455" Text="COLOR_GRADIENTACTIVECAPTION" padding="40,0,0,0" Tag="27" />
+          <L30378 class="edit" TextFormat="#822" ID="31071" Style="#0" Layout="#21" AdvStyle="#0" Rect="246,455,487,471" Text="COLOR_GRADIENTINACTIVECAPTION" padding="40,0,0,0" Tag="28" />
+        </L30350>
+      </L30249>
+      <L31249 class="widget" Layout="#31" Rect="15,526,520,546" margin="10,0,10,0">
+        <L31250 class="pushbutton" ID="31250" Layout="#1" Rect="15,526,50,546" Text="XP" BkPic="20074" />
+        <L31251 class="pushbutton" ID="31251" Layout="#2" Rect="50,526,99,546" Text="Win10" BkPic="20074" />
+        <L31252 class="pushbutton" ID="31252" Layout="#2" Rect="99,526,164,546" Text="Win10_1" BkPic="20074" />
+        <L31253 class="pushbutton" ID="31253" Layout="#2" Rect="164,526,228,546" Text="Win10_2" BkPic="20074" />
+        <L31254 class="pushbutton" ID="31254" Layout="#2" Rect="228,526,292,546" Text="Win10_3" BkPic="20074" />
+        <L31255 class="pushbutton" ID="31255" Layout="#2" Rect="292,526,357,546" Text="Win10_4" BkPic="20074" />
+        <L30381 class="pushbutton" ID="30381" Layout="#2" Rect="357,526,405,546" Text="Dark" BkPic="20074" />
+        <L31248 class="pushbutton" ID="31248" Layout="#2" Rect="405,526,443,546" Text="Sys" BkPic="20074" />
+        <L31070 class="pushbutton" ID="1" Layout="#11" Rect="460,526,520,546" Text="Ok" BkPic="20074" />
+      </L31249>
+      <L30250 class="static" TextFormat="#802" Layout="#31" Rect="15,546,520,563" Text="double click to set system color." margin="10,0,10,0" />
+    </L31040>
+    <L31139 class="window" Style="#10CF0802" Rect="0,0,654,632" Text="DrawFrameControl" BkPic="10008" Font="Verdana:13" Frame="30237">
+      <L31140 class="groupbox" Rect="13,31,641,309" Text="DrawFrameControl">
+        <L31141 class="listbox" Style="#10010001" AdvStyle="#200" Rect="21,79,143,296" Frame="30219" />
+        <L31142 class="listbox" Style="#10010009" AdvStyle="#200" Rect="156,80,308,299" Frame="30219" />
+        <L31143 class="static" Rect="22,53,142,73" Text="UINT uType" />
+        <L31144 class="static" Rect="325,55,445,75" Text="UINT uState2" />
+        <L31145 class="widget" Rect="497,126,617,238" />
+        <L31146 class="listbox" Style="#10010009" AdvStyle="#200" Rect="318,80,472,299" Frame="30219" />
+        <L31147 class="static" Rect="163,52,283,72" Text="UINT uState1" />
+      </L31140>
+      <L31148 class="groupbox" Rect="14,318,642,596" Text="DrawEdge">
+        <L31149 class="listbox" Style="#10010009" AdvStyle="#200" Rect="22,366,177,583" Frame="30219" />
+        <L31150 class="listbox" Style="#10010009" AdvStyle="#200" Rect="190,365,342,584" Frame="30219" />
+        <L31151 class="static" Rect="23,340,143,360" Text="UINT edge" />
+        <L31153 class="widget" Rect="498,413,618,525" />
+        <L31155 class="static" Rect="197,337,317,357" Text="UINT grfFlags" />
+      </L31148>
+    </L31139>
+    <L31182 class="window" Style="#10CB0802" Rect="0,0,622,459" Text="AnimateWidnow tester" BkPic="10008" Font="Courier New:13" Frame="30237">
+      <L31185 class="listbox" ID="31185" Style="#10010008" AdvStyle="#200" Rect="380,186,599,331" Frame="10002" />
+      <L31186 class="pushbutton" ID="1" Rect="380,396,485,416" Text="run" BkPic="20074" />
+      <L31187 class="static" Rect="380,164,515,181" Text="dwFlags" />
+      <L31188 class="static" Rect="380,342,479,362" Text="dwTime(MS)" />
+      <L31189 class="edit" Rect="380,364,599,384" Text="3000" Frame="10002" />
+      <L31190 class="widget" AdvStyle="#200" Rect="14,35,363,418" Frame="10002">
+        <L31191 class="widget" Layout="#1" Rect="16,37,114,416">
+          <L31192 class="radiobutton" ForePic="null" ID="31216" Rect="17,80,112,104" Text="Back" Hint="倒退缓冲（BackEase）：让动画在继续之前往后退一点。这有点象在斜坡上启动汽车，会往后倒退一点然后才前进。在BackEase中，有一个&quot;Amplitude&quot;属性，该属性可以简单理解为扩展宽度，也就是说动画继续之前往后退的宽度，默认设置为1，随着值的增加，倒退宽度也就越大。" BkPic="20074" />
+          <L31193 class="radiobutton" State="1" ForePic="null" ID="31216" Rect="17,131,112,155" Text="Bounce" Hint="弹跳缓冲（BounceEase）：有弹回效果的动画，类似我们前面提到的篮球落下，弹起，再落下，即弹跳反冲。该效果中包含两个属性，&quot;Bounces&quot;是表示弹跳几次，&quot;Bounciness&quot;是表示弹跳的速度，越大会越慢。" BkPic="20074" />
+          <L31194 class="radiobutton" ForePic="null" ID="31216" Rect="17,181,112,205" Text="Circle" Hint="圆缓冲（CircleEase）：创建使用循环函数加速和/或减速的动画。 基于三角函数（圆函数）来加速动画，一开始的加速度比较慢，越往后加速度越快。" BkPic="20074" />
+          <L31195 class="radiobutton" ForePic="null" ID="31216" Rect="17,231,112,255" Text="Elastic" Hint="伸缩缓冲（ElasticEase）：创建表示弹簧在停止前来回振荡的动画。类似于弹跳缓冲（BounceEase），它会让一个值摆动直到停下为止。该效果包含两个属性，&quot;Oscillations&quot;表示伸缩的次数，&quot;Springiness&quot;表示伸缩的速度" BkPic="20074" />
+          <L31196 class="radiobutton" ForePic="null" ID="31216" Rect="17,282,112,306" Text="Exponential" Hint="指数缓冲（ExponentialEase）：创建使用指数公式加速和/或减速的动画。类似于圆缓冲和立方体缓冲，只是加速度的值是按照指数来变化的。该效果包含属性&quot;Exponent&quot;，代表指数，越大效果越慢。" BkPic="20074" />
+          <L31197 class="radiobutton" ForePic="null" ID="31216" Rect="17,332,112,356" Text="Power" Hint="乘方缓冲（PowerEase）：创建使用公式f(t)=t^p（其中，p 等于 PowerEase.Power  属性）加速和/或减速的动画。这是一种指数缓冲，缓冲的值与时间的乘方成比例。该效果有一个&quot;Power&quot;属性，表示时间t的指数，如果Power=2，则和平方缓冲动画相同效果;Power=3则和立方体缓冲动画效果相同，依次类推" BkPic="20074" />
+          <L31198 class="radiobutton" ForePic="null" ID="31216" Rect="17,382,112,406" Text="Sine" Hint="正弦缓冲（SineEase）：创建使用正弦公式加速和/或减速的动画。沿着正弦波来对值进行加速。" BkPic="20074" />
+        </L31191>
+        <L31199 class="static" Rect="107,65,368,415" BkPic="31215" />
+        <L31200 class="widget" Layout="#21" Rect="114,37,361,87">
+          <L31201 class="static" TextFormat="#824" Style="#10010016" Rect="128,44,189,68" Text="EaseIn" Hint="eEaseModeIn" padding="4,4,4,4" />
+          <L31202 class="static" TextFormat="#824" Style="#10010016" Rect="204,44,268,68" Text="EaseOut" Hint="eEaseModeOut" padding="4,4,4,4" Tag="1" />
+          <L31203 class="static" TextFormat="#824" Style="#10010016" Rect="275,44,355,68" Text="EaseInOut" Hint="eEaseModeInOut" padding="4,4,4,4" Tag="2" />
+        </L31200>
+      </L31190>
+      <L31204 class="static" Rect="380,41,476,61" Text="Param1" />
+      <L31205 class="edit" Rect="380,63,599,83" Text="3" Frame="10002" />
+      <L31206 class="static" Rect="380,96,476,116" Text="Param2" />
+      <L31207 class="edit" Rect="380,118,599,138" Text="2" Frame="10002" />
+      <L31208 class="rich" TextFormat="#0" Style="#10018840" Rect="17,428,243,448" Text="&lt;a href=&quot;https://docs.microsoft.com/en-us/dotnet/framework/wpf/graphics-multimedia/easing-functions&quot;&gt;MSDN Easing functions help&lt;/a&gt;" />
+    </L31182>
+    <L31209 class="window" Style="#C70002" Rect="0,0,340,153" Text="HWND::AnimateWindow(hWnd)" BkPic="31214" Font="Courier New:13" Frame="30237">
+      <L31210 class="pushbutton" Rect="95,111,248,131" Font="Courier New:13" />
+      <L31211 class="static" TextFormat="#810" Rect="33,37,232,99" Text="note: the windows AnimateWindow will block thread" />
+    </L31209>
+    <L31212 class="window" Style="#C70002" Rect="0,0,340,153" Text="HTUI::AnimateWindow(hWindow)" BkPic="31214" Font="Courier New:13" Frame="30237">
+      <L31219 class="memo" Layout="#20000" Rect="17,34,329,140" Frame="10002" />
+    </L31212>
+    <L31217 class="window" Style="#C70002" Rect="0,0,340,153" Text="HTUI::AnimateWindow(hWidget)" BkPic="10008" Font="Courier New:13" Frame="30237">
+      <L31183 class="layer" Style="#10C40000" AdvStyle="#200" Rect="12,28,323,144" Text="you can copy code here" BkPic="31214" Frame="30237">
+        <L31184 class="memo" Layout="#20000" Rect="24,58,308,129" Frame="10002" />
+      </L31183>
+    </L31217>
+    <L31233 class="window" Style="#10C80002" Rect="0,0,590,271" Text="Auto Translate" BkPic="10008" Font="Verdana:13" Frame="10002">
+      <L30283 class="groupbox" Style="#18000000" Rect="18,48,572,227" padding="20,20,20,0">
+        <L30285 class="checkbox" State="1" Layout="#2" Rect="38,68,198,88" Text="Arabic" />
+        <L30286 class="checkbox" State="1" Layout="#2" Rect="198,68,358,88" Text="Chinese(Simplified)" />
+        <L30287 class="checkbox" State="1" Layout="#2" Rect="358,68,518,88" Text="Chinese(Traditional)" />
+        <L30299 class="checkbox" State="1" Layout="#2" Rect="38,88,198,108" Text="Danish" />
+        <L30295 class="checkbox" State="1" Layout="#2" Rect="198,88,358,108" Text="Dutch" />
+        <L30288 class="checkbox" State="1" Layout="#2" Rect="358,88,518,108" Text="English" />
+        <L30289 class="checkbox" State="1" Layout="#2" Rect="38,108,198,128" Text="French" />
+        <L30290 class="checkbox" State="1" Layout="#2" Rect="198,108,358,128" Text="German" />
+        <L30291 class="checkbox" State="1" Layout="#2" Rect="358,108,518,128" Text="Hebrew" />
+        <L30292 class="checkbox" State="1" Layout="#2" Rect="38,128,198,148" Text="Italian" />
+        <L30293 class="checkbox" State="1" Layout="#2" Rect="198,128,358,148" Text="Japanese" />
+        <L30294 class="checkbox" State="1" Layout="#2" Rect="358,128,518,148" Text="Korean" />
+        <L30296 class="checkbox" State="1" Layout="#2" Rect="38,148,198,168" Text="Portuguese" />
+        <L30297 class="checkbox" State="1" Layout="#2" Rect="198,148,358,168" Text="Russian" />
+        <L30298 class="checkbox" State="1" Layout="#2" Rect="358,148,518,168" Text="Spanish" />
+        <L30300 class="checkbox" State="1" Layout="#2" Rect="38,168,198,188" Text="Swedish" />
+        <L30301 class="checkbox" State="1" Layout="#2" Rect="198,168,358,188" Text="Turkish" />
+        <L30328 class="checkbox" State="1" Layout="#220" Rect="352,201,560,221" Text="Merget exist language file" />
+        <L30329 class="groupbox" Layout="#230" Rect="38,197,554,200" />
+      </L30283>
+      <L33041 class="pushbutton" ID="33041" Layout="#220" Rect="356,239,456,259" Text="Load" BkPic="20074" />
+      <L33042 class="pushbutton" ID="1" Layout="#220" Rect="460,239,560,259" Text="Ok" BkPic="20074" />
+    </L31233>
+    <L31239 class="window" Layout="#44041" AdvStyle="#80200">
+      <L31240 class="widget" Style="#108D0000" Layout="#11000" Rect="0,0,433,269" padding="5,5,5,5" />
+    </L31239>
+    <L31270 class="window" Style="#10CF0802" Layout="#0" AdvStyle="#80" Rect="0,0,254,242" Text="Alloc GPU Memory" BkPic="10008" Font="Verdana:13" Frame="10002">
+      <L31285 class="widget" Layout="#21" Rect="5,23,249,43">
+        <L31286 class="radiobutton" State="1" DownOffsetX="1" DownOffsetY="1" ForePic="null" TextFormat="#825" ID="31289" Style="#10210006" Layout="#1" Rect="5,23,52,43" Text="D3D9" BkPic="71" />
+        <L31287 class="radiobutton" DownOffsetX="1" DownOffsetY="1" ForePic="null" TextFormat="#825" ID="31290" Style="#10210006" Layout="#1" Rect="52,23,99,43" Text="D3D11" BkPic="71" />
+        <L31288 class="radiobutton" DownOffsetX="1" DownOffsetY="1" ForePic="null" TextFormat="#825" ID="31291" Style="#10210006" Layout="#1" Rect="99,23,172,43" Text="GX current" BkPic="71" />
+      </L31285>
+      <L31292 class="widget" Layout="#41" Rect="5,43,249,237">
+        <L31284 class="groupbox" Style="#0" Layout="#2" Rect="5,23,249,170" margin="0,0,20,10">
+          <L31272 class="edit" TextFormat="#0" Style="#10010800" Rect="110,42,237,73" Text="0" BkPic="10008" Frame="30206" />
+          <L31274 class="static" Rect="13,48,100,68" Text="Available:" />
+          <L33094 class="edit" TextFormat="#0" Style="#10010800" Rect="110,72,237,103" Text="0" BkPic="10008" Frame="30206" />
+          <L33095 class="static" Rect="13,78,100,98" Text="usage:" />
+          <L31276 class="pushbutton" ID="31276" Layout="#200" Rect="14,110,70,130" Text="+1M" BkPic="20074" Tag="1" />
+          <L31277 class="pushbutton" ID="31276" Layout="#200" Rect="70,110,126,130" Text="+10M" BkPic="20074" Tag="10" />
+          <L31278 class="pushbutton" ID="31276" Layout="#200" Rect="126,110,182,130" Text="+100M" BkPic="20074" Tag="100" />
+          <L31282 class="pushbutton" ID="31276" Layout="#200" Rect="182,110,238,130" Text="+1G" BkPic="20074" Tag="1000" />
+          <L31279 class="pushbutton" ID="31276" Layout="#200" Rect="14,136,70,156" Text="-1M" BkPic="20074" Tag="-1" />
+          <L31280 class="pushbutton" ID="31276" Layout="#200" Rect="70,136,126,156" Text="-10M" BkPic="20074" Tag="-10" />
+          <L31281 class="pushbutton" ID="31276" Layout="#200" Rect="126,136,182,156" Text="-100M" BkPic="20074" Tag="-100" />
+          <L31283 class="pushbutton" ID="31276" Layout="#200" Rect="182,136,238,156" Text="-1G" BkPic="20074" Tag="-1000" />
+        </L31284>
+      </L31292>
+    </L31270>
+    <L33003 class="window" Style="#10CF0802" Rect="0,0,554,310" Text="Reset ID" BkPic="10008" Font="Verdana:13" Frame="30237">
+      <L33004 class="listbox" Style="#10010808" Layout="#22030" AdvStyle="#200" Rect="21,35,303,292" Frame="30237" />
+      <L33010 class="groupbox" Layout="#20" Rect="322,26,533,156" Text="merge" BkPic="30146">
+        <L33008 class="pushbutton" ID="33008" Rect="386,124,466,144" Text="done" BkPic="20074" />
+        <L33011 class="static" TextFormat="#2810" Layout="#10000" Rect="345,51,519,83" Text="All selected items will be replaced with %s" />
+      </L33010>
+      <L33012 class="groupbox" Layout="#20" Rect="322,163,533,293" Text="reset id" BkPic="30146">
+        <L33014 class="edit" Prompt="start id" Rect="342,261,432,281" BkPic="30146" />
+        <L33009 class="pushbutton" ID="33009" Rect="440,261,520,281" Text="done" BkPic="20074" />
+        <L33013 class="static" TextFormat="#2810" Layout="#10000" Rect="342,189,516,221" Text="%s will auto reset from special id" />
+      </L33012>
+    </L33003>
+    <L33015 class="window" Rect="0,0,898,538" Text="SVG View" BkPic="10008" Frame="30237">
+      <L33033 class="widget" Layout="#21" Rect="5,25,893,44" BkPic="30337" margin="0,2,0,4" />
+      <L33016 class="tree" Indent="16" Layout="#22001" AdvStyle="#200" Rect="5,48,205,533" Frame="30206">
+        <L33039 class="widget" Style="#0" Rect="19,395,219,441">
+          <L33034 class="widget" AdvStyle="#20" Rect="35,408,235,424">
+            <L33036 class="checkbox" ID="20" Layout="#1" Rect="35,408,59,424" />
+            <L33037 class="widget" ID="22" Layout="#1" AdvStyle="#20" Rect="59,408,79,424" />
+            <L33038 class="static" ID="23" Layout="#41" AdvStyle="#20" Rect="79,408,235,424" />
+          </L33034>
+        </L33039>
+      </L33016>
+      <L33019 class="splitter" Style="#10010004" Layout="#1" Rect="205,48,208,533" />
+      <L33022 class="widget" Layout="#41" Rect="208,48,690,533">
+        <L33017 class="widget" Layout="#41" AdvStyle="#200" Rect="208,48,690,365" BkPic="30198" Frame="30206">
+          <L33040 class="widget" Layout="#41" Rect="234,74,664,319" margin="20,20,20,20" />
+          <L33025 class="widget" Layout="#31" Rect="214,339,684,359">
+            <L33026 class="pushbutton" PicWidth="12" PicHeight="12" ID="31242" Layout="#1" Rect="214,339,254,359" Text="&lt;&lt;&lt;" />
+            <L33027 class="pushbutton" PicWidth="12" PicHeight="12" ID="31243" Layout="#1" Rect="254,339,294,359" Text="&lt;&lt;" />
+            <L33028 class="pushbutton" StateNumber="2" PicWidth="12" PicHeight="12" ID="30339" Layout="#1" Rect="294,339,334,359" Text="||" />
+            <L33029 class="pushbutton" PicWidth="12" PicHeight="12" ID="30342" Layout="#1" Rect="334,339,374,359" Text="&gt;&gt;" />
+            <L33030 class="pushbutton" PicWidth="12" PicHeight="12" ID="30343" Layout="#1" Rect="374,339,414,359" Text="&gt;&gt;&gt;" />
+            <L33032 class="static" TextFormat="#805" Layout="#21" Rect="414,339,684,359" BkPic="10008" />
+          </L33025>
+        </L33017>
+        <L33024 class="splitter" Style="#10010005" Layout="#31" Rect="208,365,690,372" />
+        <L33023 class="memo" TextFormat="#0" Style="#10010000" Layout="#31" Rect="208,372,690,533" Frame="30206" />
+      </L33022>
+      <L33020 class="splitter" Style="#10010004" Layout="#11" Rect="690,48,693,533" />
+      <L33018 class="tree" Layout="#22011" AdvStyle="#200" Rect="693,48,893,533" Frame="30206" />
+    </L33015>
+    <L33044 class="window" Style="#10CF0802" Layout="#0" Rect="0,0,597,500" Text="Tester/Spy Setting" BkPic="10008" Font="Verdana:13" Frame="10002">
+      <L33052 class="groupbox" Rect="14,37,582,145" Text="User Interface">
+        <L33060 class="static" Rect="27,65,136,85" Text="High Constract:" />
+        <L33061 class="radiobutton" ID="33087" Layout="#1012" Rect="136,65,179,85" Text="XP" />
+        <L33062 class="radiobutton" ID="33087" Layout="#1012" Rect="179,65,245,85" Text="Win10" />
+        <L33063 class="radiobutton" ID="33087" Layout="#1012" Rect="245,65,326,85" Text="Win10-1" />
+        <L33064 class="radiobutton" ID="33087" Layout="#1012" Rect="326,65,407,85" Text="Win10-2" />
+        <L33065 class="radiobutton" ID="33087" Layout="#1012" Rect="407,65,488,85" Text="Win10-3" />
+        <L33066 class="radiobutton" ID="33087" Layout="#1012" Rect="488,65,569,85" Text="Win10-4" />
+        <L33053 class="static" Rect="26,87,136,107" Text="normal:" />
+        <L33054 class="radiobutton" ID="33087" Layout="#1012" Rect="136,87,179,107" Text="XP" />
+        <L33055 class="radiobutton" ID="33087" Layout="#1012" Rect="179,87,245,107" Text="Win10" />
+        <L33067 class="radiobutton" ID="33087" Rect="136,110,336,130" Text="Dark" />
+      </L33052>
+      <L33068 class="groupbox" Rect="14,153,580,211" Text="Animation">
+        <L33069 class="checkbox" ID="33088" Rect="29,176,182,196" Text="AnimationButton" />
+        <L33070 class="checkbox" ID="33088" Rect="171,176,324,196" Text="AnimationScroll" />
+        <L33071 class="checkbox" ID="33088" Rect="303,176,456,196" Text="AnimationSysBut" />
+      </L33068>
+      <L33072 class="groupbox" Rect="14,225,581,290" Text="Hint">
+        <L33073 class="checkbox" ID="33088" Rect="25,250,178,270" Text="ShowHintOnEllipsis" />
+        <L33074 class="checkbox" ID="33088" Rect="171,252,324,272" Text="ShowHintOnTabKey" />
+      </L33072>
+      <L33075 class="groupbox" Rect="15,299,580,412" Text="color">
+        <L33048 class="static" Rect="26,322,115,342" Text="HintColorBk:" />
+        <L33046 class="edit" ID="33091" Rect="193,315,273,346" BkPic="10008" Frame="30206" />
+        <L33076 class="static" Rect="305,322,405,339" Text="HintColorText:" />
+        <L33077 class="edit" ID="33091" Rect="460,315,540,346" BkPic="10008" Frame="30206" />
+        <L33049 class="static" Rect="26,350,192,370" Text="ColorEditSelBackground:" />
+        <L33047 class="edit" ID="33091" Rect="193,343,273,374" BkPic="10008" Frame="30206" />
+        <L33079 class="static" Rect="305,350,466,370" Text="ColorEditSelText:" />
+        <L33078 class="edit" ID="33091" Rect="460,343,540,374" BkPic="10008" Frame="30206" />
+        <L33081 class="static" Rect="26,378,191,398" Text="ColorEditPrompt:" />
+        <L33080 class="edit" ID="33091" Rect="193,371,273,402" BkPic="10008" Frame="30206" />
+        <L33083 class="static" Rect="305,378,464,398" Text="DisabledColorText:" />
+        <L33082 class="edit" ID="33091" Rect="460,371,540,402" BkPic="10008" Frame="30206" />
+      </L33075>
+      <L33084 class="groupbox" Rect="14,415,581,480" Text="other">
+        <L33085 class="checkbox" ID="33088" Rect="25,440,178,460" Text="UseSystemFrame" />
+        <L33086 class="checkbox" ID="33088" Rect="171,442,366,462" Text="Webview2SSOUsingOSA" />
+      </L33084>
+    </L33044>
+  </wnd>
+</tmdui>

@@ -1,0 +1,11 @@
+20210302
+ 1. 双击窗口，在单击时关闭窗口，位于下面的窗口不应该收到双击事件.
+
+20210305
+ 1. hotkey支持enable,disable.
+
+20210309
+ 1. combo弹出带defaultitem的对话框，焦点应该切到对话框上.
+
+20210429
+ 1. 隐藏的layered动画不应该刷屏.(开spy message，不能有wm_printclient).

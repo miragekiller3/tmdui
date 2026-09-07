@@ -1,0 +1,38 @@
+<tmdui version="20210202" encoding="utf-8">
+  <pic>
+    <L10004 class="bmp" FrameNum="1" FileName="xmsx.jpg" Valid="#1001100" />
+    <L10008 class="gradient" ColorTo="#80FF" FillMode="5" />
+    <L10011 class="bmp" FrameNum="1" FileName="star.gif" Valid="#1003100" />
+    <L20012 class="clr" Color="#FF8000" />
+    <L20015 class="bmp" Left="2" Top="2" Right="2" Bottom="2" FileName="button.png" Valid="#1FF11FF" />
+    <L20020 class="bmp" FrameNum="1" FileName="circle.png" />
+    <L22009 class="clr" Color="#00000000" />
+  </pic>
+  <frame>
+    <L10001 class="form" />
+  </frame>
+  <wnd>
+    <L10002 class="window" DefaultItem="20005" Interval="50" Style="#10CF0802" Rect="0,0,761,440" BkPic="10008" Font="宋体:14" Frame="10001">
+      <L22002 class="widget" Style="#0" Layout="#330" AdvStyle="#20" Rect="4,24,754,434" />
+      <L22005 class="static" Style="#10010000" AdvStyle="#200" Rect="18,34,499,58" Frame="10001" />
+      <L20016 class="widget" Rect="217,73,623,413" />
+      <L10006 class="pushbutton" ID="20005" Style="#10010016" Rect="10,68,210,97" Text="Fade In/Out" BkPic="20015" />
+      <L10007 class="pushbutton" ID="20006" Style="#10010016" Rect="10,98,210,127" Text="Move In/Out" BkPic="20015" />
+      <L10003 class="pushbutton" ID="20001" Style="#10010016" Rect="10,128,210,159" Text="MoveWindow(移动窗口)" BkPic="20015" />
+      <L22010 class="pushbutton" ID="22010" Style="#10010016" Rect="10,159,210,190" Text="Show Buuble" BkPic="20015" />
+      <L10005 class="animate" ID="20004" Style="#10840004" Layout="#22000" AdvStyle="#200" Rect="195,190,364,403" BkPic="10004" Frame="10001">
+        <L22006 class="float" Layout="#11200" Rect="201,396,401,397" BkPic="22009">
+          <L22011 class="widget" Layout="#31" Rect="201,396,401,397" />
+          <L22007 class="layer" Style="#0" Layout="#11031" Rect="358,413,558,433" BkPic="22009">
+            <L22008 class="pushbutton" Layout="#11031" Rect="358,413,558,433" BkPic="20015" />
+          </L22007>
+        </L22006>
+      </L10005>
+      <L20009 class="widget" Rect="28,319,132,416" BkPic="10011" />
+      <L10012 class="widget" ID="20007" Layout="#22000" AdvStyle="#20" Rect="64,114,79,128" BkPic="10011" />
+      <L20018 class="checkbox" ID="20019" Style="#10016" Rect="24,219,144,239" Text="Cube Animate" />
+      <L22003 class="checkbox" ID="22004" Rect="24,245,155,265" Text="Circle Animate" />
+      <L10013 class="listbox" ID="20008" Style="#10000000" Layout="#22011" AdvStyle="#200" Rect="527,24,757,436" Frame="10001" />
+    </L10002>
+  </wnd>
+</tmdui>

@@ -1,0 +1,15 @@
+<tmdui version="20210202" encoding="utf-8">
+  <pic>
+    <L21027 class="gradient" ColorTo="#0080FF" FillMode="10" />
+  </pic>
+  <frame>
+    <L21024 class="form" />
+  </frame>
+  <wnd>
+    <L21001 class="window" Style="#10CF0802" Rect="0,0,418,219" BkPic="21027" Font="Arial:13" Frame="21024">
+      <L21002 class="pushbutton" ID="1041" Style="#10010016" Rect="30,5,52,25" Text="+" Hint="zoom out" />
+      <L21003 class="pushbutton" ID="1042" Style="#10010016" Rect="53,5,74,25" Text="-" Hint="zoom in" />
+      <L1200 class="static" Rect="32,55,401,100" Text="HWND hWnd = ::CreateWindow(...); // create self HWND&#13;&#10;HTUI hWidget = TM::CTuiWidgetImpl::CreateByHWND(hWnd );&#13;&#10;" />
+    </L21001>
+  </wnd>
+</tmdui>

@@ -1,0 +1,13 @@
+<tmdui version="20210202" encoding="utf-8">
+  <pic />
+  <frame>
+    <L1001 class="form" />
+  </frame>
+  <wnd>
+    <L1000 class="window" Frame="1001">
+      <L1002 class="listbox" Layout="#22330" AdvStyle="#200" Rect="37,36,449,270" Frame="1001">
+        <L1003 class="header" Style="#10000042" Layout="#21" Rect="39,38,447,68" />
+      </L1002>
+    </L1000>
+  </wnd>
+</tmdui>

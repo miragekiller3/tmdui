@@ -1,0 +1,78 @@
+<tmdui version="20210202" encoding="utf-8">
+  <pic>
+    <L10024 class="clr" Color="#7FFFFFFF" />
+    <L20017 class="bmp" FrameNum="1" Left="20" Top="20" Right="20" Bottom="20" FileName="bc_bg.png" Valid="#9FF" />
+    <L20019 class="gradient" />
+    <L20026 class="gradient" ColorTo="#80FF" FillMode="10" />
+  </pic>
+  <frame>
+    <L20014 class="form" />
+  </frame>
+  <wnd>
+    <L20013 class="window" Rect="0,0,483,294" Text="pop up window" Frame="20014" margin="100,0,0,0">
+      <L20015 class="dummy" BindDlg="20016" Layout="#22041" Rect="4,24,479,290" padding="-22,-42,-22,-22">
+        <L20027 class="static" TextFormat="#805" Layout="#330" Rect="37,45,432,259" Text="pop up window&#13;&#10;LAYOUT:frame" BkPic="10024" />
+      </L20015>
+    </L20013>
+    <L20016 class="window" Layout="#22000" AdvStyle="#800A0" BkPic="20017" />
+    <L20020 class="window" Style="#50CF0002" BkPic="20019">
+      <L20021 class="checkbox" Rect="32,38,152,58" Text="aaa" />
+      <L20022 class="checkbox" Rect="31,60,151,80" Text="bbb" />
+    </L20020>
+    <L20028 class="window" Rect="0,0,658,451" Text="test tab stop" BkPic="20019" Frame="20014">
+      <L20032 class="dummy" Rect="13,69,186,346" BkPic="20026" padding="5,5,5,5" />
+      <L20030 class="pushbutton" StateNumber="2" Style="#10010016" Rect="397,38,517,58" Text="2. button" />
+      <L20029 class="dummy" Layout="#330" Rect="199,62,440,343" BkPic="20026" padding="10,10,10,10" />
+      <L20031 class="pushbutton" Style="#10010016" Layout="#200" Rect="37,406,157,426" Text="4. button" />
+      <L20036 class="dummy" Rect="221,406,392,432" BkPic="20026" padding="5,0,5,0" />
+      <L20038 class="dummy" Rect="457,404,612,432" BkPic="20026" padding="5,0,5,0" />
+      <L20033 class="dummy" Layout="#20" Rect="459,70,640,356" BkPic="20026" padding="5,5,5,5" />
+      <L20034 class="static" Rect="16,40,170,60" Text="1.first  dlg" />
+      <L20035 class="static" Rect="236,45,395,65" Text="3. center dlg" />
+      <L20039 class="static" Rect="251,383,320,403" Text="5.button" />
+      <L20040 class="static" Rect="448,376,612,396" Text="6. button no tab" />
+      <L20041 class="static" Rect="530,46,650,66" Text="7. tail dlg" />
+    </L20028>
+    <L20044 class="window" Style="#10CF0802" Rect="0,0,494,480" Frame="20014">
+      <L20023 class="pushbutton" ID="20023" Style="#10010016" Rect="30,5,52,25" Text="+" Hint="zoom out" />
+      <L20024 class="pushbutton" ID="20024" Style="#10010016" Rect="53,5,74,25" Text="-" Hint="zoom in" />
+      <L20045 class="pushbutton" ID="21000" Rect="25,36,163,56" Text="Test Child Window" />
+      <L20046 class="pushbutton" ID="21025" Rect="25,64,161,84" Text="Test Pop Dlg" />
+      <L21037 class="pushbutton" ID="21038" Rect="167,63,336,83" Text="Test Pop no active Dlg" />
+      <L20047 class="pushbutton" ID="21028" Rect="178,93,311,113" Text="Test Pop DUI" />
+      <L20048 class="pushbutton" ID="21030" Rect="31,154,151,174" Text="Test Tab Stop" />
+      <L20049 class="pushbutton" ID="21029" Style="#10006" Rect="28,122,155,142" Text="Test Follow Mode" />
+      <L21008 class="pushbutton" ID="21009" Rect="173,35,311,55" Text="Test Child Dlg" />
+      <L21026 class="pushbutton" ID="21027" Rect="26,94,159,114" Text="Test Child DUI" />
+      <L20072 class="checkbox" Rect="83,212,283,232" Text="Layered Child mode" />
+      <L21033 class="pushbutton" StateNumber="2" ID="21034" Style="#10010016" Rect="75,5,96,25" Text="&lt;&gt;" Hint="Right to Left" />
+    </L20044>
+    <L20050 class="window" Style="#16CF0802" Rect="0,0,530,419" BkPic="20019" Frame="20014">
+      <L20051 class="pushbutton" StateNumber="2" DownOffsetX="0" DownOffsetY="0" ID="20043" Style="#10010016" Rect="10,31,178,51" Text="show/hide dummy1" />
+      <L21035 class="pushbutton" StateNumber="2" DownOffsetX="0" DownOffsetY="0" ID="21036" Style="#10010016" Rect="10,52,178,72" Text="enable/disable dummy1" />
+      <L20053 class="checkbox" Rect="35,76,95,96" Text="tab2" />
+      <L20054 class="widget" ID="21001" Style="#10C40000" Layout="#330" Rect="20,144,479,405" Text="tab3" BkPic="20019" Frame="20014" />
+      <L20058 class="checkbox" Rect="105,78,175,98" Text="tab4" />
+      <L21010 class="static" Rect="202,31,482,132" Text="1. drag/move main window&#13;&#10;2. drag/move tab3 window&#13;&#10;3. click how/hide button&#13;&#10;4. click enable/disable button&#13;&#10;5. hide-&gt;move/drag-&gt;show&#13;&#10;6. tab key and shift+tab key&#13;&#10;7. attach/detach,then redo 1-5" />
+      <L21031 class="pushbutton" ID="21032" Rect="46,101,166,121" Text="attach/detach" Hint="attach/detach" />
+    </L20050>
+    <L21011 class="window" Style="#16CF0002" Rect="0,0,627,483" BkPic="20019" Frame="20014">
+      <L21016 class="dummy" BindDlg="20020" ID="20009" Style="#10850000" Layout="#330" Rect="19,41,243,191" Text="auto bind TUI dialog" BkPic="20026" Frame="20014" padding="10,10,10,10">
+        <L20064 class="pushbutton" Style="#10010016" Rect="38,138,95,158" Text="but1" Hint="aa1" AccText="bb1" />
+        <L20065 class="pushbutton" Style="#10010016" Rect="107,137,160,157" Text="but2" />
+      </L21016>
+      <L21017 class="dummy" ID="20009" Style="#10850000" Layout="#330" Rect="259,43,492,218" Text="normal child window 1" BkPic="20026" Frame="20014" padding="10,10,10,10">
+        <L20066 class="pushbutton" Style="#10010016" Rect="343,57,400,77" Text="but1" Hint="a1" AccText="b1" />
+        <L20067 class="pushbutton" Style="#10010016" Rect="415,62,468,82" Text="but2" Hint="a2" />
+      </L21017>
+      <L21018 class="dummy" Style="#10850002" Layout="#440" Rect="21,229,252,399" Text="follow mode child window" BkPic="20026" Frame="20014" padding="10,10,10,10">
+        <L20068 class="pushbutton" Style="#10010016" Rect="38,259,95,279" Text="but1" Hint="a1" />
+        <L20069 class="pushbutton" Style="#10010016" Rect="107,258,160,278" Text="but2" Hint="b1" />
+      </L21018>
+      <L21024 class="dummy" BindDlg="20013" Style="#10850001" Layout="#330" Rect="265,223,501,411" Text="pop up window" BkPic="20026" Frame="20014" padding="10,10,10,10">
+        <L20070 class="pushbutton" Style="#10010016" Rect="308,303,365,323" Text="but1" />
+        <L20071 class="pushbutton" Style="#10010016" Rect="393,299,446,319" Text="but2" />
+      </L21024>
+    </L21011>
+  </wnd>
+</tmdui>

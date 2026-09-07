@@ -1,0 +1,56 @@
+/**
+ *  @file
+ *  @brief  WIZARD_CLASSNAME
+ *
+ *  @author WIZARD_USERNAME
+ *  @date   WIZARD_DATA
+ *
+ *  Copyright (C) WIZARD_YEAR WIZARD_USERNAME
+ */
+
+#include "stdafx.h"
+#include "WIZARD_FILE_H"
+
+using namespace TM;
+
+
+WIZARD_CLASSNAME::WIZARD_CLASSNAME()
+{
+}
+
+WIZARD_CLASSNAME::~WIZARD_CLASSNAME()
+{
+}
+
+TMResult WIZARD_CLASSNAME::OnInitDialog(TMUInt uMsg, TMWParam wParam, TMLParam lParam, TMBool& bHandled)
+{
+//     _tuiApp.AddMessageFilter(this);
+    return 0;
+}
+
+TMResult WIZARD_CLASSNAME::OnDestroy(TMUInt uMsg, TMWParam wParam, TMLParam lParam, TMBool& bHandled)
+{
+    bHandled = false;
+//     _tuiApp.RemoveMessageFilter(this);
+    return 0;
+}
+
+TMResult WIZARD_CLASSNAME::OnOk(TMUShort wNotifyCode, TMUShort wID, void* hWndCtl, TMBool& bHandled)
+{
+//    EndDialog(wID);
+    DestroyWindow();
+    return 0;
+}
+
+TMResult WIZARD_CLASSNAME::OnCancel(TMUShort wNotifyCode, TMUShort wID, void* hWndCtl, TMBool& bHandled)
+{
+//    EndDialog(wID);
+    DestroyWindow();
+    return 0;
+}
+
+//CTuiMsgFilter
+// BOOL WIZARD_CLASSNAME::PreTranslateMessage(TM::TUIMSG* pMsg, TMResult& lResult)
+// {
+//     return false;
+// }

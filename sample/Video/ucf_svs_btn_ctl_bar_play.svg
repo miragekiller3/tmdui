@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="105px" height="18px" viewBox="0 0 105 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>ucf_svs_btn_ctl_bar_play_pause</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="assets" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-2109.000000, -954.000000)">
+            <g id="btn_play_default" transform="translate(2109.000000, 954.000000)">
+                <rect id="Rectangle-9" stroke="#D7D7D8" fill="#FFFFFF" x="0.5" y="0.5" width="20" height="17" rx="2"></rect>
+                <path d="M7.2948,5 C7.2948,5 7,5.02003097 7,5.17978677 L7.004,12.8200379 C7.004,12.9797937 7.1364,13.0458581 7.2988,12.9661804 L15,9.00351582 L7.2948,5 Z" id="Fill-1" fill="#858688"></path>
+            </g>
+            <rect id="Rectangle-9" stroke="#00618E" fill="#FFFFFF" x="2193.5" y="954.5" width="20" height="17" rx="2"></rect>
+            <path d="M2200.2948,959 C2200.2948,959 2200,959.020031 2200,959.179787 L2200.004,966.820038 C2200.004,966.979794 2200.1364,967.045858 2200.2988,966.96618 L2208,963.003516 L2200.2948,959 Z" id="Fill-1" fill="#858688"></path>
+            <rect id="Rectangle-9" stroke="#D7D7D8" fill="#FFFFFF" x="2172.5" y="954.5" width="20" height="17" rx="2"></rect>
+            <path d="M2179.2948,959 C2179.2948,959 2179,959.020031 2179,959.179787 L2179.004,966.820038 C2179.004,966.979794 2179.1364,967.045858 2179.2988,966.96618 L2187,963.003516 L2179.2948,959 Z" id="Fill-1" fill="#D7D7D8"></path>
+            <rect id="Rectangle-9" stroke="#AEAEAF" fill="#F5F5F6" x="2151.5" y="954.5" width="20" height="17" rx="2"></rect>
+            <path d="M2158.2948,959 C2158.2948,959 2158,959.020031 2158,959.179787 L2158.004,966.820038 C2158.004,966.979794 2158.1364,967.045858 2158.2988,966.96618 L2166,963.003516 L2158.2948,959 Z" id="Fill-1" fill="#858688"></path>
+            <rect id="Rectangle-9" stroke="#AEAEAF" fill="#EBEBEC" x="2130.5" y="954.5" width="20" height="17" rx="2"></rect>
+            <path d="M2137.2948,959 C2137.2948,959 2137,959.020031 2137,959.179787 L2137.004,966.820038 C2137.004,966.979794 2137.1364,967.045858 2137.2988,966.96618 L2145,963.003516 L2137.2948,959 Z" id="Fill-1" fill="#858688"></path>
+        </g>
+    </g>
+</svg>

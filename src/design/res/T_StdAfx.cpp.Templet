@@ -1,0 +1,22 @@
+/**
+ *  @file
+ *
+ *  @author WIZARD_USERNAME
+ *  @date   WIZARD_DATA
+ *
+ *  Copyright (C) WIZARD_YEAR WIZARD_USERNAME
+ */
+
+#include "stdafx.h"
+
+#ifdef _ATL_STATIC_REGISTRY
+#include <statreg.h>
+#include <statreg.cpp>
+#endif
+
+//#include <atlimpl.cpp>
+
+#include "tm.cpp"
+#include "gx.cpp"
+#include "tmdui.cpp"
+

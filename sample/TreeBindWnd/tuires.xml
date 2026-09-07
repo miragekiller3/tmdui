@@ -1,0 +1,32 @@
+<tmdui version="20210202" encoding="utf-8">
+  <pic>
+    <L10008 class="gradient" ColorTo="#80FF" FillMode="10" />
+    <L20016 class="bmp" FrameNum="1" Left="2" Top="2" Right="2" Bottom="2" FileName="blackframe2.bmp" Valid="#9FF" />
+    <L20020 class="bmp" FrameNum="1" FileName="blackframe2.bmp" />
+    <L20026 class="bmp" FrameNum="1" FileName="488274713.gif" />
+  </pic>
+  <frame>
+    <L10001 class="form" />
+  </frame>
+  <wnd>
+    <L10002 class="window" Style="#10CF0802" Rect="0,0,607,427" BkPic="10008" Font="Arial:13" Frame="10001">
+      <L20022 class="pushbutton" ID="20022" Style="#10010016" Rect="30,5,52,25" Text="+" Hint="zoom out" />
+      <L20023 class="pushbutton" ID="20023" Style="#10010016" Rect="53,5,74,25" Text="-" Hint="zoom in" />
+      <L20035 class="static" TextFormat="#810" Rect="20,32,317,71" Text="this sample test insert tree item ,&#13;&#10;and bind window to item." />
+      <L21003 class="edit" Rect="372,40,446,60" Text="1000" Frame="10001" />
+      <L20030 class="pushbutton" ID="21004" Style="#10010016" Layout="#2" Rect="446,40,532,60" Text="Add Bind" Tag="100" />
+      <L20031 class="pushbutton" ID="20038" Style="#10010016" Layout="#2" Rect="532,40,582,60" Text="Add" Tag="1000" />
+      <L20034 class="tree" ItemHeight="50" Style="#10C50000" Layout="#22330" AdvStyle="#200" Rect="28,73,587,394" BkPic="10008" Frame="10001" padding="10,10,10,10" />
+      <L20036 class="edit" Layout="#31" Rect="4,403,603,423" Frame="10001" />
+      <L21000 class="pushbutton" StateNumber="2" ID="21001" Style="#10010016" Rect="76,5,97,25" Text="&lt;&gt;" Hint="Right To Left" />
+    </L10002>
+    <L20015 class="window" Style="#10C40002" Rect="0,0,541,222">
+      <L20024 class="widget" Style="#10C40000" Rect="10,0,531,99" Frame="10001" margin="10,0,10,0">
+        <L20019 class="pushbutton" PicWidth="32" PicHeight="32" ForePic="20020" TextFormat="#815" Style="#10010016" Layout="#30" Rect="70,13,276,37" Text="aa" BkPic="10008" />
+        <L20025 class="animate" Style="#10000004" Layout="#1" AdvStyle="#20" Rect="14,29,74,90" BkPic="20026" margin="0,5,0,5" />
+        <L20027 class="pushbutton" Style="#10010016" Layout="#20" Rect="277,15,519,35" Text="at_debug_trace_v(e_tpDebug, &quot;AT&quot;, 0, 0);" />
+        <L21002 class="pushbutton" Style="#18010006" Rect="78,39,182,59" Text="disabled tooltip" Hint="tooltip on disabled window" />
+      </L20024>
+    </L20015>
+  </wnd>
+</tmdui>

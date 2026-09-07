@@ -1,0 +1,55 @@
+<tmdui version="20210202" encoding="utf-8">
+  <pic>
+    <L1103 class="bmp" FileName="NbrRecBtnIcons_Stop.svg" MultiDPI="1" Valid="#21FF" />
+    <L1112 class="gradient" />
+    <L1117 class="bmp" FrameNum="1" Left="2" Top="2" Right="2" Bottom="2" FileName="ucf-svs-vol-trackbar-bg.png" />
+    <L1118 class="bmp" FrameNum="1" Top="2" FileName="ucf-svs-vol-trackbar-bg-upper.svg" MultiDPI="1" />
+    <L1119 class="bmp" FrameNum="1" Bottom="2" FileName="ucf-svs-vol-trackbar-bg-lower.svg" MultiDPI="1" />
+    <L1120 class="bmp" FrameNum="1" FileName="ucf-svs-vol-trackbar-bg-btn.svg" MultiDPI="1" />
+    <L1124 class="bmp" FrameNum="1" FileName="camera-web.png" />
+    <L30056 class="bmp" FileName="ucf_svs_btn_ctl_bar_play.svg" MultiDPI="1" Valid="#21FF" />
+    <L30059 class="bmp" FrameNum="25" FileName="ucf_svs_btn_ctl_bar_mute2.svg" MultiDPI="1" Valid="#21FF" />
+    <L30060 class="bmp" FrameNum="10" FileName="ucf_svs_btn_ctl_bar_fit_screen.svg" MultiDPI="1" Valid="#21FF" />
+    <L30061 class="bmp" FrameNum="10" FileName="ucf_svs_btn_ctl_bar_full_screen.svg" MultiDPI="1" Valid="#21FF" />
+    <L30068 class="bmp" FrameNum="1" FileName="ucf-svs-trackbar-bg-btn.svg" MultiDPI="1" Valid="#21FF" />
+    <L30069 class="bmp" FrameNum="1" FileName="ucf-svs-trackbar-bg-right.svg" MultiDPI="1" Valid="#21FF" />
+    <L30070 class="bmp" FrameNum="1" FileName="ucf-svs-trackbar-bg-left.svg" MultiDPI="1" Valid="#21FF" />
+    <L30072 class="bmp" FrameNum="1" FileName="ucf-svs-trackbar-bg.svg" Alpha="128" MultiDPI="1" Valid="#21FF" />
+    <L35041 class="bmp" FrameNum="1" FileName="notification_checkmark_20_20.svg" MultiDPI="1" />
+    <L37003 class="clr" Color="#000000" />
+  </pic>
+  <frame>
+    <L21024 class="form" />
+  </frame>
+  <wnd>
+    <L21001 class="window" Style="#10CF0802" Layout="#1440" Rect="0,0,876,532" BkPic="37003" Font="Arial:13" Frame="21024">
+      <L37004 class="widget" Rect="16,5,200,25">
+        <L21002 class="pushbutton" ID="1041" Style="#10010016" Rect="30,5,52,25" Text="+" Hint="zoom out" />
+        <L21003 class="pushbutton" ID="1042" Style="#10010016" Layout="#2" Rect="52,5,73,25" Text="-" Hint="zoom in" />
+        <L1113 class="pushbutton" StateNumber="2" ID="1114" Style="#10010016" Layout="#2" Rect="73,5,94,25" Text="&lt;&gt;" Hint="Right To Left" />
+        <L37001 class="pushbutton" StateNumber="3" ID="37002" Style="#10010016" Layout="#2" Rect="94,5,115,25" Text="D" Hint="device" />
+        <L37005 class="pushbutton" StateNumber="4" ID="37007" Style="#10010016" Layout="#2" Rect="135,5,156,25" Text="U" Hint="turn upside down" margin="20,0,0,0" />
+        <L37006 class="pushbutton" StateNumber="2" ID="37008" Style="#10010016" Layout="#2" Rect="156,5,177,25" Text="M" Hint="mirror image" />
+        <L1106 class="pushbutton" StateNumber="3" ID="1107" Style="#10016" Layout="#2" Rect="135,5,165,25" Text="4/25" Hint="grid 4/25" margin="20,0,0,0" />
+        <L1121 class="pushbutton" StateNumber="2" ID="1122" Style="#10016" Layout="#2" Rect="165,5,186,25" Text="i" Hint="picture-in-picture" />
+      </L37004>
+      <L36000 class="widget" Layout="#441" Rect="4,24,872,528">
+        <L21025 class="video" Style="#1000C000" Layout="#440" AdvStyle="#280" Rect="4,24,872,528">
+          <L1116 class="trackbar" LeftPic="1119" RightPic="1118" BtnPic="1120" BtnPicWidth="12" Min="100" Pos="100" ID="1116" Style="#10004" Layout="#220" Rect="773,402,794,490" BkPic="1117" margin="8,0,8,0" />
+          <L30078 class="widget" ID="1112" Layout="#31" Rect="4,498,872,528" BkPic="30072" padding="0,5,0,5">
+            <L1123 class="pushbutton" ForePic="1124" ID="1125" Layout="#1" Rect="24,503,45,523" margin="20,0,0,0" />
+            <L21030 class="pushbutton" ID="1101" Layout="#1" Rect="45,503,66,523" Text="..." />
+            <L30079 class="pushbutton" DownOffsetX="0" DownOffsetY="0" PicWidth="21" PicHeight="18" PicMargin="0" ForePic="30056" ID="1102" Layout="#1001" Rect="74,503,95,523" Hint="Play" BkPic="null" margin="8,0,0,0" padding="0,0,0,0" />
+            <L1104 class="pushbutton" DownOffsetX="0" DownOffsetY="0" PicWidth="21" PicHeight="18" PicMargin="0" ForePic="1103" ID="1105" Layout="#1001" Rect="103,503,124,523" Hint="Play" BkPic="null" margin="8,0,0,0" padding="0,0,0,0" />
+            <L30082 class="trackbar" LeftPic="30070" RightPic="30069" BtnPic="30068" BtnPicWidth="12" Max="100" Pos="10" ID="30082" Layout="#41" Rect="132,503,671,523" margin="8,0,8,0" />
+            <L30083 class="static" TextColor="#FFFFFF" TextFormat="#805" ID="1115" Layout="#1011" Rect="679,503,780,523" Text="01:01:01/02:02:02" Font="Segoe UI:13" />
+            <L30091 class="static" ID="1116" Layout="#11" Rect="780,503,785,523" />
+            <L30084 class="pushbutton" StateNumber="2" DownOffsetX="0" DownOffsetY="0" PicWidth="21" PicHeight="18" PicMargin="0" ForePic="30059" ID="30084" Layout="#11" Rect="785,503,806,523" Hint="Mute" BkPic="null" margin="0,0,8,0" padding="0,0,0,0" />
+            <L30085 class="pushbutton" DownOffsetX="0" DownOffsetY="0" PicWidth="21" PicHeight="18" ForePic="30060" ID="1118" Layout="#11" Rect="814,503,835,523" Hint="Expand view" BkPic="null" margin="0,0,8,0" padding="0,0,0,0" />
+            <L30086 class="pushbutton" DownOffsetX="0" DownOffsetY="0" PicWidth="21" PicHeight="18" PicMargin="0" ForePic="30061" ID="1119" Layout="#11" Rect="843,503,864,523" Hint="Full Screen" BkPic="null" margin="0,0,8,0" padding="0,0,0,0" />
+          </L30078>
+        </L21025>
+      </L36000>
+    </L21001>
+  </wnd>
+</tmdui>

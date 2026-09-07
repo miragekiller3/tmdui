@@ -1,0 +1,22 @@
+<tmdui version="20210202" encoding="utf-8">
+  <pic>
+    <L2012 class="gradient" ColorTo="#FF8040" FillMode="10" />
+  </pic>
+  <frame>
+    <L1001 class="form" />
+  </frame>
+  <wnd>
+    <L1000 class="window" Text="Open c:\1.swf" Frame="1001">
+      <L2000 class="pushbutton" ID="2004" Style="#10010016" Layout="#20" Rect="354,3,376,23" Text="+" Hint="zoom out" />
+      <L2001 class="pushbutton" ID="2003" Style="#10010016" Layout="#20" Rect="376,3,397,23" Text="-" Hint="zoom in" />
+      <L2002 class="pushbutton" StateNumber="2" ID="2005" Style="#10010016" Layout="#20" Rect="397,3,418,23" Text="&lt;&gt;" Hint="Right To Left" />
+      <L2009 class="activex" Object="{D27CDB6E-AE6D-11CF-96B8-444553540000}" Layout="#330" AdvStyle="#200" Rect="121,76,385,193" BkPic="2012" Frame="1001" />
+      <L2010 class="pushbutton" ID="2011" Rect="374,257,466,277" Text="play" />
+    </L1000>
+    <L1003 class="window" AdvStyle="#8000000" Rect="0,0,159,72" Frame="1001">
+      <L1004 class="arrow" Rect="10,34,26,51" padding="-80,0,0,0">
+        <L1005 class="static" Rect="10,34,26,51" Text="&lt;" />
+      </L1004>
+    </L1003>
+  </wnd>
+</tmdui>
