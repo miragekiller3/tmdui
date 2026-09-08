@@ -308,7 +308,7 @@
     </L30229>
     <L30231 class="window" Style="#10C01802" AdvStyle="#80" Rect="0,0,449,291" Text="Template Direct UI Library" BkPic="10008" Font="Verdana:13" Frame="10002">
       <L30233 class="rich" TextFormat="#40000" Style="#10018A04" Layout="#0" AdvStyle="#0" Rect="29,103,301,122" Text="BDFLYAO(bdflyao@foxmail.com) " margin="8,0,0,0" />
-      <L30238 class="pushbutton" TextFormat="#814" ID="30238" Rect="24,147,443,174" Text="https://github.com" BkPic="null" Font="::u" Tag="1" />
+      <L30238 class="pushbutton" TextFormat="#814" ID="30238" Rect="24,147,443,174" Text="https://github.com/miragekiller3" BkPic="null" Font="::u" Tag="1" />
       <L30232 class="static" Rect="20,39,447,211" Text="刻苦编程:&#13;&#10;  miragekiller(3916345933@qq.com)&#13;&#10;&#13;&#10;华丽美术:&#13;&#10;&#13;&#10;&#13;&#10;git:&#13;&#10;" />
       <L30235 class="animate" Style="#10000004" Layout="#20" Rect="313,30,433,150" BkPic="30236" />
       <L30241 class="static" TextFormat="#802" Rect="13,193,433,247" Text="Product Version: %d&#13;&#10;Editor Version: %d&#13;&#10;©2008-2021 miragekiller" Font="Courier New" />
