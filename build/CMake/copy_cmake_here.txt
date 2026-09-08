@@ -1,0 +1,2 @@
+copy cmake bin here
+tmdui\build\CMake\bin\cmake.exe
