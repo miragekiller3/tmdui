@@ -1211,7 +1211,7 @@ size_t StrSplitOneA(TMCStrA ps, size_t ns, size_t& cur, TMCStrA pk, size_t nk)
     return _str_split_if(ps, ns, cur, _str_split_one_of<TMCharA>(pk, nk));
 }
 
-size_t StrSplitOneA(TMCStrW ps, size_t ns, size_t& cur, TMCStrW pk, size_t nk)
+size_t StrSplitOneW(TMCStrW ps, size_t ns, size_t& cur, TMCStrW pk, size_t nk)
 {
     DbgAssert(pk);
     DbgAssert(nk);

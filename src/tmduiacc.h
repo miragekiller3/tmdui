@@ -86,19 +86,19 @@
 
 
 // The following ifdef block is the standard way of creating macros which make exporting
-// from a DLL simpler. All files within this DLL are compiled with the TMDuiAcc_EXPORTS
+// from a DLL simpler. All files within this DLL are compiled with the TUI_ACC_EXPORTS
 // symbol defined on the command line. this symbol should not be defined on any project
 // that uses this DLL. This way any other project whose source files include this file see
 // TUIPROXY_API functions as being imported from a DLL, wheras this DLL sees symbols
 // defined with this macro as being exported.
-#ifdef TMDuiAcc_EXPORTS
+#ifdef TUI_ACC_EXPORTS
 #define TUIPROXY_API __declspec(dllexport)
 #else
 #define TUIPROXY_API //__declspec(dllimport)
 #endif
 
 
-#if defined (TUIPROXY_LIB) || defined(TMDuiAcc_EXPORTS)
+#if defined (TUIPROXY_LIB) || defined(TUI_ACC_EXPORTS)
 #   define LibGetAccObject           GetAccObject
 #   define LibGetAccObjectQT         GetAccObjectQT
 #else

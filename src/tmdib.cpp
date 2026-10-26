@@ -87,10 +87,11 @@ EImageFormat DibFormatFromStream(IStream* stream)
     if (!stream)
         return eImageFormatUnknown;
     TMUInt8 c[32] = { 0 };
-    stream->Read (c, 32, 0);
+	TMULong nRead = 0;
+    stream->Read(c, 32, &nRead);
     LARGE_INTEGER li;
-    li.QuadPart = -32;
-    stream->Seek (li, STREAM_SEEK_CUR, 0);
+    li.QuadPart = -(TMLong)nRead;
+    stream->Seek(li, STREAM_SEEK_CUR, 0);
     return DibFormatFromMem(c);
 }
 

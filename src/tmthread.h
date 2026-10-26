@@ -106,7 +106,7 @@ void CriticalDestroy(TMCritical* pStruct);
  */
 struct TMMutex;
 
-/** see CreateEvent (0, 0, 1, 0) in MSDN */
+/** see CreateEvent(0, 0, 1, 0) in MSDN */
 void MutexCreate(TMMutex* pStruct);
 
 /** see WaitForSingleObject in MSDN */
@@ -139,7 +139,7 @@ void MutexDestroy(TMMutex* pStruct);
  */
 struct TMEvent;
 
-/** see CreateEvent (0, 0, 0, 0) in MSDN */
+/** see CreateEvent(0, 0, 0, 0) in MSDN */
 void EventCreate(TMEvent* pStruct);
 
 /**
@@ -251,7 +251,7 @@ typedef struct
 } TMThread;
 
 #   define TMThreadID                   DWORD
-#   define TM_DECALRE_THREAD_PROC(f)    DWORD WINAPI f (LPVOID pArg)
+#   define TM_DECALRE_THREAD_PROC(f)    DWORD WINAPI f(LPVOID pArg)
 #   define TM_THREAD_PROC               LPTHREAD_START_ROUTINE
 #   define TM_THREAD_PROC_RET           DWORD
 
@@ -259,7 +259,7 @@ typedef struct
 
 #   define TMThread                     pthread_t
 #   define TMThreadID                   pthread_t
-#   define TM_DECALRE_THREAD_PROC(f)    void* f (void* pArg)
+#   define TM_DECALRE_THREAD_PROC(f)    void* f(void* pArg)
     typedef void* (*TM_THREAD_PROC)(void* pArg);
 #   define TM_THREAD_PROC_RET           void*
 
@@ -269,8 +269,8 @@ typedef struct
 TM_INLINE void ThreadInit(TMThread* pStruct)
 {
     DbgAssert(pStruct);
-    TM_IF_WIN (pStruct->dwID = 0; pStruct->hThread = 0);
-    TM_NO_WIN (*pStruct = 0);
+    TM_IF_WIN(pStruct->dwID = 0; pStruct->hThread = 0);
+    TM_NO_WIN(*pStruct = 0);
 }
 
 /** get current thread */
@@ -299,13 +299,13 @@ TM_INLINE TMThreadID ThreadSelfId()
 TM_INLINE TMBool ThreadValid(const TMThread* pStruct)
 {
     DbgAssert(pStruct);
-    return TM_SW_WIN (pStruct->dwID, 0 != *pStruct);
+    return TM_SW_WIN(pStruct->dwID, 0 != *pStruct);
 }
 
 /** check thread is alive(not exist) */
 TM_INLINE TMBool ThreadIsAlive(const TMThread* pStruct)
 {
-    DbgAssert(ThreadValid (pStruct));
+    DbgAssert(ThreadValid(pStruct));
 #ifdef TM_WIN
     DWORD dwExitCode = 0;
     GetExitCodeThread(pStruct->hThread, &dwExitCode);
@@ -321,8 +321,8 @@ TM_INLINE TMBool ThreadIsAlive(const TMThread* pStruct)
 TM_INLINE TMBool ThreadEqual(const TMThread* ps1, const TMThread* ps2)
 {
     DbgAssert(ps1 && ps2);
-    TM_IF_WIN (return ps1->hThread == ps2->hThread && ps1->dwID == ps2->dwID);
-    TM_NO_WIN (return pthread_equal(*ps1, *ps2));
+    TM_IF_WIN(return ps1->hThread == ps2->hThread && ps1->dwID == ps2->dwID);
+    TM_NO_WIN(return pthread_equal(*ps1, *ps2));
 }
 
 /** check thread is equal current thread */
@@ -341,13 +341,13 @@ TM_INLINE void ThreadCreate(TMThread* pStruct, TM_THREAD_PROC pfn, void* param)
     DbgAssert(!ThreadValid(pStruct));
 #endif
 // #if defined(TM_WIN) && defined(_MT)
-//     pStruct->hThread = (HANDLE)_beginthreadex (0, 0,
+//     pStruct->hThread = (HANDLE)_beginthreadex(0, 0,
 //         (unsigned (__stdcall *)(void *))pfn, param, 0, &pStruct->dwID);
 // #elif defined(TM_WIN) && !defined(_MT)
 #if defined(TM_WIN)
     pStruct->hThread = CreateThread(0, 0, pfn,  param, 0, (PULONG)&pStruct->dwID);
 #else
-    pthread_create (pStruct, 0, pfn, param);
+    pthread_create(pStruct, 0, pfn, param);
 #endif
 }
 
@@ -361,7 +361,7 @@ TM_INLINE int ThreadJoin(TMThread* pStruct)
     if (!pStruct->hThread)
         return -1;
 
-    ret = WaitForSingleObject (pStruct->hThread, INFINITE);
+    ret = WaitForSingleObject(pStruct->hThread, INFINITE);
     DbgAssert(ret == WAIT_OBJECT_0);
 
     DWORD dwExitCode = 0;
@@ -369,7 +369,7 @@ TM_INLINE int ThreadJoin(TMThread* pStruct)
 
     // call CloseHandle to compatible with the posix thread functions
     // thread is invalid after posix pthread_join
-    CloseHandle (pStruct->hThread);
+    CloseHandle(pStruct->hThread);
 
     pStruct->hThread = 0;
     pStruct->dwID = 0;
@@ -379,7 +379,7 @@ TM_INLINE int ThreadJoin(TMThread* pStruct)
     DbgAssert(pStruct);
     if (!*pStruct)
         return -1;
-    pthread_join (*pStruct, 0);
+    pthread_join(*pStruct, 0);
     *pStruct = 0;
     return 0;
 #endif
@@ -392,28 +392,27 @@ TM_INLINE void ThreadDetach(TMThread* pStruct)
     if (!ThreadValid(pStruct))
         return;
 
-    TM_IF_WIN (CloseHandle(pStruct->hThread); pStruct->hThread = 0);
-    TM_NO_WIN (pthread_detach(*pStruct));
+    TM_IF_WIN(CloseHandle(pStruct->hThread); pStruct->hThread = 0);
+    TM_NO_WIN(pthread_detach(*pStruct));
 }
 
 /** kill a thread */
-TM_INLINE void ThreadKill(TMThread* pStruct)
-{
-    DbgAssert(pStruct);
-    if (!ThreadValid(pStruct))
-        return;
-    TM_IF_WIN (TerminateThread(pStruct->hThread, 0); CloseHandle(pStruct->hThread));
-//    TM_NO_WIN (pthread_cancel(*pStruct));
-    TM_NO_WIN (pthread_kill(*pStruct, SIGKILL));
-    ThreadInit(pStruct);
-}
+// TM_INLINE void ThreadKill(TMThread* pStruct)
+// {
+//     DbgAssert(pStruct);
+//     if (!ThreadValid(pStruct))
+//         return;
+//     TM_IF_WIN(TerminateThread(pStruct->hThread, 0); CloseHandle(pStruct->hThread));
+//     TM_NO_WIN(pthread_kill(*pStruct, SIGKILL));
+//     ThreadInit(pStruct);
+// }
 
 /** pause a thread */
 TM_INLINE void ThreadSuspend(TMThread* pStruct)
 {
 #ifdef TM_WIN
     DbgAssert(pStruct);
-    SuspendThread (pStruct->hThread);
+    SuspendThread(pStruct->hThread);
 #endif
 }
 
@@ -422,20 +421,33 @@ TM_INLINE void ThreadResume(TMThread* pStruct)
 {
 #ifdef TM_WIN
     DbgAssert(pStruct);
-    ResumeThread (pStruct->hThread);
+    ResumeThread(pStruct->hThread);
 #endif
 }
 
 /** sleep self */
 TM_INLINE void ThreadSleep(unsigned long dwMilliseconds)
 {
-    TM_IF_WIN (Sleep(dwMilliseconds));
-    TM_NO_WIN (usleep(dwMilliseconds));
+#ifdef TM_WIN
+    Sleep(dwMilliseconds);
+#else
+	// POSIX
+    struct timespec ts;
+    ts.tv_sec = dwMilliseconds / 1000;
+    ts.tv_nsec = (dwMilliseconds % 1000) * 1000000L;
 
-//     timeval tv;
-//     tv.tv_sec = dwMilliseconds / 1000;                     // seconds
-//     tv.tv_usec = (dwMilliseconds % 1000) * 1000;         // microseconds
-//     select (0, 0, 0, 0, &tv);
+    // EINTR
+    // nanosleep maybe break with SIGINT...
+    struct timespec rem;
+    while (nanosleep(&ts, &rem) == -1 && errno == EINTR)
+        ts = rem;
+
+// 	struct timeval tv;
+//     tv.tv_sec = dwMilliseconds / 1000;
+//     tv.tv_usec = (dwMilliseconds % 1000) * 1000;
+//     select(0, NULL, NULL, NULL, &tv);
+
+#endif // TM_WIN
 }
 
 /** allow self to yield the processor to another */
@@ -443,12 +455,12 @@ TM_INLINE void ThreadYield()
 {
 #ifdef TM_WIN
 #   if (_WIN32_WINNT >= 0x0400)
-    SwitchToThread ();
+    SwitchToThread();
 #   else
-    Sleep (0);
+    Sleep(0);
 #   endif // _WIN32_WINNT >= 0x0400
 #else
-    ThreadSleep (0);
+    ThreadSleep(0);
 #endif // TM_WIN
 }
 
@@ -695,33 +707,33 @@ protected:
 
 public:
     /** @see StateCreate */
-    CState (TMBool bSignaled = false) { StateCreate (&m_obj, bSignaled); }
+    CState(TMBool bSignaled = false) { StateCreate(&m_obj, bSignaled); }
 
     /** @see StateDestroy */
-    ~CState () { StateDestroy (&m_obj); }
+    ~CState() { StateDestroy(&m_obj); }
 
     operator TMState() const { return m_obj; }
 
     /** @see StateLock */
-    void Lock () { StateLock (&m_obj); }
+    void Lock() { StateLock(&m_obj); }
 
     /** @see StateTimeLock */
-    ESyncRet Lock (unsigned long dwMilliseconds) { return StateTimeLock (&m_obj, dwMilliseconds); }
+    ESyncRet Lock(unsigned long dwMilliseconds) { return StateTimeLock(&m_obj, dwMilliseconds); }
 
     /** donothing */
-    void Unlock () {}
+    void Unlock() {}
 
     /** @see StateSignal */
-    void Signal () { StateSignal (&m_obj); }
+    void Signal() { StateSignal(&m_obj); }
 
     /** @see StatePulse */
-    void Pulse () { StatePulse (&m_obj); }
+    void Pulse() { StatePulse(&m_obj); }
 
     /** @see StatePulse */
-    TMBool IsSignaled () { return StateIsSignaled (&m_obj); }
+    TMBool IsSignaled() { return StateIsSignaled(&m_obj); }
 
     /** @see StateUnsignal */
-    void Unsignal () { StateUnsignal (&m_obj); }
+    void Unsignal() { StateUnsignal(&m_obj); }
 
 };
 
@@ -737,7 +749,7 @@ public:
         CMutex m;
         int x;
 
-        void Set (int n)
+        void Set(int n)
         {
             // call statck: m.Lock(); x=n; m.Unlock();
             CAutoLockT<CMutex> _m(m);
@@ -754,8 +766,8 @@ private:
     TM_NO_COPYABLE(CAutoLockT);
 
 public:
-    CAutoLockT (T& cont) : m_cont (cont) { cont.Lock (); }
-    ~CAutoLockT () { m_cont.Unlock (); }
+    CAutoLockT(T& cont) : m_cont(cont) { cont.Lock(); }
+    ~CAutoLockT() { m_cont.Unlock(); }
 };
 
 
@@ -782,24 +794,24 @@ public:
     {
     };
     CMyThread th;
-    th.Create (&th);
+    th.Create(&th);
 
     // way 2
     class CMyThread : public IThread
     {
     public:
         CThreadID th;
-        void Create () { th.Create (this); }
+        void Create() { th.Create(this); }
     }
 
     // way 3
-    TM_DECALRE_THREAD_PROC (ThreadProc)
+    TM_DECALRE_THREAD_PROC(ThreadProc)
     {
         ...
         return (TM_THREAD_PROC_RET)(0);
     }
     CThreadID th;
-    th.Create (ThreadProc, x);
+    th.Create(ThreadProc, x);
 
  *  @endcode
  */
@@ -810,31 +822,31 @@ public:
     TM_NO_COPYABLE(CThreadID);
 
 private:
-    static TM_DECALRE_THREAD_PROC (_ThreadProc)
+    static TM_DECALRE_THREAD_PROC(_ThreadProc)
     {
-        IThread* p = (IThread*) (pArg);
-        return (TM_THREAD_PROC_RET)(TMIntPtr)p->ThreadProc ();
+        IThread* p = (IThread*)(pArg);
+        return (TM_THREAD_PROC_RET)(TMIntPtr)p->ThreadProc();
     }
 
 public:
     /** */
-    CThreadID() { ThreadInit (&m_obj); }
+    CThreadID() { ThreadInit(&m_obj); }
 
     /**
      *  @copydoc ThreadDetach
      *  @see ThreadDetach
      */
-    ~CThreadID () { ThreadDetach (&m_obj); }
+    ~CThreadID() { ThreadDetach(&m_obj); }
 
     /**
      *  @copydoc ThreadValid
      */
-    TMBool IsValid () const { return ThreadValid(&m_obj); }
+    TMBool IsValid() const { return ThreadValid(&m_obj); }
 
     /**
      *  @copydoc ThreadIsAlive
      */
-    TMBool IsAlive () const { return ThreadIsAlive(&m_obj); }
+    TMBool IsAlive() const { return ThreadIsAlive(&m_obj); }
 
     /** */
     operator TMBool() const { return IsValid(); }
@@ -843,40 +855,40 @@ public:
      *  @copydoc ThreadDetach
      *  @see ThreadDetach
      */
-    void Detach () { ThreadDetach (&m_obj); }
+    void Detach() { ThreadDetach(&m_obj); }
 
     /**
      *  @copydoc ThreadCreate
      *  @see ThreadCreate
      */
-    void Create (IThread* pi) { ThreadCreate (&m_obj, _ThreadProc, pi); }
+    void Create(IThread* pi) { ThreadCreate(&m_obj, _ThreadProc, pi); }
 
     /**
      *  @copydoc ThreadCreate
      *  @see ThreadCreate
      */
-    void CreateBy (TM_THREAD_PROC proc, void* pArg) { ThreadCreate (&m_obj, proc, pArg); }
+    void CreateBy(TM_THREAD_PROC proc, void* pArg) { ThreadCreate(&m_obj, proc, pArg); }
 
     /**
      *  @copydoc ThreadSuspend
      *  @see ThreadSuspend
      */
-    void Suspend () { ThreadSuspend (&m_obj); }
+    void Suspend() { ThreadSuspend(&m_obj); }
 
     /**
      *  @copydoc ThreadResume
      *  @see ThreadResume
      */
-    void Resume () { ThreadResume (&m_obj); }
+    void Resume() { ThreadResume(&m_obj); }
 
     /**
      *  @copydoc ThreadJoin
      *  @see ThreadJoin
      */
-    int Join () { return ThreadJoin (&m_obj); }
+    int Join() { return ThreadJoin(&m_obj); }
 
     /** @copydoc ThreadKill */
-    void Kill () { ThreadKill(&m_obj); }
+//     void Kill() { ThreadKill(&m_obj); }
 
 public: // call for current thread
     /**
@@ -906,13 +918,13 @@ public:
     CState m_state; // Signal: exit thread;
 
 public:
-    void Create (IThread* pi)
+    void Create(IThread* pi)
     {
         m_state.Unsignal();
         CThreadID::Create(pi);
     }
 
-    void CreateBy (TM_THREAD_PROC proc, void* pArg)
+    void CreateBy(TM_THREAD_PROC proc, void* pArg)
     {
         m_state.Unsignal();
         CThreadID::CreateBy(proc, pArg);
@@ -923,17 +935,17 @@ public:
         m_state.Signal();
     }
 
-    void Join ()
+    void Join()
     {
         m_state.Signal();
         CThreadID::Join();
     }
 
-    void Kill ()
-    {
-        m_state.Signal();
-        CThreadID::Kill();
-    }
+//     void Kill()
+//     {
+//         m_state.Signal();
+//         CThreadID::Kill();
+//     }
 };
 
 
@@ -955,11 +967,11 @@ protected:
     using T::m_obj;
 
 private:
-    static TM_DECALRE_THREAD_PROC (_ThreadProc)
+    static TM_DECALRE_THREAD_PROC(_ThreadProc)
     {
         CRefPtr<CRefThreadT> p;
-        p.Attach((CRefThreadT*) (pArg));
-        TM_THREAD_PROC_RET ret = (TM_THREAD_PROC_RET)p->ThreadProc ();
+        p.Attach((CRefThreadT*)(pArg));
+        TM_THREAD_PROC_RET ret = (TM_THREAD_PROC_RET)p->ThreadProc();
         return ret;
     }
 
@@ -970,16 +982,16 @@ public:
 
 public:
     /** the init reference count = 1 */
-    CRefThreadT () : m_nRef (1) {}
+    CRefThreadT() : m_nRef(1) {}
 
     /** */
-    virtual ~CRefThreadT () {}
+    virtual ~CRefThreadT() {}
 
     /** */
-    TM_REFAPI AddRef () { return ++m_nRef; }
+    TM_REFAPI AddRef() { return ++m_nRef; }
 
     /** delete this if reference count == 0 */
-    TM_REFAPI Release ()
+    TM_REFAPI Release()
     {
         TMAtmInt n = --m_nRef;
         if (n <= 0)
@@ -988,7 +1000,7 @@ public:
     }
 
     /** */
-    void Create () { AddRef(); ThreadCreate (&m_obj, _ThreadProc, this); }
+    void Create() { AddRef(); ThreadCreate(&m_obj, _ThreadProc, this); }
 };
 
 typedef CRefThreadT<CThreadID> CRefThread;

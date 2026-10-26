@@ -604,12 +604,12 @@ static TMResult _SendMouseMessage(TMBool bNcMsg, CTuiWgt* pWnd, TMUInt uMsg, TMW
         case WM_LBUTTONDBLCLK: uMsg = WM_NCLBUTTONDBLCLK; break;
             
         case WM_RBUTTONDOWN: uMsg = WM_NCRBUTTONDOWN; break;
-        case WM_RBUTTONUP: uMsg = WM_NCRBUTTONDOWN; break;
-        case WM_RBUTTONDBLCLK: uMsg = WM_NCRBUTTONDOWN; break;
+        case WM_RBUTTONUP: uMsg = WM_NCRBUTTONUP; break;
+        case WM_RBUTTONDBLCLK: uMsg = WM_NCRBUTTONDBLCLK; break;
             
-        case WM_MBUTTONDOWN: uMsg = WM_NCRBUTTONDOWN; break;
-        case WM_MBUTTONUP: uMsg = WM_NCRBUTTONDOWN; break;
-        case WM_MBUTTONDBLCLK: uMsg = WM_NCRBUTTONDOWN; break;
+        case WM_MBUTTONDOWN: uMsg = WM_NCMBUTTONDOWN; break;
+        case WM_MBUTTONUP: uMsg = WM_NCMBUTTONUP; break;
+        case WM_MBUTTONDBLCLK: uMsg = WM_NCMBUTTONDBLCLK; break;
             
         case CM_MOUSEENTRY: uMsg = CM_NCMOUSEENTRY; break;
         case WM_MOUSELEAVE: uMsg = CM_NCMOUSELEAVE; break;

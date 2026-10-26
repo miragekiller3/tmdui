@@ -564,6 +564,7 @@ TM_INLINE size_t StrAssign(TMStrA pd, size_t nd, TMCStrW ps, size_t ns)
     DbgAssert(!ns || (pd && ps));
     size_t n = StrW2A(CP_DEFAULT, pd, nd, ps, ns);
     DbgAssert(pd);
+	tm_setmin(n, nd - 1);
     pd[n] = 0;
     return n;
 }
@@ -575,6 +576,7 @@ TM_INLINE size_t StrAssign(TMStrW pd, size_t nd, TMCStrA ps, size_t ns)
     DbgAssert(!ns || (pd && ps));
     size_t n = StrA2W(CP_DEFAULT, pd, nd, ps, ns);
     DbgAssert(pd);
+	tm_setmin(n, nd - 1);
     pd[n] = 0;
     return n;
 }

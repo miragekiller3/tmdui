@@ -188,7 +188,7 @@
 #pragma message("#define TM_API             " TM_NUMBER_OF(TM_API))
 #pragma message("#define TM_CAPI            " TM_NUMBER_OF(TM_CAPI))
 #pragma message("#define tm_override        " TM_NUMBER_OF(tm_override))
-#pragma message("#define tm_final           " TM_NUMBER_OF(tm_final))
+#pragma message("#define tm_override           " TM_NUMBER_OF(tm_override))
 #pragma message("#define tm_constexpr(x)    " TM_NUMBER_OF(tm_constexpr(x)))
 #pragma message("#define tm_noexcept        " TM_NUMBER_OF(tm_noexcept))
 #pragma message("#define tm_for             " TM_NUMBER_OF(tm_for))
@@ -253,7 +253,7 @@
 #pragma message("#define TMLParam           " TM_NUMBER_OF(TMLParam))
 #pragma message("#define TMResult           " TM_NUMBER_OF(TMResult))
 
-#pragma message("#define TMCStr             " TM_NUMBER_OF(TMCStr))
+// #pragma message("#define TMCStr             " TM_NUMBER_OF(TMCStr))
 #pragma message("#define TMFilename         " TM_NUMBER_OF(TMFilename))
 
 
@@ -862,19 +862,19 @@ public:
         HeapDestroy(m_heap);
     }
 
-    virtual char* DbgMemAlloc(size_t n) tm_final { m_nAllMem += n; return (char*)HeapAlloc(m_heap, 0, n); }
+    virtual char* DbgMemAlloc(size_t n) tm_override { m_nAllMem += n; return (char*)HeapAlloc(m_heap, 0, n); }
     
-    virtual void  DbgMemFree(void* p) tm_final { m_nAllMem -= HeapSize(m_heap, 0, p); HeapFree(m_heap, 0, p); }
+    virtual void  DbgMemFree(void* p) tm_override { m_nAllMem -= HeapSize(m_heap, 0, p); HeapFree(m_heap, 0, p); }
 
-    virtual size_t DbgMemSize(void* p) tm_final { return HeapSize(m_heap, 0, p); }
+    virtual size_t DbgMemSize(void* p) tm_override { return HeapSize(m_heap, 0, p); }
 
-    virtual void DbgMemLock() tm_final { HeapLock(m_heap); }
+    virtual void DbgMemLock() tm_override { HeapLock(m_heap); }
     
-    virtual void DbgMemUnlock() tm_final { HeapUnlock(m_heap); }
+    virtual void DbgMemUnlock() tm_override { HeapUnlock(m_heap); }
     
-    virtual bool DbgIsMemHeap(void* hHeap) tm_final { return hHeap == m_heap; }
+    virtual bool DbgIsMemHeap(void* hHeap) tm_override { return hHeap == m_heap; }
     
-    virtual int GetCallStack(int nFrames, void** ppBackTrace, int nSkip) tm_final
+    virtual int GetCallStack(int nFrames, void** ppBackTrace, int nSkip) tm_override
     {
         DECLARE_DLL_FUNC(dll_ntdll, WORD, WINAPI, RtlCaptureStackBackTrace,
             (DWORD FramesToSkip, DWORD FramesToCapture, PVOID* BackTrace, PDWORD BackTraceHash));
@@ -888,13 +888,13 @@ public:
 class CDebugMem : public IDebug
 {
 // public: 
-//     virtual char* DbgMemAlloc(size_t n) tm_final { return 0; }
-//     virtual void  DbgMemFree(void* p) tm_final {}
-//     virtual size_t DbgMemSize(void* p) tm_final { return 0; }
-//     virtual void DbgMemLock() tm_final { }
-//     virtual void DbgMemUnlock() tm_final {}
-//     virtual bool DbgIsMemHeap(void* hHeap) tm_final { return false; }
-//     virtual int GetCallStack(int nFrames, void** ppBackTrace, int nSkip) tm_final { return 0; }
+//     virtual char* DbgMemAlloc(size_t n) tm_override { return 0; }
+//     virtual void  DbgMemFree(void* p) tm_override {}
+//     virtual size_t DbgMemSize(void* p) tm_override { return 0; }
+//     virtual void DbgMemLock() tm_override { }
+//     virtual void DbgMemUnlock() tm_override {}
+//     virtual bool DbgIsMemHeap(void* hHeap) tm_override { return false; }
+//     virtual int GetCallStack(int nFrames, void** ppBackTrace, int nSkip) tm_override { return 0; }
 };
 #endif // TM_WIN
 
@@ -914,7 +914,7 @@ public:
     {
     }
 
-    virtual CDebugLeakInfoList* LeakGetBegin() tm_final
+    virtual CDebugLeakInfoList* LeakGetBegin() tm_override
     {
         DbgMemLock();
         CDebugLeak& dl = m_leak;// CDebugLeak::Inst();
@@ -922,26 +922,26 @@ public:
         return &dl.m_aInfo;
     }
 
-    virtual void LeakGetEnd() tm_final
+    virtual void LeakGetEnd() tm_override
     {
         DbgMemUnlock();
 //        CDebugLeak& dl = m_leak;// CDebugLeak::Inst();
 //        dl.m_critical.Unlock();
     }
 
-    virtual void LeakFlip() tm_final
+    virtual void LeakFlip() tm_override
     {
         CDebugLeak& dl = m_leak;// CDebugLeak::Inst();
         dl.Flip();
     }
 
-    virtual void LeakDump(CMemDump* dumpOld, CMemDump* dumpNew, int& nDebugMem) tm_final
+    virtual void LeakDump(CMemDump* dumpOld, CMemDump* dumpNew, int& nDebugMem) tm_override
     {
         CDebugLeak& dl = m_leak;// CDebugLeak::Inst();
         dl.Dump(dumpOld, dumpNew, nDebugMem);
     }
 
-    virtual const TMDbgClassInfo* LeakOpt(const TMDbgClassInfo* p, EDbgLeakOptType eType) tm_final
+    virtual const TMDbgClassInfo* LeakOpt(const TMDbgClassInfo* p, EDbgLeakOptType eType) tm_override
     {
         TM_ANALYSIS_UNUSED(aa);
         if (p && (const void*)p->m_pClass == this)
@@ -949,43 +949,43 @@ public:
         return m_leak.Done(p, eType); 
     }
 
-    virtual ITrace* TraceCreate() tm_final
+    virtual ITrace* TraceCreate() tm_override
     {
         return new CTraceStr();
     }
     
-    virtual void TraceAddHook(ITraceHook* p) tm_final
+    virtual void TraceAddHook(ITraceHook* p) tm_override
     {
         m_trace.m_aSink.insert(p);
     }
 
-    virtual void TraceDelHook(ITraceHook* p) tm_final
+    virtual void TraceDelHook(ITraceHook* p) tm_override
     {
         m_trace.m_aSink.erase(p);
     }
 
-    virtual bool Set(TMBool bEnable) tm_final
+    virtual bool TraceSetAssert(TMBool bEnable) tm_override
     {
         bool b = m_trace.m_bDisableAssert;
         m_trace.m_bDisableAssert = !bEnable;
         return b;
     }
 
-    virtual bool TraceSetToSys(TMBool bEnable) tm_final
+    virtual bool TraceSetToSys(TMBool bEnable) tm_override
     {
         bool b = m_trace.m_bDisableNormal;
         m_trace.m_bDisableNormal = !bEnable;
         return b;
     }
 
-    virtual bool TraceSetToCon(TMBool bEnable) tm_final
+    virtual bool TraceSetToCon(TMBool bEnable) tm_override
     {
         bool b = m_trace.m_bConsole;
         m_trace.m_bConsole = !!bEnable;
         return b;
     }
 
-    virtual void TraceSetToFile(TMCStr file) tm_final
+    virtual void TraceSetToFile(TMCStr file) tm_override
     {
         m_trace.m_fn[0] = 0;
         if (!file)

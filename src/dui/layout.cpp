@@ -265,7 +265,7 @@ struct CLayoutHelper
         LayoutAnchor(p->GetNext(), rcOldP, rcNewP);
     }
 
-    HTUI LayOutFlowLine(HTUI p, CTuiRect& rc, CTuiRect::value_type l, CTuiRect::value_type& h, CTuiRect::value_type& b)
+    Ref LayOutFlowLine(HTUI p, CTuiRect& rc, CTuiRect::value_type l, CTuiRect::value_type& h, CTuiRect::value_type& b)
     {
         if (!p)
             return 0;
@@ -283,14 +283,14 @@ struct CLayoutHelper
         {
             rc.SetTop(rc.Top() + h);
             CTuiRect::value_type hh = 0;
-            return LayOutFlowLine (p, rc, rc.Left(), hh, b);
+            return LayOutFlowLine(p, rc, rc.Left(), hh, b);
         }
         
         GXDips hh = p->GetHeight() + p->m_bdMargin.top + p->m_bdMargin.bottom;
         h = tm_max(h, hh);
         GXDips nTop = rc.Top();
 
-        HTUI h1 = LayOutFlowLine(p->GetNext(), rc, ll, h, b); 
+        Ref h1 = LayOutFlowLine(p->GetNext(), rc, ll, h, b); 
         
         switch ((dwLayout & FLOW_MASK) & ~LAYOUT_SCROLL)
         {
@@ -378,7 +378,7 @@ struct CLayoutHelper
 //     }
 
 
-    void LayOutFlow(HTUI hWgt, const CTuiRect& rcBound, CTuiRect::value_type& b)
+    void LayOutFlow(Ref hWgt, const CTuiRect& rcBound, CTuiRect::value_type& b)
     {
         for (HTUI hOld = 0; hWgt;)
         {
@@ -404,7 +404,7 @@ struct CLayoutHelper
                     h = 0;
                 }
                 hOld = hWgt;
-                hWgt = LayOutFlowLine (hWgt, rcFlow, l, h, b);
+                hWgt = LayOutFlowLine(hWgt, rcFlow, l, h, b);
             }
             else
             {

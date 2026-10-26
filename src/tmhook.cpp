@@ -218,7 +218,7 @@ struct CHooks
     CHookNormal<eHookTypeCALLWNDPROCRET,    WH_CALLWNDPROCRET,  TCheckAction> m_hook_CALLWNDPROCRET;
     CHookGlobal<eHookTypeKEYBOARD_LL,       WH_KEYBOARD_LL,     TCheckThan0 > m_hook_KEYBOARD_LL;
     CHookGlobal<eHookTypeMOUSE_LL,          WH_MOUSE_LL,        TCheckThan0 > m_hook_MOUSE_LL;
-    CHookThread<eHookTypeThreadKEYBOARD_LL, WH_MOUSE_LL,        TCheckThan0 > m_hook_ThreadKEYBOARD_LL;
+    CHookThread<eHookTypeThreadKEYBOARD_LL, WH_KEYBOARD_LL,     TCheckThan0 > m_hook_ThreadKEYBOARD_LL;
 
     static CHooks s_hooks;
 

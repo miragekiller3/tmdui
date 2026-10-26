@@ -1331,7 +1331,7 @@ template <class D, class S>
 void DibStretch(D& __d, const S& __s)
 {
     int w1 = __d.GetWidth();
-    int w2 = __d.GetWidth();
+    int w2 = __s.GetWidth();
     int h1 = __d.GetHeight();
     int h2 = __s.GetHeight();
     if (w1 == w2 && h1 == h2)

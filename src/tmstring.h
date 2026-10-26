@@ -276,7 +276,7 @@ TM_BGN_NAMESPACE
 
 
 
-template <int nscp, int ndcp>
+template <int ndcp, int nscp>
 class A2AT : public CStdStrA
 {
 private:
@@ -284,7 +284,7 @@ private:
     {
         DbgAssert(nLen ? 0 != p : 1);
         int nBuf = nLen * 4;
-        int n = StrConvert(nscp, this->GetBuffer(nBuf+1), nBuf, ndcp, p, nLen);
+        int n = StrConvert(ndcp, this->GetBuffer(nBuf+1), nBuf, nscp, p, nLen);
         this->SetLength (n);
     }
 
@@ -629,8 +629,8 @@ typedef CStringA                                        W2A;
 typedef CStringW                                        A2W;
 typedef A2BT<CP_UTF8, TMCharW, TMCharA>                 W2UTF;
 typedef A2BT<CP_UTF8, TMCharA, TMCharW>                 UTF2W;
-typedef A2AT<CP_DEFAULT, CP_UTF8>                       A2UTF;
-typedef A2AT<CP_UTF8, CP_DEFAULT>                       UTF2A;
+typedef A2AT<CP_UTF8, CP_DEFAULT>                       A2UTF;
+typedef A2AT<CP_DEFAULT, CP_UTF8>                       UTF2A;
 typedef URL2A                                           URL2A;
 typedef A2URL                                           A2URL;
 typedef L2TT<TMCharT>                                   L2T;

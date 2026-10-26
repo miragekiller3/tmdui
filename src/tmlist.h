@@ -286,7 +286,7 @@ public:
 
     size_type count(key_reference key) const
     {
-        iterator iter = lower_bound(key);
+        const_iterator iter = lower_bound(key);
         if (iter == this->end() || Pred()(key, traits_key_data().key(*iter)))
             return 0;
         return 1;
