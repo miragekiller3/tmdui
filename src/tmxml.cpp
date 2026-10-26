@@ -32,7 +32,7 @@ enum ETokenType
 TM_BGN_NAMESPACE
 
 
-template<class T> class CXmlTokenT : public XmlRange // : public TMWStrRange // CXmlTag // TMWStrRange
+template<class T> class CXmlTokenT : public XmlRange
 {
 public:
     typedef const T* iterator;
@@ -48,8 +48,7 @@ public:
         m_size = xml.size();
     }
 
-//     XmlRange& ToTag() { return *this; }
-    XmlRange  ToTag(size_t b, size_t sz) { XmlRange rg = { b, sz }; return rg; }
+    static XmlRange ToTag(size_t b, size_t sz) { XmlRange rg = { b, sz }; return rg; }
 
 private:
     inline static bool IsInvalidChar(T c)
@@ -202,8 +201,9 @@ public:
             }
             else if (m_src[m_data + 1] == '?') // skip <?xml version="1.0" encoding="utf-8"?>
             {
-                size_t x = CXmlTag(m_src + m_data, m_size).find(L' ');
-                size_t y = CXmlTag(m_src + m_data, m_size).find(TM_T("?>"), 2);
+				CXmlTag tagTmp(m_src + m_data, m_size - m_data);
+                size_t x = tagTmp.find(L' ');
+                size_t y = tagTmp.find(TM_T("?>"), 2);
                 if (x != CXmlTag::npos && y != CXmlTag::npos && x < y)
                 {
                     pCallback->AddProcessingInstruction(ToTag(m_data + 2, x - 2), ToTag(m_data + x + 1, y - x - 1));
@@ -218,7 +218,7 @@ public:
             }
             else if (m_src[m_data + 1] == '!' && m_src[m_data + 2] == '-' && m_src[m_data + 3] == '-')
             {
-                size_t y = CXmlTag(m_src + m_data, m_size).find(TM_T("-->"), 3);
+                size_t y = CXmlTag(m_src + m_data, m_size - m_data).find(TM_T("-->"), 3);
                 if (y != CXmlTag::npos)
                 {
                     pCallback->AddComment(ToTag(m_data + 4, y - 4));
@@ -244,7 +244,7 @@ public:
             pCallback->AddNode(tagName);
 
             // get property
-            XmlRange xt;
+            XmlRange xt = {0};
             for (; ;)
             {
                 XmlRange xtTmp;
@@ -261,9 +261,8 @@ public:
                 }
                 else if (tp == e_ttEqual)
                 {
-                    pCallback->AddProperty(xt, xtTmp);
-//                     DbgTrace("add prop");
-//                     DbgTrace(xt.begin());
+					if (xt.m_size)
+						pCallback->AddProperty(xt, xtTmp);
                 }
                 else if (tp == e_ttRight)
                 {

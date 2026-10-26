@@ -120,12 +120,15 @@ public:
 //     str_constexpr_ CStringT(size_type n, value_type c)              : base_class(n, c) {}
     str_constexpr_ CStringT(TMCStrA p, size_type n)                 : base_class(n, p) { _alloc(); }
     str_constexpr_ CStringT(TMCStrW p, size_type n)                 : base_class(n, p) { _alloc(); }
+    str_constexpr_ CStringT(TMCStrA p, TMCStrA e)                   : base_class(e - p, p) { _alloc(); }
+    str_constexpr_ CStringT(TMCStrW p, TMCStrW e)                   : base_class(e - p, p) { _alloc(); }
     str_constexpr_ CStringT(TMCStrA p)                              : base_class(p) { _alloc(); }
     str_constexpr_ CStringT(TMCStrW p)                              : base_class(p) { _alloc(); }
 #else
     tm_constexpr11 CStringT(const std_view& v)                      tm_noexcept : base_class(v) {}
     tm_constexpr11 CStringT(const std_string& s)                    tm_noexcept : base_class(s) {}
     tm_constexpr11 CStringT(const_pointer p, size_type n)           tm_noexcept : base_class(n, p) {}
+    tm_constexpr11 CStringT(const_pointer p, const_pointer e)       tm_noexcept : base_class(e - p, p) {}
     tm_constexpr17 CStringT(const_pointer p)                        tm_noexcept : base_class(p) {}
 #endif // _CSTRING_MODE != _CSTRING_MODE_VIEW
 

@@ -15,8 +15,8 @@
 
 #include "tmdef.h"
 
-#include <stdarg.h>
-#include <stdio.h>
+#include <stdarg.h>		// va_start/va_end
+#include <stdlib.h>		// malloc/free
 
 #ifdef TM_WIN
 #   include <windows.h>
