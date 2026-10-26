@@ -88,10 +88,8 @@ T_TexType* _CTextureGL_CreateTex(CGXAppGL* app, int w, int h, T_TexType* pTo, T_
     }
     if ((pTo->m_width == w) && (pTo->m_height == h))
         return pTo;
-
     if ((pTo->m_width = w) && (pTo->m_height = h) && pTo->Init(bInit))
         return pTo;
-    pTo->Release();
     return 0;
 }
 
