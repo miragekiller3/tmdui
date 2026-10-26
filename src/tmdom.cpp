@@ -432,10 +432,10 @@ public:
         return parser.p;
     }
 
-    // selectSingleNode() ���Һ� XPath ��ѯƥ���һ���ڵ�?6
-    // transformNode() ʹ�� XSLT ��һ���ڵ�ת��Ϊһ���ַ����� 6
-    // transformNodeToObject() ʹ�� XSLT ��һ���ڵ�ת��Ϊһ���ĵ��� 6
-    // setUserData(key,data,handler) �Ѷ���������ڵ��ϵ�һ�����ϡ�?    No Yes
+    // selectSingleNode()
+    // transformNode()
+    // transformNodeToObject()
+    // setUserData(key,data,handler)
 
     template <class F> void Enum(F _func)
     {
@@ -579,8 +579,8 @@ public:
     virtual CComPtr<IDomNodeList> getElementsByTagName(const CDomStrView& name) tm_override;
 
     // W3C
-    //     getFeature(feature,version) ���� DOM ���󣬴˶����ִ��ӵ��ָ�����ԺͰ汾��ר�ŵ�?API��     No Yes
-    //     getUserData(key) ���ع����ڵ��ϼ��Ķ��󡣴˶����������ͨ��ʹ����ͬ�ļ�������?setUserData �����õ��˽ڵ㡣     No Yes
+    //     getFeature(feature,version)
+    //     getUserData(key)
 
     virtual TMBool hasAttributes() tm_override;
 
@@ -595,9 +595,9 @@ public:
     virtual void setAttributeNode(IDomNode* attr) tm_override { DbgAssert(0); }
 
     //W3C
-    // setIdAttribute(name,isId) ���?Attribute ���� isId ����Ϊ true����ô�˷������ָ������������Ϊһ���û�ȷ��?ID �����ԣ�user-determined ID attribute����     No Yes
-    // setIdAttributeNS(uri,name,isId) ���?Attribute ���� isId ����Ϊ true����ô�˷������ָ������������Ϊһ���û�ȷ��?ID �����ԣ�user-determined ID attribute�������������ռ䣩��     No Yes
-    // setIdAttributeNode(idAttr,isId) ���?Attribute ���� isId ����Ϊ true����ô�˷������ָ������������Ϊһ���û�ȷ��?ID �����ԣ�user-determined ID attribute����     No Yes
+    // setIdAttribute(name,isId)
+    // setIdAttributeNS(uri,name,isId)
+    // setIdAttributeNode(idAttr,isId)
 
     ///////////////////////////////////////////////////////////////////////
     // extend
@@ -692,11 +692,11 @@ public:
     virtual void put_data(const CDomStrPtr& txt) tm_override { m_strText = txt; }
 
     //W3C
-    //    isElementContentWhitespace �ж��ı��ڵ��Ƿ�����հ��ַ����ݡ�?No No No Yes
+    //    isElementContentWhitespace
     virtual long get_length() tm_override { return m_strText.size(); }
 
     //W3C
-    //wholeText ���ĵ��е�˳����˽ڵ㷵�������ı��ڵ�������ı� No No No Yes
+    //wholeText
 
     ///////////////////////////////////////////////////////////////////////
     // W3C method
@@ -708,9 +708,9 @@ public:
     virtual void replaceData(long offset, long count, const CDomStrView& txt) tm_override { m_strText.replace(offset, count, txt.data(), txt.size()); }
 
     // W3C not support
-    // replaceWholeText() ʹ��ָ���ı����滻�˽ڵ��Լ��������ڵ��ı��ڵ� No No No Yes
-    // splitText() ��һ�� Text �ڵ�ָ�������� 6 1 9 Yes
-    // substringData() �ӽڵ���ȡ���� 6 1 9 Yes
+    // replaceWholeText()
+    // splitText()
+    // substringData()
 
     ///////////////////////////////////////////////////////////////////////
     // extend
@@ -761,20 +761,20 @@ public:
     // W3C property
 
     // W3C not support
-    // async �涨 XML �ļ��������Ƿ�Ӧ����ͬ�������� 5 1.5 9 No
+    // async
 
     // W3C not support
-    //    doctype �������ĵ���ص��ĵ���������?(DTD)�� 6 1 9 Yes
+    //    doctype
 
     virtual CDomStrPtr get_documentURI() tm_override { return m_url; }
     virtual void put_documentURI(const CDomStrPtr& str) tm_override { m_url = str; }
 
     // W3C not support
-    // domConfig ����normalizeDocument()������ʱ��ʹ�õ�����     No Yes
+    // domConfig
 
     // W3C not support
-    // implementation ���ش������ĵ��� DOMImplementation ���� No 1 9 Yes
-    // inputEncoding ���������ĵ��ı��뷽ʽ���ڽ���ʱ���� No 1 No Yes
+    // implementation
+    // inputEncoding
 
     virtual CDomStrPtr get_nodeName() tm_override;
 
@@ -786,44 +786,44 @@ public:
     }
 
     // W3C not support
-    // strictErrorChecking ���û򷵻��Ƿ�ǿ�ƽ��д����顣 No 1 No Yes
-    // xmlEncoding �����ĵ��ı��뷽���� No 1 No Yes
-    // xmlStandalone ���û򷵻��ĵ��Ƿ�Ϊ standalone�� No 1 No Yes
-    // xmlVersion ���û򷵻��ĵ��� XML �汾�� No 1 No Yes
+    // strictErrorChecking
+    // xmlEncoding
+    // xmlStandalone
+    // xmlVersion
 
     ///////////////////////////////////////////////////////////////////////
     // W3C method
 
     // W3C not support
-    // adoptNode(sourcenode) ����һ���ĵ����ĵ�ѡ��һ���ڵ㣬Ȼ�󷵻ر�ѡ�ڵ㡣     No Yes
+    // adoptNode(sourcenode) 
 
     // W3C not support
-    // createAttribute(name) ����ӵ��ָ�����Ƶ����Խڵ㣬�������µ� Attr ���� 6 1 9 Yes
-    // createAttributeNS(uri,name) ����ӵ��ָ�����ƺ������ռ�����Խڵ㣬�������µ�?Attr ����     9 Yes
-    // createCDATASection() ���� CDATA ���νڵ㡣 5 1 9 Yes
-    // createComment() ����ע�ͽڵ㡣 6 1 9 Yes
-    // createDocumentFragment() �����յ� DocumentFragment ���󣬲����ش˶��� 5 1 9 Yes
+    // createAttribute(name)
+    // createAttributeNS(uri,name)
+    // createCDATASection()
+    // createComment()
+    // createDocumentFragment()
 
     virtual TM::IDomElement* createElement(const CDomStrPtr& name) tm_override;
 
     // W3C not support
-    // createElementNS() ��������ָ�������ռ��Ԫ�ؽڵ�?No 1 9 Yes
-    // createEvent() �����µ� Event ����       Yes
-    // createEntityReference(name) ���� EntityReference ���󣬲����ش˶��� 5   No Yes
-    // createExpression() ����һ��XPath����ʽ�Թ��Ժ����?      Yes
+    // createElementNS()
+    // createEvent()
+    // createEntityReference(name)
+    // createExpression()
 
     virtual IDomProcessingInstruction* createProcessingInstruction(const CDomStrPtr& target, const CDomStrPtr& data) tm_override;
     
-    // createRange() ���� Range ���󣬲����ش˶��� No     Yes
-    // evaluate() ����һ�� XPath ����ʽ�� No 1 9 Yes
+    // createRange()
+    // evaluate()
 
     virtual IDomText* createTextNode(const CDomStrPtr& txt) tm_override;
 
     // W3C not support
-    // getElementById() ���Ҿ���ָ����Ψһ ID ��Ԫ�ء� 5 1 9 Yes
-    // getElementsByTagName() �������о���ָ�����Ƶ�Ԫ�ؽڵ㡣 5 1 9 Yes
-    // getElementsByTagNameNS() �������о���ָ�����ƺ������ռ��Ԫ�ؽڵ�?No 1 9 Yes
-    //    importNode() ��һ���ڵ����һ���ĵ����Ƶ����ĵ��Ա�Ӧ�á�?    9 Yes
+    // getElementById()
+    // getElementsByTagName()
+    // getElementsByTagNameNS()
+    //    importNode()
 
     int transformNode(CString& str, TMBool bTransformChilds = true, int nTab = 2) tm_override
     {
@@ -835,8 +835,8 @@ public:
     virtual void LoadXml(CXmlTag tag, IDomNode* pParent = 0, EXmlLoadFlag flag = eXmlLoadFlagSpaceXML) tm_override;
 
     // W3C not support
-    //    normalizeDocument()       No Yes
-    //    renameNode() ������Ԫ�ػ������Խڵ㡣     No Yes
+    //    normalizeDocument()
+    //    renameNode()
 
     // extend
 //     TMBool LoadXmlFile(TMCStr fnXml);

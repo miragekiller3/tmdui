@@ -143,7 +143,7 @@ struct CHooks
 
     public:
         inline void SetHook(PFNHOOKPROC proc, TMLParam lData) { SetHook(_CALLBACK(proc, lData)); }
-        inline void RemoveHook(PFNHOOKPROC proc, TMLParam lData) { _RemoveHook(_CALLBACK(proc, lData)); }
+        inline void RemoveHook(PFNHOOKPROC proc, TMLParam lData) { RemoveHook(_CALLBACK(proc, lData)); }
     };
 
     // CheckAction
@@ -171,7 +171,7 @@ struct CHooks
     template <EHookType type, int idHook, class T_CheckAction>
     struct CHookNormal : public CHook
     {
-        virtual void SetHook(const _CALLBACK& cb) tm_final
+        virtual void SetHook(const _CALLBACK& cb) tm_override
         {
             DbgAssert(this == &s_hooks[type]);
             this->_SetHook(cb, idHook, CHookF<type, idHook, T_CheckAction>::HookProc, 0, GetCurrentThreadId());
@@ -182,7 +182,7 @@ struct CHooks
     template <EHookType type, int idHook, class T_CheckAction>
     struct CHookGlobal : public CHook
     {
-        virtual void SetHook(const _CALLBACK& cb) tm_final
+        virtual void SetHook(const _CALLBACK& cb) tm_override
         {
             DbgAssert(this == &s_hooks[type]);
             this->_SetHook(cb, idHook, CHookF<type, idHook, T_CheckAction>::HookProc, _ModuleATL.GetModuleInstance(), 0);
@@ -193,13 +193,13 @@ struct CHooks
     template <EHookType type, int idHook, class T_CheckAction>
     struct CHookThread : public CHook
     {
-        virtual void SetHook(const _CALLBACK& cb) tm_final
+        virtual void SetHook(const _CALLBACK& cb) tm_override
         {
             DbgAssert(this == &s_hooks[type]);
             this->_SetThreadHook(cb, idHook, CHookF<type, idHook, T_CheckAction>::HookProc);
         }
         
-        virtual void RemoveHook(const _CALLBACK& cb) tm_final
+        virtual void RemoveHook(const _CALLBACK& cb) tm_override
         {
             this->_RemoveThreadHook(cb);
         }

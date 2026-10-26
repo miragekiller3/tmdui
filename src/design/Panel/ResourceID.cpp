@@ -287,7 +287,7 @@ const RIDInfo* CIDMgr::Next(EDIT_MODE eMode, TMCStr pClass, const TM::CString* s
 ////////////////////////////////////////////////////////////////////////////////
 // class CIDMgr
 
-// h file definition£º#define IDC_XXX n1   //{index} n2
+// h file definition: #define IDC_XXX n1   //{index} n2
 
 void CIDMgr::LoadHFile(TMCStr pFileName, EDIT_MODE em, IProjMgr* pLog)
 {

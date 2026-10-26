@@ -40,7 +40,7 @@ struct _D3D11Bugs
 // for Rivatuner Statistics Server crash:
 // RTSSHooks64.dll!O000000180047b710RTSSHooks64.dll!O000000180037196()
 // RTSSHooks64.dll!O0o00001800412fe0()
-// HRESULT hr = swapChainD->swapChain->Present(swapChainD->swapInterval£¬presentFlags);
+// HRESULT hr = swapChainD->swapChain->Present(swapChainD->swapInterval, presentFlags);
 struct _RTSSHooksBugs11
 {
     static HRESULT PresentSC(IDXGISwapChain* chain)

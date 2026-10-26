@@ -361,7 +361,7 @@ TM_INLINE TMBool ResLoad(TMHModule hMod, TMCStr pResName, TMCStr pTypeName, TMRe
 
 #elif defined(TM_GTK)
     DbgAssert(data);
-    // pResName£º "/org/example/myres.bin"
+    // pResName: "/org/example/myres.bin"
     data->p = g_resources_lookup_data(pResName, G_RESOURCE_LOOKUP_FLAGS_NONE, NULL);
         return 0 != data->p;
 #else

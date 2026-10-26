@@ -224,7 +224,7 @@ public:
         return ERROR_SUCCESS == SHDeleteValue (m_hDir, lpDir, lpKey);
     }
 
-    //if lpValue==""or==0£¬indicates delete the default value of that item
+    //if lpValue==""or==0, indicates delete the default value of that item
     TMBool DeleteValue (const TMCharT* lpValue)
     {
         DbgAssert(m_hDir);
