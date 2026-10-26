@@ -177,16 +177,21 @@ TM_INLINE void EventLock (TMEvent* pStruct)
     pthread_cleanup_pop (0);
 }
 
-TM_INLINE ESyncRet _pthread_cond_timedwait (pthread_cond_t* cond,
-                                            pthread_mutex_t* mutex,
-                                            unsigned long dwMilliseconds)
+TM_INLINE ESyncRet _pthread_cond_timedwait(pthread_cond_t* cond,
+                                           pthread_mutex_t* mutex,
+                                           unsigned long dwMilliseconds)
 {
     struct timeval now;
     struct timespec ts;
-    gettimeofday (&now, NULL);
-    ts.tv_sec  = now.tv_sec + (dwMilliseconds / 1000);   // second
-    ts.tv_nsec = (dwMilliseconds % 1000) * 1000000;      //nanosecond
-    return (ESyncRet) pthread_cond_timedwait (cond, mutex, &ts);
+    gettimeofday(&now, NULL);
+    ts.tv_sec  = now.tv_sec + (dwMilliseconds / 1000);
+    ts.tv_nsec = now.tv_usec * 1000 + (dwMilliseconds % 1000) * 1000000;
+    if (ts.tv_nsec >= 1000000000L)
+	{
+        ts.tv_sec += 1;
+        ts.tv_nsec -= 1000000000L;
+    }
+    return (ESyncRet)pthread_cond_timedwait(cond, mutex, &ts);
 }
 
 TM_INLINE ESyncRet EventTimeLock (TMEvent* pStruct, unsigned long dwMilliseconds)
